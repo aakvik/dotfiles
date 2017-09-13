@@ -16,5 +16,4 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-#eval "$(ssh-agent)"
-alias config='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
+alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
