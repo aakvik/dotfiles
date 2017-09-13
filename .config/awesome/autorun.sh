@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+function run {
+  if ! pgrep $1 ;
+  then
+    $@&
+  fi
+}
+
+setxkbmap -layout "no"
+setxkbmap -option caps:none
+run xscreensaver -nosplash &
+run xss-lock -- xscreensaver-command -lock &
+run albert
+run owncloud
