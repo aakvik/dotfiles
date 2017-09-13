@@ -1,0 +1,80 @@
+# whoami 
+ set from="aleksander.aakvik@digitalgarden.no"
+ set realname="Aleksander Aakvik"
+
+# IMAP connection TLS
+ set folder="imap://mail.uniweb.no/INBOX"
+ set spoolfile="imap://mail.uniweb.no:143"
+ set record="=Sent"
+ set postponed="=Drafts"
+ set ssl_force_tls = yes
+
+# special folders
+ mailboxes +INBOX +archive +sent +drafts +junk +trash
+
+# change dateformat
+ set index_format="%4C %Z %{%b %d} %-50.50L (%4l) %s"
+
+# gpg encryped credentials
+ source "gpg -dq $HOME/.credentials.gpg |"
+ set imap_user="aleksander.aakvik@digitalgarden.no"
+ set imap_pass=$my_pass
+
+# refreshing mailbox
+ set imap_idle=yes
+ set imap_passive=yes
+ set mail_check=10
+ set imap_keepalive=30
+ set imap_check_subscribed
+ set mail_check=60
+ set sleep_time = 0
+ set timeout=10
+ set net_inc=5
+ set abort_nosubject=yes
+ set edit_headers=yes
+
+# local folders
+ set header_cache="~/.mutt/cache/headers"
+ set message_cachedir="~/.mutt/cache/bodies"
+ set certificate_file="~/.mutt/certificates"
+ 
+# SMTP settings TLS
+ set ssl_starttls=yes
+ set smtp_url="smtp://$imap_user:$imap_pass@mail.uniweb.no:587"
+
+# signature
+ set signature="~/.mutt/signature"
+
+# custom theme
+ source "~/.mutt/comida.mutt"
+
+# gpg config
+ source "~/.mutt/gpg.rc"
+ set pgp_use_gpg_agent = yes
+ set pgp_sign_as = 0x733893F1
+ set pgp_timeout = 3600
+ set crypt_autosign = yes
+ set crypt_replyencrypt = yes
+ set crypt_replyencrypt
+ set crypt_replysign
+ set crypt_replysignencrypted
+ set pgp_show_unusable=no
+
+# manually refresh inbox
+ bind index G imap-fetch-mail
+
+# misc config
+ set send_charset="utf-8"
+ set fast_reply=yes
+ set include=yes
+ set sort=threads
+ set sort_aux=last-date-received
+
+# abook address book
+ set query_command= "abook --mutt-query '%s'"
+ macro index,pager  a "<pipe-message>abook --add-email-quiet<return>" "Add this sender to Abook"
+ bind editor        <Tab> complete-query
+
+# disables index highlighting in all folders except inbox
+ folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
+ folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
