@@ -9,6 +9,10 @@
  set postponed="=Drafts"
  set ssl_force_tls = yes
 
+# SMTP settings TLS
+ set ssl_starttls=yes
+ set smtp_url="smtp://$imap_user:$imap_pass@mail.uniweb.no:587"
+
 # special folders
  mailboxes +INBOX +archive +sent +drafts +junk +trash
 
@@ -38,9 +42,6 @@
  set message_cachedir="~/.mutt/cache/bodies"
  set certificate_file="~/.mutt/certificates"
  
-# SMTP settings TLS
- set ssl_starttls=yes
- set smtp_url="smtp://$imap_user:$imap_pass@mail.uniweb.no:587"
 
 # signature
  set signature="~/.mutt/signature"

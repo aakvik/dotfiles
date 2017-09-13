@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/usr/bin/perl
 #
 # On-the-fly adjusting of the font size in urxvt
 #
