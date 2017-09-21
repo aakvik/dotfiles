@@ -1,24 +1,18 @@
-[2017-09-13 08:53:59] WeeChat 1.9 (compiled on Aug 26 2017 13:38:06)
-[2017-09-13 08:53:59] Reading configuration file sec.conf
-[2017-09-13 08:53:59] Reading configuration file weechat.conf
-[2017-09-13 08:53:59] Reading configuration file plugins.conf
-[2017-09-13 08:53:59] Reading configuration file charset.conf
-[2017-09-13 08:53:59] Reading configuration file logger.conf
-[2017-09-13 08:53:59] Reading configuration file exec.conf
-[2017-09-13 08:53:59] Reading configuration file trigger.conf
-[2017-09-13 08:53:59] Reading configuration file aspell.conf
-[2017-09-13 08:53:59] Reading configuration file alias.conf
-[2017-09-13 08:53:59] Reading configuration file buflist.conf
-[2017-09-13 08:53:59] Reading configuration file fifo.conf
-[2017-09-13 08:53:59] Reading configuration file xfer.conf
-[2017-09-13 08:53:59] Reading configuration file irc.conf
-[2017-09-13 08:53:59] Reading configuration file relay.conf
-[2017-09-13 08:53:59] Reading configuration file script.conf
-[2017-09-13 08:53:59] irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
-[2017-09-13 09:04:46] Writing configuration file iset.conf (default options)
-[2017-09-13 09:04:46] Reading configuration file iset.conf
-[2017-09-13 09:05:16] Writing configuration file buffers.conf (default options)
-[2017-09-13 09:05:16] Reading configuration file buffers.conf
-[2017-09-13 09:05:44] Writing configuration file buffers.conf
-[2017-09-13 09:06:25] Reading configuration file buffers.conf
-[2017-09-13 09:13:09] Writing configuration file buffers.conf
+[2017-09-21 00:44:59] WeeChat 1.9 (compiled on Aug 26 2017 13:38:06)
+[2017-09-21 00:44:59] Reading configuration file sec.conf
+[2017-09-21 00:44:59] Reading configuration file weechat.conf
+[2017-09-21 00:44:59] Reading configuration file plugins.conf
+[2017-09-21 00:44:59] Reading configuration file charset.conf
+[2017-09-21 00:44:59] Reading configuration file logger.conf
+[2017-09-21 00:44:59] Reading configuration file exec.conf
+[2017-09-21 00:44:59] Reading configuration file trigger.conf
+[2017-09-21 00:44:59] Reading configuration file aspell.conf
+[2017-09-21 00:44:59] Reading configuration file alias.conf
+[2017-09-21 00:44:59] Reading configuration file buflist.conf
+[2017-09-21 00:44:59] Reading configuration file fifo.conf
+[2017-09-21 00:44:59] Reading configuration file xfer.conf
+[2017-09-21 00:44:59] Reading configuration file irc.conf
+[2017-09-21 00:44:59] Reading configuration file relay.conf
+[2017-09-21 00:44:59] Reading configuration file iset.conf
+[2017-09-21 00:44:59] Reading configuration file script.conf
+[2017-09-21 00:44:59] irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
