@@ -40,3 +40,10 @@ set smartindent                             " automatically indent level
 au BufRead /tmp/mutt-* set tw=72            "max 72 char lenght when writing email (mutt)
 
 let g:airline_theme = 'hybrid'              " set theme for airline infobar
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
