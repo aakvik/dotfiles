@@ -1,23 +1,42 @@
-runtime! archlinux.vim		        " Load global archlinux vimrc
+set nocompatible                            " be iMproved, required
+filetype off                                " required
 
-filetype plugin indent on
+set rtp+=~/.vim/bundle/Vundle.vim           " set the runtime path to include Vundle and initialize
 
-if has("syntax")		            " Enables code syntax highlighting
+call vundle#begin()                         " all plugins below this line
+
+Plugin 'VundleVim/Vundle.vim'               " let Vundle handle itself
+Plugin 'vim-airline/vim-airline'            " airline infobar
+Plugin 'vim-airline/vim-airline-themes'     " airline themes
+Plugin 'mhinz/vim-signify'                  " git modify indicator
+Plugin 'tpope/vim-fugitive'                 " git wrapper
+
+call vundle#end()                           " all plugins before this line
+
+filetype plugin indent on                   " required
+
+
+if has("syntax")		                    " Enables code syntax highlighting
   syntax on
 endif
 
-colorscheme smyck		            " Set theme
-set showcmd			                " Show (partial) command in status line.
-set showmatch			            " Show matching brackets.
-set ignorecase			            " Do case insensitive matching
-set smartcase			            " Do smart case matching
-set incsearch			            " Incremental search
-set autowrite			            " Automatically save before commands like :next and :make
-set hidden			                " Hide buffers when they are abandoned
-set number			                " Enable linenumbers
-set tabstop=4			            " show existing tab with 4 spaces width			
-set shiftwidth=4		            " when indenting with '>', use 4 spaces width
-set expandtab			            " show existing tab with 4 spaces width
-set clipboard=unnamedplus           " yank to CLIPBOARD
-set laststatus=2                    " always display statusline
-au BufRead /tmp/mutt-* set tw=72    "max 72 char lenght when writing email (mutt)
+colorscheme smyck		                    " Set theme
+set showcmd			                        " Show (partial) command in status line.
+set showmatch			                    " Show matching brackets.
+set ignorecase			                    " Do case insensitive matching
+set smartcase			                    " Do smart case matching
+set incsearch			                    " Incremental search
+set autowrite			                    " Automatically save before commands like :next and :make
+set hidden			                        " Hide buffers when they are abandoned
+set number			                        " Enable linenumbers
+set tabstop=4			                    " show existing tab with 4 spaces width
+set shiftwidth=4		                    " when indenting with '>', use 4 spaces width
+set expandtab			                    " show existing tab with 4 spaces width
+set clipboard=unnamedplus                   " yank to CLIPBOARD
+set laststatus=2                            " always display statusline
+set autoindent                              " copies indentation from previous line
+set smartindent                             " automatically indent level
+
+au BufRead /tmp/mutt-* set tw=72            "max 72 char lenght when writing email (mutt)
+
+let g:airline_theme = 'hybrid'              " set theme for airline infobar
