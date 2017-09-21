@@ -1,9 +1,8 @@
-
 --[[
-                                    
-     Steamburn Awesome WM theme 3.0 
-     github.com/copycat-killer      
-                                    
+
+     Steamburn Awesome WM theme 3.0
+     github.com/copycat-killer
+
 --]]
 
 local gears = require("gears")
@@ -18,18 +17,18 @@ theme.dir                                       = os.getenv("HOME") .. "/.config
 theme.wallpaper                                 = theme.dir .. "/wall.png"
 theme.font                                      = "Misc Tamsyn 10.5"
 theme.fg_normal                                 = "#e2ccb0"
-theme.fg_focus                                  = "#d88166"
+theme.fg_focus                                  = "#e2ccb0"
 theme.fg_urgent                                 = "#CC9393"
 theme.bg_normal                                 = "#140c0b"
 theme.bg_focus                                  = "#140c0b"
 theme.bg_urgent                                 = "#2a1f1e"
 theme.border_width                              = 1
 theme.border_normal                             = "#302627"
-theme.border_focus                              = "#c2745b"
+theme.border_focus                              = "#e2ccb0"
 theme.border_marked                             = "#CC9393"
-theme.taglist_fg_focus                          = "#d88166"
+theme.taglist_fg_focus                          = "#e2ccb0"
 theme.tasklist_bg_focus                         = "#140c0b"
-theme.tasklist_fg_focus                         = "#d88166"
+theme.tasklist_fg_focus                         = "#e2ccb0"
 theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
 theme.menu_height                               = 16
@@ -156,9 +155,9 @@ theme.fs = lain.widget.fs({
 -- Battery
 local bat = lain.widget.bat({
     settings = function()
-        bat_perc = bat_now.perc
-        if bat_now.ac_status == 1 then bat_perc = "Plug" end
-        widget:set_markup(markup.font(theme.font, markup(gray, " Bat ") .. bat_perc .. " "))
+        local perc = bat_now.perc
+        if bat_now.ac_status == 1 then perc = "Plug" end
+        widget:set_markup(markup.font(theme.font, markup(gray, " Bat ") .. perc .. " "))
     end
 })
 
@@ -256,11 +255,11 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             spr,
-            theme.mpd.widget,
+            --theme.mpd.widget,
             --mail.widget,
             cpu.widget,
             mem.widget,
-            bat.widget,
+            --bat.widget,
             net.widget,
             theme.volume.widget,
             mytextclock
