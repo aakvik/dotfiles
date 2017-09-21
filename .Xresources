@@ -86,9 +86,9 @@ URxvt*foreground: 	    	#E7E7E7
 URxvt*background: 		    #2D2D2D
 
 URxvt.scrollBar:            false
-URxvt*font:                 xft:xos4 Terminus:size=10
-URxvt*boldFont:             xft:xos4 Terminus:bold:size=10
-URxvt.letterSpace:          +1
+URxvt*font:                 xft:Inconsolata:size=12
+URxvt*boldFont:             xft:Inconsolata:bold:size=12
+!URxvt.letterSpace:          +1
 
 URxvt.perl-ext-common: 		default,matcher,clipboard,font-size
 URxvt.url-launcher: 		/usr/bin/firefox
