@@ -186,6 +186,16 @@ theme.volume = lain.widget.alsa({
     end
 })
 
+local volume = lain.widget.pulse {
+    settings = function()
+        vlevel = volume_now.left
+        if volume_now.muted == "yes" then
+            vlevel = vlevel .. " M"
+        end
+        widget:set_markup(markup.font(theme.font, markup(gray, " Vol ") .. vlevel .. " "))
+    end
+}
+
 -- Weather
 theme.weather = lain.widget.weather({
     city_id = 2643743, -- placeholder (London)
@@ -261,6 +271,7 @@ function theme.at_screen_connect(s)
             mem.widget,
             --bat.widget,
             net.widget,
+            volume.widget,
             mytextclock
         },
     }
