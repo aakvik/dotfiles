@@ -12,4 +12,3 @@ setxkbmap -option caps:none
 run xscreensaver -nosplash &
 run xss-lock -- xscreensaver-command -lock &
 run albert
-run owncloud
