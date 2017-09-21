@@ -14,8 +14,8 @@ local os    = { getenv = os.getenv }
 local theme                                     = {}
 theme.zenburn_dir                               = require("awful.util").get_themes_dir() .. "zenburn"
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/steamburn"
-theme.wallpaper                                 = theme.dir .. "/wall.png"
-theme.font                                      = "Misc Tamsyn 10.5"
+theme.wallpaper                                 = "#e2ccb0"
+theme.font                                      = "Misc Tamsyn 14"
 theme.fg_normal                                 = "#e2ccb0"
 theme.fg_focus                                  = "#e2ccb0"
 theme.fg_urgent                                 = "#CC9393"
@@ -79,18 +79,18 @@ local markup = lain.util.markup
 local gray   = "#94928F"
 
 -- Textclock
-local mytextclock = wibox.widget.textclock(" %H:%M ")
+local mytextclock = wibox.widget.textclock(" %a %b %d %H:%M ")
 mytextclock.font = theme.font
 
--- Calendar
-lain.widget.calendar({
-    attach_to = { mytextclock },
-    notification_preset = {
-        font = "Misc Tamsyn 11",
-        fg   = theme.fg_normal,
-        bg   = theme.bg_normal
-    }
-})
+---- Calendar
+--lain.widget.calendar({
+--    attach_to = { mytextclock },
+--    notification_preset = {
+--        font = "Misc Tamsyn 11",
+--        fg   = theme.fg_normal,
+--        bg   = theme.bg_normal
+--    }
+--})
 
 --[[ Mail IMAP check
 -- commented because it needs to be set before use
@@ -235,7 +235,7 @@ function theme.at_screen_connect(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = 18 })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = 32 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -253,15 +253,14 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            theme.mpd.widget,
             wibox.widget.systray(),
             spr,
-            --theme.mpd.widget,
             --mail.widget,
             cpu.widget,
             mem.widget,
             --bat.widget,
             net.widget,
-            theme.volume.widget,
             mytextclock
         },
     }
