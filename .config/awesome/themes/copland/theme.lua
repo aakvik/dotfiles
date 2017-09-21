@@ -1,9 +1,8 @@
-
 --[[
-                                  
-     Copland Awesome WM theme 2.0 
-     github.com/copycat-killer    
-                                  
+
+     Copland Awesome WM theme 2.0
+     github.com/copycat-killer
+
 --]]
 
 local gears   = require("gears")
@@ -16,9 +15,9 @@ local awesome, client = awesome, client
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/copland"
 theme.wallpaper                                 = theme.dir .. "/wall.png"
-theme.font                                      = "Tamzen 10.5"
-theme.fg_normal                                 = "#BBBBBB"
-theme.fg_focus                                  = "#78A4FF"
+theme.font                                      = "Liberation mono 8"
+theme.fg_normal                                 = "#88C2BF"
+theme.fg_focus                                  = "#212837"
 theme.bg_normal                                 = "#111111"
 theme.bg_focus                                  = "#111111"
 theme.fg_urgent                                 = "#000000"
