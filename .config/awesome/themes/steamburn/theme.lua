@@ -114,22 +114,22 @@ local mail = lain.widget.imap({
 --]]
 
 -- MPD
-theme.mpd = lain.widget.mpd({
-    settings = function()
-        artist = mpd_now.artist .. " "
-        title  = mpd_now.title  .. " "
-
-        if mpd_now.state == "pause" then
-            artist = "mpd "
-            title  = "paused "
-        elseif mpd_now.state == "stop" then
-            artist = ""
-            title  = ""
-        end
-
-        widget:set_markup(markup.font(theme.font, markup(gray, artist) .. title))
-    end
-})
+--theme.mpd = lain.widget.mpd({
+--    settings = function()
+--        artist = mpd_now.artist .. " "
+--        title  = mpd_now.title  .. " "
+--
+--        if mpd_now.state == "pause" then
+--            artist = "mpd "
+--            title  = "paused "
+--        elseif mpd_now.state == "stop" then
+--            artist = ""
+--            title  = ""
+--        end
+--
+--        widget:set_markup(markup.font(theme.font, markup(gray, artist) .. title))
+--    end
+--})
 
 -- CPU
 local cpu = lain.widget.sysload({
@@ -148,7 +148,7 @@ local mem = lain.widget.mem({
 -- /home fs
 theme.fs = lain.widget.fs({
     options = "--exclude-type=tmpfs",
-    partition = "/home",
+    partition = "/mnt/storage",
     notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Misc Tamsyn 10.5" },
 })
 
@@ -253,9 +253,9 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            theme.mpd.widget,
             wibox.widget.systray(),
             spr,
+            theme.fs.widget,
             --mail.widget,
             cpu.widget,
             mem.widget,
