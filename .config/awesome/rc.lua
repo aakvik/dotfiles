@@ -20,6 +20,9 @@ local lain          = require("lain")
 --local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+-- Enable VIM help for hotkeys widget when client with matching name is opened:
+require("awful.hotkeys_popup.keys.vim")
+
 -- }}}
 
 -- {{{ Error handling
@@ -64,12 +67,12 @@ local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "urxvt"
 local editor       = os.getenv("EDITOR") or "vim"
-local gui_editor   = "gvim"
+local gui_editor   = "vim"
 local browser      = "firefox"
-local guieditor    = "atom"
+local guieditor    = "vim"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5" }
+awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 awful.layout.layouts = {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
