@@ -4,17 +4,16 @@
  set use_from = yes
 
 # IMAP connection TLS
- set folder = "imap://mail.uniweb.no/INBOX"
+ set folder = "imap://mail.uniweb.no/"
  set spoolfile = "imap://mail.uniweb.no/INBOX"
- set record = +Sent 
- set postponed = +Drafts
+ set record = +INBOX/Sent 
+ set postponed = +INBOX/Drafts
 
  set ssl_force_tls = yes
 
 # change dateformat
  set date_format="%y-%m-%d %T"
  set index_format="%2C | %Z [%d] %-40.30F (%-4.4c) %s" 
-#set index_format = "%4C %Z %{%b %d} %-50.50L (%4l) %s"
 
 # gpg encryped credentials
 # source "gpg -dq $HOME/.credentials.gpg |"
@@ -82,6 +81,6 @@
  folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
 
 # spamassasin training
-macro index \ed "<enter-command>unset wait_key\n<pipe-entry>sa-learn --spam\n<enter-command>set wait_key\n<save-message>=Junk\n" "Tags as SPAM"
-macro index \eu "<pipe-entry>sa-learn --ham\n<enter-command>set wait_key\n<save-message>=inbox\n" "Untags as SPAM"
+macro index \ed "<enter-command>unset wait_key\n<pipe-entry>sa-learn --spam\n<enter-command>set wait_key\n<save-message>+INBOX/Junk\n" "Tags as SPAM"
+macro index \eu "<pipe-entry>sa-learn --ham\n<enter-command>set wait_key\n<save-message>+INBOX\n" "Untags as SPAM"
 macro index \et "<pipe-entry>spamassassin -t\n<enter-command>set wait_key\n" "Tests if it is SPAM"
