@@ -1,4 +1,4 @@
-# whoami 
+# whoami
  set from = "aleksander@aakvik.net"
  set realname = "Aleksander Aakvik"
  set use_from = yes
@@ -6,14 +6,14 @@
 # IMAP connection TLS
  set folder = "imap://mail.uniweb.no/"
  set spoolfile = "imap://mail.uniweb.no/INBOX"
- set record = +INBOX/Sent 
+ set record = +INBOX/Sent
  set postponed = +INBOX/Drafts
 
  set ssl_force_tls = yes
 
 # change dateformat
  set date_format="%y-%m-%d %T"
- set index_format="%2C | %Z [%d] %-40.30F (%-4.4c) %s" 
+ set index_format="%2C | %Z [%d] %-40.30F (%-4.4c) %s"
 
 # gpg encryped credentials
 # source "gpg -dq $HOME/.credentials.gpg |"
@@ -26,7 +26,7 @@
 
 # refreshing mailbox
  set imap_idle = yes
- unset imap_passive 
+ unset imap_passive
  set mail_check = 10
  set imap_keepalive = 300
  set imap_check_subscribed
@@ -41,7 +41,7 @@
  set header_cache = "~/.mutt/cache/headers"
  set message_cachedir = "~/.mutt/cache/bodies"
  set certificate_file = "~/.mutt/certificates"
- 
+
 
 # signature
  set signature = "~/.mutt/signature"
@@ -54,8 +54,8 @@
  set pgp_use_gpg_agent = yes
  set pgp_sign_as = 0x733893F1
  set pgp_timeout = 3600
- set crypt_autosign = yes
- set crypt_replyencrypt = yes
+ set crypt_autosign = no
+ set crypt_replyencrypt = no
  set crypt_replyencrypt
  set crypt_replysign
  set crypt_replysignencrypted

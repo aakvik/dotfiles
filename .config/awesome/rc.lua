@@ -214,8 +214,10 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     -- Take a screenshot
     -- https://github.com/copycat-killer/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("screenshot") end),
+    -- awful.key({ altkey }, "p", function() os.execute("screenshot") end),
 
+    -- Take screenshot standard arch way
+    awful.key( { modkey,         }, "p", function () awful.util.spawn_with_shell("sleep 0.5 && scrot -s -e 'mv $f ~/Pictures/screenshots/'") end),
     -- Hotkeys
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
