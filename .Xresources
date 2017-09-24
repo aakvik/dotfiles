@@ -88,7 +88,7 @@ URxvt*background: 		    #2D2D2D
 URxvt.scrollBar:            false
 
 URxvt*font:                 xft:xos4 Terminus:size=14
-URxvt*boldFont:             xft:xos4 Terminus:bold:size=14
+URxvt*boldFont:             xft:xos4 Terminus:size=14
 !URxvt.letterSpace:          +1
 
 URxvt.perl-ext-common: 		default,matcher,clipboard,font-size
