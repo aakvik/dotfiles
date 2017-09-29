@@ -1,51 +1,93 @@
-[2017-09-22 08:23:25] WeeChat 1.9 (compiled on Aug 26 2017 13:38:06)
-[2017-09-22 08:23:25] Reading configuration file sec.conf
-[2017-09-22 08:23:25] Reading configuration file weechat.conf
-[2017-09-22 08:23:25] Reading configuration file plugins.conf
-[2017-09-22 08:23:25] Reading configuration file charset.conf
-[2017-09-22 08:23:25] Reading configuration file logger.conf
-[2017-09-22 08:23:25] Reading configuration file exec.conf
-[2017-09-22 08:23:25] Reading configuration file trigger.conf
-[2017-09-22 08:23:25] Reading configuration file aspell.conf
-[2017-09-22 08:23:25] Reading configuration file alias.conf
-[2017-09-22 08:23:25] Reading configuration file buflist.conf
-[2017-09-22 08:23:25] Reading configuration file fifo.conf
-[2017-09-22 08:23:25] Reading configuration file xfer.conf
-[2017-09-22 08:23:25] Reading configuration file irc.conf
-[2017-09-22 08:23:25] Reading configuration file relay.conf
-[2017-09-22 08:23:25] Reading configuration file iset.conf
-[2017-09-22 08:23:25] Reading configuration file script.conf
-[2017-09-22 08:23:25] irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
-[2017-09-22 08:23:25] irc: connecting to server irc.uniweb.no/7000 (SSL)...
-[2017-09-22 23:45:00] irc: connecting to server chat.freenode.net/6667...
-[2017-09-22 23:56:57] irc: connecting to server chat.freenode.net/6667...
-[2017-09-23 00:04:54] Writing configuration file autosort.conf (default options)
-[2017-09-23 00:04:54] Reading configuration file autosort.conf
-[2017-09-23 00:04:54] Writing configuration file autosort.conf
-[2017-09-23 00:21:10] irc: connecting to server irc.homelien.no/6667...
-[2017-09-23 00:21:30] Writing configuration file irc.conf
-[2017-09-23 00:35:16] Writing configuration file irc.conf
-[2017-09-23 00:35:41] Writing configuration file irc.conf
-[2017-09-23 00:35:44] Writing configuration file irc.conf
-[2017-09-23 01:18:07] Writing configuration file theme.conf (default options)
-[2017-09-23 01:18:07] Reading configuration file theme.conf
-[2017-09-23 01:25:28] Writing configuration file sec.conf
-[2017-09-23 01:25:28] Writing configuration file weechat.conf
-[2017-09-23 01:25:28] Writing configuration file plugins.conf
-[2017-09-23 01:25:28] Writing configuration file charset.conf
-[2017-09-23 01:25:28] Writing configuration file logger.conf
-[2017-09-23 01:25:28] Writing configuration file exec.conf
-[2017-09-23 01:25:28] Writing configuration file trigger.conf
-[2017-09-23 01:25:28] Writing configuration file aspell.conf
-[2017-09-23 01:25:28] Writing configuration file alias.conf
-[2017-09-23 01:25:28] Writing configuration file buflist.conf
-[2017-09-23 01:25:28] Writing configuration file fifo.conf
-[2017-09-23 01:25:28] Writing configuration file xfer.conf
-[2017-09-23 01:25:28] Writing configuration file irc.conf
-[2017-09-23 01:25:28] Writing configuration file relay.conf
-[2017-09-23 01:25:28] Writing configuration file iset.conf
-[2017-09-23 01:25:28] Writing configuration file script.conf
-[2017-09-23 01:25:28] Writing configuration file autosort.conf
-[2017-09-23 01:25:28] Writing configuration file theme.conf
-[2017-09-23 01:35:13] Writing configuration file irc.conf
-[2017-09-23 01:35:23] Writing configuration file irc.conf
+[2017-09-29 18:04:35] WeeChat 1.9.1 (compiled on Sep 23 2017 19:44:10)
+[2017-09-29 18:04:35] Reading configuration file sec.conf
+[2017-09-29 18:04:35] Reading configuration file weechat.conf
+[2017-09-29 18:04:35] Reading configuration file plugins.conf
+[2017-09-29 18:04:35] Reading configuration file charset.conf
+[2017-09-29 18:04:35] Reading configuration file logger.conf
+[2017-09-29 18:04:35] Reading configuration file exec.conf
+[2017-09-29 18:04:35] Reading configuration file trigger.conf
+[2017-09-29 18:04:35] Reading configuration file aspell.conf
+[2017-09-29 18:04:35] Reading configuration file alias.conf
+[2017-09-29 18:04:35] Reading configuration file buflist.conf
+[2017-09-29 18:04:35] Reading configuration file fifo.conf
+[2017-09-29 18:04:35] Reading configuration file xfer.conf
+[2017-09-29 18:04:35] Reading configuration file irc.conf
+[2017-09-29 18:04:35] Reading configuration file relay.conf
+[2017-09-29 18:04:35] Reading configuration file iset.conf
+[2017-09-29 18:04:35] Reading configuration file autosort.conf
+[2017-09-29 18:04:35] Writing configuration file autosort.conf
+[2017-09-29 18:04:35] Reading configuration file script.conf
+[2017-09-29 18:04:35] irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+[2017-09-29 18:04:36] irc: connecting to server irc.uniweb.no/7000 (SSL)...
+[2017-09-29 18:04:36] irc: connecting to server irc.aakvik.net/1025 (SSL)...
+[2017-09-29 18:04:36] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:04:37] Writing configuration file irc.conf
+[2017-09-29 18:05:44] irc: connecting to server chat.freenode.org/6667 (SSL)...
+[2017-09-29 18:05:54] irc: connecting to server chat.freenode.org/6667 (SSL)...
+[2017-09-29 18:06:15] irc: connecting to server chat.freenode.org/6667 (SSL)...
+[2017-09-29 18:06:18] Writing configuration file irc.conf
+[2017-09-29 18:06:58] irc: connecting to server irc.aakvik.net/1025 (SSL)...
+[2017-09-29 18:06:59] Writing configuration file irc.conf
+[2017-09-29 18:07:09] irc: connecting to server irc.aakvik.net/1025 (SSL)...
+[2017-09-29 18:07:10] Writing configuration file irc.conf
+[2017-09-29 18:07:20] Writing configuration file irc.conf
+[2017-09-29 18:07:42] irc: connecting to server irc.aakvik.net/1025 (SSL)...
+[2017-09-29 18:09:49] Writing configuration file irc.conf
+[2017-09-29 18:09:49] Writing configuration file irc.conf
+[2017-09-29 18:09:49] Writing configuration file irc.conf
+[2017-09-29 18:09:49] Writing configuration file irc.conf
+[2017-09-29 18:09:49] Writing configuration file irc.conf
+[2017-09-29 18:10:32] Writing configuration file irc.conf
+[2017-09-29 18:10:39] Writing configuration file irc.conf
+[2017-09-29 18:10:45] Writing configuration file irc.conf
+[2017-09-29 18:10:59] Writing configuration file irc.conf
+[2017-09-29 18:14:12] Writing configuration file irc.conf
+[2017-09-29 18:14:16] Writing configuration file irc.conf
+[2017-09-29 18:14:18] Writing configuration file irc.conf
+[2017-09-29 18:14:22] Writing configuration file irc.conf
+[2017-09-29 18:15:03] Writing configuration file irc.conf
+[2017-09-29 18:15:33] Writing configuration file irc.conf
+[2017-09-29 18:17:55] Writing configuration file irc.conf
+[2017-09-29 18:26:03] Writing configuration file irc.conf
+[2017-09-29 18:27:54] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 18:28:03] Writing configuration file irc.conf
+[2017-09-29 18:28:31] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 18:30:51] Writing configuration file irc.conf
+[2017-09-29 18:42:54] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 18:44:03] Writing configuration file irc.conf
+[2017-09-29 18:52:11] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 18:53:04] Writing configuration file irc.conf
+[2017-09-29 19:00:34] irc: connecting to server 10.22.0.1/7000 (SSL)...
+[2017-09-29 19:00:44] irc: connecting to server 10.22.0.1/7000 (SSL)...
+[2017-09-29 19:01:04] irc: connecting to server 10.22.0.1/7000 (SSL)...
+[2017-09-29 19:01:44] irc: connecting to server 10.22.0.1/7000 (SSL)...
+[2017-09-29 19:01:48] Writing configuration file irc.conf
+[2017-09-29 19:02:05] irc: connecting to server irc.uniweb.no/7000 (SSL)...
+[2017-09-29 19:02:15] irc: connecting to server irc.uniweb.no/7000 (SSL)...
+[2017-09-29 19:02:35] irc: connecting to server irc.uniweb.no/7000 (SSL)...
+[2017-09-29 19:03:15] irc: connecting to server irc.uniweb.no/7000 (SSL)...
+[2017-09-29 19:04:36] irc: connecting to server irc.uniweb.no/7000 (SSL)...
+[2017-09-29 19:04:38] Writing configuration file irc.conf
+[2017-09-29 19:06:46] Writing configuration file irc.conf
+[2017-09-29 19:07:10] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 19:07:10] Writing configuration file irc.conf
+[2017-09-29 19:07:20] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 19:07:20] Writing configuration file irc.conf
+[2017-09-29 19:07:22] Writing configuration file irc.conf
+[2017-09-29 19:07:40] irc: connecting to server 10.22.0.23/1025...
+[2017-09-29 19:07:40] Writing configuration file irc.conf
+[2017-09-29 19:07:40] Writing configuration file irc.conf
+[2017-09-29 19:07:40] Writing configuration file irc.conf
+[2017-09-29 19:07:40] Writing configuration file irc.conf
+[2017-09-29 19:07:40] Writing configuration file irc.conf
