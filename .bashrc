@@ -17,3 +17,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
+
