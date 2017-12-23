@@ -11,6 +11,8 @@ Plugin 'vim-airline/vim-airline-themes'     " airline themes
 Plugin 'mhinz/vim-signify'                  " git modify indicator
 Plugin 'scrooloose/nerdtree'                " nerdtree browser
 Plugin 'tpope/vim-fugitive'                 " git wrapper
+Plugin 'scrooloose/nerdcommenter'           " magic comments
+Plugin 'taglist.vim'                        " source code browser
 
 call vundle#end()                           " all plugins before this line
 
