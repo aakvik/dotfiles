@@ -18,7 +18,7 @@ local string  = { match  = string.match,
 local function factory(args)
     local alsa     = { widget = wibox.widget.textbox() }
     local args     = args or {}
-    local timeout  = args.timeout or 5
+    local timeout  = args.timeout or 0
     local settings = args.settings or function() end
 
     alsa.cmd           = args.cmd or "amixer"

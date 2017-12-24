@@ -94,10 +94,10 @@ URxvt*font:                 xft:xos4 Terminus:size=14
 URxvt*boldFont:             xft:xos4 Terminus:size=14
 !URxvt.letterSpace:          +1
 
-!URxvt.keysym.Home:          \033[1~
-!URxvt.keysym.End:           \033[4~
-!URxvt.keysym.KP_Home:       \033[1~
-!URxvt.keysym.KP_End:        \033[4~
+URxvt.keysym.Home:          \033[1~
+URxvt.keysym.End:           \033[4~
+URxvt.keysym.KP_Home:       \033[1~
+URxvt.keysym.KP_End:        \033[4~
 !URxvt.keysym.M-Down:        \033[1;3B
 !URxvt.keysym.M-Up:          \033[1;3A
 !URxvt.keysym.M-Left:        \033[1;3D
