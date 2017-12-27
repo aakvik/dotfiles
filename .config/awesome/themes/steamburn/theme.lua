@@ -14,7 +14,7 @@ local os    = { getenv = os.getenv }
 local theme                                     = {}
 theme.zenburn_dir                               = require("awful.util").get_themes_dir() .. "zenburn"
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/steamburn"
-theme.wallpaper                                 = "#e2ccb0"
+--theme.wallpaper                                 = "#e2ccb0"
 theme.font                                      = "Misc Tamsyn 14"
 theme.fg_normal                                 = "#e2ccb0"
 theme.fg_focus                                  = "#e2ccb0"
