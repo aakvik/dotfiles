@@ -42,3 +42,8 @@ export LESS='-R '
 # git handling for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
 
+# pastebin
+pb () {
+      curl -F "c=@${1:--}" https://ptpb.pw/
+  }
+
