@@ -313,7 +313,7 @@ globalkeys = awful.util.table.join(
         awful.key({ }, "XF86MonBrightnessUp", function ()
         awful.util.spawn("xbacklight -inc 5") end),
 
--- Lock screen 
+-- Lock screen
 
     awful.key({modkey,}, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
 
@@ -453,6 +453,8 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end),
 
+    awful.key({ modkey }, "e", function () awful.spawn("urxvt -e neomutt") end),
+    awful.key({ modkey }, "i", function () awful.spawn("urxvt -e weechat") end),
     -- Default
     --[[ Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
