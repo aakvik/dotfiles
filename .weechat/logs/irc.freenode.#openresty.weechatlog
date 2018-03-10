@@ -1,0 +1,521 @@
+2018-01-04 14:16:32	-->	aakvik (goodtimes@91.207.159.96) has joined #openresty
+2018-01-04 14:16:32	--	Channel #openresty: 17 nicks (0 ops, 0 voices, 17 normals)
+2018-01-04 14:16:32	***	Buffer Playback...
+2018-01-04 14:16:32	sobel	echo
+2018-01-04 14:16:32	kostyay	hi. when using `proxy_intercept_errors` in conjunction with content_by_lua_block is it possible to access the proxy's response?
+2018-01-04 14:16:32	kostyay	i would like to render custom errors based on the response returned by the proxy
+2018-01-04 14:16:32	***	Playback Complete.
+2018-01-04 14:16:49	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-04 14:24:05	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 252 seconds)
+2018-01-04 14:33:53	-->	kostya (~kostya@213.57.82.50) has joined #openresty
+2018-01-04 14:33:57	<--	kostyay (~kostya@213.57.82.50) has quit (Ping timeout: 264 seconds)
+2018-01-04 14:48:12	--	irc: disconnected from server
+2018-01-16 10:17:57	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-16 10:17:57	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-01-16 10:18:11	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-16 13:53:05	--	irc: disconnected from server
+2018-01-16 14:08:36	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-16 14:08:36	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-01-16 14:08:49	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-16 14:27:21	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Ping timeout: 264 seconds)
+2018-01-16 14:27:28	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-01-16 14:27:28	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-01-16 14:27:28	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-01-16 14:27:56	<--	rigid (~rigid@unaffiliated/rigid) has quit (Quit: NO WINE +++ NO WIFE +++ NO CARRIER)
+2018-01-16 14:32:21	-->	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has joined #openresty
+2018-01-16 14:32:21	<--	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has quit (Changing host)
+2018-01-16 14:32:21	-->	rigid (~rigid@unaffiliated/rigid) has joined #openresty
+2018-01-16 14:35:09	<--	rigid (~rigid@unaffiliated/rigid) has quit (Client Quit)
+2018-01-16 14:38:55	-->	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has joined #openresty
+2018-01-16 14:38:55	<--	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has quit (Changing host)
+2018-01-16 14:38:55	-->	rigid (~rigid@unaffiliated/rigid) has joined #openresty
+2018-01-16 14:46:22	--	irc: disconnected from server
+2018-01-16 14:46:29	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-16 14:46:29	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-01-16 14:46:46	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-16 16:48:39	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-01-16 16:48:46	-->	ryan_for1 (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-16 17:18:17	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-01-16 18:03:27	<--	ryan_for1 (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-01-16 18:42:28	--	irc: disconnected from server
+2018-01-16 18:42:39	-->	aleksanderffs (goodtimes@aakvik.net) has joined #openresty
+2018-01-16 18:42:39	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-16 18:43:18	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-16 18:46:02	<--	aakvik (goodtimes@aakvik.net) has quit (Ping timeout: 255 seconds)
+2018-01-16 18:52:39	<--	aleksanderffs (goodtimes@aakvik.net) has left #openresty
+2018-01-16 18:52:39	--	irc: disconnected from server
+2018-01-16 20:32:09	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-16 20:32:09	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-01-16 20:32:09	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-16 20:32:10	--	Mode #openresty [+cnt]
+2018-01-16 20:32:10	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-17 00:58:43	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit
+2018-01-17 01:31:06	-->	ryan_for1 (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-17 09:51:26	<--	ryan_for1 (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 255 seconds)
+2018-01-17 13:52:20	-->	ryan_for1 (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-17 20:40:34	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 255 seconds)
+2018-01-17 20:40:47	-->	p0pr0ck5 (~p0pr0ck5@2607:f298:5:101d:f816:3eff:fe39:68c7) has joined #openresty
+2018-01-17 22:25:24	<--	p0pr0ck5 (~p0pr0ck5@2607:f298:5:101d:f816:3eff:fe39:68c7) has quit (Ping timeout: 256 seconds)
+2018-01-17 22:26:09	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-01-18 01:58:56	-->	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has joined #openresty
+2018-01-18 04:30:16	<--	nezZario (sid125746@gateway/web/irccloud.com/x-sdypvyghhhbzwxkg) has quit (*.net *.split)
+2018-01-18 04:31:59	-->	nezZario (sid125746@gateway/web/irccloud.com/x-ugrbuyjchetckenf) has joined #openresty
+2018-01-18 04:32:57	<--	bngle (~bungle@unaffiliated/bungle) has quit (Ping timeout: 240 seconds)
+2018-01-18 04:35:03	-->	bungle (~bungle@unaffiliated/bungle) has joined #openresty
+2018-01-18 09:49:47	<--	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has quit
+2018-01-18 14:36:10	<--	ryan_for1 (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Quit: WeeChat 2.0)
+2018-01-18 15:19:50	--	irc: disconnected from server
+2018-01-18 15:19:53	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-18 15:19:53	--	Channel #openresty: 12 nicks (0 ops, 0 voices, 12 normals)
+2018-01-18 15:20:16	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-18 17:46:20	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-18 17:59:21	-->	FunnyLookinHat (~funnylook@208.185.177.193) has joined #openresty
+2018-01-18 17:59:21	<--	FunnyLookinHat (~funnylook@208.185.177.193) has quit (Changing host)
+2018-01-18 17:59:21	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-01-18 19:42:27	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-01-18 20:20:48	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Remote host closed the connection)
+2018-01-18 20:29:04	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-01-18 20:29:04	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-01-18 20:29:04	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-01-18 21:20:42	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Read error: Connection reset by peer)
+2018-01-18 21:21:28	-->	FunnyLookinHat (~funnylook@208.185.177.193) has joined #openresty
+2018-01-18 21:21:28	<--	FunnyLookinHat (~funnylook@208.185.177.193) has quit (Changing host)
+2018-01-18 21:21:28	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-01-18 23:38:08	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit
+2018-01-19 00:15:58	-->	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has joined #openresty
+2018-01-19 03:09:31	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-19 08:09:49	<--	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has quit
+2018-01-19 08:34:57	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-01-19 08:48:30	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-19 13:07:27	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-01-19 13:22:23	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-19 14:31:30	--	irc: disconnected from server
+2018-01-19 14:31:33	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-19 14:31:33	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-01-19 14:31:56	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-19 18:05:00	-->	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has joined #openresty
+2018-01-19 19:14:55	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-01-20 00:38:46	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Remote host closed the connection)
+2018-01-20 00:40:58	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-01-20 00:40:58	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-01-20 00:40:58	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-01-20 00:51:42	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Remote host closed the connection)
+2018-01-20 00:53:54	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-01-20 00:53:54	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-01-20 00:53:54	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-01-20 01:12:20	<--	rigid (~rigid@unaffiliated/rigid) has quit (Quit: NO WINE +++ NO WIFE +++ NO CARRIER)
+2018-01-20 01:13:14	-->	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has joined #openresty
+2018-01-20 01:13:14	<--	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has quit (Changing host)
+2018-01-20 01:13:14	-->	rigid (~rigid@unaffiliated/rigid) has joined #openresty
+2018-01-20 01:16:16	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Remote host closed the connection)
+2018-01-20 01:16:28	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-01-20 01:16:28	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-01-20 01:16:29	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-01-20 01:17:26	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Remote host closed the connection)
+2018-01-20 01:21:49	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-01-20 01:21:49	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-01-20 01:21:49	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-01-20 03:28:52	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-20 05:04:13	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Quit: WeeChat 2.0)
+2018-01-20 05:21:55	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-20 11:50:57	-->	tavish (~tavish@unaffiliated/tavish) has joined #openresty
+2018-01-20 13:58:37	<--	tavish (~tavish@unaffiliated/tavish) has quit (Ping timeout: 256 seconds)
+2018-01-20 14:29:03	-->	tavish (~tavish@unaffiliated/tavish) has joined #openresty
+2018-01-20 19:20:15	<--	rigid (~rigid@unaffiliated/rigid) has quit (Ping timeout: 248 seconds)
+2018-01-20 19:21:19	-->	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has joined #openresty
+2018-01-20 19:21:19	<--	rigid (~rigid@ipbcc2ea78.dynamic.kabel-deutschland.de) has quit (Changing host)
+2018-01-20 19:21:20	-->	rigid (~rigid@unaffiliated/rigid) has joined #openresty
+2018-01-20 20:27:27	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-01-20 20:37:31	<--	tavish (~tavish@unaffiliated/tavish) has quit (Remote host closed the connection)
+2018-01-20 20:39:31	<--	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has quit
+2018-01-20 23:05:40	<--	zas (sid128553@gateway/web/irccloud.com/x-qksdkgfoadunxkky) has quit (*.net *.split)
+2018-01-20 23:06:32	<--	paolo (~paolo@unaffiliated/paolo) has quit (*.net *.split)
+2018-01-20 23:06:32	<--	MeltedLux (MeltedLux@help.lux.melted.me) has quit (*.net *.split)
+2018-01-20 23:06:32	-->	MeltedLux (MeltedLux@help.lux.melted.me) has joined #openresty
+2018-01-20 23:06:32	-->	paolo (~paolo@unaffiliated/paolo) has joined #openresty
+2018-01-20 23:06:32	-->	zas (sid128553@gateway/web/irccloud.com/x-seqjavrdgmqygqat) has joined #openresty
+2018-01-21 01:05:29	-->	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has joined #openresty
+2018-01-21 04:02:45	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-21 16:03:27	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-01-21 16:20:30	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-21 17:06:20	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 260 seconds)
+2018-01-21 17:19:32	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-21 18:07:17	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-01-21 18:21:42	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-21 20:05:11	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 268 seconds)
+2018-01-22 03:15:28	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-22 09:26:07	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-01-22 10:09:56	<--	orbiter (~orbiter@dslb-088-064-187-183.088.064.pools.vodafone-ip.de) has quit
+2018-01-22 12:14:25	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-01-22 14:22:23	<--	aakvik (goodtimes@aakvik.net) has left #openresty
+2018-01-22 14:22:23	--	irc: disconnected from server
+2018-01-26 14:17:44	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-26 14:17:44	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 14:17:44	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 14:17:46	--	Mode #openresty [+cnt]
+2018-01-26 14:17:46	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 14:34:08	--	irc: disconnected from server
+2018-01-26 14:35:33	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-26 14:35:33	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 14:37:11	-->	aakvik (~goodtimes@aakvik.net) has joined #openresty
+2018-01-26 14:37:11	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 14:37:56	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 14:37:57	--	Mode #openresty [+cnt]
+2018-01-26 14:37:57	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 14:55:03	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-26 14:55:03	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 14:55:49	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 14:55:50	--	Mode #openresty [+cnt]
+2018-01-26 14:55:51	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 16:43:03	--	irc: disconnected from server
+2018-01-26 16:51:13	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-26 16:51:13	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 16:51:52	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 17:05:19	--	irc: disconnected from server
+2018-01-26 17:31:50	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-26 17:31:50	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 17:32:27	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 17:35:03	--	irc: disconnected from server
+2018-01-26 17:40:12	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-26 17:40:12	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-01-26 17:40:31	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-26 18:01:00	-->	orbiter (~orbiter@dslb-092-074-097-076.092.074.pools.vodafone-ip.de) has joined #openresty
+2018-01-26 18:03:12	--	irc: disconnected from server
+2018-01-28 18:56:24	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-28 18:56:24	--	Channel #openresty: 15 nicks (0 ops, 0 voices, 15 normals)
+2018-01-28 18:56:38	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-28 19:02:19	--	irc: disconnected from server
+2018-01-28 19:02:30	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-01-28 19:02:30	--	Channel #openresty: 15 nicks (0 ops, 0 voices, 15 normals)
+2018-01-28 19:03:07	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-01-28 19:57:12	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 268 seconds)
+2018-01-28 20:56:16	<--	r8s (~narate@184.22.215.62) has quit (Ping timeout: 248 seconds)
+2018-01-28 22:53:18	-->	r8s (~narate@184.22.215.62) has joined #openresty
+2018-01-28 22:57:36	<--	r8s (~narate@184.22.215.62) has quit (Ping timeout: 256 seconds)
+2018-01-28 23:48:47	--	irc: disconnected from server
+2018-02-06 19:45:19	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-06 19:45:19	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-02-06 19:45:38	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-06 20:07:45	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-07 01:55:12	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit
+2018-02-07 04:41:20	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-07 09:22:43	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit
+2018-02-07 10:45:18	-->	tavish (~tavish@unaffiliated/tavish) has joined #openresty
+2018-02-07 12:18:47	-->	tavish_ (~tavish@unaffiliated/tavish) has joined #openresty
+2018-02-07 13:57:13	<--	tavish_ (~tavish@unaffiliated/tavish) has quit (Quit: Leaving)
+2018-02-07 14:28:03	<--	tavish (~tavish@unaffiliated/tavish) has quit (Remote host closed the connection)
+2018-02-07 14:54:26	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 255 seconds)
+2018-02-07 15:54:13	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-07 17:09:28	sobel	anyone got experience to share about nginx+SNI+CertBot? i'm hoping to get a reverse-proxy for multiple domains running ASAP
+2018-02-07 17:21:00	sobel	i'm still contemplating a change to the postgresql json encoder. json types get escaped as strings instead of embedded as json.
+2018-02-07 17:21:18	sobel	and it makes negative sense. my server doesn't have hstore or i'd try that, too.
+2018-02-07 17:52:25	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 268 seconds)
+2018-02-07 18:46:08	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-07 22:53:27	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit (Ping timeout: 260 seconds)
+2018-02-08 04:53:11	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-08 05:39:27	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-08 05:58:02	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-08 06:34:29	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 255 seconds)
+2018-02-08 06:47:53	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-08 11:09:10	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-08 11:20:56	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-08 17:21:23	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 265 seconds)
+2018-02-08 17:26:18	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-08 17:34:48	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-08 19:11:11	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-02-08 20:10:09	<--	bungle (~bungle@unaffiliated/bungle) has quit (Ping timeout: 256 seconds)
+2018-02-08 20:11:15	-->	bungle (~bungle@unaffiliated/bungle) has joined #openresty
+2018-02-09 01:04:36	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Remote host closed the connection)
+2018-02-09 02:26:12	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-09 02:30:35	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Ping timeout: 240 seconds)
+2018-02-09 03:49:50	-->	FunnyLookinHat (~funnylook@c-24-17-226-60.hsd1.wa.comcast.net) has joined #openresty
+2018-02-09 03:49:50	<--	FunnyLookinHat (~funnylook@c-24-17-226-60.hsd1.wa.comcast.net) has quit (Changing host)
+2018-02-09 03:49:50	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-09 03:49:50	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Remote host closed the connection)
+2018-02-09 04:27:42	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-09 07:48:31	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-02-09 08:00:14	-->	ryan_ford (~user@110.54.175.51) has joined #openresty
+2018-02-09 08:07:27	<--	ryan_ford (~user@110.54.175.51) has quit (Ping timeout: 240 seconds)
+2018-02-09 08:20:51	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-09 09:30:23	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-02-09 10:55:01	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-09 12:56:59	-->	ryan_ford (~user@110.54.175.51) has joined #openresty
+2018-02-09 13:15:24	<--	ryan_ford (~user@110.54.175.51) has quit (Ping timeout: 260 seconds)
+2018-02-09 13:28:45	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-09 16:38:41	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 256 seconds)
+2018-02-09 16:40:43	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-09 17:30:26	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-09 19:33:26	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 276 seconds)
+2018-02-09 22:30:33	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit
+2018-02-10 00:12:51	<--	aakvik (goodtimes@aakvik.net) has left #openresty
+2018-02-10 00:12:51	--	irc: disconnected from server
+2018-02-10 00:49:13	--	irc: disconnected from server
+2018-02-10 00:50:47	--	irc: disconnected from server
+2018-02-10 00:52:51	--	irc: disconnected from server
+2018-02-10 01:18:18	--	irc: disconnected from server
+2018-02-10 01:21:29	--	irc: disconnected from server
+2018-02-10 01:54:28	--	irc: disconnected from server
+2018-02-10 02:02:34	--	irc: disconnected from server
+2018-02-10 02:04:16	--	irc: disconnected from server
+2018-02-10 02:40:27	--	irc: disconnected from server
+2018-02-10 03:10:09	--	irc: disconnected from server
+2018-02-10 20:13:39	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-10 20:13:39	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-02-10 20:13:39	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-10 20:13:39	--	Mode #openresty [+cnt]
+2018-02-10 20:13:39	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-10 22:23:18	sobel	anyone here know ngx_postgres_output.c well enough to talk shop? i'm contemplating a hack to let it quit escaping JSON/JSONB strings so they can be regular sub-objects in json
+2018-02-10 22:24:24	sobel	sorta ironic that the json type works poorest with ngx_rds but i understand how it got that way
+2018-02-10 22:25:25	sobel	oh balls, i bet it's ngx_rds that does the quoting and it probably doesn't have type info
+2018-02-10 22:34:03	sobel	found it. https://github.com/openresty/rds-json-nginx-module/blob/master/src/ngx_http_rds_json_output.c#L422
+2018-02-10 22:34:36	sobel	that's the line that needs to know a column is already JSON and don't escape it
+2018-02-10 22:35:09	sobel	same thing, L451
+2018-02-10 22:38:14	<--	nezZario (sid125746@gateway/web/irccloud.com/x-ugrbuyjchetckenf) has quit (*.net *.split)
+2018-02-10 22:42:18	-->	nezZario (sid125746@gateway/web/irccloud.com/x-ugrbuyjchetckenf) has joined #openresty
+2018-02-10 22:42:41	<--	nezZario (sid125746@gateway/web/irccloud.com/x-ugrbuyjchetckenf) has quit (Max SendQ exceeded)
+2018-02-10 22:43:29	-->	nezZario (sid125746@gateway/web/irccloud.com/session) has joined #openresty
+2018-02-10 22:44:10	<--	nezZario (sid125746@gateway/web/irccloud.com/session) has quit (Changing host)
+2018-02-10 22:44:10	-->	nezZario (sid125746@unaffiliated/nezzario) has joined #openresty
+2018-02-10 22:44:27	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 240 seconds)
+2018-02-10 22:46:59	<--	nezZario (sid125746@unaffiliated/nezzario) has quit (Changing host)
+2018-02-10 22:46:59	-->	nezZario (sid125746@gateway/web/irccloud.com/x-ynbhchxlkuhqbedi) has joined #openresty
+2018-02-10 22:47:22	-->	p0pr0ck5 (~p0pr0ck5@2607:f298:5:101d:f816:3eff:fe39:68c7) has joined #openresty
+2018-02-10 23:23:26	<--	tavish (~tavish@unaffiliated/tavish) has quit (Remote host closed the connection)
+2018-02-11 05:27:25	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-11 06:19:56	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit
+2018-02-11 07:40:39	<--	p0pr0ck5 (~p0pr0ck5@2607:f298:5:101d:f816:3eff:fe39:68c7) has quit (Ping timeout: 255 seconds)
+2018-02-11 07:42:24	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-11 09:45:10	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-11 10:40:55	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-02-11 11:39:23	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-11 13:59:02	sobel	then there's a piece in the dbd-to-json encoder that actually does the encoding, which would need the type info. so ugh. no facility i can piggyback on for this.
+2018-02-11 13:59:55	sobel	now taking architecture advice. the dbd-json module doesn't have to (currently) know much about modules that output dbd, it just blindly encodes them
+2018-02-11 14:00:34	sobel	sensible until an attr looks like a string but contains valid JSON
+2018-02-11 14:00:51	sobel	s/looks like/isa
+2018-02-11 14:01:05	sobel	er, /isa cstring
+2018-02-11 14:01:08	sobel	anywho.
+2018-02-11 18:07:03	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit
+2018-02-11 18:44:12	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 260 seconds)
+2018-02-11 18:52:28	-->	tavish (~tavish@unaffiliated/tavish) has joined #openresty
+2018-02-11 20:57:54	<--	tavish (~tavish@unaffiliated/tavish) has quit (Quit: Leaving)
+2018-02-12 03:28:03	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-12 04:28:29	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-12 04:35:31	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit
+2018-02-12 09:08:37	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-12 10:33:58	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 240 seconds)
+2018-02-12 10:56:45	-->	p0pr0ck5 (~p0pr0ck5@2607:f298:5:101d:f816:3eff:fe39:68c7) has joined #openresty
+2018-02-12 12:43:32	<--	p0pr0ck5 (~p0pr0ck5@2607:f298:5:101d:f816:3eff:fe39:68c7) has quit (Ping timeout: 256 seconds)
+2018-02-12 12:48:18	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-12 14:38:53	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit
+2018-02-12 14:47:20	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-12 14:58:47	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 255 seconds)
+2018-02-12 15:30:55	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-12 16:05:32	<--	nezZario (sid125746@gateway/web/irccloud.com/x-ynbhchxlkuhqbedi) has quit
+2018-02-12 16:07:31	-->	nezZario (sid125746@gateway/web/irccloud.com/x-wkffzpxjwqzcdgcc) has joined #openresty
+2018-02-12 16:24:51	<--	zas (sid128553@gateway/web/irccloud.com/x-seqjavrdgmqygqat) has quit
+2018-02-12 16:25:08	-->	zas (sid128553@gateway/web/irccloud.com/x-bkhnkjumwnekfuqs) has joined #openresty
+2018-02-12 16:36:04	<--	kevin1024 (sid133011@gateway/web/irccloud.com/x-chkquayeixnxexri) has quit
+2018-02-12 16:36:27	-->	kevin1024 (sid133011@gateway/web/irccloud.com/x-ihylyzqgdcgbgury) has joined #openresty
+2018-02-12 17:48:10	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-12 18:18:34	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-02-12 18:35:46	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-12 19:04:48	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-12 21:20:57	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Read error: Connection reset by peer)
+2018-02-12 21:21:28	-->	FunnyLookinHat (~funnylook@208.185.177.193) has joined #openresty
+2018-02-12 21:21:28	<--	FunnyLookinHat (~funnylook@208.185.177.193) has quit (Changing host)
+2018-02-12 21:21:28	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-12 23:12:12	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit
+2018-02-13 00:06:05	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Remote host closed the connection)
+2018-02-13 00:09:12	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-13 00:11:57	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Client Quit)
+2018-02-13 00:15:35	-->	domby (~dy@dyy.hu) has joined #openresty
+2018-02-13 00:16:05	domby	hi
+2018-02-13 02:01:57	--	domby is now known as dY
+2018-02-13 02:19:47	<--	rgrau (~rgrau@163.172.137.219) has quit (Ping timeout: 256 seconds)
+2018-02-13 02:21:29	-->	rgrau (~rgrau@163.172.137.219) has joined #openresty
+2018-02-13 03:28:20	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-13 03:36:44	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-02-13 03:54:15	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-13 04:54:04	--	dY is now known as domby
+2018-02-13 05:01:17	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-02-13 05:15:59	--	domby is now known as dY
+2018-02-13 06:36:59	-->	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has joined #openresty
+2018-02-13 09:48:11	--	dY is now known as domby
+2018-02-13 09:52:29	-->	mouthbreather (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has joined #openresty
+2018-02-13 09:53:21	<--	orbiter (~orbiter@ipservice-092-211-160-087.092.211.pools.vodafone-ip.de) has quit (Ping timeout: 248 seconds)
+2018-02-13 10:01:12	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-13 10:29:14	--	domby is now known as dY
+2018-02-13 10:52:33	--	dY is now known as domby
+2018-02-13 10:52:49	--	domby is now known as dombyy
+2018-02-13 11:05:10	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-13 12:12:33	--	dombyy is now known as dY
+2018-02-13 14:01:29	--	dY is now known as dombyy
+2018-02-13 14:07:14	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-13 14:11:50	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 260 seconds)
+2018-02-13 14:16:46	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-13 17:35:54	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-13 17:43:57	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit
+2018-02-13 18:08:47	--	dombyy is now known as dY
+2018-02-13 18:10:46	--	irc: disconnected from server
+2018-02-13 18:10:49	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-13 18:10:50	--	Channel #openresty: 15 nicks (0 ops, 0 voices, 15 normals)
+2018-02-13 18:10:50	***	Buffer Playback...
+2018-02-13 18:10:50	domby	[23:16:05] hi
+2018-02-13 18:10:50	***	Playback Complete.
+2018-02-13 18:11:08	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-13 20:29:49	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 260 seconds)
+2018-02-13 20:30:37	-->	angelixd (~user@c-24-1-231-109.hsd1.il.comcast.net) has joined #openresty
+2018-02-13 21:24:51	<--	angelixd (~user@c-24-1-231-109.hsd1.il.comcast.net) has quit (Remote host closed the connection)
+2018-02-13 22:25:40	<--	mouthbreather (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has quit
+2018-02-13 23:48:50	<--	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has quit (Ping timeout: 256 seconds)
+2018-02-14 00:53:35	-->	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has joined #openresty
+2018-02-14 01:18:10	-->	thibaultcha (~thibaultc@163.172.223.42) has joined #openresty
+2018-02-14 01:18:10	<--	thibaultcha (~thibaultc@163.172.223.42) has quit (Changing host)
+2018-02-14 01:18:10	-->	thibaultcha (~thibaultc@unaffiliated/thibaultcha) has joined #openresty
+2018-02-14 02:25:27	<--	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2018-02-14 03:29:47	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-14 04:37:35	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Quit: WeeChat 2.0)
+2018-02-14 04:42:08	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-14 10:17:41	--	dY is now known as dombyy
+2018-02-14 12:39:43	--	dombyy is now known as dY
+2018-02-14 13:26:02	-->	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has joined #openresty
+2018-02-14 13:48:32	--	dY is now known as dombyy
+2018-02-14 17:32:26	--	dombyy is now known as dY
+2018-02-14 17:43:56	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 255 seconds)
+2018-02-14 17:46:14	--	dY is now known as dombyy
+2018-02-14 18:02:17	--	dombyy is now known as dY
+2018-02-14 18:30:26	--	irc: disconnected from server
+2018-02-14 18:31:25	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-14 18:31:25	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-02-14 18:31:25	***	Buffer Playback...
+2018-02-14 18:31:25	domby	[23:16:05] hi
+2018-02-14 18:31:25	***	Playback Complete.
+2018-02-14 18:31:44	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-15 03:52:16	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 256 seconds)
+2018-02-15 03:52:50	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-15 04:21:25	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 05:04:27	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-15 05:48:06	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 07:22:10	<--	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has quit
+2018-02-15 09:00:14	--	dY is now known as dombyy
+2018-02-15 09:43:41	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 276 seconds)
+2018-02-15 09:55:31	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 10:02:57	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-15 10:15:16	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 10:20:41	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 256 seconds)
+2018-02-15 10:33:12	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 10:38:39	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 248 seconds)
+2018-02-15 11:25:54	-->	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has joined #openresty
+2018-02-15 12:00:15	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 12:17:02	--	dombyy is now known as dY
+2018-02-15 13:25:35	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 240 seconds)
+2018-02-15 13:41:43	--	dY is now known as dombyy
+2018-02-15 13:42:14	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 15:08:10	--	dombyy is now known as dY
+2018-02-15 15:09:35	--	dY is now known as dombyy
+2018-02-15 17:31:33	--	dombyy is now known as dY
+2018-02-15 17:45:37	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Quit: WeeChat 2.0)
+2018-02-15 18:51:48	--	dY is now known as dombyy
+2018-02-15 18:58:11	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 255 seconds)
+2018-02-15 19:00:15	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-15 19:17:32	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-15 20:03:21	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 264 seconds)
+2018-02-15 23:09:06	--	dombyy is now known as dY
+2018-02-15 23:42:01	--	irc: disconnected from server
+2018-02-16 20:40:47	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-16 20:40:47	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-02-16 20:40:47	***	Buffer Playback...
+2018-02-16 20:40:47	domby	[23:16:05] hi
+2018-02-16 20:40:47	***	Playback Complete.
+2018-02-16 20:41:06	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-16 21:10:13	--	irc: disconnected from server
+2018-02-19 17:32:49	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-19 17:32:49	--	Channel #openresty: 15 nicks (0 ops, 0 voices, 15 normals)
+2018-02-19 17:32:49	***	Buffer Playback...
+2018-02-19 17:32:49	domby	[23:16:05] hi
+2018-02-19 17:32:49	***	Playback Complete.
+2018-02-19 17:33:08	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-19 18:27:02	--	irc: disconnected from server
+2018-02-20 17:17:31	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-20 17:17:31	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-02-20 17:17:31	***	Buffer Playback...
+2018-02-20 17:17:31	domby	[23:16:05] hi
+2018-02-20 17:17:31	***	Playback Complete.
+2018-02-20 17:17:50	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-20 17:53:48	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 268 seconds)
+2018-02-20 18:07:06	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-20 18:17:07	--	irc: disconnected from server
+2018-02-20 18:23:27	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-20 18:23:27	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-02-20 18:23:27	***	Buffer Playback...
+2018-02-20 18:23:27	domby	[23:16:05] hi
+2018-02-20 18:23:27	***	Playback Complete.
+2018-02-20 18:23:46	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-20 19:38:10	-->	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has joined #openresty
+2018-02-20 21:25:07	<--	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has quit (Ping timeout: 260 seconds)
+2018-02-20 21:44:51	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-20 23:03:20	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Remote host closed the connection)
+2018-02-20 23:04:37	-->	FunnyLookinHat (~funnylook@208.185.177.193) has joined #openresty
+2018-02-20 23:04:37	<--	FunnyLookinHat (~funnylook@208.185.177.193) has quit (Changing host)
+2018-02-20 23:04:37	-->	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has joined #openresty
+2018-02-20 23:04:38	<--	FunnyLookinHat (~funnylook@ubuntu/member/funnylookinhat) has quit (Remote host closed the connection)
+2018-02-21 04:58:54	-->	ryan_ford (user@gateway/vpn/privateinternetaccess/ryanford/x-70615241) has joined #openresty
+2018-02-21 06:04:16	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-21 07:20:15	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-21 07:27:39	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-21 08:38:52	<--	orbiter (~orbiter@dslb-178-007-239-243.178.007.pools.vodafone-ip.de) has quit
+2018-02-21 08:41:26	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-21 08:45:28	--	irc: disconnected from server
+2018-02-23 00:14:29	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-23 00:14:30	--	Channel #openresty: 13 nicks (0 ops, 0 voices, 13 normals)
+2018-02-23 00:14:33	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-23 00:14:34	--	Mode #openresty [+cnt]
+2018-02-23 00:14:34	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-23 00:14:45	--	Mode #openresty [+cnt]
+2018-02-23 00:14:46	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-23 06:00:34	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-23 06:30:58	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-23 06:35:43	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-23 07:02:57	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-23 07:11:52	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-23 07:40:52	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-23 07:44:16	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-23 07:45:23	--	irc: disconnected from server
+2018-02-24 22:45:51	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-24 22:45:51	--	Channel #openresty: 12 nicks (0 ops, 0 voices, 12 normals)
+2018-02-24 22:46:14	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-25 06:41:33	<--	p0pr0ck5_ (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 240 seconds)
+2018-02-25 06:42:45	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-25 09:54:24	-->	orbiter (~orbiter@dslb-178-002-058-112.178.002.pools.vodafone-ip.de) has joined #openresty
+2018-02-25 10:10:05	<--	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has quit (Ping timeout: 240 seconds)
+2018-02-25 10:11:39	-->	p0pr0ck5 (~p0pr0ck5@znc.cryptobells.com) has joined #openresty
+2018-02-25 10:34:48	<--	zas (sid128553@gateway/web/irccloud.com/x-bkhnkjumwnekfuqs) has quit (*.net *.split)
+2018-02-25 10:36:24	-->	zas (sid128553@gateway/web/irccloud.com/x-bkhnkjumwnekfuqs) has joined #openresty
+2018-02-25 13:11:51	--	irc: disconnected from server
+2018-02-27 09:14:27	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-02-27 09:14:27	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-02-27 09:14:50	--	Channel created on to., 29 nov. 2012 18:11:12
+2018-02-27 09:30:38	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 09:33:28	<--	orbiter (~orbiter@dslb-178-002-058-112.178.002.pools.vodafone-ip.de) has quit
+2018-02-27 09:35:06	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 09:40:06	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 09:53:35	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 09:54:45	<--	kPb_in (~kunal@150.242.196.2) has quit (Client Quit)
+2018-02-27 10:00:42	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 10:33:40	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 10:39:59	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 10:40:15	<--	kPb_in (~kunal@150.242.196.2) has quit (Client Quit)
+2018-02-27 11:07:34	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 11:22:57	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 11:38:25	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 11:52:27	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 12:24:32	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 12:25:23	<--	kPb_in (~kunal@150.242.196.2) has quit (Client Quit)
+2018-02-27 12:47:42	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 13:11:08	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 13:31:36	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 13:34:36	<--	kPb_in (~kunal@150.242.196.2) has quit (Client Quit)
+2018-02-27 13:41:21	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 13:47:35	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
+2018-02-27 13:49:35	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
+2018-02-27 13:54:39	--	irc: disconnected from server

@@ -1,0 +1,29 @@
+2017-09-29 22:05:28	aleksander	er det noe firewall regler for den google VPS'en? Jeg sliter med å komme ut på port 25.
+2017-09-29 22:05:29	 *	sindre.nordbotten is away.
+2017-09-29 22:09:13	aleksander	dette nytter jo ikke :/
+2017-09-29 22:09:14	aleksander	https://cloud.google.com/compute/docs/tutorials/sending-mail/
+2017-09-30 00:54:26	--	irc: disconnected from server
+2017-10-03 14:20:28	sindre.nordbotten	2cDKxVt#dLZCU&kvFKxXI@kV
+2017-10-03 14:38:05	sindre.nordbotten	[aleksander] sånn
+2017-10-03 14:38:15	sindre.nordbotten	[aleksander] blokkeringen var allerede der
+2017-10-03 14:38:17	sindre.nordbotten	[aleksander] den ligger i vhosten
+2017-10-06 21:55:25	--	irc: disconnected from server
+2017-10-13 13:54:58	aleksander	91.207.158.139  support.fastname.no
+2017-10-17 12:17:13	sindre.nordbotten	Vi stengte dl.uniweb.no  - det eneste jeg kan se som slo feil er at vi linker til noe filer for nedlasting i denne artikkelen https://www.uniweb.no/support-artikler/slik-setter-du-opp-dynamisk-dns/ 
+2017-10-17 12:17:16	sindre.nordbotten	som ikke funker nå
+2017-10-17 12:18:54	sindre.nordbotten	Jeg har ikke tilgang til disse, er det noe du kan se på?
+2017-10-17 12:22:36	aleksander	kan du lagre de i WP?
+2017-10-17 12:23:35	aleksander	hva var banen i vhosten?
+2017-10-17 12:23:43	aleksander	nvm fant
+2017-10-18 06:27:25	--	irc: disconnected from server
+2017-10-19 13:04:49	aleksander	kan du komme ned litt?
+2017-10-19 13:04:58	sindre.nordbotten	:thumbsup:
+2017-10-24 09:57:04	--	irc: disconnected from server
+2017-11-10 10:22:30	aleksander	91.207.158.97
+2017-11-10 10:22:30	 *	sindre.nordbotten is away.
+2017-11-15 13:02:53	aleksander	firefox blinker
+2017-11-15 13:02:53	 *	sindre.nordbotten is away.
+2017-11-15 13:06:45	sindre.nordbotten	Hvor da?
+2017-11-15 13:22:44	sindre.nordbotten	Bedre?
+2017-11-16 09:25:13	sindre.nordbotten	W00t servern kræsja?
+2017-11-22 14:48:41	--	irc: disconnected from server

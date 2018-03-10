@@ -1,0 +1,109 @@
+2017-09-12 10:37:43	joakim	pool.sks-keyservers.net , keys.gnupg.net , pgp.mit.edu 
+2017-09-12 11:40:33	joakim	[aleksander] http://codesorcery.net/old/mutt/mutt-gnupg-howto 
+2017-09-12 11:40:40	joakim	[aleksander] VI. Publicizing Your Public Key
+2017-09-12 12:51:14	joakim	Denne veiledningen her er veldig bra og lett forståelig, noe vi på sikt bør rette oss mot? https://protonmail.com/support/knowledge-base/anti-spoofing/ 
+2017-09-13 08:53:52	--	irc: disconnected from server
+2017-09-15 11:31:54	joakim	[aleksander] cat /etc/exim4/fastname_blacklist.txt | grep -i mail.hotels.com 
+2017-09-19 19:12:15	--	irc: disconnected from server
+2017-09-20 12:55:18	joakim	promillefri.no  done
+2017-09-20 14:26:40	joakim	[aleksander] https://www.digicert.com/help/ 
+2017-09-20 14:29:00	joakim	Kan du ta en titt på holtsmarkgolf.no ? Viser Bad Gateway
+2017-09-20 14:34:14	joakim	[aleksander] rah\Th2quiesho}h
+2017-09-20 14:34:22	joakim	[aleksander] brukernavn : admin
+2017-09-20 14:54:02	joakim	[aleksander] holtsmarkgolf.no  fungerer nå?
+2017-09-20 14:54:26	joakim	[aleksander] ser ut som tech har fiksa noe på den serveren akkurat
+2017-09-20 17:59:58	--	irc: disconnected from server
+2017-09-28 14:47:39	joakim	2017-09-27 20:46:52 H=(maila-dd.linkedin.com ) [108.174.6.140] F=<m-j157pfbbyofo79b3cehnpkrpsocg5ah85pway94kc3g5vao821y@bounce.linkedin.com> rejected RCPT <karen@romer.no>: sender/sender_domain in internal blacklist
+2017-09-28 14:47:56	joakim	Får du fjernet @bounce.linkedin.com fralisten?
+2017-09-28 21:03:53	--	irc: disconnected from server
+2017-10-04 10:57:46	joakim	@aleksander Kunne du sett på denne når du har tid: Hendelse #332224#332224
+2017-10-04 11:34:19	joakim	[aleksander] Jepp
+2017-10-04 14:44:01	joakim	Hvis du skulle finne deg selv i en situasjon der du har veldig lite å gjøre. Følgende saker er eksempler der kunden ikke mottar e-post fra zendesk som har vedlegg i seg. De må som regel sendes på nytt. Aner ikke hvorfor. 
+2017-10-04 14:44:01	joakim	Hendelse #331690#331690
+2017-10-04 14:44:01	joakim	Hendelse #331955#331955
+2017-10-04 14:44:01	joakim	Hendelse #332209#332209
+2017-10-04 14:44:01	joakim	Noe som kan sjekkes?
+2017-10-06 21:55:25	--	irc: disconnected from server
+2017-10-09 11:42:07	joakim	Jeg får ingen ns oppslag mot okonett.no 
+2017-10-09 11:42:07	joakim	Kunne du tatt en titt?
+2017-10-09 11:42:07	joakim	Virker som samme problem Roy hadde tidligere.
+2017-10-09 11:47:08	joakim	over på noe annet. kan det stemme at UW 57754 og ordre 114925 bare skal lukkes?
+2017-10-09 11:47:39	joakim	og 114916
+2017-10-09 11:47:49	joakim	det er domregger, ikke ordre btw,
+2017-10-09 12:16:36	joakim	[aleksander] ja, bare lukk alt på det kundenummer så lenge de ikke ber om annet
+2017-10-09 12:16:43	joakim	[aleksander] okonett.no  manglet ttl på SRV record
+2017-10-09 12:16:46	joakim	[aleksander] burde fungerer snart
+2017-10-09 12:17:17	joakim	[aleksander] har oppdatert alle domener som hadde MX med NULL prio og SRV med NULL prio på begge brands
+2017-10-09 12:34:11	joakim	Ok takker
+2017-10-09 15:57:55	aleksander	ahgooJaeg6theel
+2017-10-09 15:58:19	aleksander	4t38tM4744P3t9c
+2017-10-11 06:42:42	--	irc: disconnected from server
+2017-10-11 06:46:35	--	irc: disconnected from server
+2017-10-11 06:57:16	--	irc: disconnected from server
+2017-10-11 07:01:26	--	irc: disconnected from server
+2017-10-11 15:30:03	joakim	https://youtu.be/HM40cK5tu7w 
+2017-10-12 13:04:10	joakim	Kan du se på  Hendelse #333421når du har tid. Kunden sier det haster
+2017-10-12 14:36:49	joakim	Kan du se på: 
+2017-10-12 14:36:49	joakim	https://www.breidablikkeiendom.no/ 
+2017-10-17 14:56:49	joakim	Domene lihesten.com 
+2017-10-17 14:56:49	joakim	Peter Førsund
+2017-10-17 14:56:49	joakim	920 71 077 
+2017-10-17 14:56:49	joakim	Error 500 - på siden.
+2017-10-17 14:56:49	joakim	"max input vars" skal endres. 
+2017-10-17 14:56:49	joakim	Kunden har blitt vist veiledningen: https://www.uniweb.no/support-artikler/lokal-konfigurasjon-med-php-ini-og-user-ini/ 
+2017-10-17 14:56:49	joakim	Kunden har ikke kompetanse på dette området.
+2017-10-18 06:27:25	--	irc: disconnected from server
+2017-10-19 13:38:19	aleksander	post@byggmesterforbundet-tonsberg.no
+2017-10-19 13:38:26	aleksander	hanne@enaraas.no
+2017-10-19 13:38:30	aleksander	geir@lillelondon.no
+2017-10-20 11:42:23	joakim	Jeg trenger at du ser på notisen jeg har lagt inn i historikken til UW 34917
+2017-10-20 11:54:08	aleksander	gi beskjed når du er ferdig i tlf
+2017-10-24 09:57:04	--	irc: disconnected from server
+2017-10-30 10:55:32	joakim	kan du sende meg et nytt passord for UWSE ks?
+2017-10-30 11:02:22	aleksander	kae1Gine
+2017-11-01 10:48:33	joakim	Morn, jeg har sendt deg en ticket (Hendelse #336198#336198) hvor installering av SSL sertifikat via script ikke har fungert. Kunne du tatt en titt når du får tid?
+2017-11-01 12:01:13	joakim	[aleksander] jepp, beklager sent svar, vært avgårde. Ser på den nå.
+2017-11-01 12:31:33	joakim	Null stress :+1:
+2017-11-01 22:08:36	--	irc: disconnected from server
+2017-11-01 22:41:18	--	irc: disconnected from server
+2017-11-02 08:24:28	--	irc: disconnected from server
+2017-11-02 13:05:46	aleksander	 #335293
+2017-11-02 14:58:41	--	irc: disconnected from server
+2017-11-02 15:09:59	--	irc: disconnected from server
+2017-11-03 14:44:51	--	irc: disconnected from server
+2017-11-06 10:10:33	joakim	For å bestille .dk domener hos UW sender vi inn det skjemaet fra domreg. Der trengs pålogging. Min feiler. Har du mulighet til å sende den?
+2017-11-06 10:11:52	joakim	https://orders.uniweb.no/reg.php?domreglinjeid=234107 
+2017-11-06 10:15:58	aleksander	ohruQu`oo0ie
+2017-11-06 10:23:10	aleksander	kan du fikse SSL på blogg.qross.no ?
+2017-11-06 10:23:38	joakim	nl-lasesmed.no 
+2017-11-09 10:14:21	joakim	ddælkdf gjlæsdfjgølksdjfælgk jsdælfgj sdf
+2017-11-09 11:27:15	joakim	Er dnssec noe som er aktivt på alle domeneer hos oss eller bare på .no?
+2017-11-09 11:38:54	joakim	nvm fant ut av det
+2017-11-13 08:36:38	joakim	Kunne du tatt en titt på denne igjen i dag? Hendelse #335293#335293
+2017-11-13 08:36:39	joakim	Om du fortsatt ikke har fått noe svar fra MS, så kan vel saken lukkes, etter vi har sagt ifra til Comtech.
+2017-11-13 12:41:59	aleksander	har ikke fått noe svar fra MS
+2017-11-13 12:42:11	aleksander	men det er en liste vi gjerne vil være med på, og kommer til å forsette å forsøke på dette
+2017-11-14 15:29:50	joakim	v310972-vps
+2017-11-16 11:07:40	joakim	934 68 146 maf.no  ønsker at du ringer han. Var noe halveis krisegreier med at siden var nede.
+2017-11-16 12:39:56	joakim	Ser du hvorfor https://www.e-varehuset.no/  ikke fungerer?
+2017-11-20 11:05:50	aleksander	joakim!
+2017-11-20 11:05:52	aleksander	joakim!
+2017-11-20 15:03:31	aleksander	kundeservice@buypass.no
+2017-11-21 10:01:27	joakim	Point of Contact for Certificate delivery / vetting issues
+2017-11-21 10:01:27	joakim	Organization Name:
+2017-11-21 10:01:27	joakim	PRICEWATERHOUSECOOPERS AS
+2017-11-21 10:01:27	joakim	Department:
+2017-11-21 10:01:27	joakim	First Name:
+2017-11-21 10:01:27	joakim	Christer
+2017-11-21 10:01:27	joakim	Last Name:
+2017-11-21 10:01:27	joakim	Bach Brun
+2017-11-21 10:01:27	joakim	Telephone(inc.region code):
+2017-11-21 10:01:27	joakim	+4795260000
+2017-11-21 10:01:27	joakim	Email Address:
+2017-11-21 10:01:27	joakim	christer.bach.brun@no.pwc.com mailto:christer.bach.brun@no.pwc.com 
+2017-11-21 10:01:27	joakim	Receive GlobalSign News & Offers:
+2017-11-21 10:01:27	joakim	false
+2017-11-21 10:19:52	aleksander	http://dotshare.it/
+2017-11-22 13:38:13	aleksander	post_max_size
+2017-11-22 13:38:21	aleksander	upload_max_filesize
+2017-11-22 14:48:41	--	irc: disconnected from server

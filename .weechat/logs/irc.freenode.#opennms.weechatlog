@@ -1,0 +1,48 @@
+2017-09-22 23:50:18	-->	aakvik (~aleksande@41-147-11.connect.netcom.no) has joined #opennms
+2017-09-22 23:50:18	--	Topic for #opennms is "OpenNMS Horizon 20.1.0 (Zorg) is out: http://bit.ly/opennms-changes-20-1-0 | Compass mobile app version 3 is available: http://compass.opennms.io/ | Compass changes: http://bit.ly/compass-3-0-1 | Check out our Mattermost chat server: http://chat.opennms.com/"
+2017-09-22 23:50:18	--	Topic set by RangerRick on to., 21 sep. 2017 22:10:28
+2017-09-22 23:50:18	--	Channel #opennms: 57 nicks (1 op, 0 voices, 56 normals)
+2017-09-22 23:50:18	--	PvNotice(ChanServ): Welcome to #opennms, here's your accordion.
+2017-09-22 23:50:18	--	URL for #opennms: http://www.opennms.org/
+2017-09-22 23:50:20	--	Channel created on sø., 26 nov. 2006 07:42:57
+2017-09-22 23:54:05	--	You are now known as aleksanderffs
+2017-09-22 23:54:30	--	You are now known as aakvik
+2017-09-22 23:56:57	--	irc: disconnected from server
+2017-09-22 23:57:15	-->	aleksander (~aleksande@41-147-11.connect.netcom.no) has joined #opennms
+2017-09-22 23:57:15	--	Topic for #opennms is "OpenNMS Horizon 20.1.0 (Zorg) is out: http://bit.ly/opennms-changes-20-1-0 | Compass mobile app version 3 is available: http://compass.opennms.io/ | Compass changes: http://bit.ly/compass-3-0-1 | Check out our Mattermost chat server: http://chat.opennms.com/"
+2017-09-22 23:57:15	--	Topic set by RangerRick on to., 21 sep. 2017 22:10:28
+2017-09-22 23:57:15	--	Channel #opennms: 57 nicks (1 op, 0 voices, 56 normals)
+2017-09-22 23:57:15	--	PvNotice(ChanServ): Welcome to #opennms, here's your accordion.
+2017-09-22 23:57:15	--	URL for #opennms: http://www.opennms.org/
+2017-09-22 23:57:17	--	You are now known as aakvik
+2017-09-22 23:57:21	--	Channel created on sø., 26 nov. 2006 07:42:57
+2017-09-23 00:08:40	<--	tehowe (~tehowe@toroon0949w-lp130-01-74-15-57-53.dsl.bell.ca) has quit (Remote host closed the connection)
+2017-09-23 03:37:07	-->	laemar_ (~quassel@p508871C8.dip0.t-ipconnect.de) has joined #opennms
+2017-09-23 03:39:45	<--	laemar (~quassel@p50887261.dip0.t-ipconnect.de) has quit (Ping timeout: 248 seconds)
+2017-09-23 06:00:01	<--	OpenNMS-Chat (~OpenNMS-C@chat.opennms.com) has quit (Remote host closed the connection)
+2017-09-23 06:00:08	-->	OpenNMS-Chat (~OpenNMS-C@chat.opennms.com) has joined #opennms
+2017-09-23 06:48:31	<--	rtjure (~rtjure@84.40.71.42) has quit (Ping timeout: 248 seconds)
+2017-09-23 07:10:56	-->	rtjure (~rtjure@84.40.71.42) has joined #opennms
+2017-09-23 10:19:34	-->	tehowe (~tehowe@rdsl-1293.tor.pathcom.com) has joined #opennms
+2017-09-23 16:13:42	-->	camerin (hoax@elite.bshellz.net) has joined #opennms
+2017-09-24 03:36:07	-->	laemar (~quassel@p508867DE.dip0.t-ipconnect.de) has joined #opennms
+2017-09-24 03:38:35	<--	laemar_ (~quassel@p508871C8.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-09-24 06:00:01	<--	OpenNMS-Chat (~OpenNMS-C@chat.opennms.com) has quit (Remote host closed the connection)
+2017-09-24 06:00:08	-->	OpenNMS-Chat (~OpenNMS-C@2604:a880:800:10::14c:e001) has joined #opennms
+2017-09-24 08:30:37	<--	Tharbakim (~Tharbakim@unaffiliated/tharbakim) has quit (Ping timeout: 260 seconds)
+2017-09-24 12:47:43	<--	_indigo (~indigo@varda.atfg.org) has quit (Quit: ZNC - http://znc.in)
+2017-09-24 12:47:43	<--	izrail (~izrail@varda.atfg.org) has quit (Quit: ZNC - http://znc.in)
+2017-09-24 12:49:46	-->	_indigo (~indigo@2a02:c205:3000:8538::80) has joined #opennms
+2017-09-24 12:49:50	-->	izrail (~izrail@varda.atfg.org) has joined #opennms
+2017-09-24 13:53:34	-->	Tharbakim (~Tharbakim@S0106788a20071e8d.vf.shawcable.net) has joined #opennms
+2017-09-24 13:53:34	<--	Tharbakim (~Tharbakim@S0106788a20071e8d.vf.shawcable.net) has quit (Changing host)
+2017-09-24 13:53:34	-->	Tharbakim (~Tharbakim@unaffiliated/tharbakim) has joined #opennms
+2017-09-24 19:01:26	OpenNMS-Chat	<trazomtg> does somebody see an error in the log files?
+2017-09-24 19:47:45	OpenNMS-Chat	<trazomtg> i have a smeserver 9.2 connected to internet and my PC are connected to this servers with a switch
+2017-09-24 19:48:18	OpenNMS-Chat	<trazomtg> i have opened the port 8980 on smeserver but i can't connect to opennms
+2017-09-24 19:49:45	OpenNMS-Chat	<trazomtg> i get a white page without any error for 127.0.0.1:8980 or localhost:8980 or 127.0.0.1:8980/opennms
+2017-09-24 20:21:45	<--	tehowe (~tehowe@rdsl-1293.tor.pathcom.com) has quit (Ping timeout: 240 seconds)
+2017-09-24 20:22:07	-->	tehowe (~tehowe@rdsl-0966.tor.pathcom.com) has joined #opennms
+2017-09-24 20:37:47	OpenNMS-Chat	<trazomtg> i have a link broken :  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.144-5.b01.fc26.x86_64/jre/lib/ext/jfxrt.jar  TO    /usr/lib/jvm/openjfx/rt/lib/ext/jfxrt.jar What can i correct this error?
+2017-09-24 21:13:30	<--	tehowe (~tehowe@rdsl-0966.tor.pathcom.com) has quit (Remote host closed the connection)
+2017-09-24 22:09:20	--	irc: disconnected from server

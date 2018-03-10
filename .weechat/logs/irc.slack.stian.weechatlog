@@ -1,0 +1,43 @@
+2017-10-09 14:03:48	aleksander	jeg rebooter web06
+2017-10-09 14:03:48	 *	stian is away.
+2017-10-09 14:26:07	stian	Den er god
+2017-10-10 13:44:39	aleksander	den er oppe nå
+2017-10-10 13:47:07	aleksander	den bruker adresse 85.252.49.10, denne er vel ikke brukt til noe annet?
+2017-10-10 14:32:58	stian	Tror ikke det, men ikke så godt å si med FN. Ikke så godt dokumentert hva som er i bruk av iper.
+2017-10-10 15:08:21	aleksander	den active directory tjenesten kjører jo heller ikke på DC'en
+2017-10-11 06:42:42	--	irc: disconnected from server
+2017-10-11 06:46:35	--	irc: disconnected from server
+2017-10-11 06:57:16	--	irc: disconnected from server
+2017-10-11 07:01:26	--	irc: disconnected from server
+2017-10-12 09:42:20	stian	Ser ut som SNMP sluttet å fungere på mssql03. Aner du hvorfor?
+2017-10-13 10:35:34	stian	Har lagt ut ny versjon av php på uw17. Si ifra om det skal dukke opp noe.
+2017-10-13 10:35:43	aleksander	ok
+2017-10-13 10:35:49	stian	Legger ut på resten om det ikke er noe trøbbel.
+2017-10-13 10:36:04	stian	php 7.0.24
+2017-10-13 12:45:23	aleksander	VMware Domain Controller fra opennms kan du bare slette, jeg skrudde den av igjen
+2017-10-13 12:45:30	aleksander	skal vel helst aldri på igjen
+2017-10-18 06:27:25	--	irc: disconnected from server
+2017-10-24 09:57:04	--	irc: disconnected from server
+2017-10-27 10:15:03	stian	Er du her?
+2017-10-29 02:18:11	--	irc: disconnected from server
+2017-11-01 22:08:36	--	irc: disconnected from server
+2017-11-01 22:41:18	--	irc: disconnected from server
+2017-11-02 08:24:28	--	irc: disconnected from server
+2017-11-02 14:58:41	--	irc: disconnected from server
+2017-11-02 15:09:59	--	irc: disconnected from server
+2017-11-03 14:44:51	--	irc: disconnected from server
+2017-11-20 12:47:59	aleksander	hvor lagrer du sendcount hos smtp.uniweb.np?
+2017-11-20 12:47:59	 *	stian is away.
+2017-11-20 12:48:05	aleksander	submit mener jeg
+2017-11-20 12:49:04	stian	"/usr/local/etc/exim/
+2017-11-20 12:49:42	aleksander	tenkte på hvor mye de har sendt hittil
+2017-11-20 12:49:44	aleksander	altså ratelimit
+2017-11-20 12:50:45	stian	exim_dumpdb
+2017-11-20 12:51:08	aleksander	exim_dumpdb /var/spool/exim4/ ratelimit
+2017-11-20 12:51:41	aleksander	ah, ser den
+2017-11-20 12:51:47	aleksander	exim 4.71
+2017-11-20 12:51:59	stian	stemmer
+2017-11-20 13:09:47	aleksander	en ting til, hvor kjører du amrecover fra for å gjøre restores på mailstore.uniweb.no? direkte på amanda serveren?
+2017-11-20 13:17:00	stian	du kan eventuelt kjøre den fra mailstore00
+2017-11-20 13:17:24	aleksander	ok, takk
+2017-11-22 14:48:41	--	irc: disconnected from server
