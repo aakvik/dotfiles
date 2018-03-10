@@ -1,0 +1,1090 @@
+2017-09-12 01:32:42	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-12 01:32:43	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-12 01:32:43	--	gnutls: receiving 2 certificates
+2017-09-12 01:32:43	--	 - certificate[1] info:
+2017-09-12 01:32:43	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-12 01:32:43	--	 - certificate[2] info:
+2017-09-12 01:32:43	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-12 01:32:43	--	gnutls: peer's certificate is trusted
+2017-09-12 01:32:43	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-09-12 01:32:43	--	CTCP requested by slackbot: VERSION
+2017-09-12 01:32:43	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-12 01:32:43	--	IRC-SLACK gateway
+2017-09-12 01:32:44	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-09-12 01:32:44	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-12 01:32:44	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-12 01:32:44	--	there are 19 users
+2017-09-12 01:32:44	--	Message of the day
+2017-09-12 01:32:44	--	WELCOME TO SLACK...
+2017-09-12 01:32:44	--	Hi! In addition to the normal Slack channels,
+2017-09-12 01:32:44	--	you can join the following channels:
+2017-09-12 01:32:44	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-12 01:32:44	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-12 01:32:44	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-12 01:32:44	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-12 01:32:44	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-12 01:32:44	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-12 01:32:44	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-12 01:32:44	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-12 01:32:44	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-12 01:32:44	--	End of MOTD command
+2017-09-13 08:50:15	=!=	irc: this buffer is not a channel!
+2017-09-13 08:53:52	--	irc: disconnected from server
+2017-09-13 08:53:59	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-13 08:54:00	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-13 08:54:00	--	gnutls: receiving 2 certificates
+2017-09-13 08:54:00	--	 - certificate[1] info:
+2017-09-13 08:54:00	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-13 08:54:00	--	 - certificate[2] info:
+2017-09-13 08:54:00	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-13 08:54:00	--	gnutls: peer's certificate is trusted
+2017-09-13 08:54:00	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-09-13 08:54:00	--	CTCP requested by slackbot: VERSION
+2017-09-13 08:54:00	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-13 08:54:00	--	IRC-SLACK gateway
+2017-09-13 08:54:01	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-09-13 08:54:01	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-13 08:54:01	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-13 08:54:01	--	there are 19 users
+2017-09-13 08:54:01	--	Message of the day
+2017-09-13 08:54:01	--	WELCOME TO SLACK...
+2017-09-13 08:54:01	--	Hi! In addition to the normal Slack channels,
+2017-09-13 08:54:01	--	you can join the following channels:
+2017-09-13 08:54:01	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-13 08:54:01	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-13 08:54:01	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-13 08:54:01	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-13 08:54:01	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-13 08:54:01	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-13 08:54:01	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-13 08:54:01	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-13 08:54:01	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-13 08:54:01	--	End of MOTD command
+2017-09-13 09:04:59	=!=	irc: this buffer is not a channel!
+2017-09-13 09:06:46	=!=	irc: this buffer is not a channel!
+2017-09-19 19:12:15	--	irc: disconnected from server
+2017-09-19 19:12:27	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-19 19:12:28	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-19 19:12:28	--	gnutls: receiving 2 certificates
+2017-09-19 19:12:28	--	 - certificate[1] info:
+2017-09-19 19:12:28	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-19 19:12:28	--	 - certificate[2] info:
+2017-09-19 19:12:28	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-19 19:12:28	--	gnutls: peer's certificate is trusted
+2017-09-19 19:12:28	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.71.207.146)
+2017-09-19 19:12:28	--	CTCP requested by slackbot: VERSION
+2017-09-19 19:12:28	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-19 19:12:28	--	IRC-SLACK gateway
+2017-09-19 19:12:29	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.128.178
+2017-09-19 19:12:29	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-19 19:12:29	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-19 19:12:29	--	there are 19 users
+2017-09-19 19:12:29	--	Message of the day
+2017-09-19 19:12:29	--	WELCOME TO SLACK...
+2017-09-19 19:12:29	--	Hi! In addition to the normal Slack channels,
+2017-09-19 19:12:29	--	you can join the following channels:
+2017-09-19 19:12:29	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-19 19:12:29	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-19 19:12:29	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-19 19:12:29	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-19 19:12:29	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-19 19:12:29	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-19 19:12:29	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-19 19:12:29	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-19 19:12:29	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-19 19:12:29	--	End of MOTD command
+2017-09-19 23:20:52	--	irc: disconnected from server
+2017-09-19 23:20:53	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-19 23:20:53	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-19 23:20:53	--	gnutls: receiving 2 certificates
+2017-09-19 23:20:53	--	 - certificate[1] info:
+2017-09-19 23:20:53	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-19 23:20:53	--	 - certificate[2] info:
+2017-09-19 23:20:53	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-19 23:20:53	--	gnutls: peer's certificate is trusted
+2017-09-19 23:20:53	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-09-19 23:20:53	--	CTCP requested by slackbot: VERSION
+2017-09-19 23:20:53	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-19 23:20:53	--	IRC-SLACK gateway
+2017-09-19 23:20:54	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-09-19 23:20:54	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-19 23:20:54	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-19 23:20:54	--	there are 19 users
+2017-09-19 23:20:54	--	Message of the day
+2017-09-19 23:20:54	--	WELCOME TO SLACK...
+2017-09-19 23:20:54	--	Hi! In addition to the normal Slack channels,
+2017-09-19 23:20:54	--	you can join the following channels:
+2017-09-19 23:20:54	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-19 23:20:54	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-19 23:20:54	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-19 23:20:54	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-19 23:20:54	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-19 23:20:54	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-19 23:20:54	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-19 23:20:54	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-19 23:20:54	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-19 23:20:54	--	End of MOTD command
+2017-09-20 17:59:58	--	irc: disconnected from server
+2017-09-20 18:49:50	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-20 18:49:51	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-20 18:49:51	--	gnutls: receiving 2 certificates
+2017-09-20 18:49:51	--	 - certificate[1] info:
+2017-09-20 18:49:51	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-20 18:49:51	--	 - certificate[2] info:
+2017-09-20 18:49:51	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-20 18:49:51	--	gnutls: peer's certificate is trusted
+2017-09-20 18:49:51	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.52.186)
+2017-09-20 18:49:51	--	CTCP requested by slackbot: VERSION
+2017-09-20 18:49:51	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-20 18:49:51	--	IRC-SLACK gateway
+2017-09-20 18:49:51	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.245.56
+2017-09-20 18:49:51	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-20 18:49:51	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-20 18:49:51	--	there are 19 users
+2017-09-20 18:49:51	--	Message of the day
+2017-09-20 18:49:51	--	WELCOME TO SLACK...
+2017-09-20 18:49:51	--	Hi! In addition to the normal Slack channels,
+2017-09-20 18:49:51	--	you can join the following channels:
+2017-09-20 18:49:51	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-20 18:49:51	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-20 18:49:51	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-20 18:49:51	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-20 18:49:51	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-20 18:49:51	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-20 18:49:51	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-20 18:49:51	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-20 18:49:51	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-20 18:49:51	--	End of MOTD command
+2017-09-21 00:44:55	--	irc: disconnected from server
+2017-09-21 00:44:59	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-21 00:45:00	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-21 00:45:00	--	gnutls: receiving 2 certificates
+2017-09-21 00:45:00	--	 - certificate[1] info:
+2017-09-21 00:45:00	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-21 00:45:00	--	 - certificate[2] info:
+2017-09-21 00:45:00	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-21 00:45:00	--	gnutls: peer's certificate is trusted
+2017-09-21 00:45:00	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-09-21 00:45:00	--	CTCP requested by slackbot: VERSION
+2017-09-21 00:45:00	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-21 00:45:00	--	IRC-SLACK gateway
+2017-09-21 00:45:01	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-09-21 00:45:01	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-21 00:45:01	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-21 00:45:01	--	there are 19 users
+2017-09-21 00:45:01	--	Message of the day
+2017-09-21 00:45:01	--	WELCOME TO SLACK...
+2017-09-21 00:45:01	--	Hi! In addition to the normal Slack channels,
+2017-09-21 00:45:01	--	you can join the following channels:
+2017-09-21 00:45:01	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-21 00:45:01	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-21 00:45:01	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-21 00:45:01	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-21 00:45:01	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-21 00:45:01	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-21 00:45:01	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-21 00:45:01	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-21 00:45:01	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-21 00:45:01	--	End of MOTD command
+2017-09-21 06:49:38	--	irc: disconnected from server
+2017-09-21 08:30:07	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-21 08:30:07	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-21 08:30:07	--	gnutls: receiving 2 certificates
+2017-09-21 08:30:07	--	 - certificate[1] info:
+2017-09-21 08:30:07	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-21 08:30:07	--	 - certificate[2] info:
+2017-09-21 08:30:07	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-21 08:30:07	--	gnutls: peer's certificate is trusted
+2017-09-21 08:30:07	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-09-21 08:30:07	--	CTCP requested by slackbot: VERSION
+2017-09-21 08:30:07	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-21 08:30:07	--	IRC-SLACK gateway
+2017-09-21 08:30:08	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-09-21 08:30:08	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-21 08:30:08	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-21 08:30:08	--	there are 19 users
+2017-09-21 08:30:08	--	Message of the day
+2017-09-21 08:30:08	--	WELCOME TO SLACK...
+2017-09-21 08:30:08	--	Hi! In addition to the normal Slack channels,
+2017-09-21 08:30:08	--	you can join the following channels:
+2017-09-21 08:30:08	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-21 08:30:08	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-21 08:30:08	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-21 08:30:08	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-21 08:30:08	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-21 08:30:08	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-21 08:30:08	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-21 08:30:08	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-21 08:30:08	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-21 08:30:08	--	End of MOTD command
+2017-09-21 08:59:14	=!=	irc: this buffer is not a channel!
+2017-09-21 09:00:39	--	irc: disconnected from server
+2017-09-21 09:01:46	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-21 09:01:46	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-21 09:01:46	--	gnutls: receiving 2 certificates
+2017-09-21 09:01:46	--	 - certificate[1] info:
+2017-09-21 09:01:46	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-21 09:01:46	--	 - certificate[2] info:
+2017-09-21 09:01:46	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-21 09:01:46	--	gnutls: peer's certificate is trusted
+2017-09-21 09:01:46	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-09-21 09:01:47	--	CTCP requested by slackbot: VERSION
+2017-09-21 09:01:47	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-21 09:01:47	--	IRC-SLACK gateway
+2017-09-21 09:01:47	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-09-21 09:01:47	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-21 09:01:47	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-21 09:01:47	--	there are 19 users
+2017-09-21 09:01:47	--	Message of the day
+2017-09-21 09:01:47	--	WELCOME TO SLACK...
+2017-09-21 09:01:47	--	Hi! In addition to the normal Slack channels,
+2017-09-21 09:01:47	--	you can join the following channels:
+2017-09-21 09:01:47	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-21 09:01:47	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-21 09:01:47	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-21 09:01:47	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-21 09:01:47	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-21 09:01:47	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-21 09:01:47	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-21 09:01:47	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-21 09:01:47	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-21 09:01:47	--	End of MOTD command
+2017-09-21 10:16:29	--	irc: disconnected from server
+2017-09-22 08:23:25	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-22 08:23:25	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-22 08:23:25	--	gnutls: receiving 2 certificates
+2017-09-22 08:23:25	--	 - certificate[1] info:
+2017-09-22 08:23:25	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-22 08:23:25	--	 - certificate[2] info:
+2017-09-22 08:23:25	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-22 08:23:25	--	gnutls: peer's certificate is trusted
+2017-09-22 08:23:25	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.71.207.146)
+2017-09-22 08:23:26	--	CTCP requested by slackbot: VERSION
+2017-09-22 08:23:26	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-22 08:23:26	--	IRC-SLACK gateway
+2017-09-22 08:23:26	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.128.178
+2017-09-22 08:23:26	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-22 08:23:26	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-22 08:23:26	--	there are 19 users
+2017-09-22 08:23:26	--	Message of the day
+2017-09-22 08:23:26	--	WELCOME TO SLACK...
+2017-09-22 08:23:26	--	Hi! In addition to the normal Slack channels,
+2017-09-22 08:23:26	--	you can join the following channels:
+2017-09-22 08:23:26	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-22 08:23:26	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-22 08:23:26	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-22 08:23:26	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-22 08:23:26	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-22 08:23:26	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-22 08:23:26	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-22 08:23:26	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-22 08:23:26	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-22 08:23:26	--	End of MOTD command
+2017-09-24 22:09:20	--	irc: disconnected from server
+2017-09-26 13:07:10	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-26 13:07:11	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-26 13:07:11	--	gnutls: receiving 2 certificates
+2017-09-26 13:07:11	--	 - certificate[1] info:
+2017-09-26 13:07:11	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-26 13:07:11	--	 - certificate[2] info:
+2017-09-26 13:07:11	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-26 13:07:11	--	gnutls: peer's certificate is trusted
+2017-09-26 13:07:11	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-09-26 13:07:11	--	CTCP requested by slackbot: VERSION
+2017-09-26 13:07:11	--	CTCP reply to slackbot: VERSION WeeChat 1.9 (Aug 26 2017)
+2017-09-26 13:07:11	--	IRC-SLACK gateway
+2017-09-26 13:07:12	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-09-26 13:07:12	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-26 13:07:12	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-26 13:07:12	--	there are 19 users
+2017-09-26 13:07:12	--	Message of the day
+2017-09-26 13:07:12	--	WELCOME TO SLACK...
+2017-09-26 13:07:12	--	Hi! In addition to the normal Slack channels,
+2017-09-26 13:07:12	--	you can join the following channels:
+2017-09-26 13:07:12	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-26 13:07:12	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-26 13:07:12	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-26 13:07:12	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-26 13:07:12	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-26 13:07:12	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-26 13:07:12	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-26 13:07:12	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-26 13:07:12	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-26 13:07:12	--	End of MOTD command
+2017-09-28 21:03:53	--	irc: disconnected from server
+2017-09-28 22:15:13	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-28 22:15:13	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-28 22:15:13	--	gnutls: receiving 2 certificates
+2017-09-28 22:15:13	--	 - certificate[1] info:
+2017-09-28 22:15:13	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-28 22:15:13	--	 - certificate[2] info:
+2017-09-28 22:15:13	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-28 22:15:13	--	gnutls: peer's certificate is trusted
+2017-09-28 22:15:13	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.52.186)
+2017-09-28 22:15:14	--	CTCP requested by slackbot: VERSION
+2017-09-28 22:15:14	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 23 2017)
+2017-09-28 22:15:14	--	IRC-SLACK gateway
+2017-09-28 22:15:14	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.245.56
+2017-09-28 22:15:14	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-28 22:15:14	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-28 22:15:14	--	there are 19 users
+2017-09-28 22:15:14	--	Message of the day
+2017-09-28 22:15:14	--	WELCOME TO SLACK...
+2017-09-28 22:15:14	--	Hi! In addition to the normal Slack channels,
+2017-09-28 22:15:14	--	you can join the following channels:
+2017-09-28 22:15:14	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-28 22:15:14	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-28 22:15:14	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-28 22:15:14	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-28 22:15:14	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-28 22:15:14	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-28 22:15:14	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-28 22:15:14	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-28 22:15:14	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-28 22:15:14	--	End of MOTD command
+2017-09-29 02:23:10	--	irc: disconnected from server
+2017-09-29 17:30:34	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-29 17:30:34	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-29 17:30:34	--	gnutls: receiving 2 certificates
+2017-09-29 17:30:34	--	 - certificate[1] info:
+2017-09-29 17:30:34	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-29 17:30:34	--	 - certificate[2] info:
+2017-09-29 17:30:34	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-29 17:30:34	--	gnutls: peer's certificate is trusted
+2017-09-29 17:30:35	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-09-29 17:30:35	--	CTCP requested by slackbot: VERSION
+2017-09-29 17:30:35	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 23 2017)
+2017-09-29 17:30:35	--	IRC-SLACK gateway
+2017-09-29 17:30:35	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-09-29 17:30:35	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-29 17:30:35	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-29 17:30:35	--	there are 19 users
+2017-09-29 17:30:35	--	Message of the day
+2017-09-29 17:30:35	--	WELCOME TO SLACK...
+2017-09-29 17:30:35	--	Hi! In addition to the normal Slack channels,
+2017-09-29 17:30:35	--	you can join the following channels:
+2017-09-29 17:30:35	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-29 17:30:35	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-29 17:30:35	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-29 17:30:35	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-29 17:30:35	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-29 17:30:35	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-29 17:30:35	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-29 17:30:35	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-29 17:30:35	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-29 17:30:35	--	End of MOTD command
+2017-09-29 17:30:49	--	irc: disconnected from server
+2017-09-29 17:32:51	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-29 17:32:52	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-29 17:32:52	--	gnutls: receiving 2 certificates
+2017-09-29 17:32:52	--	 - certificate[1] info:
+2017-09-29 17:32:52	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-29 17:32:52	--	 - certificate[2] info:
+2017-09-29 17:32:52	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-29 17:32:52	--	gnutls: peer's certificate is trusted
+2017-09-29 17:32:52	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-09-29 17:32:52	--	CTCP requested by slackbot: VERSION
+2017-09-29 17:32:52	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 23 2017)
+2017-09-29 17:32:52	--	IRC-SLACK gateway
+2017-09-29 17:32:53	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-09-29 17:32:53	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-29 17:32:53	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-29 17:32:53	--	there are 19 users
+2017-09-29 17:32:53	--	Message of the day
+2017-09-29 17:32:53	--	WELCOME TO SLACK...
+2017-09-29 17:32:53	--	Hi! In addition to the normal Slack channels,
+2017-09-29 17:32:53	--	you can join the following channels:
+2017-09-29 17:32:53	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-29 17:32:53	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-29 17:32:53	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-29 17:32:53	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-29 17:32:53	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-29 17:32:53	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-29 17:32:53	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-29 17:32:53	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-29 17:32:53	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-29 17:32:53	--	End of MOTD command
+2017-09-29 18:04:34	--	irc: disconnected from server
+2017-09-29 18:04:35	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-09-29 18:04:36	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-09-29 18:04:36	--	gnutls: receiving 2 certificates
+2017-09-29 18:04:36	--	 - certificate[1] info:
+2017-09-29 18:04:36	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-09-29 18:04:36	--	 - certificate[2] info:
+2017-09-29 18:04:36	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-09-29 18:04:36	--	gnutls: peer's certificate is trusted
+2017-09-29 18:04:36	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-09-29 18:04:36	--	CTCP requested by slackbot: VERSION
+2017-09-29 18:04:36	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 23 2017)
+2017-09-29 18:04:36	--	IRC-SLACK gateway
+2017-09-29 18:04:37	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-09-29 18:04:37	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-09-29 18:04:37	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-09-29 18:04:37	--	there are 19 users
+2017-09-29 18:04:37	--	Message of the day
+2017-09-29 18:04:37	--	WELCOME TO SLACK...
+2017-09-29 18:04:37	--	Hi! In addition to the normal Slack channels,
+2017-09-29 18:04:37	--	you can join the following channels:
+2017-09-29 18:04:37	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-09-29 18:04:37	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-09-29 18:04:37	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-09-29 18:04:37	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-09-29 18:04:37	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-09-29 18:04:37	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-09-29 18:04:37	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-09-29 18:04:37	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-09-29 18:04:37	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-09-29 18:04:37	--	End of MOTD command
+2017-09-29 18:25:50	=!=	irc: this buffer is not a channel!
+2017-09-30 00:54:26	--	irc: disconnected from server
+2017-10-02 18:18:45	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-02 18:18:45	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-02 18:18:45	--	gnutls: receiving 2 certificates
+2017-10-02 18:18:45	--	 - certificate[1] info:
+2017-10-02 18:18:45	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-10-02 18:18:45	--	 - certificate[2] info:
+2017-10-02 18:18:45	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-10-02 18:18:45	--	gnutls: peer's certificate is trusted
+2017-10-02 18:18:45	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-10-02 18:18:46	--	CTCP requested by slackbot: VERSION
+2017-10-02 18:18:46	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 23 2017)
+2017-10-02 18:18:46	--	IRC-SLACK gateway
+2017-10-02 18:18:47	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-10-02 18:18:47	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-02 18:18:47	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-02 18:18:47	--	there are 20 users
+2017-10-02 18:18:47	--	Message of the day
+2017-10-02 18:18:47	--	WELCOME TO SLACK...
+2017-10-02 18:18:47	--	Hi! In addition to the normal Slack channels,
+2017-10-02 18:18:47	--	you can join the following channels:
+2017-10-02 18:18:47	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-02 18:18:47	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-02 18:18:47	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-02 18:18:47	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-02 18:18:47	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-02 18:18:47	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-02 18:18:47	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-02 18:18:47	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-02 18:18:47	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-02 18:18:47	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-02 18:18:47	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-02 18:18:47	--	End of MOTD command
+2017-10-06 21:55:25	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2017-10-06 21:55:25	--	irc: disconnecting from server...
+2017-10-06 21:55:25	--	irc: disconnected from server
+2017-10-06 21:55:25	--	irc: reconnecting to server in 10 seconds
+2017-10-06 21:55:35	--	irc: reconnecting to server...
+2017-10-06 21:55:35	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-06 21:55:35	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-06 21:55:35	--	gnutls: receiving 2 certificates
+2017-10-06 21:55:35	--	 - certificate[1] info:
+2017-10-06 21:55:35	--	   - subject `CN=*.irc.slack.com,O=Tiny Speck,L=San Francisco,ST=California,C=US', issuer `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', serial 0x68548878570c7082df92ad607e8c9ce0, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', pin-sha256="hTc0t+S0L1x0+zubygRQXM4tbRQMZKdPzbuOPr1hDKk="
+2017-10-06 21:55:35	--	 - certificate[2] info:
+2017-10-06 21:55:35	--	   - subject `CN=GeoTrust SSL CA - G3,O=GeoTrust Inc.,C=US', issuer `CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US', serial 0x023a6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', pin-sha256="PbNCVpVasMJxps3IqFfLTRKkVnRCLrTlZVc5kspqlkw="
+2017-10-06 21:55:35	--	gnutls: peer's certificate is trusted
+2017-10-06 21:55:35	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-10-06 21:55:36	--	CTCP requested by slackbot: VERSION
+2017-10-06 21:55:36	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 23 2017)
+2017-10-06 21:55:36	--	IRC-SLACK gateway
+2017-10-06 21:55:36	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-10-06 21:55:36	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-06 21:55:36	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-06 21:55:36	--	there are 20 users
+2017-10-06 21:55:36	--	Message of the day
+2017-10-06 21:55:36	--	WELCOME TO SLACK...
+2017-10-06 21:55:36	--	Hi! In addition to the normal Slack channels,
+2017-10-06 21:55:36	--	you can join the following channels:
+2017-10-06 21:55:36	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-06 21:55:36	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-06 21:55:36	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-06 21:55:36	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-06 21:55:36	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-06 21:55:36	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-06 21:55:36	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-06 21:55:36	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-06 21:55:36	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-06 21:55:36	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-06 21:55:36	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-06 21:55:36	--	End of MOTD command
+2017-10-09 12:53:49	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-09 12:53:50	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-09 12:53:50	--	gnutls: receiving 2 certificates
+2017-10-09 12:53:50	--	 - certificate[1] info:
+2017-10-09 12:53:50	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-09 12:53:50	--	 - certificate[2] info:
+2017-10-09 12:53:50	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-09 12:53:50	--	gnutls: peer's certificate is trusted
+2017-10-09 12:53:50	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-10-09 12:53:50	--	CTCP requested by slackbot: VERSION
+2017-10-09 12:53:50	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-09 12:53:50	--	IRC-SLACK gateway
+2017-10-09 12:53:51	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-10-09 12:53:51	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-09 12:53:51	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-09 12:53:51	--	there are 20 users
+2017-10-09 12:53:51	--	Message of the day
+2017-10-09 12:53:51	--	WELCOME TO SLACK...
+2017-10-09 12:53:51	--	Hi! In addition to the normal Slack channels,
+2017-10-09 12:53:51	--	you can join the following channels:
+2017-10-09 12:53:51	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-09 12:53:51	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-09 12:53:51	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-09 12:53:51	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-09 12:53:51	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-09 12:53:51	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-09 12:53:51	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-09 12:53:51	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-09 12:53:51	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-09 12:53:51	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-09 12:53:51	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-09 12:53:51	--	End of MOTD command
+2017-10-11 06:42:42	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-10-11 06:42:42	--	irc: disconnecting from server...
+2017-10-11 06:42:42	--	irc: disconnected from server
+2017-10-11 06:42:42	--	irc: reconnecting to server in 10 seconds
+2017-10-11 06:42:52	--	irc: reconnecting to server...
+2017-10-11 06:42:52	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-11 06:42:52	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-11 06:42:52	--	gnutls: receiving 2 certificates
+2017-10-11 06:42:52	--	 - certificate[1] info:
+2017-10-11 06:42:52	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-11 06:42:53	--	 - certificate[2] info:
+2017-10-11 06:42:53	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-11 06:42:53	--	gnutls: peer's certificate is trusted
+2017-10-11 06:42:53	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.52.186)
+2017-10-11 06:42:53	--	CTCP requested by slackbot: VERSION
+2017-10-11 06:42:53	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-11 06:42:53	--	IRC-SLACK gateway
+2017-10-11 06:42:53	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.245.56
+2017-10-11 06:42:53	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-11 06:42:53	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-11 06:42:53	--	there are 21 users
+2017-10-11 06:42:53	--	Message of the day
+2017-10-11 06:42:53	--	WELCOME TO SLACK...
+2017-10-11 06:42:53	--	Hi! In addition to the normal Slack channels,
+2017-10-11 06:42:53	--	you can join the following channels:
+2017-10-11 06:42:53	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-11 06:42:53	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-11 06:42:53	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-11 06:42:53	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-11 06:42:53	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-11 06:42:53	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-11 06:42:53	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-11 06:42:53	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-11 06:42:53	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-11 06:42:53	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-11 06:42:53	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-11 06:42:53	--	End of MOTD command
+2017-10-11 06:46:35	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-10-11 06:46:35	--	irc: disconnecting from server...
+2017-10-11 06:46:35	--	irc: disconnected from server
+2017-10-11 06:46:35	--	irc: reconnecting to server in 10 seconds
+2017-10-11 06:46:45	--	irc: reconnecting to server...
+2017-10-11 06:46:45	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-11 06:46:59	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-11 06:46:59	--	gnutls: receiving 2 certificates
+2017-10-11 06:46:59	--	 - certificate[1] info:
+2017-10-11 06:46:59	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-11 06:46:59	--	 - certificate[2] info:
+2017-10-11 06:46:59	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-11 06:46:59	--	gnutls: peer's certificate is trusted
+2017-10-11 06:47:15	=!=	irc: TLS handshake failed
+2017-10-11 06:47:15	=!=	irc: error: The requested session has expired.
+2017-10-11 06:47:15	--	irc: reconnecting to server in 20 seconds
+2017-10-11 06:47:35	--	irc: reconnecting to server...
+2017-10-11 06:47:35	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-11 06:47:45	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-11 06:47:45	--	gnutls: receiving 2 certificates
+2017-10-11 06:47:45	--	 - certificate[1] info:
+2017-10-11 06:47:45	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-11 06:47:45	--	 - certificate[2] info:
+2017-10-11 06:47:45	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-11 06:47:45	--	gnutls: peer's certificate is trusted
+2017-10-11 06:47:52	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-10-11 06:47:58	--	CTCP requested by slackbot: VERSION
+2017-10-11 06:47:58	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-11 06:47:58	--	IRC-SLACK gateway
+2017-10-11 06:48:10	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-10-11 06:48:10	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-11 06:48:10	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-11 06:48:10	--	there are 21 users
+2017-10-11 06:48:10	--	Message of the day
+2017-10-11 06:48:10	--	WELCOME TO SLACK...
+2017-10-11 06:48:10	--	Hi! In addition to the normal Slack channels,
+2017-10-11 06:48:10	--	you can join the following channels:
+2017-10-11 06:48:10	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-11 06:48:10	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-11 06:48:10	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-11 06:48:10	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-11 06:48:10	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-11 06:48:10	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-11 06:48:10	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-11 06:48:10	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-11 06:48:10	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-11 06:48:10	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-11 06:48:10	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-11 06:48:10	--	End of MOTD command
+2017-10-11 06:57:16	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-10-11 06:57:16	--	irc: disconnecting from server...
+2017-10-11 06:57:16	--	irc: disconnected from server
+2017-10-11 06:57:16	--	irc: reconnecting to server in 10 seconds
+2017-10-11 06:57:26	--	irc: reconnecting to server...
+2017-10-11 06:57:26	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-11 06:57:56	=!=	irc: TLS handshake failed
+2017-10-11 06:57:56	=!=	irc: error: The requested session has expired.
+2017-10-11 06:57:56	--	irc: reconnecting to server in 20 seconds
+2017-10-11 06:58:16	--	irc: reconnecting to server...
+2017-10-11 06:58:16	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-11 06:58:27	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-11 06:58:27	--	gnutls: receiving 2 certificates
+2017-10-11 06:58:27	--	 - certificate[1] info:
+2017-10-11 06:58:27	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-11 06:58:27	--	 - certificate[2] info:
+2017-10-11 06:58:27	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-11 06:58:27	--	gnutls: peer's certificate is trusted
+2017-10-11 06:58:40	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.52.186)
+2017-10-11 06:58:49	--	CTCP requested by slackbot: VERSION
+2017-10-11 06:58:49	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-11 06:58:49	--	IRC-SLACK gateway
+2017-10-11 06:59:16	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.245.56
+2017-10-11 06:59:16	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-11 06:59:16	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-11 06:59:16	--	there are 21 users
+2017-10-11 06:59:16	--	Message of the day
+2017-10-11 06:59:16	--	WELCOME TO SLACK...
+2017-10-11 06:59:16	--	Hi! In addition to the normal Slack channels,
+2017-10-11 06:59:16	--	you can join the following channels:
+2017-10-11 06:59:16	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-11 06:59:16	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-11 06:59:16	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-11 06:59:16	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-11 06:59:16	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-11 06:59:16	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-11 06:59:16	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-11 06:59:16	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-11 06:59:16	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-11 06:59:16	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-11 06:59:16	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-11 06:59:16	--	End of MOTD command
+2017-10-11 07:01:26	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-10-11 07:01:26	--	irc: disconnecting from server...
+2017-10-11 07:01:26	--	irc: disconnected from server
+2017-10-11 07:01:26	--	irc: reconnecting to server in 10 seconds
+2017-10-11 07:01:36	--	irc: reconnecting to server...
+2017-10-11 07:01:36	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-11 07:01:36	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-11 07:01:36	--	gnutls: receiving 2 certificates
+2017-10-11 07:01:36	--	 - certificate[1] info:
+2017-10-11 07:01:36	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-11 07:01:36	--	 - certificate[2] info:
+2017-10-11 07:01:36	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-11 07:01:36	--	gnutls: peer's certificate is trusted
+2017-10-11 07:01:37	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.52.186)
+2017-10-11 07:01:37	--	CTCP requested by slackbot: VERSION
+2017-10-11 07:01:37	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-11 07:01:37	--	IRC-SLACK gateway
+2017-10-11 07:01:37	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.245.56
+2017-10-11 07:01:37	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-11 07:01:37	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-11 07:01:37	--	there are 21 users
+2017-10-11 07:01:37	--	Message of the day
+2017-10-11 07:01:37	--	WELCOME TO SLACK...
+2017-10-11 07:01:37	--	Hi! In addition to the normal Slack channels,
+2017-10-11 07:01:37	--	you can join the following channels:
+2017-10-11 07:01:37	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-11 07:01:37	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-11 07:01:37	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-11 07:01:37	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-11 07:01:37	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-11 07:01:37	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-11 07:01:37	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-11 07:01:37	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-11 07:01:37	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-11 07:01:37	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-11 07:01:37	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-11 07:01:37	--	End of MOTD command
+2017-10-18 06:27:25	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2017-10-18 06:27:25	--	irc: disconnecting from server...
+2017-10-18 06:27:25	--	irc: disconnected from server
+2017-10-18 06:27:25	--	irc: reconnecting to server in 10 seconds
+2017-10-18 06:27:35	--	irc: reconnecting to server...
+2017-10-18 06:27:35	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-18 06:27:35	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-18 06:27:35	--	gnutls: receiving 2 certificates
+2017-10-18 06:27:35	--	 - certificate[1] info:
+2017-10-18 06:27:35	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-18 06:27:35	--	 - certificate[2] info:
+2017-10-18 06:27:35	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-18 06:27:35	--	gnutls: peer's certificate is trusted
+2017-10-18 06:27:36	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-10-18 06:27:36	--	CTCP requested by slackbot: VERSION
+2017-10-18 06:27:36	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-18 06:27:36	--	IRC-SLACK gateway
+2017-10-18 06:27:36	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-10-18 06:27:36	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-18 06:27:36	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-18 06:27:36	--	there are 21 users
+2017-10-18 06:27:36	--	Message of the day
+2017-10-18 06:27:36	--	WELCOME TO SLACK...
+2017-10-18 06:27:36	--	Hi! In addition to the normal Slack channels,
+2017-10-18 06:27:36	--	you can join the following channels:
+2017-10-18 06:27:36	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-18 06:27:36	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-18 06:27:36	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-18 06:27:36	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-18 06:27:36	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-18 06:27:36	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-18 06:27:36	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-10-18 06:27:36	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-10-18 06:27:36	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-18 06:27:36	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-18 06:27:36	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-18 06:27:36	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-18 06:27:36	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-18 06:27:36	--	End of MOTD command
+2017-10-24 09:57:04	--	irc: disconnected from server
+2017-10-24 10:01:42	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-24 10:01:42	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-24 10:01:42	--	gnutls: receiving 2 certificates
+2017-10-24 10:01:42	--	 - certificate[1] info:
+2017-10-24 10:01:42	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-24 10:01:42	--	 - certificate[2] info:
+2017-10-24 10:01:42	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-24 10:01:42	--	gnutls: peer's certificate is trusted
+2017-10-24 10:01:42	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-10-24 10:01:43	--	CTCP requested by slackbot: VERSION
+2017-10-24 10:01:43	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-24 10:01:43	--	IRC-SLACK gateway
+2017-10-24 10:01:43	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-10-24 10:01:43	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-24 10:01:43	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-24 10:01:43	--	there are 21 users
+2017-10-24 10:01:43	--	Message of the day
+2017-10-24 10:01:43	--	WELCOME TO SLACK...
+2017-10-24 10:01:43	--	Hi! In addition to the normal Slack channels,
+2017-10-24 10:01:43	--	you can join the following channels:
+2017-10-24 10:01:43	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-24 10:01:43	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-24 10:01:43	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-24 10:01:43	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-24 10:01:43	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-24 10:01:43	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-24 10:01:43	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-10-24 10:01:43	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-10-24 10:01:43	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-24 10:01:43	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-24 10:01:43	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-24 10:01:43	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-24 10:01:43	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-24 10:01:43	--	End of MOTD command
+2017-10-24 13:41:52	=!=	irc: this buffer is not a channel!
+2017-10-24 13:41:58	--	irc: disconnected from server
+2017-10-24 13:42:00	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-24 13:42:01	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-24 13:42:01	--	gnutls: receiving 2 certificates
+2017-10-24 13:42:01	--	 - certificate[1] info:
+2017-10-24 13:42:01	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-24 13:42:01	--	 - certificate[2] info:
+2017-10-24 13:42:01	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-24 13:42:01	--	gnutls: peer's certificate is trusted
+2017-10-24 13:42:01	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.71.207.146)
+2017-10-24 13:42:01	--	CTCP requested by slackbot: VERSION
+2017-10-24 13:42:01	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-24 13:42:01	--	IRC-SLACK gateway
+2017-10-24 13:42:02	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.128.178
+2017-10-24 13:42:02	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-24 13:42:02	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-24 13:42:02	--	there are 21 users
+2017-10-24 13:42:02	--	Message of the day
+2017-10-24 13:42:02	--	WELCOME TO SLACK...
+2017-10-24 13:42:02	--	Hi! In addition to the normal Slack channels,
+2017-10-24 13:42:02	--	you can join the following channels:
+2017-10-24 13:42:02	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-24 13:42:02	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-24 13:42:02	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-24 13:42:02	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-24 13:42:02	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-24 13:42:02	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-24 13:42:02	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-10-24 13:42:02	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-10-24 13:42:02	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-24 13:42:02	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-24 13:42:02	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-24 13:42:02	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-24 13:42:02	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-24 13:42:02	--	End of MOTD command
+2017-10-29 02:18:11	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2017-10-29 02:18:11	--	irc: disconnecting from server...
+2017-10-29 02:18:11	--	irc: disconnected from server
+2017-10-29 02:18:11	--	irc: reconnecting to server in 10 seconds
+2017-10-29 02:18:21	--	irc: reconnecting to server...
+2017-10-29 02:18:21	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-10-29 02:18:21	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-10-29 02:18:21	--	gnutls: receiving 2 certificates
+2017-10-29 02:18:21	--	 - certificate[1] info:
+2017-10-29 02:18:21	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-10-29 02:18:21	--	 - certificate[2] info:
+2017-10-29 02:18:21	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-10-29 02:18:21	--	gnutls: peer's certificate is trusted
+2017-10-29 02:18:21	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.71.207.146)
+2017-10-29 02:18:22	--	CTCP requested by slackbot: VERSION
+2017-10-29 02:18:22	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-10-29 02:18:22	--	IRC-SLACK gateway
+2017-10-29 02:18:22	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.128.178
+2017-10-29 02:18:22	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-10-29 02:18:22	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-10-29 02:18:22	--	there are 21 users
+2017-10-29 02:18:22	--	Message of the day
+2017-10-29 02:18:22	--	WELCOME TO SLACK...
+2017-10-29 02:18:22	--	Hi! In addition to the normal Slack channels,
+2017-10-29 02:18:22	--	you can join the following channels:
+2017-10-29 02:18:22	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-10-29 02:18:22	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-10-29 02:18:22	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-10-29 02:18:22	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-10-29 02:18:22	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-10-29 02:18:22	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-10-29 02:18:22	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-10-29 02:18:22	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-10-29 02:18:22	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-10-29 02:18:22	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-10-29 02:18:22	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-10-29 02:18:22	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-10-29 02:18:22	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-10-29 02:18:22	--	End of MOTD command
+2017-11-01 22:08:36	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-11-01 22:08:36	--	irc: disconnecting from server...
+2017-11-01 22:08:36	--	irc: disconnected from server
+2017-11-01 22:08:36	--	irc: reconnecting to server in 10 seconds
+2017-11-01 22:08:46	--	irc: reconnecting to server...
+2017-11-01 22:08:46	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-01 22:08:46	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-11-01 22:08:46	--	gnutls: receiving 2 certificates
+2017-11-01 22:08:46	--	 - certificate[1] info:
+2017-11-01 22:08:46	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-11-01 22:08:46	--	 - certificate[2] info:
+2017-11-01 22:08:46	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-11-01 22:08:46	--	gnutls: peer's certificate is trusted
+2017-11-01 22:08:47	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-11-01 22:08:47	--	CTCP requested by slackbot: VERSION
+2017-11-01 22:08:47	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-11-01 22:08:47	--	IRC-SLACK gateway
+2017-11-01 22:08:47	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-11-01 22:08:47	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-11-01 22:08:47	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-11-01 22:08:47	--	there are 21 users
+2017-11-01 22:08:47	--	Message of the day
+2017-11-01 22:08:47	--	WELCOME TO SLACK...
+2017-11-01 22:08:47	--	Hi! In addition to the normal Slack channels,
+2017-11-01 22:08:47	--	you can join the following channels:
+2017-11-01 22:08:47	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-11-01 22:08:47	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-11-01 22:08:47	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-11-01 22:08:47	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-11-01 22:08:47	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-11-01 22:08:47	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-11-01 22:08:47	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-11-01 22:08:47	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-11-01 22:08:47	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-11-01 22:08:47	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-11-01 22:08:47	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-11-01 22:08:47	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-11-01 22:08:47	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-11-01 22:08:47	--	End of MOTD command
+2017-11-01 22:41:18	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-11-01 22:41:18	--	irc: disconnecting from server...
+2017-11-01 22:41:18	--	irc: disconnected from server
+2017-11-01 22:41:18	--	irc: reconnecting to server in 10 seconds
+2017-11-01 22:41:28	--	irc: reconnecting to server...
+2017-11-01 22:41:28	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-01 22:41:31	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-11-01 22:41:31	--	gnutls: receiving 2 certificates
+2017-11-01 22:41:31	--	 - certificate[1] info:
+2017-11-01 22:41:31	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-11-01 22:41:31	--	 - certificate[2] info:
+2017-11-01 22:41:31	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-11-01 22:41:31	--	gnutls: peer's certificate is trusted
+2017-11-01 22:41:31	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-11-01 22:41:31	--	CTCP requested by slackbot: VERSION
+2017-11-01 22:41:31	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-11-01 22:41:31	--	IRC-SLACK gateway
+2017-11-01 22:41:31	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-11-01 22:41:31	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-11-01 22:41:31	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-11-01 22:41:31	--	there are 21 users
+2017-11-01 22:41:31	--	Message of the day
+2017-11-01 22:41:31	--	WELCOME TO SLACK...
+2017-11-01 22:41:31	--	Hi! In addition to the normal Slack channels,
+2017-11-01 22:41:31	--	you can join the following channels:
+2017-11-01 22:41:31	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-11-01 22:41:31	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-11-01 22:41:31	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-11-01 22:41:31	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-11-01 22:41:31	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-11-01 22:41:31	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-11-01 22:41:31	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-11-01 22:41:31	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-11-01 22:41:31	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-11-01 22:41:31	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-11-01 22:41:31	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-11-01 22:41:31	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-11-01 22:41:31	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-11-01 22:41:31	--	End of MOTD command
+2017-11-02 08:24:28	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-11-02 08:24:28	--	irc: disconnecting from server...
+2017-11-02 08:24:28	--	irc: disconnected from server
+2017-11-02 08:24:28	--	irc: reconnecting to server in 10 seconds
+2017-11-02 08:24:38	--	irc: reconnecting to server...
+2017-11-02 08:24:38	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-02 08:24:40	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-11-02 08:24:40	--	gnutls: receiving 2 certificates
+2017-11-02 08:24:40	--	 - certificate[1] info:
+2017-11-02 08:24:40	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-11-02 08:24:40	--	 - certificate[2] info:
+2017-11-02 08:24:40	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-11-02 08:24:40	--	gnutls: peer's certificate is trusted
+2017-11-02 08:24:40	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-11-02 08:24:40	--	CTCP requested by slackbot: VERSION
+2017-11-02 08:24:40	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-11-02 08:24:40	--	IRC-SLACK gateway
+2017-11-02 08:24:40	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-11-02 08:24:40	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-11-02 08:24:40	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-11-02 08:24:40	--	there are 21 users
+2017-11-02 08:24:40	--	Message of the day
+2017-11-02 08:24:40	--	WELCOME TO SLACK...
+2017-11-02 08:24:40	--	Hi! In addition to the normal Slack channels,
+2017-11-02 08:24:40	--	you can join the following channels:
+2017-11-02 08:24:40	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-11-02 08:24:40	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-11-02 08:24:40	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-11-02 08:24:40	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-11-02 08:24:41	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-11-02 08:24:41	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-11-02 08:24:41	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-11-02 08:24:41	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-11-02 08:24:41	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-11-02 08:24:41	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-11-02 08:24:41	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-11-02 08:24:41	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-11-02 08:24:41	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-11-02 08:24:41	--	End of MOTD command
+2017-11-02 14:58:41	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-11-02 14:58:41	--	irc: disconnecting from server...
+2017-11-02 14:58:41	--	irc: disconnected from server
+2017-11-02 14:58:41	--	irc: reconnecting to server in 10 seconds
+2017-11-02 14:58:51	--	irc: reconnecting to server...
+2017-11-02 14:58:51	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-02 14:58:52	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-11-02 14:58:52	--	gnutls: receiving 2 certificates
+2017-11-02 14:58:52	--	 - certificate[1] info:
+2017-11-02 14:58:52	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-11-02 14:58:52	--	 - certificate[2] info:
+2017-11-02 14:58:52	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-11-02 14:58:52	--	gnutls: peer's certificate is trusted
+2017-11-02 14:58:52	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.6.66.3)
+2017-11-02 14:58:52	--	CTCP requested by slackbot: VERSION
+2017-11-02 14:58:52	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-11-02 14:58:52	--	IRC-SLACK gateway
+2017-11-02 14:58:52	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.69.159
+2017-11-02 14:58:52	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-11-02 14:58:52	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-11-02 14:58:52	--	there are 21 users
+2017-11-02 14:58:52	--	Message of the day
+2017-11-02 14:58:52	--	WELCOME TO SLACK...
+2017-11-02 14:58:52	--	Hi! In addition to the normal Slack channels,
+2017-11-02 14:58:52	--	you can join the following channels:
+2017-11-02 14:58:52	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-11-02 14:58:52	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-11-02 14:58:52	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-11-02 14:58:52	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-11-02 14:58:52	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-11-02 14:58:52	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-11-02 14:58:52	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-11-02 14:58:52	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-11-02 14:58:52	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-11-02 14:58:52	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-11-02 14:58:52	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-11-02 14:58:52	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-11-02 14:58:52	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-11-02 14:58:52	--	End of MOTD command
+2017-11-02 15:09:59	=!=	irc: reading data on socket: error -110 The TLS connection was non-properly terminated.
+2017-11-02 15:09:59	--	irc: disconnecting from server...
+2017-11-02 15:09:59	--	irc: disconnected from server
+2017-11-02 15:09:59	--	irc: reconnecting to server in 10 seconds
+2017-11-02 15:10:09	--	irc: reconnecting to server...
+2017-11-02 15:10:09	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-02 15:10:39	=!=	irc: TLS handshake failed
+2017-11-02 15:10:39	=!=	irc: error: The requested session has expired.
+2017-11-02 15:10:39	--	irc: reconnecting to server in 20 seconds
+2017-11-02 15:10:59	--	irc: reconnecting to server...
+2017-11-02 15:10:59	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-02 15:11:01	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-11-02 15:11:01	--	gnutls: receiving 2 certificates
+2017-11-02 15:11:01	--	 - certificate[1] info:
+2017-11-02 15:11:01	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-11-02 15:11:01	--	 - certificate[2] info:
+2017-11-02 15:11:01	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-11-02 15:11:01	--	gnutls: peer's certificate is trusted
+2017-11-02 15:11:01	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.72.199.169)
+2017-11-02 15:11:01	--	CTCP requested by slackbot: VERSION
+2017-11-02 15:11:01	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-11-02 15:11:01	--	IRC-SLACK gateway
+2017-11-02 15:11:02	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.17.201
+2017-11-02 15:11:02	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-11-02 15:11:02	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-11-02 15:11:02	--	there are 21 users
+2017-11-02 15:11:02	--	Message of the day
+2017-11-02 15:11:02	--	WELCOME TO SLACK...
+2017-11-02 15:11:02	--	Hi! In addition to the normal Slack channels,
+2017-11-02 15:11:02	--	you can join the following channels:
+2017-11-02 15:11:02	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-11-02 15:11:02	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-11-02 15:11:02	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-11-02 15:11:02	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-11-02 15:11:02	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-11-02 15:11:02	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-11-02 15:11:02	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-11-02 15:11:02	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-11-02 15:11:02	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-11-02 15:11:02	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-11-02 15:11:02	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-11-02 15:11:02	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-11-02 15:11:02	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-11-02 15:11:02	--	End of MOTD command
+2017-11-03 14:44:51	--	irc: disconnected from server
+2017-11-03 14:44:53	--	irc: connecting to server digitalgarden.irc.slack.com/6667 (SSL)...
+2017-11-03 14:44:53	--	gnutls: connected using 512-bit Diffie-Hellman shared secret exchange
+2017-11-03 14:44:53	--	gnutls: receiving 2 certificates
+2017-11-03 14:44:53	--	 - certificate[1] info:
+2017-11-03 14:44:53	--	   - subject `C=US,ST=California,L=San Francisco,O=Tiny Speck,CN=*.irc.slack.com', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', RSA key 2048 bits, signed using RSA-SHA256, activated `2015-11-25 00:00:00 UTC', expires `2017-12-02 23:59:59 UTC', SHA-1 fingerprint `ed4dcb04c89dc80d43e65437e7c4632dcf50ac86'
+2017-11-03 14:44:53	--	 - certificate[2] info:
+2017-11-03 14:44:53	--	   - subject `C=US,O=GeoTrust Inc.,CN=GeoTrust SSL CA - G3', issuer `C=US,O=GeoTrust Inc.,CN=GeoTrust Global CA', RSA key 2048 bits, signed using RSA-SHA256, activated `2013-11-05 21:36:50 UTC', expires `2022-05-20 21:36:50 UTC', SHA-1 fingerprint `5aeaee3f7f2a9449cebafeec68fdd184f20124a7'
+2017-11-03 14:44:53	--	gnutls: peer's certificate is trusted
+2017-11-03 14:44:53	--	irc: connected to digitalgarden.irc.slack.com/6667 (52.71.207.146)
+2017-11-03 14:44:54	--	CTCP requested by slackbot: VERSION
+2017-11-03 14:44:54	--	CTCP reply to slackbot: VERSION WeeChat 1.9.1 (Sep 29 2017)
+2017-11-03 14:44:54	--	IRC-SLACK gateway
+2017-11-03 14:44:54	--	Welcome to Slack IRC Gateway server aleksander!~aleksander@10.0.128.178
+2017-11-03 14:44:55	--	MAP SILENCE=15 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE MODES=6 MAXCHANNELS=100 SAFELIST :are supported by this server
+2017-11-03 14:44:55	--	NICKLEN=32 TOPICLEN=160 AWAYLEN=160 CHANTYPES=# PREFIX=(ov)@+ CHANMODES=b,k,l,rimnpst CASEMAPPING=rfc1459 :are supported by this server
+2017-11-03 14:44:55	--	there are 21 users
+2017-11-03 14:44:55	--	Message of the day
+2017-11-03 14:44:55	--	WELCOME TO SLACK...
+2017-11-03 14:44:55	--	Hi! In addition to the normal Slack channels,
+2017-11-03 14:44:55	--	you can join the following channels:
+2017-11-03 14:44:55	--	#mpdm-morten--aleksander--ben--stian.landsnes-1
+2017-11-03 14:44:55	--	    Group messaging with: @morten @aleksander @ben @stian.landsnes
+2017-11-03 14:44:55	--	#mpdm-tjommi_margot--joakim--aleksander--hakon-1
+2017-11-03 14:44:55	--	    Group messaging with: @tjommi_margot @joakim @aleksander @hakon
+2017-11-03 14:44:55	--	#mpdm-aleksander--morten--sindre.nordbotten--stian.landsnes-1
+2017-11-03 14:44:55	--	    Group messaging with: @aleksander @morten @sindre.nordbotten @stian.landsnes
+2017-11-03 14:44:55	--	#mpdm-erling--aleksander--stianandreassen-1
+2017-11-03 14:44:55	--	    Group messaging with: @erling @aleksander @stianandreassen
+2017-11-03 14:44:55	--	#mpdm-morten--aleksander--stian.landsnes-1
+2017-11-03 14:44:55	--	    Group messaging with: @morten @aleksander @stian.landsnes
+2017-11-03 14:44:55	--	#mpdm-morten--aleksander--denys--stian.landsnes-1
+2017-11-03 14:44:55	--	    Group messaging with: @morten @aleksander @denys @stian.landsnes
+2017-11-03 14:44:55	--	You may disable this notice by appending '-no_mpdm_greet' to your password token.
+2017-11-03 14:44:55	--	End of MOTD command
+2017-11-22 14:48:41	--	irc: disconnected from server

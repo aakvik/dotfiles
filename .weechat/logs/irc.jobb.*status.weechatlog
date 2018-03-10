@@ -1,0 +1,890 @@
+2017-09-29 18:28:39	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:28:39	*status	|Certificate:
+2017-09-29 18:28:39	*status	|    Data:
+2017-09-29 18:28:39	*status	|        Version: 3 (0x2)
+2017-09-29 18:28:39	*status	|        Serial Number:
+2017-09-29 18:28:39	*status	|            11:21:9d:90:34:ae:a7:bc:94:c2:f6:9e:55:84:38:6b:42:bb
+2017-09-29 18:28:39	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:28:39	*status	|        Issuer: C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G2
+2017-09-29 18:28:39	*status	|        Validity
+2017-09-29 18:28:39	*status	|            Not Before: Jul  3 17:24:53 2014 GMT
+2017-09-29 18:28:39	*status	|            Not After : Jul  4 17:24:53 2015 GMT
+2017-09-29 18:28:39	*status	|        Subject: OU=Domain Control Validated, CN=*.uniweb.no
+2017-09-29 18:28:39	*status	|        Subject Public Key Info:
+2017-09-29 18:28:39	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:28:39	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:28:39	*status	|                Modulus:
+2017-09-29 18:28:39	*status	|                    00:f7:47:b8:5d:ec:75:31:7a:c7:58:d5:08:56:15:
+2017-09-29 18:28:39	*status	|                    09:0c:96:af:6a:ad:86:5d:9c:40:dc:19:02:2b:ad:
+2017-09-29 18:28:39	*status	|                    9a:57:88:c8:50:04:3f:aa:d8:a7:71:b4:ba:0c:f7:
+2017-09-29 18:28:39	*status	|                    30:a6:1a:ac:66:20:c2:3e:f5:10:1d:9f:b3:a2:f4:
+2017-09-29 18:28:39	*status	|                    75:12:2d:1b:42:1f:74:f9:29:d5:af:4e:bd:eb:c5:
+2017-09-29 18:28:39	*status	|                    17:78:f2:e3:08:0d:40:1e:b5:8d:65:12:7b:11:3f:
+2017-09-29 18:28:39	*status	|                    61:a0:07:eb:03:ab:db:44:5f:1e:e0:ed:a9:cf:1f:
+2017-09-29 18:28:39	*status	|                    54:45:df:29:e1:c7:08:d4:56:8d:3e:c2:d1:e0:fb:
+2017-09-29 18:28:40	*status	|                    f1:d6:c1:7b:f0:31:e7:c1:4a:33:20:dc:4f:89:89:
+2017-09-29 18:28:40	*status	|                    8d:b9:04:c5:f1:5c:97:d0:75:c9:32:5c:bb:02:69:
+2017-09-29 18:28:40	*status	|                    32:0f:22:6d:4e:7b:bb:ae:64:55:db:82:c5:5c:44:
+2017-09-29 18:28:40	*status	|                    43:62:e4:e3:07:9f:72:50:62:30:ec:6c:2c:a4:09:
+2017-09-29 18:28:40	*status	|                    de:a0:22:00:cc:af:ef:19:a2:2c:99:99:e1:1e:fa:
+2017-09-29 18:28:40	*status	|                    46:aa:20:35:27:7a:32:ad:67:26:2d:31:56:a7:d4:
+2017-09-29 18:28:40	*status	|                    da:ab:14:46:6f:e3:fd:88:8f:c1:d8:d4:98:1e:c0:
+2017-09-29 18:28:40	*status	|                    51:e2:2e:93:e3:24:05:db:fe:ad:4c:16:bc:49:c2:
+2017-09-29 18:28:40	*status	|                    a7:41:36:de:9b:73:01:c6:89:15:bd:76:6b:95:f3:
+2017-09-29 18:28:40	*status	|                    26:8b
+2017-09-29 18:28:40	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:28:40	*status	|        X509v3 extensions:
+2017-09-29 18:28:40	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:28:40	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:28:40	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:28:40	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:28:40	*status	|                  CPS: https://www.globalsign.com/repository/
+2017-09-29 18:28:41	*status	|
+2017-09-29 18:28:41	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:28:41	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:28:41	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:28:41	*status	|                CA:FALSE
+2017-09-29 18:28:41	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:28:41	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:28:41	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:28:42	*status	|
+2017-09-29 18:28:42	*status	|                Full Name:
+2017-09-29 18:28:42	*status	|                  URI:http://crl2.alphassl.com/gs/gsalphasha2g2.crl
+2017-09-29 18:28:42	*status	|
+2017-09-29 18:28:42	*status	|            Authority Information Access: 
+2017-09-29 18:28:42	*status	|                CA Issuers - URI:http://secure2.alphassl.com/cacert/gsalphasha2g2r1.crt
+2017-09-29 18:28:43	*status	|                OCSP - URI:http://ocsp2.globalsign.com/gsalphasha2g2
+2017-09-29 18:28:43	*status	|
+2017-09-29 18:28:43	*status	|            X509v3 Subject Key Identifier: 
+2017-09-29 18:28:43	*status	|                52:50:AD:09:0D:0D:84:0B:40:7D:F8:B9:79:F8:6A:C0:8C:8C:69:F7
+2017-09-29 18:28:43	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:28:43	*status	|                keyid:F5:CD:D5:3C:08:50:F9:6A:4F:3A:B7:97:DA:56:83:E6:69:D2:68:F7
+2017-09-29 18:28:43	*status	|
+2017-09-29 18:28:44	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:28:44	*status	|         2a:dd:a8:74:cb:63:91:0e:0a:dd:53:7e:02:76:79:8e:a4:e5:
+2017-09-29 18:28:44	*status	|         5c:14:55:12:a4:28:8a:6a:49:ce:dd:1b:47:e3:fa:05:fd:6a:
+2017-09-29 18:28:44	*status	|         8e:60:c2:36:b1:64:11:33:75:69:06:39:8b:7d:09:3a:1c:bd:
+2017-09-29 18:28:44	*status	|         18:5f:6e:60:7d:3b:3e:bc:27:b0:1e:67:e3:5e:0c:13:3b:77:
+2017-09-29 18:28:44	*status	|         a6:b0:34:2d:dc:64:7d:25:4e:7e:87:79:de:71:9a:f1:34:68:
+2017-09-29 18:28:45	*status	|         da:14:f2:b3:a8:21:1a:bc:56:af:18:c5:35:d9:d7:88:c5:6a:
+2017-09-29 18:28:45	*status	|         67:15:b6:1b:46:72:13:79:23:72:e3:96:c3:7f:9e:e0:ff:f5:
+2017-09-29 18:28:45	*status	|         52:d9:21:d0:42:49:ed:23:4d:0e:f1:3c:76:59:3a:ee:51:bc:
+2017-09-29 18:28:45	*status	|         80:75:26:8d:5d:62:a1:87:4a:68:36:48:14:4c:b4:06:d2:20:
+2017-09-29 18:28:45	*status	|         3b:17:38:72:61:c8:1a:8b:69:43:a0:6a:1d:47:cb:59:23:38:
+2017-09-29 18:28:46	*status	|         a8:53:92:98:9d:0f:9d:06:ce:3f:f6:21:66:c7:32:14:33:30:
+2017-09-29 18:28:46	*status	|         09:6d:24:61:b6:8e:cf:61:90:7f:11:d2:86:46:e5:14:a1:f3:
+2017-09-29 18:28:46	*status	|         fc:4a:0c:53:44:ec:b8:41:ea:7a:48:10:7e:f6:95:4b:14:6c:
+2017-09-29 18:28:46	*status	|         ca:55:36:d6:d9:71:ac:6e:58:1f:2e:84:56:13:2c:cd:13:25:
+2017-09-29 18:28:46	*status	|         04:81:90:0f
+2017-09-29 18:28:46	*status	SHA1: 50:03:ae:6a:af:33:5b:7d:61:09:71:fa:4e:a2:c1:03:f9:d6:e4:97
+2017-09-29 18:28:47	*status	SHA-256: 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:28:47	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:28:47	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:29:09	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:29:09	*status	|Certificate:
+2017-09-29 18:29:09	*status	|    Data:
+2017-09-29 18:29:09	*status	|        Version: 3 (0x2)
+2017-09-29 18:29:09	*status	|        Serial Number:
+2017-09-29 18:29:09	*status	|            11:21:9d:90:34:ae:a7:bc:94:c2:f6:9e:55:84:38:6b:42:bb
+2017-09-29 18:29:09	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:29:09	*status	|        Issuer: C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G2
+2017-09-29 18:29:09	*status	|        Validity
+2017-09-29 18:29:09	*status	|            Not Before: Jul  3 17:24:53 2014 GMT
+2017-09-29 18:29:09	*status	|            Not After : Jul  4 17:24:53 2015 GMT
+2017-09-29 18:29:09	*status	|        Subject: OU=Domain Control Validated, CN=*.uniweb.no
+2017-09-29 18:29:09	*status	|        Subject Public Key Info:
+2017-09-29 18:29:09	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:29:09	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:29:09	*status	|                Modulus:
+2017-09-29 18:29:09	*status	|                    00:f7:47:b8:5d:ec:75:31:7a:c7:58:d5:08:56:15:
+2017-09-29 18:29:09	*status	|                    09:0c:96:af:6a:ad:86:5d:9c:40:dc:19:02:2b:ad:
+2017-09-29 18:29:09	*status	|                    9a:57:88:c8:50:04:3f:aa:d8:a7:71:b4:ba:0c:f7:
+2017-09-29 18:29:09	*status	|                    30:a6:1a:ac:66:20:c2:3e:f5:10:1d:9f:b3:a2:f4:
+2017-09-29 18:29:09	*status	|                    75:12:2d:1b:42:1f:74:f9:29:d5:af:4e:bd:eb:c5:
+2017-09-29 18:29:10	*status	|                    17:78:f2:e3:08:0d:40:1e:b5:8d:65:12:7b:11:3f:
+2017-09-29 18:29:10	*status	|                    61:a0:07:eb:03:ab:db:44:5f:1e:e0:ed:a9:cf:1f:
+2017-09-29 18:29:10	*status	|                    54:45:df:29:e1:c7:08:d4:56:8d:3e:c2:d1:e0:fb:
+2017-09-29 18:29:10	*status	|                    f1:d6:c1:7b:f0:31:e7:c1:4a:33:20:dc:4f:89:89:
+2017-09-29 18:29:10	*status	|                    8d:b9:04:c5:f1:5c:97:d0:75:c9:32:5c:bb:02:69:
+2017-09-29 18:29:10	*status	|                    32:0f:22:6d:4e:7b:bb:ae:64:55:db:82:c5:5c:44:
+2017-09-29 18:29:10	*status	|                    43:62:e4:e3:07:9f:72:50:62:30:ec:6c:2c:a4:09:
+2017-09-29 18:29:10	*status	|                    de:a0:22:00:cc:af:ef:19:a2:2c:99:99:e1:1e:fa:
+2017-09-29 18:29:10	*status	|                    46:aa:20:35:27:7a:32:ad:67:26:2d:31:56:a7:d4:
+2017-09-29 18:29:10	*status	|                    da:ab:14:46:6f:e3:fd:88:8f:c1:d8:d4:98:1e:c0:
+2017-09-29 18:29:10	*status	|                    51:e2:2e:93:e3:24:05:db:fe:ad:4c:16:bc:49:c2:
+2017-09-29 18:29:10	*status	|                    a7:41:36:de:9b:73:01:c6:89:15:bd:76:6b:95:f3:
+2017-09-29 18:29:10	*status	|                    26:8b
+2017-09-29 18:29:10	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:29:10	*status	|        X509v3 extensions:
+2017-09-29 18:29:10	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:29:10	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:29:10	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:29:10	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:29:11	*status	|                  CPS: https://www.globalsign.com/repository/
+2017-09-29 18:29:11	*status	|
+2017-09-29 18:29:11	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:29:11	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:29:11	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:29:11	*status	|                CA:FALSE
+2017-09-29 18:29:11	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:29:11	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:29:11	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:29:11	*status	|
+2017-09-29 18:29:12	*status	|                Full Name:
+2017-09-29 18:29:12	*status	|                  URI:http://crl2.alphassl.com/gs/gsalphasha2g2.crl
+2017-09-29 18:29:12	*status	|
+2017-09-29 18:29:12	*status	|            Authority Information Access: 
+2017-09-29 18:29:12	*status	|                CA Issuers - URI:http://secure2.alphassl.com/cacert/gsalphasha2g2r1.crt
+2017-09-29 18:29:12	*status	|                OCSP - URI:http://ocsp2.globalsign.com/gsalphasha2g2
+2017-09-29 18:29:13	*status	|
+2017-09-29 18:29:13	*status	|            X509v3 Subject Key Identifier: 
+2017-09-29 18:29:13	*status	|                52:50:AD:09:0D:0D:84:0B:40:7D:F8:B9:79:F8:6A:C0:8C:8C:69:F7
+2017-09-29 18:29:13	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:29:13	*status	|                keyid:F5:CD:D5:3C:08:50:F9:6A:4F:3A:B7:97:DA:56:83:E6:69:D2:68:F7
+2017-09-29 18:29:14	*status	|
+2017-09-29 18:29:14	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:29:14	*status	|         2a:dd:a8:74:cb:63:91:0e:0a:dd:53:7e:02:76:79:8e:a4:e5:
+2017-09-29 18:29:14	*status	|         5c:14:55:12:a4:28:8a:6a:49:ce:dd:1b:47:e3:fa:05:fd:6a:
+2017-09-29 18:29:14	*status	|         8e:60:c2:36:b1:64:11:33:75:69:06:39:8b:7d:09:3a:1c:bd:
+2017-09-29 18:29:14	*status	|         18:5f:6e:60:7d:3b:3e:bc:27:b0:1e:67:e3:5e:0c:13:3b:77:
+2017-09-29 18:29:15	*status	|         a6:b0:34:2d:dc:64:7d:25:4e:7e:87:79:de:71:9a:f1:34:68:
+2017-09-29 18:29:15	*status	|         da:14:f2:b3:a8:21:1a:bc:56:af:18:c5:35:d9:d7:88:c5:6a:
+2017-09-29 18:29:15	*status	|         67:15:b6:1b:46:72:13:79:23:72:e3:96:c3:7f:9e:e0:ff:f5:
+2017-09-29 18:29:15	*status	|         52:d9:21:d0:42:49:ed:23:4d:0e:f1:3c:76:59:3a:ee:51:bc:
+2017-09-29 18:29:15	*status	|         80:75:26:8d:5d:62:a1:87:4a:68:36:48:14:4c:b4:06:d2:20:
+2017-09-29 18:29:15	*status	|         3b:17:38:72:61:c8:1a:8b:69:43:a0:6a:1d:47:cb:59:23:38:
+2017-09-29 18:29:16	*status	|         a8:53:92:98:9d:0f:9d:06:ce:3f:f6:21:66:c7:32:14:33:30:
+2017-09-29 18:29:16	*status	|         09:6d:24:61:b6:8e:cf:61:90:7f:11:d2:86:46:e5:14:a1:f3:
+2017-09-29 18:29:16	*status	|         fc:4a:0c:53:44:ec:b8:41:ea:7a:48:10:7e:f6:95:4b:14:6c:
+2017-09-29 18:29:16	*status	|         ca:55:36:d6:d9:71:ac:6e:58:1f:2e:84:56:13:2c:cd:13:25:
+2017-09-29 18:29:16	*status	|         04:81:90:0f
+2017-09-29 18:29:16	*status	SHA1: 50:03:ae:6a:af:33:5b:7d:61:09:71:fa:4e:a2:c1:03:f9:d6:e4:97
+2017-09-29 18:29:17	*status	SHA-256: 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:29:17	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:29:17	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:29:39	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:29:39	*status	|Certificate:
+2017-09-29 18:29:39	*status	|    Data:
+2017-09-29 18:29:39	*status	|        Version: 3 (0x2)
+2017-09-29 18:29:39	*status	|        Serial Number:
+2017-09-29 18:29:39	*status	|            11:21:9d:90:34:ae:a7:bc:94:c2:f6:9e:55:84:38:6b:42:bb
+2017-09-29 18:29:39	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:29:39	*status	|        Issuer: C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G2
+2017-09-29 18:29:39	*status	|        Validity
+2017-09-29 18:29:39	*status	|            Not Before: Jul  3 17:24:53 2014 GMT
+2017-09-29 18:29:39	*status	|            Not After : Jul  4 17:24:53 2015 GMT
+2017-09-29 18:29:39	*status	|        Subject: OU=Domain Control Validated, CN=*.uniweb.no
+2017-09-29 18:29:39	*status	|        Subject Public Key Info:
+2017-09-29 18:29:40	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:29:40	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:29:40	*status	|                Modulus:
+2017-09-29 18:29:40	*status	|                    00:f7:47:b8:5d:ec:75:31:7a:c7:58:d5:08:56:15:
+2017-09-29 18:29:40	*status	|                    09:0c:96:af:6a:ad:86:5d:9c:40:dc:19:02:2b:ad:
+2017-09-29 18:29:40	*status	|                    9a:57:88:c8:50:04:3f:aa:d8:a7:71:b4:ba:0c:f7:
+2017-09-29 18:29:40	*status	|                    30:a6:1a:ac:66:20:c2:3e:f5:10:1d:9f:b3:a2:f4:
+2017-09-29 18:29:40	*status	|                    75:12:2d:1b:42:1f:74:f9:29:d5:af:4e:bd:eb:c5:
+2017-09-29 18:29:40	*status	|                    17:78:f2:e3:08:0d:40:1e:b5:8d:65:12:7b:11:3f:
+2017-09-29 18:29:40	*status	|                    61:a0:07:eb:03:ab:db:44:5f:1e:e0:ed:a9:cf:1f:
+2017-09-29 18:29:40	*status	|                    54:45:df:29:e1:c7:08:d4:56:8d:3e:c2:d1:e0:fb:
+2017-09-29 18:29:40	*status	|                    f1:d6:c1:7b:f0:31:e7:c1:4a:33:20:dc:4f:89:89:
+2017-09-29 18:29:40	*status	|                    8d:b9:04:c5:f1:5c:97:d0:75:c9:32:5c:bb:02:69:
+2017-09-29 18:29:40	*status	|                    32:0f:22:6d:4e:7b:bb:ae:64:55:db:82:c5:5c:44:
+2017-09-29 18:29:40	*status	|                    43:62:e4:e3:07:9f:72:50:62:30:ec:6c:2c:a4:09:
+2017-09-29 18:29:40	*status	|                    de:a0:22:00:cc:af:ef:19:a2:2c:99:99:e1:1e:fa:
+2017-09-29 18:29:41	*status	|                    46:aa:20:35:27:7a:32:ad:67:26:2d:31:56:a7:d4:
+2017-09-29 18:29:41	*status	|                    da:ab:14:46:6f:e3:fd:88:8f:c1:d8:d4:98:1e:c0:
+2017-09-29 18:29:41	*status	|                    51:e2:2e:93:e3:24:05:db:fe:ad:4c:16:bc:49:c2:
+2017-09-29 18:29:41	*status	|                    a7:41:36:de:9b:73:01:c6:89:15:bd:76:6b:95:f3:
+2017-09-29 18:29:41	*status	|                    26:8b
+2017-09-29 18:29:42	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:29:42	*status	|        X509v3 extensions:
+2017-09-29 18:29:42	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:29:42	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:29:42	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:29:42	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:29:42	*status	|                  CPS: https://www.globalsign.com/repository/
+2017-09-29 18:29:43	*status	|
+2017-09-29 18:29:43	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:29:43	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:29:43	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:29:43	*status	|                CA:FALSE
+2017-09-29 18:29:43	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:29:44	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:29:44	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:29:44	*status	|
+2017-09-29 18:29:44	*status	|                Full Name:
+2017-09-29 18:29:44	*status	|                  URI:http://crl2.alphassl.com/gs/gsalphasha2g2.crl
+2017-09-29 18:29:45	*status	|
+2017-09-29 18:29:45	*status	|            Authority Information Access: 
+2017-09-29 18:29:45	*status	|                CA Issuers - URI:http://secure2.alphassl.com/cacert/gsalphasha2g2r1.crt
+2017-09-29 18:29:45	*status	|                OCSP - URI:http://ocsp2.globalsign.com/gsalphasha2g2
+2017-09-29 18:29:45	*status	|
+2017-09-29 18:29:45	*status	|            X509v3 Subject Key Identifier: 
+2017-09-29 18:29:46	*status	|                52:50:AD:09:0D:0D:84:0B:40:7D:F8:B9:79:F8:6A:C0:8C:8C:69:F7
+2017-09-29 18:29:46	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:29:46	*status	|                keyid:F5:CD:D5:3C:08:50:F9:6A:4F:3A:B7:97:DA:56:83:E6:69:D2:68:F7
+2017-09-29 18:29:46	*status	|
+2017-09-29 18:29:46	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:29:46	*status	|         2a:dd:a8:74:cb:63:91:0e:0a:dd:53:7e:02:76:79:8e:a4:e5:
+2017-09-29 18:29:47	*status	|         5c:14:55:12:a4:28:8a:6a:49:ce:dd:1b:47:e3:fa:05:fd:6a:
+2017-09-29 18:29:47	*status	|         8e:60:c2:36:b1:64:11:33:75:69:06:39:8b:7d:09:3a:1c:bd:
+2017-09-29 18:29:47	*status	|         18:5f:6e:60:7d:3b:3e:bc:27:b0:1e:67:e3:5e:0c:13:3b:77:
+2017-09-29 18:29:47	*status	|         a6:b0:34:2d:dc:64:7d:25:4e:7e:87:79:de:71:9a:f1:34:68:
+2017-09-29 18:29:47	*status	|         da:14:f2:b3:a8:21:1a:bc:56:af:18:c5:35:d9:d7:88:c5:6a:
+2017-09-29 18:29:48	*status	|         67:15:b6:1b:46:72:13:79:23:72:e3:96:c3:7f:9e:e0:ff:f5:
+2017-09-29 18:29:48	*status	|         52:d9:21:d0:42:49:ed:23:4d:0e:f1:3c:76:59:3a:ee:51:bc:
+2017-09-29 18:29:48	*status	|         80:75:26:8d:5d:62:a1:87:4a:68:36:48:14:4c:b4:06:d2:20:
+2017-09-29 18:29:48	*status	|         3b:17:38:72:61:c8:1a:8b:69:43:a0:6a:1d:47:cb:59:23:38:
+2017-09-29 18:29:48	*status	|         a8:53:92:98:9d:0f:9d:06:ce:3f:f6:21:66:c7:32:14:33:30:
+2017-09-29 18:29:48	*status	|         09:6d:24:61:b6:8e:cf:61:90:7f:11:d2:86:46:e5:14:a1:f3:
+2017-09-29 18:29:49	*status	|         fc:4a:0c:53:44:ec:b8:41:ea:7a:48:10:7e:f6:95:4b:14:6c:
+2017-09-29 18:29:49	*status	|         ca:55:36:d6:d9:71:ac:6e:58:1f:2e:84:56:13:2c:cd:13:25:
+2017-09-29 18:29:49	*status	|         04:81:90:0f
+2017-09-29 18:29:49	*status	SHA1: 50:03:ae:6a:af:33:5b:7d:61:09:71:fa:4e:a2:c1:03:f9:d6:e4:97
+2017-09-29 18:29:49	*status	SHA-256: 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:29:49	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:29:50	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:30:09	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:30:09	*status	|Certificate:
+2017-09-29 18:30:09	*status	|    Data:
+2017-09-29 18:30:09	*status	|        Version: 3 (0x2)
+2017-09-29 18:30:09	*status	|        Serial Number:
+2017-09-29 18:30:09	*status	|            11:21:9d:90:34:ae:a7:bc:94:c2:f6:9e:55:84:38:6b:42:bb
+2017-09-29 18:30:09	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:30:09	*status	|        Issuer: C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G2
+2017-09-29 18:30:09	*status	|        Validity
+2017-09-29 18:30:10	*status	|            Not Before: Jul  3 17:24:53 2014 GMT
+2017-09-29 18:30:10	*status	|            Not After : Jul  4 17:24:53 2015 GMT
+2017-09-29 18:30:10	*status	|        Subject: OU=Domain Control Validated, CN=*.uniweb.no
+2017-09-29 18:30:10	*status	|        Subject Public Key Info:
+2017-09-29 18:30:10	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:30:10	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:30:10	*status	|                Modulus:
+2017-09-29 18:30:10	*status	|                    00:f7:47:b8:5d:ec:75:31:7a:c7:58:d5:08:56:15:
+2017-09-29 18:30:10	*status	|                    09:0c:96:af:6a:ad:86:5d:9c:40:dc:19:02:2b:ad:
+2017-09-29 18:30:10	*status	|                    9a:57:88:c8:50:04:3f:aa:d8:a7:71:b4:ba:0c:f7:
+2017-09-29 18:30:10	*status	|                    30:a6:1a:ac:66:20:c2:3e:f5:10:1d:9f:b3:a2:f4:
+2017-09-29 18:30:10	*status	|                    75:12:2d:1b:42:1f:74:f9:29:d5:af:4e:bd:eb:c5:
+2017-09-29 18:30:10	*status	|                    17:78:f2:e3:08:0d:40:1e:b5:8d:65:12:7b:11:3f:
+2017-09-29 18:30:10	*status	|                    61:a0:07:eb:03:ab:db:44:5f:1e:e0:ed:a9:cf:1f:
+2017-09-29 18:30:10	*status	|                    54:45:df:29:e1:c7:08:d4:56:8d:3e:c2:d1:e0:fb:
+2017-09-29 18:30:10	*status	|                    f1:d6:c1:7b:f0:31:e7:c1:4a:33:20:dc:4f:89:89:
+2017-09-29 18:30:10	*status	|                    8d:b9:04:c5:f1:5c:97:d0:75:c9:32:5c:bb:02:69:
+2017-09-29 18:30:10	*status	|                    32:0f:22:6d:4e:7b:bb:ae:64:55:db:82:c5:5c:44:
+2017-09-29 18:30:10	*status	|                    43:62:e4:e3:07:9f:72:50:62:30:ec:6c:2c:a4:09:
+2017-09-29 18:30:11	*status	|                    de:a0:22:00:cc:af:ef:19:a2:2c:99:99:e1:1e:fa:
+2017-09-29 18:30:11	*status	|                    46:aa:20:35:27:7a:32:ad:67:26:2d:31:56:a7:d4:
+2017-09-29 18:30:11	*status	|                    da:ab:14:46:6f:e3:fd:88:8f:c1:d8:d4:98:1e:c0:
+2017-09-29 18:30:11	*status	|                    51:e2:2e:93:e3:24:05:db:fe:ad:4c:16:bc:49:c2:
+2017-09-29 18:30:11	*status	|                    a7:41:36:de:9b:73:01:c6:89:15:bd:76:6b:95:f3:
+2017-09-29 18:30:12	*status	|                    26:8b
+2017-09-29 18:30:12	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:30:12	*status	|        X509v3 extensions:
+2017-09-29 18:30:12	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:30:12	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:30:12	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:30:13	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:30:13	*status	|                  CPS: https://www.globalsign.com/repository/
+2017-09-29 18:30:13	*status	|
+2017-09-29 18:30:13	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:30:13	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:30:13	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:30:14	*status	|                CA:FALSE
+2017-09-29 18:30:14	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:30:14	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:30:14	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:30:14	*status	|
+2017-09-29 18:30:14	*status	|                Full Name:
+2017-09-29 18:30:15	*status	|                  URI:http://crl2.alphassl.com/gs/gsalphasha2g2.crl
+2017-09-29 18:30:15	*status	|
+2017-09-29 18:30:15	*status	|            Authority Information Access: 
+2017-09-29 18:30:15	*status	|                CA Issuers - URI:http://secure2.alphassl.com/cacert/gsalphasha2g2r1.crt
+2017-09-29 18:30:15	*status	|                OCSP - URI:http://ocsp2.globalsign.com/gsalphasha2g2
+2017-09-29 18:30:15	*status	|
+2017-09-29 18:30:16	*status	|            X509v3 Subject Key Identifier: 
+2017-09-29 18:30:16	*status	|                52:50:AD:09:0D:0D:84:0B:40:7D:F8:B9:79:F8:6A:C0:8C:8C:69:F7
+2017-09-29 18:30:16	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:30:16	*status	|                keyid:F5:CD:D5:3C:08:50:F9:6A:4F:3A:B7:97:DA:56:83:E6:69:D2:68:F7
+2017-09-29 18:30:16	*status	|
+2017-09-29 18:30:17	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:30:17	*status	|         2a:dd:a8:74:cb:63:91:0e:0a:dd:53:7e:02:76:79:8e:a4:e5:
+2017-09-29 18:30:17	*status	|         5c:14:55:12:a4:28:8a:6a:49:ce:dd:1b:47:e3:fa:05:fd:6a:
+2017-09-29 18:30:17	*status	|         8e:60:c2:36:b1:64:11:33:75:69:06:39:8b:7d:09:3a:1c:bd:
+2017-09-29 18:30:17	*status	|         18:5f:6e:60:7d:3b:3e:bc:27:b0:1e:67:e3:5e:0c:13:3b:77:
+2017-09-29 18:30:17	*status	|         a6:b0:34:2d:dc:64:7d:25:4e:7e:87:79:de:71:9a:f1:34:68:
+2017-09-29 18:30:18	*status	|         da:14:f2:b3:a8:21:1a:bc:56:af:18:c5:35:d9:d7:88:c5:6a:
+2017-09-29 18:30:18	*status	|         67:15:b6:1b:46:72:13:79:23:72:e3:96:c3:7f:9e:e0:ff:f5:
+2017-09-29 18:30:18	*status	|         52:d9:21:d0:42:49:ed:23:4d:0e:f1:3c:76:59:3a:ee:51:bc:
+2017-09-29 18:30:18	*status	|         80:75:26:8d:5d:62:a1:87:4a:68:36:48:14:4c:b4:06:d2:20:
+2017-09-29 18:30:18	*status	|         3b:17:38:72:61:c8:1a:8b:69:43:a0:6a:1d:47:cb:59:23:38:
+2017-09-29 18:30:18	*status	|         a8:53:92:98:9d:0f:9d:06:ce:3f:f6:21:66:c7:32:14:33:30:
+2017-09-29 18:30:18	*status	|         09:6d:24:61:b6:8e:cf:61:90:7f:11:d2:86:46:e5:14:a1:f3:
+2017-09-29 18:30:18	*status	|         fc:4a:0c:53:44:ec:b8:41:ea:7a:48:10:7e:f6:95:4b:14:6c:
+2017-09-29 18:30:18	*status	|         ca:55:36:d6:d9:71:ac:6e:58:1f:2e:84:56:13:2c:cd:13:25:
+2017-09-29 18:30:18	*status	|         04:81:90:0f
+2017-09-29 18:30:18	*status	SHA1: 50:03:ae:6a:af:33:5b:7d:61:09:71:fa:4e:a2:c1:03:f9:d6:e4:97
+2017-09-29 18:30:18	*status	SHA-256: 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:30:18	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:30:18	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:30:40	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:30:40	*status	|Certificate:
+2017-09-29 18:30:40	*status	|    Data:
+2017-09-29 18:30:40	*status	|        Version: 3 (0x2)
+2017-09-29 18:30:40	*status	|        Serial Number:
+2017-09-29 18:30:40	*status	|            11:21:9d:90:34:ae:a7:bc:94:c2:f6:9e:55:84:38:6b:42:bb
+2017-09-29 18:30:40	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:30:40	*status	|        Issuer: C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G2
+2017-09-29 18:30:40	*status	|        Validity
+2017-09-29 18:30:40	*status	|            Not Before: Jul  3 17:24:53 2014 GMT
+2017-09-29 18:30:40	*status	|            Not After : Jul  4 17:24:53 2015 GMT
+2017-09-29 18:30:40	*status	|        Subject: OU=Domain Control Validated, CN=*.uniweb.no
+2017-09-29 18:30:40	*status	|        Subject Public Key Info:
+2017-09-29 18:30:40	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:30:40	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:30:40	*status	|                Modulus:
+2017-09-29 18:30:40	*status	|                    00:f7:47:b8:5d:ec:75:31:7a:c7:58:d5:08:56:15:
+2017-09-29 18:30:40	*status	|                    09:0c:96:af:6a:ad:86:5d:9c:40:dc:19:02:2b:ad:
+2017-09-29 18:30:40	*status	|                    9a:57:88:c8:50:04:3f:aa:d8:a7:71:b4:ba:0c:f7:
+2017-09-29 18:30:40	*status	|                    30:a6:1a:ac:66:20:c2:3e:f5:10:1d:9f:b3:a2:f4:
+2017-09-29 18:30:40	*status	|                    75:12:2d:1b:42:1f:74:f9:29:d5:af:4e:bd:eb:c5:
+2017-09-29 18:30:40	*status	|                    17:78:f2:e3:08:0d:40:1e:b5:8d:65:12:7b:11:3f:
+2017-09-29 18:30:40	*status	|                    61:a0:07:eb:03:ab:db:44:5f:1e:e0:ed:a9:cf:1f:
+2017-09-29 18:30:40	*status	|                    54:45:df:29:e1:c7:08:d4:56:8d:3e:c2:d1:e0:fb:
+2017-09-29 18:30:40	*status	|                    f1:d6:c1:7b:f0:31:e7:c1:4a:33:20:dc:4f:89:89:
+2017-09-29 18:30:40	*status	|                    8d:b9:04:c5:f1:5c:97:d0:75:c9:32:5c:bb:02:69:
+2017-09-29 18:30:40	*status	|                    32:0f:22:6d:4e:7b:bb:ae:64:55:db:82:c5:5c:44:
+2017-09-29 18:30:40	*status	|                    43:62:e4:e3:07:9f:72:50:62:30:ec:6c:2c:a4:09:
+2017-09-29 18:30:41	*status	|                    de:a0:22:00:cc:af:ef:19:a2:2c:99:99:e1:1e:fa:
+2017-09-29 18:30:41	*status	|                    46:aa:20:35:27:7a:32:ad:67:26:2d:31:56:a7:d4:
+2017-09-29 18:30:41	*status	|                    da:ab:14:46:6f:e3:fd:88:8f:c1:d8:d4:98:1e:c0:
+2017-09-29 18:30:41	*status	|                    51:e2:2e:93:e3:24:05:db:fe:ad:4c:16:bc:49:c2:
+2017-09-29 18:30:41	*status	|                    a7:41:36:de:9b:73:01:c6:89:15:bd:76:6b:95:f3:
+2017-09-29 18:30:41	*status	|                    26:8b
+2017-09-29 18:30:41	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:30:41	*status	|        X509v3 extensions:
+2017-09-29 18:30:41	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:30:41	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:30:41	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:30:41	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:30:42	*status	|                  CPS: https://www.globalsign.com/repository/
+2017-09-29 18:30:42	*status	|
+2017-09-29 18:30:42	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:30:42	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:30:42	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:30:42	*status	|                CA:FALSE
+2017-09-29 18:30:42	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:30:42	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:30:42	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:30:42	*status	|
+2017-09-29 18:30:42	*status	|                Full Name:
+2017-09-29 18:30:43	*status	|                  URI:http://crl2.alphassl.com/gs/gsalphasha2g2.crl
+2017-09-29 18:30:43	*status	|
+2017-09-29 18:30:43	*status	|            Authority Information Access: 
+2017-09-29 18:30:43	*status	|                CA Issuers - URI:http://secure2.alphassl.com/cacert/gsalphasha2g2r1.crt
+2017-09-29 18:30:43	*status	|                OCSP - URI:http://ocsp2.globalsign.com/gsalphasha2g2
+2017-09-29 18:30:43	*status	|
+2017-09-29 18:30:43	*status	|            X509v3 Subject Key Identifier: 
+2017-09-29 18:30:43	*status	|                52:50:AD:09:0D:0D:84:0B:40:7D:F8:B9:79:F8:6A:C0:8C:8C:69:F7
+2017-09-29 18:30:43	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:30:43	*status	|                keyid:F5:CD:D5:3C:08:50:F9:6A:4F:3A:B7:97:DA:56:83:E6:69:D2:68:F7
+2017-09-29 18:30:43	*status	|
+2017-09-29 18:30:43	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:30:44	*status	|         2a:dd:a8:74:cb:63:91:0e:0a:dd:53:7e:02:76:79:8e:a4:e5:
+2017-09-29 18:30:44	*status	|         5c:14:55:12:a4:28:8a:6a:49:ce:dd:1b:47:e3:fa:05:fd:6a:
+2017-09-29 18:30:44	*status	|         8e:60:c2:36:b1:64:11:33:75:69:06:39:8b:7d:09:3a:1c:bd:
+2017-09-29 18:30:44	*status	|         18:5f:6e:60:7d:3b:3e:bc:27:b0:1e:67:e3:5e:0c:13:3b:77:
+2017-09-29 18:30:44	*status	|         a6:b0:34:2d:dc:64:7d:25:4e:7e:87:79:de:71:9a:f1:34:68:
+2017-09-29 18:30:44	*status	|         da:14:f2:b3:a8:21:1a:bc:56:af:18:c5:35:d9:d7:88:c5:6a:
+2017-09-29 18:30:44	*status	|         67:15:b6:1b:46:72:13:79:23:72:e3:96:c3:7f:9e:e0:ff:f5:
+2017-09-29 18:30:44	*status	|         52:d9:21:d0:42:49:ed:23:4d:0e:f1:3c:76:59:3a:ee:51:bc:
+2017-09-29 18:30:44	*status	|         80:75:26:8d:5d:62:a1:87:4a:68:36:48:14:4c:b4:06:d2:20:
+2017-09-29 18:30:44	*status	|         3b:17:38:72:61:c8:1a:8b:69:43:a0:6a:1d:47:cb:59:23:38:
+2017-09-29 18:30:44	*status	|         a8:53:92:98:9d:0f:9d:06:ce:3f:f6:21:66:c7:32:14:33:30:
+2017-09-29 18:30:45	*status	|         09:6d:24:61:b6:8e:cf:61:90:7f:11:d2:86:46:e5:14:a1:f3:
+2017-09-29 18:30:45	*status	|         fc:4a:0c:53:44:ec:b8:41:ea:7a:48:10:7e:f6:95:4b:14:6c:
+2017-09-29 18:30:45	*status	|         ca:55:36:d6:d9:71:ac:6e:58:1f:2e:84:56:13:2c:cd:13:25:
+2017-09-29 18:30:45	*status	|         04:81:90:0f
+2017-09-29 18:30:45	*status	SHA1: 50:03:ae:6a:af:33:5b:7d:61:09:71:fa:4e:a2:c1:03:f9:d6:e4:97
+2017-09-29 18:30:45	*status	SHA-256: 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:30:45	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 7d:5b:b0:3f:61:95:de:7e:c5:73:96:50:03:bd:df:74:2d:70:23:f4:b1:dc:af:e0:02:a0:e2:ac:62:dd:64:d8
+2017-09-29 18:30:45	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:30:51	--	irc: disconnected from server
+2017-09-29 18:43:17	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:43:17	*status	|Certificate:
+2017-09-29 18:43:17	*status	|    Data:
+2017-09-29 18:43:17	*status	|        Version: 3 (0x2)
+2017-09-29 18:43:17	*status	|        Serial Number:
+2017-09-29 18:43:17	*status	|            62:02:8d:27:48:08:98:00:b8:38:a9:19:65:26:b8:d5
+2017-09-29 18:43:17	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:43:17	*status	|        Issuer: C=US, O=GeoTrust Inc., CN=RapidSSL SHA256 CA
+2017-09-29 18:43:17	*status	|        Validity
+2017-09-29 18:43:17	*status	|            Not Before: Apr  1 00:00:00 2016 GMT
+2017-09-29 18:43:17	*status	|            Not After : Apr  1 23:59:59 2018 GMT
+2017-09-29 18:43:17	*status	|        Subject: CN=*.uniweb.no
+2017-09-29 18:43:17	*status	|        Subject Public Key Info:
+2017-09-29 18:43:17	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:43:17	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:43:17	*status	|                Modulus:
+2017-09-29 18:43:17	*status	|                    00:da:cf:eb:fd:a4:0c:38:1e:7d:82:df:f9:bc:34:
+2017-09-29 18:43:17	*status	|                    ed:ee:69:78:fa:fa:9c:35:10:71:e0:2e:19:f4:eb:
+2017-09-29 18:43:17	*status	|                    20:16:b3:d7:f7:64:c7:f1:a1:b3:e8:c1:a6:b8:f4:
+2017-09-29 18:43:17	*status	|                    50:17:8b:de:91:87:f6:77:2c:71:03:96:b6:f6:ea:
+2017-09-29 18:43:17	*status	|                    25:cb:3f:6a:dc:6e:a0:69:65:9e:6f:d0:d7:72:41:
+2017-09-29 18:43:17	*status	|                    d2:9c:c6:c6:3a:4a:e2:55:b6:9a:02:04:b2:ec:b4:
+2017-09-29 18:43:17	*status	|                    8e:99:1c:23:5c:cd:5f:da:33:a2:6a:78:3d:aa:98:
+2017-09-29 18:43:17	*status	|                    2b:d1:89:ba:4e:fd:45:23:99:f0:20:2c:23:fe:6e:
+2017-09-29 18:43:18	*status	|                    af:7b:02:31:4f:a2:ff:40:e3:a8:9e:e2:3e:0a:12:
+2017-09-29 18:43:18	*status	|                    65:a4:ac:e9:eb:ef:a7:bd:8b:2b:97:46:7b:bc:13:
+2017-09-29 18:43:18	*status	|                    89:6a:e8:49:6b:17:b7:df:36:98:25:57:e3:52:10:
+2017-09-29 18:43:18	*status	|                    f5:66:5b:b1:22:30:00:0e:80:00:31:a3:31:14:dd:
+2017-09-29 18:43:18	*status	|                    fa:a4:2a:ef:02:8d:d8:08:5c:8a:cc:c9:fb:c2:b6:
+2017-09-29 18:43:18	*status	|                    ae:e1:de:24:e4:86:2c:ae:10:68:1b:6c:3e:ca:e9:
+2017-09-29 18:43:18	*status	|                    68:97:01:4d:38:dc:85:3c:60:df:29:3a:1d:4c:4d:
+2017-09-29 18:43:18	*status	|                    ea:20:50:89:19:a0:40:42:81:12:54:9f:86:d1:f2:
+2017-09-29 18:43:18	*status	|                    8d:33:f2:61:1b:21:b7:05:a8:ac:4a:d8:dc:94:cd:
+2017-09-29 18:43:18	*status	|                    39:e1
+2017-09-29 18:43:18	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:43:18	*status	|        X509v3 extensions:
+2017-09-29 18:43:18	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:43:18	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:43:18	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:43:18	*status	|                CA:FALSE
+2017-09-29 18:43:18	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:43:18	*status	|
+2017-09-29 18:43:18	*status	|                Full Name:
+2017-09-29 18:43:18	*status	|                  URI:http://gp.symcb.com/gp.crl
+2017-09-29 18:43:18	*status	|
+2017-09-29 18:43:18	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:43:18	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:43:19	*status	|                  CPS: https://www.rapidssl.com/legal
+2017-09-29 18:43:19	*status	|                  User Notice:
+2017-09-29 18:43:19	*status	|                    Explicit Text: https://www.rapidssl.com/legal
+2017-09-29 18:43:19	*status	|
+2017-09-29 18:43:19	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:43:19	*status	|                keyid:97:C2:27:50:9E:C2:C9:EC:0C:88:32:C8:7C:AD:E2:A6:01:4F:DA:6F
+2017-09-29 18:43:19	*status	|
+2017-09-29 18:43:19	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:43:19	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:43:19	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:43:20	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:43:20	*status	|            Authority Information Access: 
+2017-09-29 18:43:20	*status	|                OCSP - URI:http://gp.symcd.com
+2017-09-29 18:43:20	*status	|                CA Issuers - URI:http://gp.symcb.com/gp.crt
+2017-09-29 18:43:20	*status	|
+2017-09-29 18:43:20	*status	|            CT Precertificate SCTs: 
+2017-09-29 18:43:20	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:43:20	*status	|                    Version   : v1(0)
+2017-09-29 18:43:20	*status	|                    Log ID    : DD:EB:1D:2B:7A:0D:4F:A6:20:8B:81:AD:81:68:70:7E:
+2017-09-29 18:43:20	*status	|                                2E:8E:9D:01:D5:5C:88:8D:3D:11:C4:CD:B6:EC:BE:CC
+2017-09-29 18:43:20	*status	|                    Timestamp : Apr  1 07:35:34.114 2016 GMT
+2017-09-29 18:43:21	*status	|                    Extensions: none
+2017-09-29 18:43:21	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:43:21	*status	|                                30:44:02:20:6B:30:2F:17:1A:3E:2C:6D:08:C9:71:03:
+2017-09-29 18:43:21	*status	|                                76:84:0D:62:B1:2A:71:36:B7:C5:54:94:8C:18:54:E3:
+2017-09-29 18:43:21	*status	|                                D9:26:2B:A1:02:20:21:E8:4A:44:9A:41:2A:8C:53:3B:
+2017-09-29 18:43:21	*status	|                                8A:46:6C:41:D3:10:A4:80:CB:A4:2F:F6:F0:6B:00:56:
+2017-09-29 18:43:21	*status	|                                76:66:60:65:FA:72
+2017-09-29 18:43:21	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:43:21	*status	|                    Version   : v1(0)
+2017-09-29 18:43:21	*status	|                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:
+2017-09-29 18:43:22	*status	|                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10
+2017-09-29 18:43:22	*status	|                    Timestamp : Apr  1 07:35:34.159 2016 GMT
+2017-09-29 18:43:22	*status	|                    Extensions: none
+2017-09-29 18:43:22	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:43:22	*status	|                                30:46:02:21:00:AE:1B:4A:68:4A:76:4F:13:AE:B6:5B:
+2017-09-29 18:43:22	*status	|                                7C:04:C3:80:E4:A4:13:16:9E:8F:2E:B3:97:24:0C:07:
+2017-09-29 18:43:22	*status	|                                A9:27:A3:7C:15:02:21:00:96:3A:27:2E:4A:35:6D:96:
+2017-09-29 18:43:22	*status	|                                32:8C:4F:52:68:FD:89:6A:BF:23:92:F5:53:BB:3C:AF:
+2017-09-29 18:43:22	*status	|                                09:9F:9E:A8:B1:75:09:6F
+2017-09-29 18:43:22	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:43:23	*status	|                    Version   : v1(0)
+2017-09-29 18:43:23	*status	|                    Log ID    : 68:F6:98:F8:1F:64:82:BE:3A:8C:EE:B9:28:1D:4C:FC:
+2017-09-29 18:43:23	*status	|                                71:51:5D:67:93:D4:44:D1:0A:67:AC:BB:4F:4F:FB:C4
+2017-09-29 18:43:23	*status	|                    Timestamp : Apr  1 07:35:34.156 2016 GMT
+2017-09-29 18:43:23	*status	|                    Extensions: none
+2017-09-29 18:43:23	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:43:23	*status	|                                30:45:02:21:00:8B:47:03:61:70:40:85:54:6C:83:8F:
+2017-09-29 18:43:23	*status	|                                A7:B3:8B:B1:5A:A7:24:89:77:E1:7E:8E:AA:D2:D9:17:
+2017-09-29 18:43:23	*status	|                                60:85:A1:6D:84:02:20:49:77:09:5C:70:C9:59:96:D0:
+2017-09-29 18:43:23	*status	|                                AE:0E:7C:1C:EB:4D:7A:0D:D1:C0:4D:44:8D:7A:96:86:
+2017-09-29 18:43:24	*status	|                                EF:00:E3:4E:00:36:46
+2017-09-29 18:43:24	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:43:24	*status	|         b7:08:81:d4:23:af:04:ec:b7:23:39:1e:8f:1a:56:c2:d1:c0:
+2017-09-29 18:43:24	*status	|         e3:a5:42:c7:8d:66:c2:64:ad:43:70:fd:55:1e:71:7a:ca:32:
+2017-09-29 18:43:24	*status	|         88:83:b6:d6:f4:8e:79:13:9b:d7:9a:5a:fb:a9:65:31:cc:fc:
+2017-09-29 18:43:24	*status	|         28:9c:ef:6b:66:66:6c:db:8a:30:b7:09:10:32:80:d1:1f:d3:
+2017-09-29 18:43:24	*status	|         a5:c6:7d:fe:97:77:5e:9a:1d:af:a8:08:dc:3c:69:fb:1a:c3:
+2017-09-29 18:43:24	*status	|         20:6f:5c:fa:73:e2:3e:35:32:3d:fb:23:d9:e4:93:81:3e:69:
+2017-09-29 18:43:24	*status	|         5b:42:03:00:87:fb:45:8a:c0:f0:93:f4:90:58:fa:a3:4b:5a:
+2017-09-29 18:43:25	*status	|         5b:8d:5e:9b:a4:39:0c:6c:8f:cd:f2:86:b0:76:b5:99:22:5f:
+2017-09-29 18:43:25	*status	|         73:57:6a:0c:47:4c:72:4c:4f:11:df:e6:d7:4a:28:2a:46:33:
+2017-09-29 18:43:25	*status	|         fd:10:9a:aa:6d:14:f4:b1:71:fc:b8:20:63:ba:d5:c9:ea:fa:
+2017-09-29 18:43:25	*status	|         5c:15:a2:d9:d2:34:59:4a:4d:78:54:02:c3:8c:0c:b6:0d:dd:
+2017-09-29 18:43:25	*status	|         58:8b:34:2a:cf:57:f2:02:49:16:95:22:51:98:4e:5c:52:53:
+2017-09-29 18:43:25	*status	|         df:53:c8:d0:5b:2f:8b:11:3e:8c:7a:f6:73:0b:8a:86:a5:ea:
+2017-09-29 18:43:25	*status	|         d3:8e:da:ef:63:66:94:00:65:ef:f9:61:d4:95:3e:87:f7:3a:
+2017-09-29 18:43:25	*status	|         71:9f:c9:df
+2017-09-29 18:43:25	*status	SHA1: b4:4f:3d:3d:86:17:76:61:75:55:84:16:8c:c4:78:61:e6:a9:22:48
+2017-09-29 18:43:25	*status	SHA-256: 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:43:26	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:43:26	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:43:47	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:43:47	*status	|Certificate:
+2017-09-29 18:43:47	*status	|    Data:
+2017-09-29 18:43:47	*status	|        Version: 3 (0x2)
+2017-09-29 18:43:47	*status	|        Serial Number:
+2017-09-29 18:43:47	*status	|            62:02:8d:27:48:08:98:00:b8:38:a9:19:65:26:b8:d5
+2017-09-29 18:43:47	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:43:47	*status	|        Issuer: C=US, O=GeoTrust Inc., CN=RapidSSL SHA256 CA
+2017-09-29 18:43:47	*status	|        Validity
+2017-09-29 18:43:47	*status	|            Not Before: Apr  1 00:00:00 2016 GMT
+2017-09-29 18:43:47	*status	|            Not After : Apr  1 23:59:59 2018 GMT
+2017-09-29 18:43:47	*status	|        Subject: CN=*.uniweb.no
+2017-09-29 18:43:47	*status	|        Subject Public Key Info:
+2017-09-29 18:43:47	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:43:47	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:43:47	*status	|                Modulus:
+2017-09-29 18:43:48	*status	|                    00:da:cf:eb:fd:a4:0c:38:1e:7d:82:df:f9:bc:34:
+2017-09-29 18:43:48	*status	|                    ed:ee:69:78:fa:fa:9c:35:10:71:e0:2e:19:f4:eb:
+2017-09-29 18:43:48	*status	|                    20:16:b3:d7:f7:64:c7:f1:a1:b3:e8:c1:a6:b8:f4:
+2017-09-29 18:43:48	*status	|                    50:17:8b:de:91:87:f6:77:2c:71:03:96:b6:f6:ea:
+2017-09-29 18:43:48	*status	|                    25:cb:3f:6a:dc:6e:a0:69:65:9e:6f:d0:d7:72:41:
+2017-09-29 18:43:48	*status	|                    d2:9c:c6:c6:3a:4a:e2:55:b6:9a:02:04:b2:ec:b4:
+2017-09-29 18:43:48	*status	|                    8e:99:1c:23:5c:cd:5f:da:33:a2:6a:78:3d:aa:98:
+2017-09-29 18:43:48	*status	|                    2b:d1:89:ba:4e:fd:45:23:99:f0:20:2c:23:fe:6e:
+2017-09-29 18:43:48	*status	|                    af:7b:02:31:4f:a2:ff:40:e3:a8:9e:e2:3e:0a:12:
+2017-09-29 18:43:48	*status	|                    65:a4:ac:e9:eb:ef:a7:bd:8b:2b:97:46:7b:bc:13:
+2017-09-29 18:43:48	*status	|                    89:6a:e8:49:6b:17:b7:df:36:98:25:57:e3:52:10:
+2017-09-29 18:43:48	*status	|                    f5:66:5b:b1:22:30:00:0e:80:00:31:a3:31:14:dd:
+2017-09-29 18:43:48	*status	|                    fa:a4:2a:ef:02:8d:d8:08:5c:8a:cc:c9:fb:c2:b6:
+2017-09-29 18:43:48	*status	|                    ae:e1:de:24:e4:86:2c:ae:10:68:1b:6c:3e:ca:e9:
+2017-09-29 18:43:48	*status	|                    68:97:01:4d:38:dc:85:3c:60:df:29:3a:1d:4c:4d:
+2017-09-29 18:43:48	*status	|                    ea:20:50:89:19:a0:40:42:81:12:54:9f:86:d1:f2:
+2017-09-29 18:43:48	*status	|                    8d:33:f2:61:1b:21:b7:05:a8:ac:4a:d8:dc:94:cd:
+2017-09-29 18:43:48	*status	|                    39:e1
+2017-09-29 18:43:48	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:43:48	*status	|        X509v3 extensions:
+2017-09-29 18:43:48	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:43:49	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:43:49	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:43:49	*status	|                CA:FALSE
+2017-09-29 18:43:49	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:43:49	*status	|
+2017-09-29 18:43:49	*status	|                Full Name:
+2017-09-29 18:43:49	*status	|                  URI:http://gp.symcb.com/gp.crl
+2017-09-29 18:43:49	*status	|
+2017-09-29 18:43:49	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:43:49	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:43:49	*status	|                  CPS: https://www.rapidssl.com/legal
+2017-09-29 18:43:50	*status	|                  User Notice:
+2017-09-29 18:43:50	*status	|                    Explicit Text: https://www.rapidssl.com/legal
+2017-09-29 18:43:50	*status	|
+2017-09-29 18:43:50	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:43:50	*status	|                keyid:97:C2:27:50:9E:C2:C9:EC:0C:88:32:C8:7C:AD:E2:A6:01:4F:DA:6F
+2017-09-29 18:43:50	*status	|
+2017-09-29 18:43:51	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:43:51	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:43:51	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:43:51	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:43:51	*status	|            Authority Information Access: 
+2017-09-29 18:43:51	*status	|                OCSP - URI:http://gp.symcd.com
+2017-09-29 18:43:52	*status	|                CA Issuers - URI:http://gp.symcb.com/gp.crt
+2017-09-29 18:43:52	*status	|
+2017-09-29 18:43:52	*status	|            CT Precertificate SCTs: 
+2017-09-29 18:43:52	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:43:52	*status	|                    Version   : v1(0)
+2017-09-29 18:43:52	*status	|                    Log ID    : DD:EB:1D:2B:7A:0D:4F:A6:20:8B:81:AD:81:68:70:7E:
+2017-09-29 18:43:53	*status	|                                2E:8E:9D:01:D5:5C:88:8D:3D:11:C4:CD:B6:EC:BE:CC
+2017-09-29 18:43:53	*status	|                    Timestamp : Apr  1 07:35:34.114 2016 GMT
+2017-09-29 18:43:53	*status	|                    Extensions: none
+2017-09-29 18:43:53	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:43:53	*status	|                                30:44:02:20:6B:30:2F:17:1A:3E:2C:6D:08:C9:71:03:
+2017-09-29 18:43:53	*status	|                                76:84:0D:62:B1:2A:71:36:B7:C5:54:94:8C:18:54:E3:
+2017-09-29 18:43:54	*status	|                                D9:26:2B:A1:02:20:21:E8:4A:44:9A:41:2A:8C:53:3B:
+2017-09-29 18:43:54	*status	|                                8A:46:6C:41:D3:10:A4:80:CB:A4:2F:F6:F0:6B:00:56:
+2017-09-29 18:43:55	*status	|                                76:66:60:65:FA:72
+2017-09-29 18:43:55	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:43:55	*status	|                    Version   : v1(0)
+2017-09-29 18:43:55	*status	|                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:
+2017-09-29 18:43:55	*status	|                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10
+2017-09-29 18:43:55	*status	|                    Timestamp : Apr  1 07:35:34.159 2016 GMT
+2017-09-29 18:43:55	*status	|                    Extensions: none
+2017-09-29 18:43:55	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:43:55	*status	|                                30:46:02:21:00:AE:1B:4A:68:4A:76:4F:13:AE:B6:5B:
+2017-09-29 18:43:55	*status	|                                7C:04:C3:80:E4:A4:13:16:9E:8F:2E:B3:97:24:0C:07:
+2017-09-29 18:43:55	*status	|                                A9:27:A3:7C:15:02:21:00:96:3A:27:2E:4A:35:6D:96:
+2017-09-29 18:43:55	*status	|                                32:8C:4F:52:68:FD:89:6A:BF:23:92:F5:53:BB:3C:AF:
+2017-09-29 18:43:55	*status	|                                09:9F:9E:A8:B1:75:09:6F
+2017-09-29 18:43:55	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:43:56	*status	|                    Version   : v1(0)
+2017-09-29 18:43:56	*status	|                    Log ID    : 68:F6:98:F8:1F:64:82:BE:3A:8C:EE:B9:28:1D:4C:FC:
+2017-09-29 18:43:56	*status	|                                71:51:5D:67:93:D4:44:D1:0A:67:AC:BB:4F:4F:FB:C4
+2017-09-29 18:43:56	*status	|                    Timestamp : Apr  1 07:35:34.156 2016 GMT
+2017-09-29 18:43:56	*status	|                    Extensions: none
+2017-09-29 18:43:56	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:43:56	*status	|                                30:45:02:21:00:8B:47:03:61:70:40:85:54:6C:83:8F:
+2017-09-29 18:43:56	*status	|                                A7:B3:8B:B1:5A:A7:24:89:77:E1:7E:8E:AA:D2:D9:17:
+2017-09-29 18:43:56	*status	|                                60:85:A1:6D:84:02:20:49:77:09:5C:70:C9:59:96:D0:
+2017-09-29 18:43:56	*status	|                                AE:0E:7C:1C:EB:4D:7A:0D:D1:C0:4D:44:8D:7A:96:86:
+2017-09-29 18:43:56	*status	|                                EF:00:E3:4E:00:36:46
+2017-09-29 18:43:56	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:43:56	*status	|         b7:08:81:d4:23:af:04:ec:b7:23:39:1e:8f:1a:56:c2:d1:c0:
+2017-09-29 18:43:57	*status	|         e3:a5:42:c7:8d:66:c2:64:ad:43:70:fd:55:1e:71:7a:ca:32:
+2017-09-29 18:43:57	*status	|         88:83:b6:d6:f4:8e:79:13:9b:d7:9a:5a:fb:a9:65:31:cc:fc:
+2017-09-29 18:43:57	*status	|         28:9c:ef:6b:66:66:6c:db:8a:30:b7:09:10:32:80:d1:1f:d3:
+2017-09-29 18:43:57	*status	|         a5:c6:7d:fe:97:77:5e:9a:1d:af:a8:08:dc:3c:69:fb:1a:c3:
+2017-09-29 18:43:57	*status	|         20:6f:5c:fa:73:e2:3e:35:32:3d:fb:23:d9:e4:93:81:3e:69:
+2017-09-29 18:43:57	*status	|         5b:42:03:00:87:fb:45:8a:c0:f0:93:f4:90:58:fa:a3:4b:5a:
+2017-09-29 18:43:57	*status	|         5b:8d:5e:9b:a4:39:0c:6c:8f:cd:f2:86:b0:76:b5:99:22:5f:
+2017-09-29 18:43:57	*status	|         73:57:6a:0c:47:4c:72:4c:4f:11:df:e6:d7:4a:28:2a:46:33:
+2017-09-29 18:43:57	*status	|         fd:10:9a:aa:6d:14:f4:b1:71:fc:b8:20:63:ba:d5:c9:ea:fa:
+2017-09-29 18:43:57	*status	|         5c:15:a2:d9:d2:34:59:4a:4d:78:54:02:c3:8c:0c:b6:0d:dd:
+2017-09-29 18:43:58	*status	|         58:8b:34:2a:cf:57:f2:02:49:16:95:22:51:98:4e:5c:52:53:
+2017-09-29 18:43:58	*status	|         df:53:c8:d0:5b:2f:8b:11:3e:8c:7a:f6:73:0b:8a:86:a5:ea:
+2017-09-29 18:43:58	*status	|         d3:8e:da:ef:63:66:94:00:65:ef:f9:61:d4:95:3e:87:f7:3a:
+2017-09-29 18:43:58	*status	|         71:9f:c9:df
+2017-09-29 18:43:58	*status	SHA1: b4:4f:3d:3d:86:17:76:61:75:55:84:16:8c:c4:78:61:e6:a9:22:48
+2017-09-29 18:43:58	*status	SHA-256: 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:43:59	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:43:59	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:44:03	--	irc: disconnected from server
+2017-09-29 18:52:21	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:52:21	*status	|Certificate:
+2017-09-29 18:52:21	*status	|    Data:
+2017-09-29 18:52:21	*status	|        Version: 3 (0x2)
+2017-09-29 18:52:21	*status	|        Serial Number:
+2017-09-29 18:52:21	*status	|            62:02:8d:27:48:08:98:00:b8:38:a9:19:65:26:b8:d5
+2017-09-29 18:52:21	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:52:21	*status	|        Issuer: C=US, O=GeoTrust Inc., CN=RapidSSL SHA256 CA
+2017-09-29 18:52:21	*status	|        Validity
+2017-09-29 18:52:21	*status	|            Not Before: Apr  1 00:00:00 2016 GMT
+2017-09-29 18:52:21	*status	|            Not After : Apr  1 23:59:59 2018 GMT
+2017-09-29 18:52:21	*status	|        Subject: CN=*.uniweb.no
+2017-09-29 18:52:21	*status	|        Subject Public Key Info:
+2017-09-29 18:52:21	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:52:21	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:52:21	*status	|                Modulus:
+2017-09-29 18:52:21	*status	|                    00:da:cf:eb:fd:a4:0c:38:1e:7d:82:df:f9:bc:34:
+2017-09-29 18:52:21	*status	|                    ed:ee:69:78:fa:fa:9c:35:10:71:e0:2e:19:f4:eb:
+2017-09-29 18:52:21	*status	|                    20:16:b3:d7:f7:64:c7:f1:a1:b3:e8:c1:a6:b8:f4:
+2017-09-29 18:52:21	*status	|                    50:17:8b:de:91:87:f6:77:2c:71:03:96:b6:f6:ea:
+2017-09-29 18:52:21	*status	|                    25:cb:3f:6a:dc:6e:a0:69:65:9e:6f:d0:d7:72:41:
+2017-09-29 18:52:21	*status	|                    d2:9c:c6:c6:3a:4a:e2:55:b6:9a:02:04:b2:ec:b4:
+2017-09-29 18:52:21	*status	|                    8e:99:1c:23:5c:cd:5f:da:33:a2:6a:78:3d:aa:98:
+2017-09-29 18:52:21	*status	|                    2b:d1:89:ba:4e:fd:45:23:99:f0:20:2c:23:fe:6e:
+2017-09-29 18:52:21	*status	|                    af:7b:02:31:4f:a2:ff:40:e3:a8:9e:e2:3e:0a:12:
+2017-09-29 18:52:21	*status	|                    65:a4:ac:e9:eb:ef:a7:bd:8b:2b:97:46:7b:bc:13:
+2017-09-29 18:52:22	*status	|                    89:6a:e8:49:6b:17:b7:df:36:98:25:57:e3:52:10:
+2017-09-29 18:52:22	*status	|                    f5:66:5b:b1:22:30:00:0e:80:00:31:a3:31:14:dd:
+2017-09-29 18:52:22	*status	|                    fa:a4:2a:ef:02:8d:d8:08:5c:8a:cc:c9:fb:c2:b6:
+2017-09-29 18:52:22	*status	|                    ae:e1:de:24:e4:86:2c:ae:10:68:1b:6c:3e:ca:e9:
+2017-09-29 18:52:22	*status	|                    68:97:01:4d:38:dc:85:3c:60:df:29:3a:1d:4c:4d:
+2017-09-29 18:52:22	*status	|                    ea:20:50:89:19:a0:40:42:81:12:54:9f:86:d1:f2:
+2017-09-29 18:52:22	*status	|                    8d:33:f2:61:1b:21:b7:05:a8:ac:4a:d8:dc:94:cd:
+2017-09-29 18:52:22	*status	|                    39:e1
+2017-09-29 18:52:22	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:52:22	*status	|        X509v3 extensions:
+2017-09-29 18:52:22	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:52:22	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:52:22	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:52:23	*status	|                CA:FALSE
+2017-09-29 18:52:23	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:52:23	*status	|
+2017-09-29 18:52:23	*status	|                Full Name:
+2017-09-29 18:52:23	*status	|                  URI:http://gp.symcb.com/gp.crl
+2017-09-29 18:52:23	*status	|
+2017-09-29 18:52:23	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:52:23	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:52:23	*status	|                  CPS: https://www.rapidssl.com/legal
+2017-09-29 18:52:23	*status	|                  User Notice:
+2017-09-29 18:52:23	*status	|                    Explicit Text: https://www.rapidssl.com/legal
+2017-09-29 18:52:23	*status	|
+2017-09-29 18:52:23	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:52:23	*status	|                keyid:97:C2:27:50:9E:C2:C9:EC:0C:88:32:C8:7C:AD:E2:A6:01:4F:DA:6F
+2017-09-29 18:52:23	*status	|
+2017-09-29 18:52:23	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:52:23	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:52:23	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:52:23	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:52:23	*status	|            Authority Information Access: 
+2017-09-29 18:52:23	*status	|                OCSP - URI:http://gp.symcd.com
+2017-09-29 18:52:23	*status	|                CA Issuers - URI:http://gp.symcb.com/gp.crt
+2017-09-29 18:52:23	*status	|
+2017-09-29 18:52:23	*status	|            CT Precertificate SCTs: 
+2017-09-29 18:52:23	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:52:23	*status	|                    Version   : v1(0)
+2017-09-29 18:52:23	*status	|                    Log ID    : DD:EB:1D:2B:7A:0D:4F:A6:20:8B:81:AD:81:68:70:7E:
+2017-09-29 18:52:23	*status	|                                2E:8E:9D:01:D5:5C:88:8D:3D:11:C4:CD:B6:EC:BE:CC
+2017-09-29 18:52:23	*status	|                    Timestamp : Apr  1 07:35:34.114 2016 GMT
+2017-09-29 18:52:23	*status	|                    Extensions: none
+2017-09-29 18:52:23	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:52:23	*status	|                                30:44:02:20:6B:30:2F:17:1A:3E:2C:6D:08:C9:71:03:
+2017-09-29 18:52:23	*status	|                                76:84:0D:62:B1:2A:71:36:B7:C5:54:94:8C:18:54:E3:
+2017-09-29 18:52:23	*status	|                                D9:26:2B:A1:02:20:21:E8:4A:44:9A:41:2A:8C:53:3B:
+2017-09-29 18:52:24	*status	|                                8A:46:6C:41:D3:10:A4:80:CB:A4:2F:F6:F0:6B:00:56:
+2017-09-29 18:52:24	*status	|                                76:66:60:65:FA:72
+2017-09-29 18:52:24	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:52:24	*status	|                    Version   : v1(0)
+2017-09-29 18:52:24	*status	|                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:
+2017-09-29 18:52:24	*status	|                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10
+2017-09-29 18:52:24	*status	|                    Timestamp : Apr  1 07:35:34.159 2016 GMT
+2017-09-29 18:52:24	*status	|                    Extensions: none
+2017-09-29 18:52:24	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:52:24	*status	|                                30:46:02:21:00:AE:1B:4A:68:4A:76:4F:13:AE:B6:5B:
+2017-09-29 18:52:24	*status	|                                7C:04:C3:80:E4:A4:13:16:9E:8F:2E:B3:97:24:0C:07:
+2017-09-29 18:52:24	*status	|                                A9:27:A3:7C:15:02:21:00:96:3A:27:2E:4A:35:6D:96:
+2017-09-29 18:52:24	*status	|                                32:8C:4F:52:68:FD:89:6A:BF:23:92:F5:53:BB:3C:AF:
+2017-09-29 18:52:24	*status	|                                09:9F:9E:A8:B1:75:09:6F
+2017-09-29 18:52:25	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:52:25	*status	|                    Version   : v1(0)
+2017-09-29 18:52:25	*status	|                    Log ID    : 68:F6:98:F8:1F:64:82:BE:3A:8C:EE:B9:28:1D:4C:FC:
+2017-09-29 18:52:25	*status	|                                71:51:5D:67:93:D4:44:D1:0A:67:AC:BB:4F:4F:FB:C4
+2017-09-29 18:52:25	*status	|                    Timestamp : Apr  1 07:35:34.156 2016 GMT
+2017-09-29 18:52:25	*status	|                    Extensions: none
+2017-09-29 18:52:25	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:52:25	*status	|                                30:45:02:21:00:8B:47:03:61:70:40:85:54:6C:83:8F:
+2017-09-29 18:52:25	*status	|                                A7:B3:8B:B1:5A:A7:24:89:77:E1:7E:8E:AA:D2:D9:17:
+2017-09-29 18:52:25	*status	|                                60:85:A1:6D:84:02:20:49:77:09:5C:70:C9:59:96:D0:
+2017-09-29 18:52:26	*status	|                                AE:0E:7C:1C:EB:4D:7A:0D:D1:C0:4D:44:8D:7A:96:86:
+2017-09-29 18:52:26	*status	|                                EF:00:E3:4E:00:36:46
+2017-09-29 18:52:26	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:52:26	*status	|         b7:08:81:d4:23:af:04:ec:b7:23:39:1e:8f:1a:56:c2:d1:c0:
+2017-09-29 18:52:26	*status	|         e3:a5:42:c7:8d:66:c2:64:ad:43:70:fd:55:1e:71:7a:ca:32:
+2017-09-29 18:52:26	*status	|         88:83:b6:d6:f4:8e:79:13:9b:d7:9a:5a:fb:a9:65:31:cc:fc:
+2017-09-29 18:52:26	*status	|         28:9c:ef:6b:66:66:6c:db:8a:30:b7:09:10:32:80:d1:1f:d3:
+2017-09-29 18:52:26	*status	|         a5:c6:7d:fe:97:77:5e:9a:1d:af:a8:08:dc:3c:69:fb:1a:c3:
+2017-09-29 18:52:27	*status	|         20:6f:5c:fa:73:e2:3e:35:32:3d:fb:23:d9:e4:93:81:3e:69:
+2017-09-29 18:52:27	*status	|         5b:42:03:00:87:fb:45:8a:c0:f0:93:f4:90:58:fa:a3:4b:5a:
+2017-09-29 18:52:27	*status	|         5b:8d:5e:9b:a4:39:0c:6c:8f:cd:f2:86:b0:76:b5:99:22:5f:
+2017-09-29 18:52:27	*status	|         73:57:6a:0c:47:4c:72:4c:4f:11:df:e6:d7:4a:28:2a:46:33:
+2017-09-29 18:52:28	*status	|         fd:10:9a:aa:6d:14:f4:b1:71:fc:b8:20:63:ba:d5:c9:ea:fa:
+2017-09-29 18:52:28	*status	|         5c:15:a2:d9:d2:34:59:4a:4d:78:54:02:c3:8c:0c:b6:0d:dd:
+2017-09-29 18:52:28	*status	|         58:8b:34:2a:cf:57:f2:02:49:16:95:22:51:98:4e:5c:52:53:
+2017-09-29 18:52:28	*status	|         df:53:c8:d0:5b:2f:8b:11:3e:8c:7a:f6:73:0b:8a:86:a5:ea:
+2017-09-29 18:52:28	*status	|         d3:8e:da:ef:63:66:94:00:65:ef:f9:61:d4:95:3e:87:f7:3a:
+2017-09-29 18:52:28	*status	|         71:9f:c9:df
+2017-09-29 18:52:28	*status	SHA1: b4:4f:3d:3d:86:17:76:61:75:55:84:16:8c:c4:78:61:e6:a9:22:48
+2017-09-29 18:52:28	*status	SHA-256: 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:52:28	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:52:28	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:52:52	*status	Disconnected from IRC (Invalid SSL certificate: hostname doesn't match, unable to get local issuer certificate, unable to verify the first certificate). Reconnecting...
+2017-09-29 18:52:52	*status	|Certificate:
+2017-09-29 18:52:52	*status	|    Data:
+2017-09-29 18:52:52	*status	|        Version: 3 (0x2)
+2017-09-29 18:52:52	*status	|        Serial Number:
+2017-09-29 18:52:52	*status	|            62:02:8d:27:48:08:98:00:b8:38:a9:19:65:26:b8:d5
+2017-09-29 18:52:52	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:52:52	*status	|        Issuer: C=US, O=GeoTrust Inc., CN=RapidSSL SHA256 CA
+2017-09-29 18:52:52	*status	|        Validity
+2017-09-29 18:52:52	*status	|            Not Before: Apr  1 00:00:00 2016 GMT
+2017-09-29 18:52:52	*status	|            Not After : Apr  1 23:59:59 2018 GMT
+2017-09-29 18:52:52	*status	|        Subject: CN=*.uniweb.no
+2017-09-29 18:52:52	*status	|        Subject Public Key Info:
+2017-09-29 18:52:52	*status	|            Public Key Algorithm: rsaEncryption
+2017-09-29 18:52:52	*status	|                Public-Key: (2048 bit)
+2017-09-29 18:52:52	*status	|                Modulus:
+2017-09-29 18:52:52	*status	|                    00:da:cf:eb:fd:a4:0c:38:1e:7d:82:df:f9:bc:34:
+2017-09-29 18:52:52	*status	|                    ed:ee:69:78:fa:fa:9c:35:10:71:e0:2e:19:f4:eb:
+2017-09-29 18:52:52	*status	|                    20:16:b3:d7:f7:64:c7:f1:a1:b3:e8:c1:a6:b8:f4:
+2017-09-29 18:52:52	*status	|                    50:17:8b:de:91:87:f6:77:2c:71:03:96:b6:f6:ea:
+2017-09-29 18:52:52	*status	|                    25:cb:3f:6a:dc:6e:a0:69:65:9e:6f:d0:d7:72:41:
+2017-09-29 18:52:52	*status	|                    d2:9c:c6:c6:3a:4a:e2:55:b6:9a:02:04:b2:ec:b4:
+2017-09-29 18:52:52	*status	|                    8e:99:1c:23:5c:cd:5f:da:33:a2:6a:78:3d:aa:98:
+2017-09-29 18:52:53	*status	|                    2b:d1:89:ba:4e:fd:45:23:99:f0:20:2c:23:fe:6e:
+2017-09-29 18:52:53	*status	|                    af:7b:02:31:4f:a2:ff:40:e3:a8:9e:e2:3e:0a:12:
+2017-09-29 18:52:53	*status	|                    65:a4:ac:e9:eb:ef:a7:bd:8b:2b:97:46:7b:bc:13:
+2017-09-29 18:52:53	*status	|                    89:6a:e8:49:6b:17:b7:df:36:98:25:57:e3:52:10:
+2017-09-29 18:52:53	*status	|                    f5:66:5b:b1:22:30:00:0e:80:00:31:a3:31:14:dd:
+2017-09-29 18:52:53	*status	|                    fa:a4:2a:ef:02:8d:d8:08:5c:8a:cc:c9:fb:c2:b6:
+2017-09-29 18:52:53	*status	|                    ae:e1:de:24:e4:86:2c:ae:10:68:1b:6c:3e:ca:e9:
+2017-09-29 18:52:53	*status	|                    68:97:01:4d:38:dc:85:3c:60:df:29:3a:1d:4c:4d:
+2017-09-29 18:52:53	*status	|                    ea:20:50:89:19:a0:40:42:81:12:54:9f:86:d1:f2:
+2017-09-29 18:52:53	*status	|                    8d:33:f2:61:1b:21:b7:05:a8:ac:4a:d8:dc:94:cd:
+2017-09-29 18:52:53	*status	|                    39:e1
+2017-09-29 18:52:53	*status	|                Exponent: 65537 (0x10001)
+2017-09-29 18:52:53	*status	|        X509v3 extensions:
+2017-09-29 18:52:53	*status	|            X509v3 Subject Alternative Name: 
+2017-09-29 18:52:53	*status	|                DNS:*.uniweb.no, DNS:uniweb.no
+2017-09-29 18:52:53	*status	|            X509v3 Basic Constraints: 
+2017-09-29 18:52:53	*status	|                CA:FALSE
+2017-09-29 18:52:53	*status	|            X509v3 CRL Distribution Points: 
+2017-09-29 18:52:54	*status	|
+2017-09-29 18:52:54	*status	|                Full Name:
+2017-09-29 18:52:54	*status	|                  URI:http://gp.symcb.com/gp.crl
+2017-09-29 18:52:54	*status	|
+2017-09-29 18:52:54	*status	|            X509v3 Certificate Policies: 
+2017-09-29 18:52:54	*status	|                Policy: 2.23.140.1.2.1
+2017-09-29 18:52:54	*status	|                  CPS: https://www.rapidssl.com/legal
+2017-09-29 18:52:54	*status	|                  User Notice:
+2017-09-29 18:52:54	*status	|                    Explicit Text: https://www.rapidssl.com/legal
+2017-09-29 18:52:55	*status	|
+2017-09-29 18:52:55	*status	|            X509v3 Authority Key Identifier: 
+2017-09-29 18:52:55	*status	|                keyid:97:C2:27:50:9E:C2:C9:EC:0C:88:32:C8:7C:AD:E2:A6:01:4F:DA:6F
+2017-09-29 18:52:55	*status	|
+2017-09-29 18:52:55	*status	|            X509v3 Key Usage: critical
+2017-09-29 18:52:55	*status	|                Digital Signature, Key Encipherment
+2017-09-29 18:52:56	*status	|            X509v3 Extended Key Usage: 
+2017-09-29 18:52:56	*status	|                TLS Web Server Authentication, TLS Web Client Authentication
+2017-09-29 18:52:56	*status	|            Authority Information Access: 
+2017-09-29 18:52:56	*status	|                OCSP - URI:http://gp.symcd.com
+2017-09-29 18:52:56	*status	|                CA Issuers - URI:http://gp.symcb.com/gp.crt
+2017-09-29 18:52:56	*status	|
+2017-09-29 18:52:57	*status	|            CT Precertificate SCTs: 
+2017-09-29 18:52:57	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:52:57	*status	|                    Version   : v1(0)
+2017-09-29 18:52:57	*status	|                    Log ID    : DD:EB:1D:2B:7A:0D:4F:A6:20:8B:81:AD:81:68:70:7E:
+2017-09-29 18:52:57	*status	|                                2E:8E:9D:01:D5:5C:88:8D:3D:11:C4:CD:B6:EC:BE:CC
+2017-09-29 18:52:57	*status	|                    Timestamp : Apr  1 07:35:34.114 2016 GMT
+2017-09-29 18:52:58	*status	|                    Extensions: none
+2017-09-29 18:52:58	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:52:58	*status	|                                30:44:02:20:6B:30:2F:17:1A:3E:2C:6D:08:C9:71:03:
+2017-09-29 18:52:58	*status	|                                76:84:0D:62:B1:2A:71:36:B7:C5:54:94:8C:18:54:E3:
+2017-09-29 18:52:59	*status	|                                D9:26:2B:A1:02:20:21:E8:4A:44:9A:41:2A:8C:53:3B:
+2017-09-29 18:52:59	*status	|                                8A:46:6C:41:D3:10:A4:80:CB:A4:2F:F6:F0:6B:00:56:
+2017-09-29 18:52:59	*status	|                                76:66:60:65:FA:72
+2017-09-29 18:52:59	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:52:59	*status	|                    Version   : v1(0)
+2017-09-29 18:53:00	*status	|                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:
+2017-09-29 18:53:00	*status	|                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10
+2017-09-29 18:53:00	*status	|                    Timestamp : Apr  1 07:35:34.159 2016 GMT
+2017-09-29 18:53:00	*status	|                    Extensions: none
+2017-09-29 18:53:00	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:53:00	*status	|                                30:46:02:21:00:AE:1B:4A:68:4A:76:4F:13:AE:B6:5B:
+2017-09-29 18:53:00	*status	|                                7C:04:C3:80:E4:A4:13:16:9E:8F:2E:B3:97:24:0C:07:
+2017-09-29 18:53:00	*status	|                                A9:27:A3:7C:15:02:21:00:96:3A:27:2E:4A:35:6D:96:
+2017-09-29 18:53:00	*status	|                                32:8C:4F:52:68:FD:89:6A:BF:23:92:F5:53:BB:3C:AF:
+2017-09-29 18:53:00	*status	|                                09:9F:9E:A8:B1:75:09:6F
+2017-09-29 18:53:00	*status	|                Signed Certificate Timestamp:
+2017-09-29 18:53:00	*status	|                    Version   : v1(0)
+2017-09-29 18:53:00	*status	|                    Log ID    : 68:F6:98:F8:1F:64:82:BE:3A:8C:EE:B9:28:1D:4C:FC:
+2017-09-29 18:53:00	*status	|                                71:51:5D:67:93:D4:44:D1:0A:67:AC:BB:4F:4F:FB:C4
+2017-09-29 18:53:00	*status	|                    Timestamp : Apr  1 07:35:34.156 2016 GMT
+2017-09-29 18:53:01	*status	|                    Extensions: none
+2017-09-29 18:53:01	*status	|                    Signature : ecdsa-with-SHA256
+2017-09-29 18:53:01	*status	|                                30:45:02:21:00:8B:47:03:61:70:40:85:54:6C:83:8F:
+2017-09-29 18:53:01	*status	|                                A7:B3:8B:B1:5A:A7:24:89:77:E1:7E:8E:AA:D2:D9:17:
+2017-09-29 18:53:01	*status	|                                60:85:A1:6D:84:02:20:49:77:09:5C:70:C9:59:96:D0:
+2017-09-29 18:53:01	*status	|                                AE:0E:7C:1C:EB:4D:7A:0D:D1:C0:4D:44:8D:7A:96:86:
+2017-09-29 18:53:01	*status	|                                EF:00:E3:4E:00:36:46
+2017-09-29 18:53:01	*status	|    Signature Algorithm: sha256WithRSAEncryption
+2017-09-29 18:53:01	*status	|         b7:08:81:d4:23:af:04:ec:b7:23:39:1e:8f:1a:56:c2:d1:c0:
+2017-09-29 18:53:01	*status	|         e3:a5:42:c7:8d:66:c2:64:ad:43:70:fd:55:1e:71:7a:ca:32:
+2017-09-29 18:53:01	*status	|         88:83:b6:d6:f4:8e:79:13:9b:d7:9a:5a:fb:a9:65:31:cc:fc:
+2017-09-29 18:53:01	*status	|         28:9c:ef:6b:66:66:6c:db:8a:30:b7:09:10:32:80:d1:1f:d3:
+2017-09-29 18:53:01	*status	|         a5:c6:7d:fe:97:77:5e:9a:1d:af:a8:08:dc:3c:69:fb:1a:c3:
+2017-09-29 18:53:02	*status	|         20:6f:5c:fa:73:e2:3e:35:32:3d:fb:23:d9:e4:93:81:3e:69:
+2017-09-29 18:53:02	*status	|         5b:42:03:00:87:fb:45:8a:c0:f0:93:f4:90:58:fa:a3:4b:5a:
+2017-09-29 18:53:02	*status	|         5b:8d:5e:9b:a4:39:0c:6c:8f:cd:f2:86:b0:76:b5:99:22:5f:
+2017-09-29 18:53:02	*status	|         73:57:6a:0c:47:4c:72:4c:4f:11:df:e6:d7:4a:28:2a:46:33:
+2017-09-29 18:53:02	*status	|         fd:10:9a:aa:6d:14:f4:b1:71:fc:b8:20:63:ba:d5:c9:ea:fa:
+2017-09-29 18:53:02	*status	|         5c:15:a2:d9:d2:34:59:4a:4d:78:54:02:c3:8c:0c:b6:0d:dd:
+2017-09-29 18:53:02	*status	|         58:8b:34:2a:cf:57:f2:02:49:16:95:22:51:98:4e:5c:52:53:
+2017-09-29 18:53:03	*status	|         df:53:c8:d0:5b:2f:8b:11:3e:8c:7a:f6:73:0b:8a:86:a5:ea:
+2017-09-29 18:53:03	*status	|         d3:8e:da:ef:63:66:94:00:65:ef:f9:61:d4:95:3e:87:f7:3a:
+2017-09-29 18:53:03	*status	|         71:9f:c9:df
+2017-09-29 18:53:03	*status	SHA1: b4:4f:3d:3d:86:17:76:61:75:55:84:16:8c:c4:78:61:e6:a9:22:48
+2017-09-29 18:53:03	*status	SHA-256: 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:53:03	*status	If you trust this certificate, do /znc AddTrustedServerFingerprint 57:ae:31:16:da:f3:a8:2b:c5:98:e2:5d:22:5a:28:8a:ed:98:af:21:47:68:88:b9:82:e7:e0:2b:64:b8:85:64
+2017-09-29 18:53:04	*status	Disconnected from IRC. Reconnecting...
+2017-09-29 18:53:04	--	irc: disconnected from server
+2017-09-29 18:53:04	=!=	irc: you are not connected to server

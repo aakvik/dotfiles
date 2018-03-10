@@ -1,0 +1,144 @@
+2017-10-10 20:27:27	stianandreassen	kan du hjelpe meg med en Dynify sak?
+2017-10-10 20:27:48	stianandreassen	[aleksander] hm, spør du så får jeg se, ikke det jeg kan mest om her i verden :)
+2017-10-10 20:27:49	stianandreassen	Ser at det i følge Dynify skal inn et CNAME
+2017-10-10 20:28:19	stianandreassen	@stianandreassen uploaded a file: Pasted image at 2017-10-10, 8:28 PM https://digitalgarden.slack.com/files/U04GNK8PE/F7H3NETKQ/pasted_image_at_2017_10_10_08_28_pm.png 
+2017-10-10 20:28:31	stianandreassen	Mulig det er noe føkk med dNS
+2017-10-10 20:28:39	stianandreassen	for jeg kommer inn og får sett siden i admin
+2017-10-10 20:28:48	stianandreassen	http://214361934457adc8d68780d.dynify.me/admin?url=%2F%3Fdynify_action%3Dedit 
+2017-10-10 20:31:34	stianandreassen	[aleksander] hm, sjekker straks
+2017-10-10 20:33:59	stianandreassen	jeg fjernet senius.no  på hosten
+2017-10-10 20:34:05	stianandreassen	får ikke knyttet den til igjen
+2017-10-10 20:34:10	stianandreassen	det skulle jeg ikke gjort :slightly_smiling_face:
+2017-10-10 20:34:13	stianandreassen	[aleksander] hehe
+2017-10-10 20:34:17	stianandreassen	[aleksander] sjekker nå, hold on
+2017-10-10 20:34:57	stianandreassen	fastname
+2017-10-10 20:35:09	stianandreassen	[aleksander] www.senius.no  har 214361934457adc8d68780d.dynify.me  som CNAME
+2017-10-10 20:35:19	stianandreassen	[aleksander] det er vel ikke riktig
+2017-10-10 20:35:26	stianandreassen	nei...
+2017-10-10 20:35:33	stianandreassen	dbf78da551cc5d9e4bcf5fb16e8eafcf.domains.dynify.com 
+2017-10-10 20:35:40	stianandreassen	[aleksander] ok
+2017-10-10 20:35:42	stianandreassen	[aleksander] endrer
+2017-10-10 20:35:58	stianandreassen	name er www.senius.no 
+2017-10-10 20:36:10	stianandreassen	hva er TTL`en da
+2017-10-10 20:36:18	stianandreassen	kan ikke prøve igjen før om lenge?
+2017-10-10 20:36:47	stianandreassen	[aleksander] | 2507631 |    142922 | www.senius.no                 | MX    | dbf78da551cc5d9e4bcf5fb16e8eafcf.domains.dynify.com   | 10800 |    0 |  1505994990 |        0 | NULL               |    1 |
+2017-10-10 20:36:53	stianandreassen	[aleksander] det ligger et feilaktig MX record der
+2017-10-10 20:36:58	stianandreassen	ok
+2017-10-10 20:36:59	stianandreassen	[aleksander] som sikkert skulle vært den CNAME'en
+2017-10-10 20:37:07	stianandreassen	[aleksander] tror ikke du trenger vente på ttl
+2017-10-10 20:37:13	stianandreassen	ja... hele zonen er jo føkk
+2017-10-10 20:37:14	stianandreassen	[aleksander] regner med den gjør dig rett mot NS
+2017-10-10 20:37:20	stianandreassen	[aleksander] jeg fikser den
+2017-10-10 20:38:09	stianandreassen	seniusmultidrift.no  er sikkert feil den også da
+2017-10-10 20:38:14	stianandreassen	3172c148ed3e64d771e7a16b6cccebab.domains.dynify.com 
+2017-10-10 20:38:32	stianandreassen	Den mangler sikkert en TXT også
+2017-10-10 20:38:40	stianandreassen	dynify-verification=3172c148ed3e64d771e7a16b6cccebab
+2017-10-10 20:40:11	stianandreassen	[aleksander] da burde den første være OK
+2017-10-10 20:40:18	stianandreassen	[aleksander] tar en titt på multidrift også
+2017-10-10 20:41:06	stianandreassen	senius.no  fungerer ikke hos meg
+2017-10-10 20:41:15	stianandreassen	men det kan være fordi jeg har besøkt siden
+2017-10-10 20:41:22	stianandreassen	og TTL kødder litt med meg
+2017-10-10 20:42:55	stianandreassen	[aleksander] @aleksander uploaded a file: 2017-10-10-204139_1244x1336_scrot.png https://digitalgarden.slack.com/files/U045EKQEM/F7FHL5Q1E/2017-10-10-204139_1244x1336_scrot.png 
+2017-10-10 20:45:31	stianandreassen	[aleksander] hm
+2017-10-10 20:45:33	stianandreassen	[aleksander] er du sikker på denne?
+2017-10-10 20:45:34	stianandreassen	[aleksander] 3172c148ed3e64d771e7a16b6cccebab.domains.dynify.com 
+2017-10-10 20:45:39	stianandreassen	[aleksander] når jeg besøker den direkte
+2017-10-10 20:45:43	stianandreassen	[aleksander] så får jeg site not found
+2017-10-10 20:46:11	stianandreassen	kanskje det skal være samme der også
+2017-10-10 20:46:31	stianandreassen	[aleksander] skal den peke mot samme siden?
+2017-10-10 20:46:34	stianandreassen	@stianandreassen uploaded a file: Pasted image at 2017-10-10, 8:46 PM https://digitalgarden.slack.com/files/U04GNK8PE/F7GBG2T8D/pasted_image_at_2017_10_10_08_46_pm.png 
+2017-10-10 20:46:41	stianandreassen	@stianandreassen uploaded a file: Pasted image at 2017-10-10, 8:46 PM https://digitalgarden.slack.com/files/U04GNK8PE/F7GBG4L9K/pasted_image_at_2017_10_10_08_46_pm.png 
+2017-10-10 20:46:52	stianandreassen	Ja, samme siden i følge vhosten på kontrollpanelet
+2017-10-10 20:47:00	stianandreassen	[aleksander] åja
+2017-10-10 20:47:02	stianandreassen	men inne i Dynify så står dette bildwet.
+2017-10-10 20:47:08	stianandreassen	[aleksander] da er det bedre å videresende
+2017-10-10 20:47:17	stianandreassen	[aleksander] ellers blir det SEO kluss
+2017-10-10 20:47:23	stianandreassen	ok
+2017-10-10 20:49:11	stianandreassen	så du kommer inn på http://www.senius.no/ ?
+2017-10-10 20:50:38	stianandreassen	[aleksander] jepp
+2017-10-10 20:50:43	stianandreassen	[aleksander] bildet jeg sendte var fra nå
+2017-10-10 20:50:48	stianandreassen	bra
+2017-10-10 20:50:52	stianandreassen	da har heg svart kunden
+2017-10-10 20:51:06	stianandreassen	det var fordi det kom inn en ny Dynify ticket at jeg fikk "Fix det"
+2017-10-10 20:51:13	stianandreassen	irriterende mail som kommer innimellom
+2017-10-10 20:51:18	stianandreassen	nå skjønte jeg hva det var for noe
+2017-10-10 20:51:25	stianandreassen	[aleksander] haha
+2017-10-10 20:51:29	stianandreassen	[aleksander] står du på den triggern?
+2017-10-10 20:51:32	stianandreassen	ja
+2017-10-10 20:55:08	stianandreassen	[aleksander] fixed
+2017-10-10 20:55:26	stianandreassen	[aleksander] gikk til alle i support gruppa, rart ingen har klaga :)
+2017-10-10 20:56:31	stianandreassen	de skjønte vel ikke en dritt de heller :slightly_smiling_face:
+2017-10-10 20:56:44	stianandreassen	trudde det var en kunde som hadde laget et script jeg
+2017-10-10 20:56:49	stianandreassen	som hata Dynify
+2017-10-10 20:56:51	stianandreassen	[aleksander] hehe
+2017-10-10 20:56:53	stianandreassen	hehe
+2017-10-10 20:57:20	stianandreassen	nei, nå stikker jeg hjem
+2017-10-10 20:57:27	stianandreassen	sees i morgon
+2017-10-10 20:57:27	stianandreassen	[aleksander] ha en fin kveld
+2017-10-10 20:57:31	stianandreassen	[aleksander] det gjør vi
+2017-10-10 20:57:32	stianandreassen	du gså!
+2017-10-10 20:57:49	stianandreassen	ctrl+alt+del
+2017-10-11 06:42:42	--	irc: disconnected from server
+2017-10-11 06:46:35	--	irc: disconnected from server
+2017-10-11 06:57:16	--	irc: disconnected from server
+2017-10-11 07:01:26	--	irc: disconnected from server
+2017-10-12 13:41:51	stianandreassen	[aleksander] @aleksander uploaded a file: 2017-10-12-134114_821x1394_scrot.png https://digitalgarden.slack.com/files/U045EKQEM/F7H5RTJRZ/2017-10-12-134114_821x1394_scrot.png 
+2017-10-13 09:18:17	stianandreassen	Hva tenker du om onsdagen - skal vi ha åpent med Andreas?
+2017-10-13 10:09:28	stianandreassen	[aleksander] når vi er på verdens ende?
+2017-10-13 10:10:41	stianandreassen	[aleksander] kan jo sikkert det, men han kommer jo til å bli overveldet, og ikke klare å levere det produktet vi ønsker.
+2017-10-13 10:41:38	stianandreassen	det er onsdag neste uke
+2017-10-13 10:41:41	stianandreassen	ja..
+2017-10-13 10:41:48	stianandreassen	men han kan ta mail
+2017-10-13 10:41:53	stianandreassen	dedikert denne uka
+2017-10-13 10:42:19	aleksander	ja, det kan han
+2017-10-16 16:43:28	stianandreassen	@stianandreassen uploaded a file: Er ikke dette mulig nå da? https://digitalgarden.slack.com/files/U04GNK8PE/F7JTKN16E/image_uploaded_from_ios.png 
+2017-10-17 08:55:37	aleksander	hm, jeg skal dobbeltsjekke dette, er mulig på fastname ihvertfall, da det ble gjort en fix på dette forrige uke
+2017-10-17 08:55:51	aleksander	jeg tester og ber de melde tilbake til kunden om det er korrekt at det funker nå
+2017-10-17 09:48:58	stianandreassen	ja, og at alle vet om det.
+2017-10-17 10:03:00	stianandreassen	har lagt ut info om åpningstiden på hjemmesiden under kontakt oss
+2017-10-17 10:04:17	aleksander	har informert hessel om morgendagens oppgaver
+2017-10-17 10:25:56	stianandreassen	bra . og jeg har lagt opp til info bar med at vi er stengt og fjernet onsdag som åpen dag på face. Må huske å sette den tilbake bare.
+2017-10-18 06:27:25	--	irc: disconnected from server
+2017-10-24 09:57:04	--	irc: disconnected from server
+2017-10-27 03:02:33	stianandreassen	@stianandreassen uploaded a file: Vet du om denne tjenesten fortsatt finnes? https://digitalgarden.slack.com/files/U04GNK8PE/F7QT0MXV3/.png 
+2017-10-27 08:26:54	stianandreassen	[aleksander] statistikk?
+2017-10-27 08:37:33	stianandreassen	Tipper det
+2017-10-27 08:38:27	stianandreassen	[aleksander] det har vi fortsatt, vi har en awstats løsning for både uniweb og fastname kunder
+2017-10-27 09:05:26	stianandreassen	Fungerer den?
+2017-10-27 09:06:39	stianandreassen	[aleksander] Ja, aldri fått noen klage på den, men det er jo ikke analytics
+2017-10-29 02:18:11	--	irc: disconnected from server
+2017-11-01 22:08:36	--	irc: disconnected from server
+2017-11-01 22:41:18	--	irc: disconnected from server
+2017-11-02 08:24:28	--	irc: disconnected from server
+2017-11-02 14:58:41	--	irc: disconnected from server
+2017-11-02 15:09:59	--	irc: disconnected from server
+2017-11-03 14:44:51	--	irc: disconnected from server
+2017-11-06 11:21:39	stianandreassen	husker du denne? https://parked.fastname.no/ 
+2017-11-06 11:22:08	aleksander	ja, ser på det nå, det ser ikke ut til at det har vært HTTPS der i det hele tatt.
+2017-11-06 11:22:20	stianandreassen	aha
+2017-11-06 11:22:24	stianandreassen	det er jo fint å få på plass
+2017-11-06 11:22:30	aleksander	ja
+2017-11-09 09:12:22	stianandreassen	hvor skal jeg sende e-post på de nye kundene som har kommet inn? og hvilken mailadresse skal jeg sende kopi til fremover?
+2017-11-09 09:17:02	aleksander	jeg tror jeg oppretter en ny, et øyeblikk så får du den
+2017-11-09 09:20:11	aleksander	kundeopp@digitalgarden.no
+2017-11-09 09:21:59	stianandreassen	da kommer kopiene inn dit
+2017-11-09 09:22:07	stianandreassen	hva er passordet?
+2017-11-09 09:22:17	stianandreassen	så kan jeg synke de gamle mailene inn i en mappe på den
+2017-11-09 09:48:06	stianandreassen	[aleksander] de må videresendes så det hjelper ikke å legge de der
+2017-11-09 09:48:10	stianandreassen	[aleksander] den henter ikke IMAP mapper
+2017-11-09 09:48:28	stianandreassen	hvis jeg legger den inn på klienten min
+2017-11-09 09:48:28	stianandreassen	[aleksander] men passordet er ain7in3Kaega
+2017-11-09 09:58:21	stianandreassen	da ligger mailen der
+2017-11-09 09:58:42	stianandreassen	Håkon kan bare begynne da :slightly_smiling_face:
+2017-11-09 14:11:27	stianandreassen	Hvor mange stikkontakter trengte vi nede på supporten?
+2017-11-10 08:47:19	stianandreassen	[aleksander] 4 stk under plassen til regina
+2017-11-10 09:29:33	stianandreassen	er det kun disse 4 da
+2017-11-10 09:59:20	aleksander	https://www.ajprodukter.no/kontor-konferanse/presentasjon/whiteboard/whiteboard/458670-19442502.wf?productId=19442512
+2017-11-10 09:59:33	aleksander	https://www.ajprodukter.no/kontor-konferanse/presentasjon/presentasjonstilbehor/startsett-for-whiteboard/18512998-19444099.wf?productId=19444100
+2017-11-22 13:39:43	stianandreassen	hei
+2017-11-22 13:39:44	stianandreassen	https://www.digitalgarden.no/wp-admin/ 
+2017-11-22 13:39:49	stianandreassen	det fungerer ikke
+2017-11-22 13:39:55	stianandreassen	fikk en databasefeil
+2017-11-22 13:40:07	aleksander	hm, sjekker en gang til, sec
+2017-11-22 13:43:15	aleksander	fungerer igjen nå? jeg har ikke gjort noe, en oppdatering som hang?
+2017-11-22 14:48:41	--	irc: disconnected from server

@@ -1,0 +1,281 @@
+2017-09-12 13:51:22	morten	du, jeg så tilfeldigvis at jeg har noen domener hos meg som har dns peker til oldmail
+2017-09-12 20:38:14	aleksander	hei du, så ikke dette jeg
+2017-09-12 20:38:14	 *	morten is away.
+2017-09-12 20:38:32	aleksander	det er vel bare å peke om det
+2017-09-12 21:04:17	morten	Ok, så bare bytte fra cname oldmail til mail.uniweb? Evt sjekk domenet surf-norge.no 
+2017-09-12 23:43:32	aleksander	ah, du tenker på de at de CNAME recordene i det hele tatt er der?
+2017-09-12 23:43:33	 *	morten is away.
+2017-09-12 23:44:06	aleksander	det er bare for att det skulle fungere med de gamle innstillingene frem til folk hadde fått byttet, og så man kunne ha oversikt over hvem som koblet til hvor
+2017-09-12 23:44:28	aleksander	så lenge du benytter mail.uniweb.no i epost programmet så er det bare å se bort i fra at de er der
+2017-09-12 23:45:01	aleksander	oldmail.uniweb.no er smtp3.uniweb.no og post3.uniweb.no inngangsportene
+2017-09-12 23:45:36	aleksander	så lenge du har mx01.uniweb.no og benytter mail.uniweb.no som innkommende og utgående er det ingenting i veien med oppsettet
+2017-09-13 08:53:52	--	irc: disconnected from server
+2017-09-13 09:04:38	morten	Ok :)
+2017-09-19 09:51:07	morten	[aleksander] Spørsmål fra Jokkum : Incident #329142#329142 Kan du se på det når du har tid?
+2017-09-19 09:59:19	morten	svarte nå
+2017-09-19 11:03:46	morten	[aleksander] takker
+2017-09-19 19:12:15	--	irc: disconnected from server
+2017-09-22 11:43:25	morten	[aleksander] DRID: 109921
+2017-09-22 11:43:37	morten	[aleksander] mail fra norid
+2017-09-22 11:43:39	morten	[aleksander] Hei,
+2017-09-22 11:43:41	morten	[aleksander] det ser ut til at dere en gang i minuttet forsøker å gjøre en
+2017-09-22 11:43:43	morten	[aleksander] domain:update-transaksjon mot Norid EPP-tjeneste for domenet
+2017-09-22 11:43:45	morten	[aleksander] distansekortpånett.no . Dere koder imidlertid ikke domenenavnet
+2017-09-22 11:43:47	morten	[aleksander] korrekt i EPP-kommandoen, og kommandoen feiler derfor. Fint om
+2017-09-22 11:43:49	morten	[aleksander] dere kan få stanset dette.
+2017-09-22 11:43:51	morten	[aleksander] -jarle
+2017-09-22 11:44:08	morten	[aleksander] ticket ligger i Dev
+2017-09-22 11:44:11	morten	hm, ok.. skal se på det etter lunsj
+2017-09-22 13:06:37	morten	hei
+2017-09-22 13:06:40	morten	har stoppa den nå
+2017-09-24 22:09:20	--	irc: disconnected from server
+2017-10-02 18:41:26	morten	halla, online?
+2017-10-02 18:41:34	aleksander	yep
+2017-10-02 18:41:41	morten	fastname drid: 96995, får ikke svar fra ns ang domenet, sone ligger laget.. noe som er feil enda?
+2017-10-02 18:41:49	aleksander	sjekker
+2017-10-02 18:42:02	morten	jeg deploya de fiksene tidligere idag, mx prio 10, srv 0
+2017-10-02 18:42:13	morten	bjørnar var ikke blid for å si det sånn
+2017-10-02 18:44:58	aleksander	+---------+-----------+--------------+------+-------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:44:58	aleksander	| id      | domain_id | name         | type | content                 | ttl   | prio | change_date | disabled | ordername | auth |
+2017-10-02 18:44:58	aleksander	+---------+-----------+--------------+------+-------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:44:58	aleksander	| 2614600 |    149809 | fosendykk.no | MX   | mailscan01.fastname.no. | 10800 |   10 |  1506941107 |        0 | NULL      |    1 |
+2017-10-02 18:44:58	aleksander	| 2614602 |    149809 | fosendykk.no | MX   | mailscan02.fastname.no. | 10800 |   10 |  1506941107 |        0 | NULL      |    1 |
+2017-10-02 18:44:58	aleksander	| 2614603 |    149809 | fosendykk.no | MX   | mailscan03.fastname.no. | 10800 |   10 |  1506941107 |        0 | NULL      |    1 |
+2017-10-02 18:44:58	aleksander	+---------+-----------+--------------+------+-------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:45:04	aleksander	disse har . på slutten
+2017-10-02 18:45:07	aleksander	i content
+2017-10-02 18:45:59	morten	ok, fjernt..
+2017-10-02 18:46:40	morten	skjønner ikke hvor den kommer fra
+2017-10-02 18:48:59	aleksander	de ligger der fortsatt
+2017-10-02 18:49:01	aleksander	+---------+-----------+--------------+------+-------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:49:01	aleksander	| id      | domain_id | name         | type | content                 | ttl   | prio | change_date | disabled | ordername | auth |
+2017-10-02 18:49:01	aleksander	+---------+-----------+--------------+------+-------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:49:01	aleksander	| 2614600 |    149809 | fosendykk.no | MX   | mailscan01.fastname.no. | 10800 |   10 |  1506941107 |        0 | NULL      |    1 |
+2017-10-02 18:49:01	aleksander	| 2614602 |    149809 | fosendykk.no | MX   | mailscan02.fastname.no. | 10800 |   10 |  1506941107 |        0 | NULL      |    1 |
+2017-10-02 18:49:01	aleksander	| 2614603 |    149809 | fosendykk.no | MX   | mailscan03.fastname.no. | 10800 |   10 |  1506941107 |        0 | NULL      |    1 |
+2017-10-02 18:49:01	aleksander	+---------+-----------+--------------+------+-------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:49:01	aleksander	3 rows in set (0.87 sec)
+2017-10-02 18:50:04	morten	ja jeg har ikke endra noe
+2017-10-02 18:50:48	aleksander	du sa fjernt
+2017-10-02 18:50:50	aleksander	ikke fjernet :)
+2017-10-02 18:50:52	aleksander	hehe
+2017-10-02 18:50:56	aleksander	sec
+2017-10-02 18:53:16	aleksander	sånn, da har jeg endra content
+2017-10-02 18:53:18	aleksander	+---------+-----------+--------------+------+------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:53:18	aleksander	| id      | domain_id | name         | type | content                | ttl   | prio | change_date | disabled | ordername | auth |
+2017-10-02 18:53:18	aleksander	+---------+-----------+--------------+------+------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:53:18	aleksander	| 2614600 |    149809 | fosendykk.no | MX   | mailscan01.fastname.no | 10800 |   10 |  1506963156 |        0 | NULL      |    1 |
+2017-10-02 18:53:18	aleksander	| 2614602 |    149809 | fosendykk.no | MX   | mailscan02.fastname.no | 10800 |   10 |  1506963168 |        0 | NULL      |    1 |
+2017-10-02 18:53:18	aleksander	| 2614603 |    149809 | fosendykk.no | MX   | mailscan03.fastname.no | 10800 |   10 |  1506963178 |        0 | NULL      |    1 |
+2017-10-02 18:53:18	aleksander	+---------+-----------+--------------+------+------------------------+-------+------+-------------+----------+-----------+------+
+2017-10-02 18:53:18	aleksander	3 rows in set (1.06 sec)
+2017-10-02 18:53:28	aleksander	venter et par minutter og ser om det er det som gjør utslaget
+2017-10-02 18:54:24	aleksander	fikk disse i stad
+2017-10-02 18:54:25	aleksander	[Warning] Parsed and original record content are not equal: fosendykk.no IN MX '10 mailscan01.fastname.no.' (Content parsed as '10 mailscan01.fastname.no')
+2017-10-02 18:54:25	aleksander	[Warning] Parsed and original record content are not equal: fosendykk.no IN MX '10 mailscan02.fastname.no.' (Content parsed as '10 mailscan02.fastname.no')
+2017-10-02 18:54:25	aleksander	[Warning] Parsed and original record content are not equal: fosendykk.no IN MX '10 mailscan03.fastname.no.' (Content parsed as '10 mailscan03.fastname.no')
+2017-10-02 18:58:50	aleksander	mail.fosendykk.no har heller ikke TTL
+2017-10-02 18:58:53	aleksander	på noen av recordene
+2017-10-02 18:59:12	aleksander	de pekerne trenger ikke å være i malen i det hele tatt
+2017-10-02 18:59:56	aleksander	+---------+-----------+-------------------+------+---------------+------+------+-------------+----------+-----------+------+
+2017-10-02 18:59:56	aleksander	| id      | domain_id | name              | type | content       | ttl  | prio | change_date | disabled | ordername | auth |
+2017-10-02 18:59:56	aleksander	+---------+-----------+-------------------+------+---------------+------+------+-------------+----------+-----------+------+
+2017-10-02 18:59:56	aleksander	| 2614601 |    149809 | mail.fosendykk.no | A    | 85.19.150.220 |    0 | NULL |  1506941108 |        0 | NULL      |    1 |
+2017-10-02 18:59:56	aleksander	| 2614604 |    149809 | mail.fosendykk.no | A    | 85.19.150.223 |    0 | NULL |  1506941108 |        0 | NULL      |    1 |
+2017-10-02 18:59:56	aleksander	| 2614605 |    149809 | mail.fosendykk.no | A    | 85.19.150.34  |    0 | NULL |  1506941108 |        0 | NULL      |    1 |
+2017-10-02 18:59:56	aleksander	+---------+-----------+-------------------+------+---------------+------+------+-------------+----------+-----------+------+
+2017-10-02 19:02:05	morten	lurer på om dette er en bug eller hvor det kommer fra
+2017-10-02 19:02:23	aleksander	hvor kan jeg se zone-malen?
+2017-10-02 19:02:49	morten	kunde 1, kunde->dns maler
+2017-10-02 19:03:16	aleksander	hm, dette domenet har en gammel zone fra før?
+2017-10-02 19:03:26	aleksander	se på A pekerne
+2017-10-02 19:03:30	aleksander	62.92.26.166
+2017-10-02 19:04:37	morten	kanskje det er problemet..
+2017-10-02 19:05:04	aleksander	slett hele zonen fra ks og opprett ny nå
+2017-10-02 19:05:06	morten	bare slett sonen, finner ikke noe abo fra før
+2017-10-02 19:05:16	morten	yes, doit :slightly_smiling_face:
+2017-10-02 19:05:21	aleksander	jeg har endret litt på malen
+2017-10-02 19:05:29	aleksander	trenger ikke stats, og oldmail skal ikke legges til lenger
+2017-10-02 19:05:29	morten	ok
+2017-10-02 19:05:58	morten	beklager sein deploy av de to fiksene, jeg trodde ikke det var så stress, bjørnar hadde røyk ut av øra til morgenen idag
+2017-10-02 19:06:30	aleksander	ah, sorry, burde vært litt mer presis på det
+2017-10-02 19:06:50	morten	nei ikke din feil
+2017-10-02 19:07:01	aleksander	er det bare å slette fra domains tabellen og så fra records?
+2017-10-02 19:07:14	aleksander	skjønner KS at det ikke finnes zone da?
+2017-10-02 19:07:23	morten	yes
+2017-10-02 19:07:26	aleksander	ok
+2017-10-02 19:07:37	morten	jeg kan sikkert gjøre det om du ikke pleier det
+2017-10-02 19:07:53	aleksander	trenger kanskje ikke slette fra domains?
+2017-10-02 19:08:05	morten	tror det er greit å fjerne begge
+2017-10-02 19:08:07	aleksander	jeg bare vasker de records som er feil
+2017-10-02 19:08:11	aleksander	så ser jeg om det replikerer først
+2017-10-02 19:08:14	aleksander	for å se om det er det som gjør det
+2017-10-02 19:08:14	morten	records først og så fra domains
+2017-10-02 19:08:23	morten	ok
+2017-10-02 19:12:37	aleksander	hjalp ikke, da er begge sletta
+2017-10-02 19:12:57	morten	ok, da prøver jeg å kjøre domreg’en på nytt
+2017-10-02 19:13:02	aleksander	jeg gjør det nå
+2017-10-02 19:13:06	morten	ok
+2017-10-02 19:13:42	aleksander	nei hva faen
+2017-10-02 19:13:45	aleksander	  Ingen prosess
+2017-10-02 19:13:47	aleksander	kan ikke endre
+2017-10-02 19:13:57	aleksander	kan du fikse?
+2017-10-02 19:14:00	morten	yes
+2017-10-02 19:14:11	aleksander	det ligger en egen mal på denne forhandleren
+2017-10-02 19:14:15	aleksander	vent
+2017-10-02 19:14:25	morten	aha.. kanskje det er den som kødder til
+2017-10-02 19:15:29	aleksander	sånn, da er den oppdatert / vasket
+2017-10-02 19:15:35	morten	ok..
+2017-10-02 19:15:38	aleksander	da ligger det bare MX og A i den
+2017-10-02 19:16:30	aleksander	mysql> select * from domains where name='fosendykk.no';
+2017-10-02 19:16:30	aleksander	Empty set (0.00 sec)
+2017-10-02 19:16:30	aleksander	mysql> select * from records where name like '%fosendykk.no';
+2017-10-02 19:16:30	aleksander	Empty set (1.01 sec)
+2017-10-02 19:19:20	morten	yes, jeg kjører domreg’en nå
+2017-10-02 19:19:23	aleksander	ok
+2017-10-02 19:19:52	aleksander	dig a fosendykk.no @ns.fastname.no
+2017-10-02 19:19:57	morten	der ja
+2017-10-02 19:19:58	aleksander	svarer nå
+2017-10-02 19:19:59	morten	nå funka det
+2017-10-02 19:20:10	morten	så det var forhandleren sin mal som kødda til?
+2017-10-02 19:20:10	aleksander	har du mulighet til å skaffe liste over alle malene?
+2017-10-02 19:20:12	aleksander	j
+2017-10-02 19:20:13	aleksander	a
+2017-10-02 19:21:05	morten	yes
+2017-10-02 19:23:12	morten	kjør select * from templates; i pdns_fastname
+2017-10-02 19:23:15	morten	da får du alle
+2017-10-02 19:23:36	aleksander	såpass ja
+2017-10-02 19:24:05	morten	og select * from tpl_records;
+2017-10-02 19:24:21	morten	ikke så mange, men 308
+2017-10-02 19:24:27	aleksander	vasker det direkte der
+2017-10-02 19:24:33	morten	yes
+2017-10-02 19:24:45	aleksander	endrer TTL null til default og sjekker om alle MX har prio satt
+2017-10-02 19:24:48	aleksander	så er nok mye gjort
+2017-10-02 19:24:52	morten	du har mer kontroll på hvordan de skal være enn meg
+2017-10-02 19:25:06	aleksander	jeg tar en gjennomgang på malen til UW også
+2017-10-02 19:25:12	morten	jepp bra
+2017-10-02 19:25:15	aleksander	prøve å ha så lite records som mulig
+2017-10-02 19:25:19	morten	ja
+2017-10-02 19:25:25	morten	sikkert lurt
+2017-10-02 19:28:37	morten	takk for hjelpa
+2017-10-02 19:28:41	morten	bra vi fant ut av det
+2017-10-02 19:28:52	aleksander	any time
+2017-10-06 21:55:25	--	irc: disconnected from server
+2017-10-17 14:11:45	morten	yo
+2017-10-17 14:11:59	morten	skal jeg sjekke på aktiv, forny?
+2017-10-17 14:12:13	morten	satt subtype web og winweb, noen andre du ville ha?
+2017-10-17 14:13:32	aleksander	trenger kun subtype web
+2017-10-17 14:13:36	aleksander	og servername uw15
+2017-10-17 14:14:01	aleksander	aktiv + forhandlerid=tilstede as
+2017-10-17 14:14:05	morten	det er bare 14 abonnementer
+2017-10-17 14:14:16	morten	da har jeg ikke tatt med vhost da
+2017-10-17 14:14:41	aleksander	det gjør ikkeno, jeg trenger bare brukernavnene til selve webhotellene
+2017-10-17 14:14:48	morten	ok
+2017-10-17 14:15:10	morten	BRUKERNAVN
+2017-10-17 14:15:10	morten	w287056
+2017-10-17 14:15:10	morten	w285446
+2017-10-17 14:15:11	morten	w282650
+2017-10-17 14:15:11	morten	w287781
+2017-10-17 14:15:11	morten	w284857
+2017-10-17 14:15:11	morten	w285398
+2017-10-17 14:15:11	morten	w288470
+2017-10-17 14:15:11	morten	w296345
+2017-10-17 14:15:11	morten	w286793
+2017-10-17 14:15:11	morten	w297002
+2017-10-17 14:15:11	morten	w298287
+2017-10-17 14:15:11	morten	w295552
+2017-10-17 14:15:11	morten	w297635
+2017-10-17 14:15:11	morten	w296191
+2017-10-17 14:15:27	morten	det er kun fra underkundene
+2017-10-17 14:23:13	aleksander	hm, er det mye tjenester på forhandleren tro, jeg sjekker om jeg kanskje skal ha de også
+2017-10-17 14:23:44	aleksander	det er bare noen få der, jeg sjekker de direkte
+2017-10-17 14:23:46	aleksander	takk form hjelpen
+2017-10-17 14:23:58	morten	BRUKERNAVN
+2017-10-17 14:23:58	morten	w277721
+2017-10-17 14:23:58	morten	w278751
+2017-10-17 14:23:58	morten	w286351
+2017-10-18 06:27:25	--	irc: disconnected from server
+2017-10-19 11:55:45	aleksander	cp.error.log:19-10-2017 11:33:05.017 [qtp1296064247-34874] - ERROR - [61189 (aleksander)] # Failed to execute api call: /api/v1/customer/61189/mail/alias/petrusson.se/8402
+2017-10-19 11:55:45	aleksander	cp.error.log:19-10-2017 11:33:05.019 [qtp1296064247-34874] - ERROR - [61189 (aleksander)] # An unexpected error occurred. Sending e-mail to the developers...
+2017-10-19 13:04:56	aleksander	skjønte du hva det var?
+2017-10-19 13:05:17	morten	ah, sklei ut, sjekker nå
+2017-10-19 13:09:59	morten	hva prøver du å legge inn?
+2017-10-19 13:10:22	aleksander	prøvd med newslett, blabla og test
+2017-10-19 13:10:29	aleksander	alias på epost konto
+2017-10-19 13:10:40	aleksander	#334087
+2017-10-19 13:13:09	morten	Tror det er samme feil som jeg så her om dagen
+2017-10-19 13:13:36	morten	Kunden har sagt opp alle abonnementer som har epost, og da har vi en feil der vi ikke sender en feilmelding til gui
+2017-10-19 13:14:01	morten	Det burde stått: du har ikke mulighet til å endre epost da du ikke betaler for noe epost abonnement eller noe sånt
+2017-10-19 13:14:17	morten	han er nå en freeloader på e-post
+2017-10-19 13:14:19	aleksander	ah såklart
+2017-10-19 13:14:24	aleksander	takk
+2017-10-19 13:14:27	morten	NP
+2017-10-24 09:57:04	--	irc: disconnected from server
+2017-10-24 20:02:13	morten	hallais, kunne du hjulpet med oppsett av et ssl sertifikat? har slengt på en dns pekere til christophersen.no : gullsmedkristoffersen.christophersen.no  som skal bare vise den samme site’en. Så den peker til vps IP: 91.207.159.50
+2017-10-24 20:02:37	morten	så la jeg opp en ny vhost der med servername gullsmedkristoffersen.christophersen.no 
+2017-10-24 20:02:43	morten	tenkte kanskje det var nok..
+2017-10-24 20:03:03	morten	tipper du kan det her ti ganger bedre enn meg, så tenkte du var rette mannen å høre med :slightly_smiling_face:
+2017-10-24 20:25:53	morten	Tangen er online her, hører med han jeg :)
+2017-10-25 21:03:50	morten	halla, jobber du? eller bare online pga angrepet?
+2017-10-25 21:07:18	morten	nevermind, fiksa det jeg lurte på
+2017-10-26 09:51:39	aleksander	nei, slutta å jobbe pga angrepet :)
+2017-10-26 09:51:39	 *	morten is away.
+2017-10-26 09:51:42	aleksander	fikk ikke gjort noe
+2017-10-26 15:53:10	aleksander	er du der?
+2017-10-26 15:53:10	 *	morten is away.
+2017-10-26 16:03:02	morten	Nei, hjemme nå
+2017-10-29 02:18:11	--	irc: disconnected from server
+2017-11-01 22:08:36	--	irc: disconnected from server
+2017-11-01 22:41:18	--	irc: disconnected from server
+2017-11-02 08:24:28	--	irc: disconnected from server
+2017-11-02 13:17:40	morten	Hey. Bare tenkte på en ting. Ikke noe hemmelighet at jeg skal begynne et annet sted. Syns det er best om alle vet det egentlig så folk får tenkt seg om og spurt og gravd om saker og ting før jeg slutter. Har vært så mange andre som har gått ut døra her som man ikke har hørt om før nesten uka før.
+2017-11-02 13:25:16	aleksander	den er god, jeg kan godt informere alle her nede om du ønsker det?
+2017-11-02 13:25:20	aleksander	om de ikke veit alt
+2017-11-02 13:25:27	morten	Ja gjør gjerne det
+2017-11-02 13:25:31	aleksander	'alright, will do
+2017-11-02 13:25:36	morten	Jeg har bare snakka med dere i lunsjen egentlig
+2017-11-02 13:25:44	aleksander	ok, skjønner
+2017-11-02 14:58:41	--	irc: disconnected from server
+2017-11-02 15:09:59	--	irc: disconnected from server
+2017-11-03 14:44:51	--	irc: disconnected from server
+2017-11-07 10:58:03	aleksander	veikran.no
+2017-11-07 10:58:03	aleksander	drape.no
+2017-11-07 10:58:03	aleksander	dalenparkering.no
+2017-11-07 10:58:03	aleksander	norgescatering.no
+2017-11-07 10:58:03	aleksander	parkettstudio.as
+2017-11-07 10:58:04	aleksander	hei
+2017-11-07 10:58:18	morten	hoi :slightly_smiling_face:
+2017-11-07 10:58:36	aleksander	har du mulighet til å hente ut hvilken abbid som står knyttet til epost for disse domenene
+2017-11-07 10:58:42	aleksander	de har duplikater
+2017-11-07 10:59:02	morten	det er vel ikke noe knytning
+2017-11-07 10:59:19	morten	jeg kan hente abbid for domenet.. hvis vi snakker uw?
+2017-11-07 10:59:36	aleksander	ja, gjør det
+2017-11-07 10:59:39	morten	eposten er knyttet til kundenummeret
+2017-11-07 10:59:48	aleksander	ok, kan jeg få de eventuelt da?
+2017-11-07 10:59:55	morten	seff..
+2017-11-07 10:59:59	aleksander	takk :)
+2017-11-07 11:03:40	morten	veikran.no  -> 34826
+2017-11-07 11:05:05	morten	“veikran.no ”;34826
+2017-11-07 11:05:05	morten	“drape.no ”;30676
+2017-11-07 11:05:05	morten	“dalenparkering.no ”;45154
+2017-11-07 11:05:05	morten	“norgescatering.no ”;57108
+2017-11-07 11:05:21	morten	parkettstudio.as  har ikke aktivert epost
+2017-11-07 11:05:32	aleksander	ok, takk for info :)
+2017-11-07 11:05:49	morten	bare si ifra hvis jeg skal hente noe annet
+2017-11-07 11:06:40	aleksander	f.eks. veikran.no ligger på 32717
+2017-11-07 11:06:50	morten	en annen ting, hvor mye restore har dere i uw pga av epost som slettes ved domene utløp? er det noen måte vi kan forhindre det? det deployes fiks for sletting av epost mot FN nå denne uken..
+2017-11-07 11:07:17	aleksander	jeg kommer opp en tur jeg
+2017-11-07 11:07:20	aleksander	så kan vi ta en prat
+2017-11-07 11:07:26	morten	yes :slightly_smiling_face:
+2017-11-07 11:27:29	aleksander	  1 veikran.no = 32717
+2017-11-07 11:27:29	aleksander	  2 drape.no = 30676
+2017-11-07 11:27:29	aleksander	  3 dalenparkering.no = 29414
+2017-11-07 11:27:29	aleksander	  4 norgescatering.no = 43169
+2017-11-07 11:27:37	aleksander	dette er korrekte kundenummer for eposten
+2017-11-07 11:27:59	morten	ok, da oppdaterer jeg de til rett kundenummer så tar du abonnementene?
+2017-11-07 11:28:05	aleksander	ja, har fikset abb alt
+2017-11-07 11:28:11	aleksander	er ingen duplikater igjen nå
+2017-11-07 11:29:05	morten	sånn, da var det gjort
+2017-11-07 11:29:10	aleksander	takker!
+2017-11-10 11:47:53	aleksander	 /etc/uniweb/vps/ipaddrs_vir13.txt
+2017-11-22 14:48:41	--	irc: disconnected from server

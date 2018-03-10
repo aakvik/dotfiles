@@ -1,0 +1,451 @@
+2017-09-22 23:47:19	-->	aakvik (~aleksande@41-147-11.connect.netcom.no) has joined #Netfilter
+2017-09-22 23:47:19	--	Topic for #Netfilter is "Netfilter, Xtables/iptables/nftables, Linux Network setup in general | READ THE MANUALS (iptables(8), iptables-extensions(8)) | READ https://thermicorp.de/netfilter/index.html | https://wiki.nftables.org | stop using ifconfig and route. Use iproute2 instead. | Always pastebin iptables-save -c. Don't give us iptables -L or iptables -S. We don't help you with scripts."
+2017-09-22 23:47:19	--	Topic set by Thermi (~Thermi@unaffiliated/thermi) on to., 04 mai 2017 16:42:44
+2017-09-22 23:47:19	--	Channel #Netfilter: 248 nicks (4 ops, 1 voice, 243 normals)
+2017-09-22 23:47:19	--	PvNotice(ChanServ): "Did ya read the topic, did ya? DID YA?"
+2017-09-22 23:47:21	--	Channel created on sø., 26 nov. 2006 07:42:48
+2017-09-22 23:47:37	-->	matteo (~matteo@redhat/matteo) has joined #Netfilter
+2017-09-22 23:49:59	-->	izibi (~julian@towel.0x01.eu) has joined #Netfilter
+2017-09-22 23:50:56	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-22 23:51:09	-->	Ridout (~coffee@unaffiliated/ridout) has joined #Netfilter
+2017-09-22 23:54:05	--	You are now known as aleksanderffs
+2017-09-22 23:54:30	--	You are now known as aakvik
+2017-09-22 23:56:57	--	irc: disconnected from server
+2017-09-22 23:57:15	-->	aleksander (~aleksande@41-147-11.connect.netcom.no) has joined #Netfilter
+2017-09-22 23:57:15	--	Topic for #Netfilter is "Netfilter, Xtables/iptables/nftables, Linux Network setup in general | READ THE MANUALS (iptables(8), iptables-extensions(8)) | READ https://thermicorp.de/netfilter/index.html | https://wiki.nftables.org | stop using ifconfig and route. Use iproute2 instead. | Always pastebin iptables-save -c. Don't give us iptables -L or iptables -S. We don't help you with scripts."
+2017-09-22 23:57:15	--	Topic set by Thermi (~Thermi@unaffiliated/thermi) on to., 04 mai 2017 16:42:44
+2017-09-22 23:57:15	--	Channel #Netfilter: 252 nicks (4 ops, 1 voice, 247 normals)
+2017-09-22 23:57:15	--	PvNotice(ChanServ): "Did ya read the topic, did ya? DID YA?"
+2017-09-22 23:57:17	--	You are now known as aakvik
+2017-09-22 23:57:19	--	Channel created on sø., 26 nov. 2006 07:42:48
+2017-09-22 23:57:54	<--	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has quit (Quit: Leaving.)
+2017-09-23 00:03:12	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 246 seconds)
+2017-09-23 00:09:09	-->	shootbird (~quassel@beepbeep.serverpit.com) has joined #Netfilter
+2017-09-23 00:09:18	-->	maxine (~maxine@104.36.247.58) has joined #Netfilter
+2017-09-23 00:09:54	-->	cj (~cjac@moonunit.colliertech.org) has joined #Netfilter
+2017-09-23 00:09:56	cj	maxine: moo
+2017-09-23 00:09:57	maxine	cj: i'm not following you...
+2017-09-23 00:10:00	-->	_ADN_ (~username@2a02:c7d:5e18:200:a079:6c6a:d64d:bd98) has joined #Netfilter
+2017-09-23 00:23:55	<--	meta-coder (~meta-code@unaffiliated/meta-coder) has quit (Ping timeout: 255 seconds)
+2017-09-23 00:25:17	-->	metaphysician (~meta-code@unaffiliated/meta-coder) has joined #Netfilter
+2017-09-23 00:28:37	-->	Caplain (~shayne@2605:e000:99e1:4c00:1414:2cf8:c99b:d349) has joined #Netfilter
+2017-09-23 00:30:37	<--	Caplain (~shayne@2605:e000:99e1:4c00:1414:2cf8:c99b:d349) has quit (Read error: Connection reset by peer)
+2017-09-23 00:31:56	-->	Caplain (~shayne@2605:e000:99e1:4c00:1414:2cf8:c99b:d349) has joined #Netfilter
+2017-09-23 00:33:04	-->	rootcmdr (~textual@204.14.239.58) has joined #Netfilter
+2017-09-23 00:35:22	<--	Caplain (~shayne@2605:e000:99e1:4c00:1414:2cf8:c99b:d349) has quit (Read error: Connection reset by peer)
+2017-09-23 00:45:03	-->	skylite_ (~skylite@91EC666D.dsl.pool.telekom.hu) has joined #Netfilter
+2017-09-23 00:45:12	rootcmdr	Hi Everyone!  I'm trying to figure out why Netfilter is dropping some packets that are being forwarded.  I've added log lines to my iptables rules and I can see the packet getting all the way to the mangle POSTROUTING chain, and they are somehow getting dropped before they reach the nat POSTROUTING chain(the first rule of this chain is LOG).  These packets represent the return path of a TCP connection.  The ingress path is different, so there aren't
+2017-09-23 00:45:12	rootcmdr	 any connection tracking table entries.  I have rp_filter=0 on the interfaces these packets are traversing.
+2017-09-23 00:45:48	rootcmdr	Do you all have any ideas what could be dropping these packets?
+2017-09-23 00:49:27	[chanstat]	New user peak: 256 users (last peak was 36m 2s ago)
+2017-09-23 00:50:57	<--	skylite_ (~skylite@91EC666D.dsl.pool.telekom.hu) has quit (Quit: bye...)
+2017-09-23 00:54:32	-->	skylite_ (~skylite@91EC666D.dsl.pool.telekom.hu) has joined #Netfilter
+2017-09-23 00:55:35	<--	skylite (~skylite@91EC666D.dsl.pool.telekom.hu) has quit (Quit: bye...)
+2017-09-23 01:11:32	[chanstat]	New user low: 255 (last low was 58m 7s ago)
+2017-09-23 01:11:59	<--	Dimtree (~dimtree@unaffiliated/dimtree) has quit (Ping timeout: 255 seconds)
+2017-09-23 01:16:38	tjis	rootcmdr: the nat tables are only considered once, to set up the connection tracking stuff. any subsequent packages skip those rules
+2017-09-23 01:19:26	tjis	oh, but you excluded that possibility, nevermind
+2017-09-23 01:21:02	<--	XPUCTOB (~XPUCTOB@212.73.149.139) has quit (Ping timeout: 260 seconds)
+2017-09-23 01:26:31	<--	Jan\\ (~kvirc@198.13.225.156) has quit (Read error: Connection reset by peer)
+2017-09-23 01:28:16	-->	Dimtree (~dimtree@unaffiliated/dimtree) has joined #Netfilter
+2017-09-23 01:51:13	<--	simon3145 (~simon@2a02:168:5c04::356) has quit (Quit: WeeChat 1.9)
+2017-09-23 02:00:00	<--	jrabe (irc@janikrabe.com) has quit
+2017-09-23 02:00:37	-->	jrabe (irc@janikrabe.com) has joined #Netfilter
+2017-09-23 02:00:47	rootcmdr	Thanks for the help guys.  I figured it out.
+2017-09-23 02:03:11	-->	Jan\ (~kvirc@198.13.225.156) has joined #Netfilter
+2017-09-23 02:49:47	-->	Lazydog (~Lazydog@dynamic-acs-24-101-144-159.zoominternet.net) has joined #Netfilter
+2017-09-23 03:00:35	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 240 seconds)
+2017-09-23 03:05:29	-->	shootbird (~quassel@beepbeep.serverpit.com) has joined #Netfilter
+2017-09-23 03:14:09	<--	jkroon (~jkroon@165.16.204.162) has quit (Ping timeout: 248 seconds)
+2017-09-23 03:26:00	-->	jkroon (~jkroon@165.16.204.166) has joined #Netfilter
+2017-09-23 03:40:22	<--	unclutter (~unclutter@24.79-160-153.customer.lyse.net) has quit (Quit: leaving)
+2017-09-23 03:49:57	-->	VLife2911VL (~Devastato@unaffiliated/devastator) has joined #Netfilter
+2017-09-23 03:50:50	<--	Devastator (~Devastato@unaffiliated/devastator) has quit (Ping timeout: 255 seconds)
+2017-09-23 03:58:22	--	VLife2911VL is now known as Devastator
+2017-09-23 04:13:10	-->	czart_ (~czart@acge44.neoplus.adsl.tpnet.pl) has joined #Netfilter
+2017-09-23 04:16:48	<--	jackmcbarn (~jackmcbar@wikipedia/jackmcbarn) has quit (Ping timeout: 240 seconds)
+2017-09-23 04:17:12	<--	czart__ (~czart@acge143.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 260 seconds)
+2017-09-23 04:25:26	<--	jgornick (jgornick@2600:3c00::f03c:91ff:fedf:72b4) has quit (Ping timeout: 246 seconds)
+2017-09-23 04:26:40	-->	blu_ (~bluenemo@unaffiliated/bluenemo) has joined #Netfilter
+2017-09-23 04:30:15	<--	bluenemo (~bluenemo@unaffiliated/bluenemo) has quit (Ping timeout: 252 seconds)
+2017-09-23 04:31:03	-->	jgornick (jgornick@2600:3c00::f03c:91ff:fedf:72b4) has joined #Netfilter
+2017-09-23 05:02:58	-->	jijz (~jkalliya@125.16.200.50) has joined #Netfilter
+2017-09-23 05:30:55	<--	Adbray (~Adbray@2001:470:c692:666:e17f:3ba1:c7a2:2417) has quit (Quit: Quit)
+2017-09-23 05:47:59	-->	Adbray (~Adbray@2001:470:c692:666:e56d:3936:3453:433e) has joined #Netfilter
+2017-09-23 06:14:46	-->	cyborg-one (~cyborg-on@176-119-126-153.broadband.tenet.odessa.ua) has joined #Netfilter
+2017-09-23 07:08:26	<--	Ridout (~coffee@unaffiliated/ridout) has quit (Quit: Lost terminal)
+2017-09-23 07:10:32	-->	u0m3__ (~u0m3@188.25.15.76) has joined #Netfilter
+2017-09-23 07:10:55	<--	xelra (~xelra@unaffiliated/xelra) has quit (Remote host closed the connection)
+2017-09-23 07:11:02	-->	john51_ (~john@15255.s.t4vps.eu) has joined #Netfilter
+2017-09-23 07:13:04	<--	john51 (~john@15255.s.t4vps.eu) has quit (Ping timeout: 248 seconds)
+2017-09-23 07:13:35	<--	u0m3_ (~u0m3@188.25.15.76) has quit (Ping timeout: 248 seconds)
+2017-09-23 07:16:21	-->	XPUCTOB (~XPUCTOB@212.73.149.139) has joined #Netfilter
+2017-09-23 07:20:00	<--	jijz (~jkalliya@125.16.200.50) has quit (Ping timeout: 248 seconds)
+2017-09-23 07:20:00	<--	Robby (robby@chillum.thcgirls.com) has quit (Ping timeout: 246 seconds)
+2017-09-23 07:20:24	<--	XPUCTOB (~XPUCTOB@212.73.149.139) has quit (Remote host closed the connection)
+2017-09-23 07:20:45	-->	XPUCTOB (~XPUCTOB@212.73.149.139) has joined #Netfilter
+2017-09-23 07:24:34	-->	Robby (robby@chillum.thcgirls.com) has joined #Netfilter
+2017-09-23 07:29:23	<--	Robby (robby@chillum.thcgirls.com) has quit (Excess Flood)
+2017-09-23 07:47:21	-->	xelra (~xelra@unaffiliated/xelra) has joined #Netfilter
+2017-09-23 07:50:21	-->	egrain (thomas@31.204.155.215) has joined #Netfilter
+2017-09-23 07:56:28	-->	Robby (robby@chillum.thcgirls.com) has joined #Netfilter
+2017-09-23 08:03:08	<--	Robby (robby@chillum.thcgirls.com) has quit (Ping timeout: 240 seconds)
+2017-09-23 08:23:41	<--	docmax1 (~docmax@x4e359588.dyn.telefonica.de) has quit (Read error: Connection reset by peer)
+2017-09-23 08:24:23	-->	docmax1 (~docmax@x4e359588.dyn.telefonica.de) has joined #Netfilter
+2017-09-23 08:39:06	<--	ziegleka (~ziegleka@37-48-46-63.tmcz.cz) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2017-09-23 08:43:12	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-23 08:51:03	<--	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has quit (Quit: Leaving.)
+2017-09-23 09:03:56	<--	egrain (thomas@31.204.155.215) has quit (Remote host closed the connection)
+2017-09-23 09:16:46	<--	Oatmeal (~Suzeanne@gateway/vpn/privateinternetaccess/suzeanne) has quit (Ping timeout: 240 seconds)
+2017-09-23 09:17:17	-->	Jan\\ (~kvirc@198.13.218.210) has joined #Netfilter
+2017-09-23 09:20:00	<--	Jan\ (~kvirc@198.13.225.156) has quit (Ping timeout: 248 seconds)
+2017-09-23 09:20:53	-->	Robby (robby@chillum.thcgirls.com) has joined #Netfilter
+2017-09-23 09:47:35	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 240 seconds)
+2017-09-23 09:57:50	-->	shoonya (~unknown@171.76.75.217) has joined #Netfilter
+2017-09-23 09:57:57	<--	shoonya (~unknown@171.76.75.217) has quit (Read error: Connection reset by peer)
+2017-09-23 09:58:01	-->	shootbird (~quassel@205.185.122.214) has joined #Netfilter
+2017-09-23 09:58:24	-->	shoonya (~unknown@171.76.75.217) has joined #Netfilter
+2017-09-23 10:02:35	-->	Oatmeal (~Suzeanne@gateway/vpn/privateinternetaccess/suzeanne) has joined #Netfilter
+2017-09-23 10:16:56	-->	Dave^ (none@remote.daveaskew.com) has joined #Netfilter
+2017-09-23 10:16:56	<--	Dave^ (none@remote.daveaskew.com) has quit (Changing host)
+2017-09-23 10:16:56	-->	Dave^ (none@unaffiliated/dave/x-0133662) has joined #Netfilter
+2017-09-23 10:54:53	-->	jijz (~jkalliya@125.16.200.50) has joined #Netfilter
+2017-09-23 11:03:26	-->	egrain (thomas@31.204.155.215) has joined #Netfilter
+2017-09-23 11:03:31	<--	docmax1 (~docmax@x4e359588.dyn.telefonica.de) has quit (Quit: WeeChat 1.9)
+2017-09-23 11:05:29	-->	docmax (~docmax@x4e359588.dyn.telefonica.de) has joined #Netfilter
+2017-09-23 11:16:23	<--	Oatmeal (~Suzeanne@gateway/vpn/privateinternetaccess/suzeanne) has quit (Read error: Connection reset by peer)
+2017-09-23 11:25:46	<--	shootbird (~quassel@205.185.122.214) has quit (Ping timeout: 240 seconds)
+2017-09-23 11:34:35	<--	wigums (~wigums@unaffiliated/wigums) has quit (Ping timeout: 240 seconds)
+2017-09-23 11:38:28	-->	shootbird (~quassel@beepbeep.serverpit.com) has joined #Netfilter
+2017-09-23 11:47:32	<--	jijz (~jkalliya@125.16.200.50) has quit (Ping timeout: 260 seconds)
+2017-09-23 11:48:10	-->	wigums (~wigums@unaffiliated/wigums) has joined #Netfilter
+2017-09-23 11:56:33	-->	Oatmeal (~Suzeanne@gateway/vpn/privateinternetaccess/suzeanne) has joined #Netfilter
+2017-09-23 11:57:38	<--	Oatmeal (~Suzeanne@gateway/vpn/privateinternetaccess/suzeanne) has quit (Client Quit)
+2017-09-23 12:15:37	-->	unclutter (~unclutter@24.79-160-153.customer.lyse.net) has joined #Netfilter
+2017-09-23 12:38:14	-->	simon3145 (~simon@2a02:168:5c04::356) has joined #Netfilter
+2017-09-23 12:44:25	<--	boObz (~boObz@51.15.179.232) has left #Netfilter
+2017-09-23 12:57:54	<--	izibi (~julian@towel.0x01.eu) has quit (Ping timeout: 252 seconds)
+2017-09-23 13:11:39	-->	JohnDoe42 (~frederik@2a01:170:109a:1:8976:899e:bb62:9f90) has joined #Netfilter
+2017-09-23 13:28:28	<--	Dave^ (none@unaffiliated/dave/x-0133662) has quit (Quit: - nbs-irc 2.39 - www.nbs-irc.net -)
+2017-09-23 13:47:43	-->	b (~coffee@unaffiliated/ridout) has joined #Netfilter
+2017-09-23 14:16:08	<--	egrain (thomas@31.204.155.215) has quit (Remote host closed the connection)
+2017-09-23 14:26:59	-->	izibi (~julian@towel.0x01.eu) has joined #Netfilter
+2017-09-23 14:29:26	-->	u0m3 (~u0m3@188.25.13.245) has joined #Netfilter
+2017-09-23 14:29:35	<--	u0m3__ (~u0m3@188.25.15.76) has quit (Ping timeout: 240 seconds)
+2017-09-23 14:32:35	-->	u0m3_ (~u0m3@188.25.13.245) has joined #Netfilter
+2017-09-23 14:35:35	<--	u0m3 (~u0m3@188.25.13.245) has quit (Ping timeout: 240 seconds)
+2017-09-23 14:36:12	-->	u0m3__ (~u0m3@188.25.13.245) has joined #Netfilter
+2017-09-23 14:39:02	<--	u0m3_ (~u0m3@188.25.13.245) has quit (Ping timeout: 260 seconds)
+2017-09-23 14:54:07	<--	Nik05 (~Nik05@unaffiliated/nik05) has quit (Remote host closed the connection)
+2017-09-23 14:56:43	-->	Nik05 (~Nik05@unaffiliated/nik05) has joined #Netfilter
+2017-09-23 15:05:21	<--	unclutter (~unclutter@24.79-160-153.customer.lyse.net) has quit (Ping timeout: 240 seconds)
+2017-09-23 15:11:10	-->	egrain (thomas@31.204.155.215) has joined #Netfilter
+2017-09-23 15:14:51	<--	cyborg-one (~cyborg-on@176-119-126-153.broadband.tenet.odessa.ua) has quit (Ping timeout: 252 seconds)
+2017-09-23 15:40:28	<--	Typhon (~Typhon@ipservice-092-218-106-190.092.218.pools.vodafone-ip.de) has quit (Read error: Connection reset by peer)
+2017-09-23 15:51:16	-->	Typhon (~Typhon@ipservice-092-218-106-190.092.218.pools.vodafone-ip.de) has joined #Netfilter
+2017-09-23 15:59:08	<--	docmax (~docmax@x4e359588.dyn.telefonica.de) has quit (Quit: WeeChat 1.9)
+2017-09-23 16:01:09	-->	docmax (~docmax@x4e359588.dyn.telefonica.de) has joined #Netfilter
+2017-09-23 16:09:18	<--	Typhon (~Typhon@ipservice-092-218-106-190.092.218.pools.vodafone-ip.de) has quit (Ping timeout: 252 seconds)
+2017-09-23 16:15:00	<--	JohnDoe42 (~frederik@2a01:170:109a:1:8976:899e:bb62:9f90) has quit (Quit: Leaving.)
+2017-09-23 16:15:14	-->	Typhon (~Typhon@dslb-088-065-221-190.088.065.pools.vodafone-ip.de) has joined #Netfilter
+2017-09-23 16:19:14	<--	Magik6k (~Magik6k@magik6k.net) has quit (Quit: Bye!)
+2017-09-23 16:24:08	<--	grawity (grawity@virgule.cluenet.org) has quit (Remote host closed the connection)
+2017-09-23 16:24:53	-->	grawity (grawity@virgule.cluenet.org) has joined #Netfilter
+2017-09-23 17:01:09	--	ldir is now known as NoIamTheDevelope
+2017-09-23 17:01:20	--	NoIamTheDevelope is now known as NoIamTheDevelopr
+2017-09-23 17:02:55	-->	deedier (~grml@host-109-89-104-229.dynamic.voo.be) has joined #Netfilter
+2017-09-23 17:03:03	deedier	hi
+2017-09-23 17:03:04	<--	maxine (~maxine@104.36.247.58) has quit (Remote host closed the connection)
+2017-09-23 17:03:10	-->	maxine (~maxine@104.36.247.58) has joined #Netfilter
+2017-09-23 17:04:18	deedier	anyone can help me on this issue ? https://stackoverflow.com/questions/46380643/openvpn-forward-network-traffic-to-specific-subnet
+2017-09-23 17:12:14	--	NoIamTheDevelopr is now known as ldir
+2017-09-23 17:15:17	--	u0m3__ is now known as u0m3
+2017-09-23 17:41:46	-->	JohnDoe42 (~frederik@2a01:170:109a:1:759d:6dd7:262f:66a9) has joined #Netfilter
+2017-09-23 18:11:38	-->	Dave^ (none@remote.daveaskew.com) has joined #Netfilter
+2017-09-23 18:11:38	<--	Dave^ (none@remote.daveaskew.com) has quit (Changing host)
+2017-09-23 18:11:38	-->	Dave^ (none@unaffiliated/dave/x-0133662) has joined #Netfilter
+2017-09-23 18:14:31	<--	Dave^ (none@unaffiliated/dave/x-0133662) has quit (Read error: Connection reset by peer)
+2017-09-23 18:15:47	-->	yvi (~yvi@unaffiliated/yviwp) has joined #Netfilter
+2017-09-23 18:17:25	-->	Dave^ (none@remote.daveaskew.com) has joined #Netfilter
+2017-09-23 18:17:25	<--	Dave^ (none@remote.daveaskew.com) has quit (Changing host)
+2017-09-23 18:17:25	-->	Dave^ (none@unaffiliated/dave/x-0133662) has joined #Netfilter
+2017-09-23 18:20:01	+rob0	Read our /topic, make a pastebin as it suggests.  Stop using buggy and broken Linux net-tools; "ip addr ; ip route ; ip rule ; iptables-save -c"
+2017-09-23 18:21:24	skyroveRR	ip addr
+2017-09-23 18:21:31	skyroveRR	ip: command not found
+2017-09-23 18:21:34	skyroveRR	ip route
+2017-09-23 18:21:38	skyroveRR	ip: command not found
+2017-09-23 18:21:40	skyroveRR	ip rule
+2017-09-23 18:21:44	skyroveRR	ip: command not found
+2017-09-23 18:21:48	skyroveRR	iptables-save -c
+2017-09-23 18:21:57	skyroveRR	rob0: person not found
+2017-09-23 18:22:01	skyroveRR	o.o
+2017-09-23 18:22:19	+rob0	That's because I'm AI, not human.
+2017-09-23 18:23:36	<--	Dave^ (none@unaffiliated/dave/x-0133662) has quit (Quit: - nbs-irc 2.39 - www.nbs-irc.net -)
+2017-09-23 18:25:48	-->	Dave^ (none@unaffiliated/dave/x-0133662) has joined #Netfilter
+2017-09-23 18:28:14	-->	cyborg-one (~cyborg-on@176-119-126-153.broadband.tenet.odessa.ua) has joined #Netfilter
+2017-09-23 18:31:23	<--	simonlnu (~eric@friendica.malsum.org) has quit (Ping timeout: 246 seconds)
+2017-09-23 18:31:52	-->	simonlnu (~eric@friendica.malsum.org) has joined #Netfilter
+2017-09-23 18:32:58	<--	egrain (thomas@31.204.155.215) has quit (Remote host closed the connection)
+2017-09-23 18:35:15	-->	egrain (thomas@31.204.155.215) has joined #Netfilter
+2017-09-23 18:38:28	<--	simonlnu (~eric@friendica.malsum.org) has quit (Ping timeout: 240 seconds)
+2017-09-23 18:40:21	-->	simonlnu (~eric@friendica.malsum.org) has joined #Netfilter
+2017-09-23 19:06:41	-->	zenirc369 (~karthikv@124.123.102.226) has joined #Netfilter
+2017-09-23 19:16:13	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-23 19:23:10	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 264 seconds)
+2017-09-23 19:25:08	<--	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has quit (Quit: Leaving.)
+2017-09-23 19:29:05	<--	simonlnu (~eric@friendica.malsum.org) has quit (Ping timeout: 255 seconds)
+2017-09-23 19:29:53	-->	simonlnu (~eric@friendica.malsum.org) has joined #Netfilter
+2017-09-23 19:36:39	<--	simonlnu (~eric@friendica.malsum.org) has quit (Ping timeout: 252 seconds)
+2017-09-23 19:37:23	-->	simonlnu (~eric@friendica.malsum.org) has joined #Netfilter
+2017-09-23 19:38:41	-->	shootbird (~quassel@beepbeep.serverpit.com) has joined #Netfilter
+2017-09-23 19:52:14	<--	simonlnu (~eric@friendica.malsum.org) has quit (Ping timeout: 246 seconds)
+2017-09-23 19:53:24	-->	simonlnu (~eric@malsum.org) has joined #Netfilter
+2017-09-23 20:27:57	-->	poop (~wigums@unaffiliated/wigums) has joined #Netfilter
+2017-09-23 20:31:22	<--	wigums (~wigums@unaffiliated/wigums) has quit (Ping timeout: 260 seconds)
+2017-09-23 20:31:30	--	poop is now known as wigums
+2017-09-23 20:34:33	<--	Dave^ (none@unaffiliated/dave/x-0133662) has quit (Quit: - nbs-irc 2.39 - www.nbs-irc.net -)
+2017-09-23 20:37:22	-->	u0m3_ (~u0m3@86.127.132.200) has joined #Netfilter
+2017-09-23 20:38:48	<--	u0m3 (~u0m3@188.25.13.245) has quit (Ping timeout: 252 seconds)
+2017-09-23 20:43:11	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-23 20:48:53	<--	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has quit (Quit: Leaving.)
+2017-09-23 21:16:55	grawity	if I'm using "-j REJECT" in iptables, or "reject" in nft, will that also respond to broadcast/multicast packets?
+2017-09-23 21:19:55	jelly	are these packets going to match your rule?
+2017-09-23 21:30:42	fw	grawity: no.
+2017-09-23 21:39:09	<--	nitdega (~nitdega@2602:302:d16c:d021:4438:73ab:f30d:c9f1) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2017-09-23 21:39:11	<--	u0m3_ (~u0m3@86.127.132.200) has quit (Ping timeout: 248 seconds)
+2017-09-23 21:41:51	-->	nitdega (~nitdega@2602:302:d16c:d021:4438:73ab:f30d:c9f1) has joined #Netfilter
+2017-09-23 21:46:37	<--	shoonya (~unknown@171.76.75.217) has quit (Quit: Leaving)
+2017-09-23 21:53:35	<--	jkroon (~jkroon@165.16.204.166) has quit (Ping timeout: 240 seconds)
+2017-09-23 22:07:56	-->	Oatmeal (~Suzeanne@gateway/vpn/privateinternetaccess/suzeanne) has joined #Netfilter
+2017-09-23 22:18:35	<--	JohnDoe42 (~frederik@2a01:170:109a:1:759d:6dd7:262f:66a9) has quit (Quit: Leaving.)
+2017-09-23 22:49:02	-->	kenansulayman (znc@185.38.14.119) has joined #Netfilter
+2017-09-23 22:51:05	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 240 seconds)
+2017-09-23 23:03:13	-->	shootbird (~quassel@beepbeep.serverpit.com) has joined #Netfilter
+2017-09-23 23:07:29	-->	u0m3 (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-23 23:33:19	<--	XPUCTOB (~XPUCTOB@212.73.149.139) has quit (Ping timeout: 248 seconds)
+2017-09-24 00:40:45	-->	whoisxy (~whoisxy@83.137.254.176) has joined #Netfilter
+2017-09-24 00:42:11	whoisxy	I'm wondering how the REDIRECT target is implemented?
+2017-09-24 00:43:10	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-24 00:43:22	<--	zenirc369 (~karthikv@124.123.102.226) has quit (Ping timeout: 260 seconds)
+2017-09-24 00:56:07	-->	acidvegas (~y0rd@spider.ircd.moe) has joined #Netfilter
+2017-09-24 00:56:19	acidvegas	hello o/
+2017-09-24 01:02:02	-->	czart__ (~czart@acge44.neoplus.adsl.tpnet.pl) has joined #Netfilter
+2017-09-24 01:04:52	@Jefe	whoisxy, what do you mean by "how [it] is implemented?"
+2017-09-24 01:05:33	<--	czart_ (~czart@acge44.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 252 seconds)
+2017-09-24 01:05:39	whoisxy	Jefe: well I want to know how it transforms the packets it receives
+2017-09-24 01:06:13	@Jefe	You want to know the final result, or the C-level how it gets done?
+2017-09-24 01:06:22	whoisxy	final result
+2017-09-24 01:06:30	@Jefe	That's easy.
+2017-09-24 01:07:04	@Jefe	It redirects the packet to the first IP assigned to the interface the packet was received on, perhaps changing the port.
+2017-09-24 01:07:44	whoisxy	Jefe: so dest ip and dest port are lost
+2017-09-24 01:07:56	@Jefe	dest port is not lost if it is not changed.
+2017-09-24 01:08:03	whoisxy	but it it is
+2017-09-24 01:08:07	whoisxy	*if it
+2017-09-24 01:08:10	acidvegas	is incoming and outgoing traffic on the loopback (lo) required or just output
+2017-09-24 01:08:13	@Jefe	Then, yes.
+2017-09-24 01:08:37	@Jefe	acidvegas, you mean an ACCEPT rule?
+2017-09-24 01:09:13	acidvegas	yeah
+2017-09-24 01:09:23	acidvegas	i have
+2017-09-24 01:09:23	acidvegas	iptables -A INPUT  -i lo -j ACCEPT
+2017-09-24 01:09:23	acidvegas	iptables -A OUTPUT -o lo -j ACCEPT
+2017-09-24 01:09:28	acidvegas	right now but idk if BOTH are required
+2017-09-24 01:10:08	whoisxy	Hmmm. redsocks which is program which recives network traffic and passes it through a proxy expects me to use the redirect but if it's replacing the IP and port then how will it know where I want the request to go?
+2017-09-24 01:10:18	whoisxy	maybe that's a bit offtopic for here
+2017-09-24 01:11:31	whoisxy	s/network traffic/TCP packets/ ... sorry for the lack of punctuation
+2017-09-24 01:14:13	@Jefe	whoisxy, HTTP includes the destination in the layer 7 data.
+2017-09-24 01:14:47	@Jefe	acidvegas, I would include both those rules if your policies on the INPUT and OUTPUT chains are DROP.
+2017-09-24 01:15:41	<--	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has quit (Quit: Leaving.)
+2017-09-24 01:16:06	whoisxy	Jefe: maybe my understanding is incorrect is socks specific to HTTP
+2017-09-24 01:16:42	@Jefe	No, I don't think so.  But I assume the instructions you are reading are saying to REDIRECT port 80.
+2017-09-24 01:17:21	whoisxy	I hope not I wanted to proxy TCP traffic
+2017-09-24 01:17:35	@Jefe	Hmm, I'm not sure.
+2017-09-24 01:18:27	whoisxy	this was there example root# iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
+2017-09-24 01:18:37	@Jefe	Actually, I don't think the dst addr is lost.  It just gets consumed locally.  Again, I could be wrong.
+2017-09-24 01:19:55	@Jefe	You could always use TRACE to figure out what is happening.
+2017-09-24 01:20:22	whoisxy	Jefe: I'm not using iptables, I use nftables
+2017-09-24 01:21:16	@Jefe	Well I don't know.  Sorry.  Maybe one of the devs is around.
+2017-09-24 01:21:28	acidvegas	Jefe: is --dports for INCOMMING or OUTGOING usage when using -m multiport
+2017-09-24 01:22:04	@Jefe	It's short for --destination-port.
+2017-09-24 01:22:19	@Jefe	s/\.$/s./
+2017-09-24 01:23:35	@Jefe	Anyway, I gotta run.
+2017-09-24 01:23:55	whoisxy	Jefe: okay thanks for your help anyway I'll see if I can get an understanding of the kernel functions that deal with redirecting the traffic some of the named aren't too clear but it doesn't look to big or complex
+2017-09-24 01:24:17	whoisxy	s/named/names/
+2017-09-24 01:59:41	acidvegas	is iptables -X needed or will -F clear everyhing
+2017-09-24 01:59:58	<--	matteo (~matteo@redhat/matteo) has quit (Quit: ZNC 1.6.5+deb2+b1 - http://znc.in)
+2017-09-24 02:01:09	-->	matteo (~matteo@redhat/matteo) has joined #Netfilter
+2017-09-24 02:13:01	+rob0	Neither -F nor -X are needed.  If you want no rules, load an empty ruleset with iptables-restore.
+2017-09-24 02:13:21	-->	czart_ (~czart@acev234.neoplus.adsl.tpnet.pl) has joined #Netfilter
+2017-09-24 02:14:36	acidvegas	rob0: im saying would -X have any affect if you already did -F
+2017-09-24 02:15:31	<--	linuxmodder (linuxmodde@2ProIntl/thru-the-firewall/linuxmodder) has quit (Quit: Real Life has interjected... Leave a memo)
+2017-09-24 02:15:43	-->	linuxmodder (linuxmodde@2ProIntl/thru-the-firewall/linuxmodder) has joined #Netfilter
+2017-09-24 02:17:02	<--	deedier (~grml@host-109-89-104-229.dynamic.voo.be) has quit (Quit: leaving)
+2017-09-24 02:17:17	<--	czart__ (~czart@acge44.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 260 seconds)
+2017-09-24 02:20:03	+rob0	-F does not remove user chains, only rules
+2017-09-24 02:20:14	+rob0	TIAS
+2017-09-24 02:23:32	acidvegas	rob0:
+2017-09-24 02:23:32	acidvegas	iptables -F
+2017-09-24 02:23:32	acidvegas	iptables -X
+2017-09-24 02:23:32	acidvegas	iptables -t nat -F
+2017-09-24 02:23:33	acidvegas	iptables -t nat -X
+2017-09-24 02:23:45	acidvegas	why do people include this all the time. specifying the -t nat and
+2017-09-24 02:23:47	acidvegas	mangaled table
+2017-09-24 02:23:58	acidvegas	-F and -X wouldnt clear that either?
+2017-09-24 02:24:23	+rob0	why do people use scripts at all?  As you already know because you read our /topic, it's a bad idea.
+2017-09-24 02:25:29	acidvegas	you mean instead of usiong  a .rules file?
+2017-09-24 02:25:30	acidvegas	using*
+2017-09-24 02:25:31	+rob0	an iptables command only acts in ONE TABLE.  Where did you see that "iptables -X" would clear out all tables?
+2017-09-24 02:27:17	acidvegas	true
+2017-09-24 02:27:17	acidvegas	https://wiki.archlinux.org/index.php/iptables#Resetting_rules
+2017-09-24 02:27:19	acidvegas	just saw this
+2017-09-24 02:38:51	<--	cyborg-one (~cyborg-on@176-119-126-153.broadband.tenet.odessa.ua) has quit (Quit: cyborg-one)
+2017-09-24 02:43:27	-->	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 02:46:27	<--	u0m3 (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 260 seconds)
+2017-09-24 03:03:43	<--	linuxmodder (linuxmodde@2ProIntl/thru-the-firewall/linuxmodder) has quit (Remote host closed the connection)
+2017-09-24 03:04:01	-->	linuxmodder (linuxmodde@2ProIntl/thru-the-firewall/linuxmodder) has joined #Netfilter
+2017-09-24 03:16:48	<--	tmberg (tmberg@unaffiliated/tmberg) has quit (Ping timeout: 240 seconds)
+2017-09-24 03:17:15	-->	tmberg (tmberg@unaffiliated/tmberg) has joined #Netfilter
+2017-09-24 03:29:09	-->	Dagger2 (~dagger@sawako.haruhi.eu) has joined #Netfilter
+2017-09-24 03:29:49	<--	Dagger (~dagger@sawako.haruhi.eu) has quit (Ping timeout: 276 seconds)
+2017-09-24 03:33:58	<--	kein31 (~root@79.105.41.37) has quit (Ping timeout: 264 seconds)
+2017-09-24 03:34:47	-->	kein31 (~root@62.33.40.233) has joined #Netfilter
+2017-09-24 03:42:19	tjis	I was wondering, is it possible to set up firewall rules in another network namespace, without creating a container that is capable of running iptables/nft?
+2017-09-24 03:43:07	tjis	like, ip has the -netns flag
+2017-09-24 03:45:03	tjis	ah, apparently I can use ip netns to run arbitrary commands, not just iproute2 stuff. so that answers that
+2017-09-24 03:45:08	tjis	thanks again #netfilter :D
+2017-09-24 03:58:09	-->	Caplain (~shayne@2605:e000:99e1:4c00:1414:2cf8:c99b:d349) has joined #Netfilter
+2017-09-24 04:08:44	<--	Caplain (~shayne@2605:e000:99e1:4c00:1414:2cf8:c99b:d349) has quit (Read error: Connection reset by peer)
+2017-09-24 04:16:02	-->	u0m3__ (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 04:18:35	<--	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 240 seconds)
+2017-09-24 04:18:48	-->	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 04:20:05	<--	c0d3d (~c0ded@2607:5300:60:69b1:2f41:c2fd:f13c:48fa) has quit (Ping timeout: 255 seconds)
+2017-09-24 04:21:41	<--	u0m3__ (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 240 seconds)
+2017-09-24 04:22:59	-->	c0ded (~c0ded@2607:5300:60:69b1:2f41:c2fd:f13c:48fa) has joined #Netfilter
+2017-09-24 04:23:32	-->	u0m3__ (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 04:25:29	<--	jgornick (jgornick@2600:3c00::f03c:91ff:fedf:72b4) has quit (Ping timeout: 255 seconds)
+2017-09-24 04:25:42	-->	blu__ (~bluenemo@unaffiliated/bluenemo) has joined #Netfilter
+2017-09-24 04:26:28	-->	u0m3 (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 04:26:35	<--	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 240 seconds)
+2017-09-24 04:28:32	<--	u0m3__ (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 260 seconds)
+2017-09-24 04:29:03	<--	blu_ (~bluenemo@unaffiliated/bluenemo) has quit (Ping timeout: 252 seconds)
+2017-09-24 04:31:19	-->	jgornick (jgornick@2600:3c00::f03c:91ff:fedf:72b4) has joined #Netfilter
+2017-09-24 04:37:32	<--	Death916 (Elite19663@gateway/shell/elitebnc/x-gjjqyiwtdxnsmjjd) has left #Netfilter ("Closing Window")
+2017-09-24 04:39:14	<--	egrain (thomas@31.204.155.215) has quit (Remote host closed the connection)
+2017-09-24 04:42:36	<--	Bert_2 (~bert@sys.bhack.net) has left #Netfilter
+2017-09-24 05:07:45	<--	daynaskully (~dskull@unaffiliated/daynaskully) has quit (Ping timeout: 240 seconds)
+2017-09-24 05:12:07	-->	daynaskully (~dskull@unaffiliated/daynaskully) has joined #Netfilter
+2017-09-24 05:19:45	<--	daynaskully (~dskull@unaffiliated/daynaskully) has quit (Ping timeout: 240 seconds)
+2017-09-24 05:20:33	-->	daynaskully (~dskull@unaffiliated/daynaskully) has joined #Netfilter
+2017-09-24 06:06:59	<--	Poster|z- (~poster@cpe-65-185-37-0.columbus.res.rr.com) has quit (Remote host closed the connection)
+2017-09-24 06:07:53	<--	Poster (~poster@cpe-65-185-36-98.columbus.res.rr.com) has quit (Ping timeout: 246 seconds)
+2017-09-24 06:42:25	<--	mumixam (ident@unaffiliated/mumixam) has quit (Remote host closed the connection)
+2017-09-24 06:44:08	-->	mumixam (~m@unaffiliated/mumixam) has joined #Netfilter
+2017-09-24 06:52:25	-->	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 06:55:32	<--	u0m3 (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 260 seconds)
+2017-09-24 07:00:51	<--	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 252 seconds)
+2017-09-24 07:06:45	<--	blu__ (~bluenemo@unaffiliated/bluenemo) has quit (Ping timeout: 240 seconds)
+2017-09-24 07:16:15	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 252 seconds)
+2017-09-24 07:30:20	-->	shootbird (~quassel@beepbeep.serverpit.com) has joined #Netfilter
+2017-09-24 08:13:07	-->	zenirc369 (~karthikv@124.123.102.226) has joined #Netfilter
+2017-09-24 08:33:35	<--	whoisxy (~whoisxy@83.137.254.176) has quit (Ping timeout: 240 seconds)
+2017-09-24 08:57:45	<--	kein31 (~root@62.33.40.233) has quit (Ping timeout: 240 seconds)
+2017-09-24 08:59:51	-->	kein31 (~root@62.33.40.233) has joined #Netfilter
+2017-09-24 09:04:30	<--	kopper (~mrbabar@unaffiliated/kopper) has quit (Quit: leaving)
+2017-09-24 09:11:45	<--	kein31 (~root@62.33.40.233) has quit (Ping timeout: 240 seconds)
+2017-09-24 09:13:52	-->	kein31 (~root@62.33.40.233) has joined #Netfilter
+2017-09-24 09:26:55	<--	kein31 (~root@62.33.40.233) has quit (Ping timeout: 248 seconds)
+2017-09-24 09:28:45	-->	kein31 (~root@62.33.40.233) has joined #Netfilter
+2017-09-24 09:50:43	-->	Dave^ (none@remote.daveaskew.com) has joined #Netfilter
+2017-09-24 09:50:43	<--	Dave^ (none@remote.daveaskew.com) has quit (Changing host)
+2017-09-24 09:50:43	-->	Dave^ (none@unaffiliated/dave/x-0133662) has joined #Netfilter
+2017-09-24 10:16:19	<--	b (~coffee@unaffiliated/ridout) has quit (Remote host closed the connection)
+2017-09-24 10:23:05	<--	kein31 (~root@62.33.40.233) has quit (Ping timeout: 240 seconds)
+2017-09-24 10:25:26	-->	kein31 (~root@79.105.41.37) has joined #Netfilter
+2017-09-24 10:37:19	<--	Haxxa (~Harrison@180.150.30.18) has quit (Ping timeout: 248 seconds)
+2017-09-24 10:37:28	<--	Wolfie (wolfie@wolfietech.ca) has quit (Quit: ZNC 1.7.x - http://znc.in)
+2017-09-24 10:38:57	-->	Wolfie (wolfie@wolfietech.ca) has joined #Netfilter
+2017-09-24 10:39:08	<--	mescalito (~mescalito@unaffiliated/mescal) has quit (Quit: mescalito)
+2017-09-24 10:39:25	-->	mescalito (~mescalito@unaffiliated/mescal) has joined #Netfilter
+2017-09-24 10:41:11	-->	Haxxa (~Harrison@180.150.30.18) has joined #Netfilter
+2017-09-24 10:55:52	<--	matteo (~matteo@redhat/matteo) has quit (Ping timeout: 260 seconds)
+2017-09-24 10:56:13	-->	matteo (~matteo@redhat/matteo) has joined #Netfilter
+2017-09-24 11:14:45	<--	Dave^ (none@unaffiliated/dave/x-0133662) has quit (Quit: - nbs-irc 2.39 - www.nbs-irc.net -)
+2017-09-24 11:58:42	grawity	fw: good, thanks
+2017-09-24 11:58:42	<--	maxine (~maxine@104.36.247.58) has quit (Remote host closed the connection)
+2017-09-24 11:58:50	-->	maxine (~maxine@104.36.247.58) has joined #Netfilter
+2017-09-24 12:01:43	-->	Megaf (~Megaf@unaffiliated/megaf) has joined #Netfilter
+2017-09-24 12:37:01	<--	Megaf (~Megaf@unaffiliated/megaf) has quit (Disconnected by services)
+2017-09-24 12:37:30	-->	Megaf (~Megaf@unaffiliated/megaf) has joined #Netfilter
+2017-09-24 12:39:39	<--	Dimtree (~dimtree@unaffiliated/dimtree) has quit (Ping timeout: 252 seconds)
+2017-09-24 13:00:02	-->	Dimtree (~dimtree@unaffiliated/dimtree) has joined #Netfilter
+2017-09-24 13:07:44	-->	unclutter (~unclutter@24.79-160-153.customer.lyse.net) has joined #Netfilter
+2017-09-24 13:14:56	-->	egrain (thomas@31.204.155.215) has joined #Netfilter
+2017-09-24 13:26:28	-->	kopper (~mrbabar@unaffiliated/kopper) has joined #Netfilter
+2017-09-24 13:33:46	--	Dagger2 is now known as Dagger
+2017-09-24 13:36:41	<--	Megaf (~Megaf@unaffiliated/megaf) has quit (Ping timeout: 240 seconds)
+2017-09-24 14:22:35	<--	egrain (thomas@31.204.155.215) has quit (Remote host closed the connection)
+2017-09-24 14:24:54	<--	metaphysician (~meta-code@unaffiliated/meta-coder) has quit (Quit: Bye.)
+2017-09-24 14:27:13	-->	Dave^ (none@remote.daveaskew.com) has joined #Netfilter
+2017-09-24 14:27:13	<--	Dave^ (none@remote.daveaskew.com) has quit (Changing host)
+2017-09-24 14:27:13	-->	Dave^ (none@unaffiliated/dave/x-0133662) has joined #Netfilter
+2017-09-24 14:37:21	-->	b (~coffee@unaffiliated/ridout) has joined #Netfilter
+2017-09-24 15:06:03	<--	atk (~Arch-TK@erebus.the-tk.com) has quit (Changing host)
+2017-09-24 15:06:03	-->	atk (~Arch-TK@ircpuzzles/staff/Arch-TK) has joined #Netfilter
+2017-09-24 15:09:30	-->	Diaoer (~Diaoer@139.226.141.41) has joined #Netfilter
+2017-09-24 15:21:32	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-24 15:42:06	-->	u0m3 (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 15:46:31	-->	Phrk_ (~d@185.82.101.196) has joined #Netfilter
+2017-09-24 15:48:52	Phrk_	Hi, to make local forward with ssh, just out and input -J ACCEPT and it's ok ?
+2017-09-24 15:49:11	Phrk_	*i mean lo interface
+2017-09-24 15:55:21	<--	shootbird (~quassel@beepbeep.serverpit.com) has quit (Ping timeout: 240 seconds)
+2017-09-24 16:19:22	-->	shootbird (~quassel@205.185.122.214) has joined #Netfilter
+2017-09-24 16:59:50	<--	Phrk_ (~d@185.82.101.196) has quit (Quit: Leaving)
+2017-09-24 17:19:57	<--	linuxmodder (linuxmodde@2ProIntl/thru-the-firewall/linuxmodder) has quit (Quit: Real Life has interjected... Leave a memo)
+2017-09-24 17:20:16	-->	linuxmodder (linuxmodde@2ProIntl/thru-the-firewall/linuxmodder) has joined #Netfilter
+2017-09-24 17:20:49	<--	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has quit (Quit: Leaving.)
+2017-09-24 17:22:04	-->	blackyboy (~blackyboy@103.5.133.74) has joined #Netfilter
+2017-09-24 17:41:14	<--	docmax (~docmax@x4e359588.dyn.telefonica.de) has quit (Quit: WeeChat 1.9)
+2017-09-24 17:41:30	-->	docmax (~docmax@x4e359588.dyn.telefonica.de) has joined #Netfilter
+2017-09-24 17:42:48	-->	d0x0b (c14d7cf5@gateway/web/thelounge/ip.193.77.124.245) has joined #Netfilter
+2017-09-24 17:45:39	tjis	Thermi: I'm looking at your info site. why do you consider nftables to not be production ready yet?
+2017-09-24 17:48:01	-->	egrain (thomas@31.204.155.215) has joined #Netfilter
+2017-09-24 17:49:11	<--	Diaoer (~Diaoer@139.226.141.41) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-09-24 18:00:36	<--	d0x0b (c14d7cf5@gateway/web/thelounge/ip.193.77.124.245) has quit (Quit: Page closed)
+2017-09-24 18:04:53	@Thermi	tjis: no XFRm policy match, no hashlimit (?), no ipset support
+2017-09-24 18:07:15	tjis	nft has its own set datastructures with many more features than ipset. agree on the xfrm though. what is hashlimit?
+2017-09-24 18:08:48	@Thermi	I know that. The nft sets do not have the same or a superset of the functionality of ipsets. read the manual for iptables-extensions.
+2017-09-24 18:09:24	@Thermi	e.g. almost atomic swapping, saving the rules without the sets, ...
+2017-09-24 18:11:17	tjis	huh, nft operations should be atomic
+2017-09-24 18:11:45	tjis	that's not very nice if they aren't :(
+2017-09-24 18:11:53	@Thermi	no, the ipset swap isn't atomic
+2017-09-24 18:11:58	@Thermi	AFAIK nft has no swapping
+2017-09-24 18:12:26	tjis	nft -f filename should load and apply everything in a file in an atomic way
+2017-09-24 18:12:44	@Thermi	I do not see how that applies to my argument
+2017-09-24 18:13:25	tjis	well, if that file swaps out a set, that should be atomic
+2017-09-24 18:13:39	@Thermi	Is there an operation that swaps sets like ipset does?
+2017-09-24 18:14:10	tjis	there isn't, but nft scripts as a whole are applied atomically, rather than one command after another
+2017-09-24 18:14:18	@Thermi	Well, then my point stands.
+2017-09-24 18:14:26	tjis	so you flush the set and load a new one, but it's still atomic
+2017-09-24 18:15:58	<--	Dave^ (none@unaffiliated/dave/x-0133662) has quit (Quit: - nbs-irc 2.39 - www.nbs-irc.net -)
+2017-09-24 18:50:32	-->	u0m3_ (~u0m3@5-12-78-216.residential.rdsnet.ro) has joined #Netfilter
+2017-09-24 18:53:19	<--	u0m3 (~u0m3@5-12-78-216.residential.rdsnet.ro) has quit (Ping timeout: 248 seconds)
+2017-09-24 19:22:20	-->	m8 (~m8@unaffiliated/m8) has joined #Netfilter
+2017-09-24 19:26:28	<--	m8 (~m8@unaffiliated/m8) has quit (Read error: Connection reset by peer)
+2017-09-24 19:27:00	-->	m8 (~m8@unaffiliated/m8) has joined #Netfilter
+2017-09-24 19:31:34	<--	m8 (~m8@unaffiliated/m8) has quit (Read error: Connection reset by peer)
+2017-09-24 19:31:41	<--	blackyboy (~blackyboy@103.5.133.74) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-09-24 19:34:07	<--	ircuser-1 (~Johnny@158.183-62-69.ftth.swbr.surewest.net) has quit (Quit: because)
+2017-09-24 19:52:01	-->	XPUCTOB (~XPUCTOB@212.73.149.139) has joined #Netfilter
+2017-09-24 20:08:09	-->	haos (~XPUCTOB@79-100-105-19.ip.btc-net.bg) has joined #Netfilter
+2017-09-24 20:10:41	<--	XPUCTOB (~XPUCTOB@212.73.149.139) has quit (Ping timeout: 248 seconds)
+2017-09-24 20:18:24	-->	cyborg-one (~cyborg-on@130-0-60-134.broadband.tenet.odessa.ua) has joined #Netfilter
+2017-09-24 20:36:22	<--	haos (~XPUCTOB@79-100-105-19.ip.btc-net.bg) has quit (Ping timeout: 264 seconds)
+2017-09-24 20:39:22	<--	skyroveRR (~skyroveRR@unaffiliated/skyroverr) has quit (Ping timeout: 252 seconds)
+2017-09-24 20:41:43	-->	skyroveRR (~skyroveRR@unaffiliated/skyroverr) has joined #Netfilter
+2017-09-24 20:48:55	<--	Ambrye (~Ambrye@77.66.32.57) has quit (Quit: %Leaving%)
+2017-09-24 20:50:22	-->	Ambrye (~Ambrye@77.66.32.57) has joined #Netfilter
+2017-09-24 21:43:29	<--	Typhon (~Typhon@dslb-088-065-221-190.088.065.pools.vodafone-ip.de) has quit (Ping timeout: 248 seconds)
+2017-09-24 21:55:11	<--	zenirc369 (~karthikv@124.123.102.226) has quit (Ping timeout: 248 seconds)
+2017-09-24 21:57:12	-->	Typhon (~Typhon@ipservice-092-218-106-233.092.218.pools.vodafone-ip.de) has joined #Netfilter
+2017-09-24 22:06:35	-->	yutayu (~ippan@PPPa57.e3.eacc.dti.ne.jp) has joined #Netfilter
+2017-09-24 22:08:01	<--	edong23 (~quassel@mptc-dhcp-50-50.mptelco.com) has quit (Ping timeout: 248 seconds)
+2017-09-24 22:09:20	--	irc: disconnected from server
