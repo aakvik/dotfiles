@@ -1,0 +1,63 @@
+# abook addressbook file
+
+[format]
+program=abook
+version=0.6.1
+
+
+[0]
+name=Aleksander Aakvik
+email=aleksander.aakvik@digitalgarden.as
+
+[1]
+name=Andreas
+email=andreas@uniweb.no
+
+[2]
+name=Ben Oye
+email=ben@fastname.no
+
+[3]
+name=Bjornar Ness
+email=bjornar@fastname.no
+
+[4]
+name=Erik Berg
+email=erik.berg@digitalgarden.no
+
+[5]
+name=Erling Bergquist
+email=erling@fastname.no
+
+[6]
+name=Espen Moen Kvelland
+email=kvelland@akeo.no
+
+[7]
+name=Joakim
+email=joakim.kanten@digitalgarden.no
+
+[8]
+name=Klaus Lunde
+email=klaus@fastname.no
+
+[9]
+name=Regina Mathisen
+email=regina.mathisen@digitalgarden.no
+
+[10]
+name=Roy Solberg
+email=roy.solberg@digitalgarden.no
+
+[11]
+name=Sindre Nordbotten
+email=sindre.nordbotten@digitalgarden.no
+
+[12]
+name=Stian Andreassen
+email=stian.andreassen@digitalgarden.as
+
+[13]
+name=Stian Tangen
+email=stian@uniweb.no
+
