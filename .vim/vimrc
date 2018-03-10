@@ -18,7 +18,6 @@ call vundle#end()                           " all plugins before this line
 
 filetype plugin indent on                   " required
 
-
 if has("syntax")		                    " Enables code syntax highlighting
   syntax on
 endif
@@ -39,10 +38,13 @@ set clipboard=unnamedplus                   " yank to CLIPBOARD
 set laststatus=2                            " always display statusline
 set autoindent                              " copies indentation from previous line
 set smartindent                             " automatically indent level
-set showbreak=…                             " show ellipsis at breaking
+set showbreak=↪                             " show ellipsis at breaking
 set linebreak                               " set soft wrapping
 
 au BufRead /tmp/mutt-* set tw=72            " max 72 char lenght when writing email (mutt)
+autocmd BufRead /tmp/neomutt-* execute "normal /^$/\n"
+autocmd BufRead /tmp/neomutt-* execute ":startinsert"
+
 
 let mapleader = ','                         " set leaders for more hotkeys
 let g:mapleader = ','
