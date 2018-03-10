@@ -2813,3 +2813,43 @@
 2018-02-27 09:14:27		Options saved to irc.conf
 2018-02-27 13:54:39		anotify: The connection is closed
 2018-02-27 13:54:39		anotify: The connection is closed
+2018-03-10 17:39:46		lua scripts loaded: urlselect
+2018-03-10 17:39:46		perl scripts loaded: atcomplete, beep, highmon, hl_here, iset, volumeter
+2018-03-10 17:39:47		URL server listening on ('127.0.1.1', 43129)
+2018-03-10 17:39:47		[vimode.py] Problematic keybindings detected:
+2018-03-10 17:39:47		[vimode.py]     meta-jmeta-f -> /buffer -
+2018-03-10 17:39:47		[vimode.py]     meta-jmeta-l -> /buffer +
+2018-03-10 17:39:47		[vimode.py]     meta-jmeta-r -> /server raw
+2018-03-10 17:39:47		[vimode.py]     meta-jmeta-s -> /server jump
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta-meta2-A -> /window up
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta-meta2-B -> /window down
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta-meta2-C -> /window right
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta-meta2-D -> /window left
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta2-1;3A -> /window up
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta2-1;3B -> /window down
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta2-1;3C -> /window right
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta2-1;3D -> /window left
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta-b -> /window balance
+2018-03-10 17:39:47		[vimode.py]     meta-wmeta-s -> /window swap
+2018-03-10 17:39:47		[vimode.py] These keybindings may conflict with vimode.
+2018-03-10 17:39:47		[vimode.py] You can remove problematic key bindings and add recommended ones by using /vimode bind_keys, or only list them with /vimode bind_keys --list
+2018-03-10 17:39:47		[vimode.py] For help, see: https://github.com/GermainZ/weechat-vimode/blob/master/FAQ#problematic-key-bindings.md
+2018-03-10 17:39:47		[vimode.py] To force disable warnings, you can set plugins.var.python.vimode.no_warn to 'on'
+2018-03-10 17:39:47	=!=	python: function "register" not found (or failed) in file "/home/aleksander/.weechat/python/autoload/autoload"
+2018-03-10 17:39:47		python scripts loaded: anotify, apply_corrections, autoconnect, autosort, bandwidth, theme, title, urlserver, vimode
+2018-03-10 17:39:47		script: downloading list of scripts...
+2018-03-10 17:39:47		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2018-03-10 17:39:47		script: 348 scripts for WeeChat 2.0.1
+2018-03-10 17:39:47		Options saved to irc.conf
+2018-03-10 17:39:47		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:48		Options saved to irc.conf
+2018-03-10 17:39:49		Options saved to irc.conf
+2018-03-10 17:39:49		Options saved to irc.conf
+2018-03-10 17:39:49		Options saved to irc.conf

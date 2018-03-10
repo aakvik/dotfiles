@@ -11551,3 +11551,61 @@
 2018-02-27 13:42:03	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
 2018-02-27 13:42:56	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
 2018-02-27 13:54:39	--	irc: disconnected from server
+2018-03-10 17:39:49	-->	aakvik (goodtimes@aakvik.net) has joined #lua
+2018-03-10 17:39:49	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: "Lua is too liberal to be considered an acceptable solution in an economic landscape which favors coordinated market economies defined by capitalism""
+2018-03-10 17:39:49	--	Topic set by daurnimator on to., 09 mars 2017 04:40:01
+2018-03-10 17:39:49	--	Channel #lua: 276 nicks (0 ops, 0 voices, 276 normals)
+2018-03-10 17:39:49	***	Buffer Playback...
+2018-03-10 17:39:49	zy]x[yz	[03:06:11] cometatables
+2018-03-10 17:39:49	u-ou	[03:08:25] cocometatables
+2018-03-10 17:39:49	zash	[03:10:07] comacomacomacometatables
+2018-03-10 17:39:49	rungcc	[03:16:04] hi guys
+2018-03-10 17:39:49	rungcc	[03:16:06] is me again
+2018-03-10 17:39:49	rungcc	[03:16:17] I'm trying to find a way to solve a little problem I'm running into.
+2018-03-10 17:39:49	rungcc	[03:17:15] when calling a function, i need to apply some variables to it, sometimes more, sometimes less, how can I set a function for, when not receiving a certain attribute, just assign it a standard value?
+2018-03-10 17:39:49	rungcc	[03:17:50] like, python for example, I can create a function fun(attrA, attrB = 0):
+2018-03-10 17:39:49	rungcc	[03:18:09] and If I don't assing a value for attrB when calling it, he just get's zeero
+2018-03-10 17:39:49	rungcc	[03:18:14] how can I do that in lua?
+2018-03-10 17:39:49	rungcc	[03:18:19] is it supported?
+2018-03-10 17:39:49	RhodiumToad	[03:18:19] lua doesn't have default args, you can check for nil though
+2018-03-10 17:39:49	RhodiumToad	[03:19:22] function foo(a,b) b = b or 0 print(a,b) end
+2018-03-10 17:39:49	RhodiumToad	[03:19:41] % function foo(a,b) b = b or 0 print(a,b) end  foo(123)
+2018-03-10 17:39:49	yalb	[03:19:41] RhodiumToad: 123 0
+2018-03-10 17:39:49	RhodiumToad	[03:19:52] % function foo(a,b) b = b or 0 print(a,b) end  foo(123,1)
+2018-03-10 17:39:49	yalb	[03:19:52] RhodiumToad: 123 1
+2018-03-10 17:39:49	rungcc	[03:20:01] ok...
+2018-03-10 17:39:49	RhodiumToad	[03:20:08] note, that assumes you don't want to pass the value "false" for b
+2018-03-10 17:39:49	rungcc	[03:20:26] so, when calling the function I can just ignore the extra attributes (if a treat them inside the function)?
+2018-03-10 17:39:49	RhodiumToad	[03:20:58] if you pass fewer values to a function than it expects, then the unspecified ones have the value nil
+2018-03-10 17:39:49	rungcc	[03:21:05] ok
+2018-03-10 17:39:49	rungcc	[03:21:07] ok
+2018-03-10 17:39:49	rungcc	[03:21:34] i hear it... well, that create a lot of extra code for treatment, but ok.
+2018-03-10 17:39:49	RhodiumToad	[03:21:34] if b might be false, you could use   if b == nil then b = 0 end
+2018-03-10 17:39:49	rungcc	[03:21:36] acceptable
+2018-03-10 17:39:49	rungcc	[03:42:10] ok ok. got it. let me try that... this is actually kind of fun to try hahaha
+2018-03-10 17:39:49	rungcc	[03:42:21] I'm connecting zenity to lua with a set of functions
+2018-03-10 17:39:49	rungcc	[03:42:30] will make my live waaaaaaaaay easier in the future
+2018-03-10 17:39:49	rungcc	[04:32:08] hey guys
+2018-03-10 17:39:49	rungcc	[04:32:19] what is the oposite of require('x')?
+2018-03-10 17:39:49	RhodiumToad	[04:32:29] opposite?
+2018-03-10 17:39:49	rungcc	[04:32:30] is there a dump('x') or reload('x')?
+2018-03-10 17:39:49	rungcc	[04:32:58] or if I just re-require the same file he will load again and overwrite the old one?
+2018-03-10 17:39:49	RhodiumToad	[04:33:10] re-requiring the file won't reload it
+2018-03-10 17:39:49	RhodiumToad	[04:33:30] require stores whatever it loaded in package.loaded, and if you require it again it just gets the value from there
+2018-03-10 17:39:49	RhodiumToad	[04:33:52] you could clobber the value in that table to make it load it again
+2018-03-10 17:39:49	RhodiumToad	[04:34:11] however, that may not do what you want when it comes to modules that have C codee
+2018-03-10 17:39:49	rungcc	[04:34:12] ok. it's because I'm testing a bunch of functions and even if I save the fixed file the lua interpreter will still get it from memory not from the file
+2018-03-10 17:39:49	RhodiumToad	[04:34:13] *code
+2018-03-10 17:39:49	rungcc	[04:34:18] +... RhodiumToad I promisse I will stop with those crazy questions in a bit hahaha.
+2018-03-10 17:39:49	rungcc	[04:35:22] its pure lua...
+2018-03-10 17:39:49	rungcc	[04:35:50] i'm just testing the modifications I'm making in one file, and at the moment I'm getting out and in again of the lua interpreter
+2018-03-10 17:39:49	rungcc	[04:35:57] and reloading the lua file again
+2018-03-10 17:39:49	rungcc	[04:36:03] it's getting kind of annoying
+2018-03-10 17:39:49	[xyzzy]	[04:46:18] https://www.youtube.com/watch?v=00RpZZThSAs looking good cmtptr
+2018-03-10 17:39:49	zash	[16:10:15] irc
+2018-03-10 17:39:49	zy]x[yz	[16:10:22] whats that
+2018-03-10 17:39:49	zash	[16:10:51] no, whos that
+2018-03-10 17:39:49	zash	[16:11:28] I totally didn't type my 'ssh to my server and reattach the irssi session' command twice, I promise
+2018-03-10 17:39:49	***	Playback Complete.
+2018-03-10 17:40:07	--	Channel created on sø., 26 nov. 2006 07:42:55
+2018-03-10 17:42:16	--	alazare619 is now known as SchroDonger

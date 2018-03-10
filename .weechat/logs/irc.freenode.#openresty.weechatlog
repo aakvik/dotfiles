@@ -519,3 +519,19 @@
 2018-02-27 13:47:35	<--	kPb_in (~kunal@150.242.196.2) has quit (Quit: kPb_in)
 2018-02-27 13:49:35	-->	kPb_in (~kunal@150.242.196.2) has joined #openresty
 2018-02-27 13:54:39	--	irc: disconnected from server
+2018-03-10 17:39:49	-->	aakvik (goodtimes@aakvik.net) has joined #openresty
+2018-03-10 17:39:49	--	Channel #openresty: 14 nicks (0 ops, 0 voices, 14 normals)
+2018-03-10 17:39:49	***	Buffer Playback...
+2018-03-10 17:39:49	iNthrAX	[14:36:11] Hi!
+2018-03-10 17:39:49	iNthrAX	[14:37:08] Have a question: is there something like channels (in golang) for communication between coroutines?
+2018-03-10 17:39:49	iNthrAX	[14:37:50] I've been developing in lua on another plafrom
+2018-03-10 17:39:49	iNthrAX	[14:38:49] and there are fibers (as coroutines) and channels, that allow to suspend coroutine in waiting for given event from another
+2018-03-10 17:39:49	ryan_ford	[16:15:41] https://stackoverflow.com/questions/12889361/lua-sockets-asynchronous-events
+2018-03-10 17:39:49	ryan_ford	[16:15:52] does that help at all?
+2018-03-10 17:39:49	iNthrAX	[15:31:46] ryan_ford, I've read that and there is a clarification of how to use .select for waiting on socket. Or to use something else. But the question was not about async in general or in Lua at all, but in openresty
+2018-03-10 17:39:49	iNthrAX	[15:33:38] consider I have such a case: I have 1 coroutine, that is responsible for network communication over multiplexed connection. and a have N coroutines, created by requests, that want to send request into that connection and wait for the response
+2018-03-10 17:39:49	jenia	[17:10:07] hello everyone
+2018-03-10 17:39:49	jenia	[17:10:22] how do I do access_by_lua_file off?
+2018-03-10 17:39:49	jenia	[17:10:28] or something like that
+2018-03-10 17:39:49	***	Playback Complete.
+2018-03-10 17:40:11	--	Channel created on to., 29 nov. 2012 18:11:12

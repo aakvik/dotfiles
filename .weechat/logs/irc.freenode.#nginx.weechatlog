@@ -22940,3 +22940,68 @@
 2018-02-27 13:38:10	-->	yn (~yano@freenode/staff-emeritus/yano) has joined #nginx
 2018-02-27 13:38:28	-->	Night__ (~Night@cm-84.213.37.115.getinternet.no) has joined #nginx
 2018-02-27 13:54:38	--	irc: disconnected from server
+2018-03-10 17:39:48	-->	aakvik (goodtimes@aakvik.net) has joined #nginx
+2018-03-10 17:39:48	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.9] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-03-10 17:39:48	--	Topic set by thresh (~popa3d@videolan/developer/thresh) on ti., 20 feb. 2018 15:25:13
+2018-03-10 17:39:48	--	Channel #nginx: 812 nicks (2 ops, 0 voices, 810 normals)
+2018-03-10 17:39:48	***	Buffer Playback...
+2018-03-10 17:39:48	bz-	[04:06:43] hi, i have nginx running a prod angular 5 app, and i have some routes in angular 5 that resolve to basically www.blah.com/asdf/123. when i take this url and just paste it into the web browser, i get a 404 from nginx. i should mention i am using https....(ssl)
+2018-03-10 17:39:48	bz-	[04:06:48] is there anyway to resolve this?
+2018-03-10 17:39:48	Membear	[04:18:29] yeah, by configuring a location to do what you want
+2018-03-10 17:39:48	Membear	[04:18:29] what do you want
+2018-03-10 17:39:48	bz-	[04:20:08] well, i mean, the route works fine. but if i do a hard refresh, it goes to a 404
+2018-03-10 17:39:48	bz-	[04:20:16] it's just abc.com/x/y/z
+2018-03-10 17:39:48	bz-	[04:20:20] x/y/z being a route
+2018-03-10 17:39:48	bz-	[04:20:29] if i do a hard refresh, nginx gives a 404....
+2018-03-10 17:39:48	Membear	[04:21:10] is your app just updating the address bar to a fake url?
+2018-03-10 17:39:48	Membear	[04:21:22] what specifically do you want nginx to do
+2018-03-10 17:39:48	bz-	[04:21:41] well, first, i am not sure why nginx is giving a 404
+2018-03-10 17:39:48	bz-	[04:21:58] it's a single page application, that programatically loads resources based on the URL location
+2018-03-10 17:39:48	bz-	[04:22:24] in this case, if i do a refresh at a particular URL, nginx just gives a 404, not sure what the issue is...
+2018-03-10 17:39:48	Membear	[04:22:51] what specifically do you want nginx to do
+2018-03-10 17:39:48	bz-	[04:23:11] not to give a 404
+2018-03-10 17:39:48	bz-	[04:23:11] heh
+2018-03-10 17:39:48	bz-	[04:23:16] not sure what the root issue is
+2018-03-10 17:39:48	bz-	[05:11:47] issue resolved..programatically.
+2018-03-10 17:39:48	bz-	[05:11:48] thanks
+2018-03-10 17:39:48	devwannabe	[05:19:49] I finally got CORS to work after so many hours debugging it! I placed my answer on my post - https://serverfault.com/questions/900736/still-get-data-even-there-is-a-cors-issue-in-nginx
+2018-03-10 17:39:48	devwannabe	[05:20:27] I saw a PHP code doing the same thing. So I tried telling nginx what it should do and it worked!
+2018-03-10 17:39:48	devwannabe	[05:22:59] test-cors.org cannot get it now - https://i.imgur.com/CP6oZcZ.png
+2018-03-10 17:39:48	devwannabe	[05:24:17] i'm still wondering why the nginx rules I did at work works without having to do this kind of IF statements
+2018-03-10 17:39:48	gloomy	[12:29:11] Hi :)
+2018-03-10 17:39:48	gloomy	[12:30:33] I'm very new to nginx. I want my webserver to serve a node (express) app, the right way is to setup nginx as a reverse proxy and direct requests to the node server, right ?
+2018-03-10 17:39:48	gloomy	[12:32:59] The node server is up and listening on port 8080, locally I can do curl 127.0.0.1:8080 and I get my page
+2018-03-10 17:39:48	gloomy	[12:33:44] but when I try to access it from my other machine, I get either a 404 with the IP address or a 502(bad gateway) with the domain name
+2018-03-10 17:39:48	vandemar	[12:35:23] gloomy: yes, you'd reverse proxy to node.  check the error logs for 404 or 502 reasons.
+2018-03-10 17:39:48	@ngxbot	[12:35:28] Paste from gloomy: [ https://paste.ngx.cc/3f ]
+2018-03-10 17:39:48	gloomy	[12:35:56] holy s*** that paste didn't work as expected
+2018-03-10 17:39:48	gloomy	[12:36:02] just a sec
+2018-03-10 17:39:48	@ngxbot	[12:36:54] Paste from gloomy: [ https://paste.ngx.cc/76 ]
+2018-03-10 17:39:48	gloomy	[12:37:08] There you go, that's my config.
+2018-03-10 17:39:48	vandemar	[12:37:14] why did you configure nginx to proxy to an https upstream?  I highly doubt node is speaking ssl.
+2018-03-10 17:39:48	gloomy	[12:37:52] 2018/03/10 13:22:32 [error] 9413#9413: *2 peer closed connection in SSL handshake while SSL handshaking to upstream, client: 81.11.163.52, server: groep4.webdev.ilabt.imec.be, request: "GET / HTTP/1.1", upstream: "https://127.0.0.1:8080/", host: "groep4.webdev.ilabt.imec.be" that's the error coming up in my log
+2018-03-10 17:39:48	gloomy	[12:38:38] Uh, so what's the approach I should take to serve the app through https?
+2018-03-10 17:39:48	vandemar	[12:38:53] proxy_pass https://127.0.0.1:8080;
+2018-03-10 17:39:48	vandemar	[12:38:59] *why* did you make that https?
+2018-03-10 17:39:48	gloomy	[12:39:32] Because I don't really understand what I'm doing :D
+2018-03-10 17:39:48	vandemar	[12:39:53] there are two hops, you get that, right?  From the client (browser) to nginx, and then from nginx to the upstream/backend node process.  You told nginx to use ssl for that backend leg, and it's trying, and node doesn't speak ssl, so it fails.
+2018-03-10 17:39:48	gloomy	[12:39:54] But now that you point it out, it doesn't really make sense indeed
+2018-03-10 17:39:48	gloomy	[12:40:11] yep, just realised it.
+2018-03-10 17:39:48	vandemar	[12:40:52] ssl on the backend connection has nothing to do with ssl on the nginx-to-client connection.
+2018-03-10 17:39:48	gloomy	[12:41:32] Yes, got it now, I was a bit confused as to what was communicating with what
+2018-03-10 17:39:48	vandemar	[12:42:03] there shouldn't be any introductory/non-advanced nginx guide showing https to a backend, and if there is the author should be bitched at.  that's fairly unusual.
+2018-03-10 17:39:48	gloomy	[12:44:44] No no, I followed a guide on how to setup nginx with node and another on how to setup https and was trying to combine the two
+2018-03-10 17:39:48	gloomy	[12:45:28] Ok, works now :) Thanks for heling
+2018-03-10 17:39:48	gloomy	[12:45:30] helping *
+2018-03-10 17:39:48	vandemar	[12:45:40] right but the usual guides for how to set up https shouldn't talk about https *to a backend* except as a clearly labelled special/unusual case
+2018-03-10 17:39:48	gloomy	[12:47:13] They didn't, it was just me misunderstanding it :-)
+2018-03-10 17:39:48	***	Playback Complete.
+2018-03-10 17:39:55	--	Channel created on lø., 30 jan. 2010 08:48:24
+2018-03-10 17:43:39	-->	larsi (~lars@15.51-174-167.customer.lyse.net) has joined #nginx
+2018-03-10 17:43:46	<--	larsi (~lars@15.51-174-167.customer.lyse.net) has quit (Changing host)
+2018-03-10 17:43:46	-->	larsi (~lars@unaffiliated/larsi) has joined #nginx
+2018-03-10 17:44:03	<--	plaaster (~plaaster_@mail.plaaster.ee) has quit (Quit: Leaving)
+2018-03-10 17:44:29	-->	plaaster (~plaaster_@mail.plaaster.ee) has joined #nginx
+2018-03-10 17:45:41	-->	pk12 (~pk12@199.241.146.163) has joined #nginx
+2018-03-10 17:45:57	<--	plaaster (~plaaster_@mail.plaaster.ee) has quit (Client Quit)
+2018-03-10 17:46:43	-->	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has joined #nginx
