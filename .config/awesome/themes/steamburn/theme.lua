@@ -145,12 +145,12 @@ local mem = lain.widget.mem({
     end
 })
 
--- /home fs
-theme.fs = lain.widget.fs({
-    options = "--exclude-type=tmpfs",
-    partition = "/mnt/storage",
-    notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Misc Tamsyn 10.5" },
-})
+---- /home fs
+--theme.fs = lain.widget.fs({
+--    options = "--exclude-type=tmpfs",
+--    partition = "/mnt/storage",
+--    notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Misc Tamsyn 10.5" },
+--})
 
 -- Battery
 local bat = lain.widget.bat({
@@ -265,7 +265,7 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             spr,
-            theme.fs.widget,
+            --theme.fs.widget,
             --mail.widget,
             cpu.widget,
             mem.widget,
