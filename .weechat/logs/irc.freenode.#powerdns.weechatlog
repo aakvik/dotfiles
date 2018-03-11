@@ -983,3 +983,26 @@
 2018-03-10 17:39:48	CrummyGummy	[10:14:52] I'm running mysql backend
 2018-03-10 17:39:48	***	Playback Complete.
 2018-03-10 17:40:01	--	Channel created on to., 21 jan. 2010 21:35:29
+2018-03-10 18:08:49	--	irc: disconnected from server
+2018-03-10 18:13:59	-->	aakvik (goodtimes@aakvik.net) has joined #powerdns
+2018-03-10 18:13:59	--	Topic for #powerdns is "Hi! The "official" PowerDNS Channel is on irc.oftc.net"
+2018-03-10 18:13:59	--	Topic set by ahu on ti., 01 mars 2011 09:37:06
+2018-03-10 18:13:59	--	Channel #powerdns: 19 nicks (0 ops, 0 voices, 19 normals)
+2018-03-10 18:13:59	***	Buffer Playback...
+2018-03-10 18:13:59	pavel_odintsov	[11:27:38] Hi :)
+2018-03-10 18:13:59	pavel_odintsov	[16:23:29] https://blog.powerdns.com/2014/10/22/powerdns-security-status-polling/ really nice approach 
+2018-03-10 18:13:59	pavel_odintsov	[16:24:28] does it work for dnsdist also?
+2018-03-10 18:13:59	serard	[09:24:53] Hi
+2018-03-10 18:13:59	serard	[09:25:19] Anyone using API endpoints ? I'm trying to create a zone, I get 422 - "{\"error\": \"Nameserver is not canonical: 'localhost'\"}"
+2018-03-10 18:13:59	serard	[09:25:42] I understand localhost is not canonical, but I want to create a zone on the queried server. What should I put there ?
+2018-03-10 18:13:59	serard	[09:36:34] ok found it.. just put it empty
+2018-03-10 18:13:59	hackeron	[19:11:27] Hi there, I'm running a powerDNS server and I keep getting requests from google-public-dns-a.google.com.domain flooding my server, e.g. https://gist.github.com/anonymous/d7ad7d6fdf0826f15805ef4f4a96b46d -- the A records in question are just an internal one that shouldn't be known or requested by anyone online, so I'm a little confused as to what's happening. Any ideas?
+2018-03-10 18:13:59	DJVG	[15:20:52] Hey all
+2018-03-10 18:13:59	DJVG	[15:24:12] I just found the problem hehe, only netmasks work for 'webserver-allow-from', if you put in '0.0.0.0' it doesn't work, it needs to be '0.0.0.0/0'
+2018-03-10 18:13:59	DJVG	[15:25:01] Documentation is not really clear about that
+2018-03-10 18:13:59	CrummyGummy	[10:12:36] Hello! Are there any database changes between 4.0 and 4.1 ?
+2018-03-10 18:13:59	CrummyGummy	[10:13:04] I'm looking at upgrading my servers one at a time. 
+2018-03-10 18:13:59	CrummyGummy	[10:14:52] I'm running mysql backend
+2018-03-10 18:13:59	***	Playback Complete.
+2018-03-10 18:14:13	--	Channel created on to., 21 jan. 2010 21:35:29
+2018-03-10 19:17:41	<--	aakvik (goodtimes@aakvik.net) has left #powerdns ("WeeChat 2.0.1")

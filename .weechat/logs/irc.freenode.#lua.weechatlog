@@ -11609,3 +11609,259 @@
 2018-03-10 17:39:49	***	Playback Complete.
 2018-03-10 17:40:07	--	Channel created on sø., 26 nov. 2006 07:42:55
 2018-03-10 17:42:16	--	alazare619 is now known as SchroDonger
+2018-03-10 17:48:33	-->	Yourock17 (~Yourock17@123-243-251-139.static.tpgi.com.au) has joined #lua
+2018-03-10 17:49:28	-->	paulk2 (~paulk@50.34.66.45) has joined #lua
+2018-03-10 17:51:40	<--	Yourock17 (~Yourock17@123-243-251-139.static.tpgi.com.au) has quit (Remote host closed the connection)
+2018-03-10 17:56:43	-->	KeyJoo (~keyjoo@164.215.52.106) has joined #lua
+2018-03-10 17:59:43	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-10 17:59:57	<--	HugoDaniel (~0@unaffiliated/hugodaniel) has quit (Ping timeout: 240 seconds)
+2018-03-10 18:03:57	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Ping timeout: 240 seconds)
+2018-03-10 18:06:10	-->	fkbm (~frozenkni@unaffiliated/frozenknight) has joined #lua
+2018-03-10 18:08:50	--	irc: disconnected from server
+2018-03-10 18:14:00	-->	aakvik (goodtimes@aakvik.net) has joined #lua
+2018-03-10 18:14:00	--	Topic for #lua is "http://lua-users.org/wiki/IrcChannel :: Paste on http://codepad.org/?lang=Lua :: Please consider registering with NickServ if you haven't already. :: "Lua is too liberal to be considered an acceptable solution in an economic landscape which favors coordinated market economies defined by capitalism""
+2018-03-10 18:14:00	--	Topic set by daurnimator on to., 09 mars 2017 04:40:01
+2018-03-10 18:14:00	--	Channel #lua: 278 nicks (0 ops, 0 voices, 278 normals)
+2018-03-10 18:14:00	***	Buffer Playback...
+2018-03-10 18:14:00	zy]x[yz	[03:06:11] cometatables
+2018-03-10 18:14:00	u-ou	[03:08:25] cocometatables
+2018-03-10 18:14:00	zash	[03:10:07] comacomacomacometatables
+2018-03-10 18:14:00	rungcc	[03:16:04] hi guys
+2018-03-10 18:14:00	rungcc	[03:16:06] is me again
+2018-03-10 18:14:00	rungcc	[03:16:17] I'm trying to find a way to solve a little problem I'm running into.
+2018-03-10 18:14:00	rungcc	[03:17:15] when calling a function, i need to apply some variables to it, sometimes more, sometimes less, how can I set a function for, when not receiving a certain attribute, just assign it a standard value?
+2018-03-10 18:14:00	rungcc	[03:17:50] like, python for example, I can create a function fun(attrA, attrB = 0):
+2018-03-10 18:14:00	rungcc	[03:18:09] and If I don't assing a value for attrB when calling it, he just get's zeero
+2018-03-10 18:14:00	rungcc	[03:18:14] how can I do that in lua?
+2018-03-10 18:14:00	rungcc	[03:18:19] is it supported?
+2018-03-10 18:14:00	RhodiumToad	[03:18:19] lua doesn't have default args, you can check for nil though
+2018-03-10 18:14:00	RhodiumToad	[03:19:22] function foo(a,b) b = b or 0 print(a,b) end
+2018-03-10 18:14:00	RhodiumToad	[03:19:41] % function foo(a,b) b = b or 0 print(a,b) end  foo(123)
+2018-03-10 18:14:00	yalb	[03:19:41] RhodiumToad: 123 0
+2018-03-10 18:14:00	RhodiumToad	[03:19:52] % function foo(a,b) b = b or 0 print(a,b) end  foo(123,1)
+2018-03-10 18:14:00	yalb	[03:19:52] RhodiumToad: 123 1
+2018-03-10 18:14:00	rungcc	[03:20:01] ok...
+2018-03-10 18:14:00	RhodiumToad	[03:20:08] note, that assumes you don't want to pass the value "false" for b
+2018-03-10 18:14:00	rungcc	[03:20:26] so, when calling the function I can just ignore the extra attributes (if a treat them inside the function)?
+2018-03-10 18:14:00	RhodiumToad	[03:20:58] if you pass fewer values to a function than it expects, then the unspecified ones have the value nil
+2018-03-10 18:14:00	rungcc	[03:21:05] ok
+2018-03-10 18:14:00	rungcc	[03:21:07] ok
+2018-03-10 18:14:00	rungcc	[03:21:34] i hear it... well, that create a lot of extra code for treatment, but ok.
+2018-03-10 18:14:00	RhodiumToad	[03:21:34] if b might be false, you could use   if b == nil then b = 0 end
+2018-03-10 18:14:00	rungcc	[03:21:36] acceptable
+2018-03-10 18:14:00	rungcc	[03:42:10] ok ok. got it. let me try that... this is actually kind of fun to try hahaha
+2018-03-10 18:14:00	rungcc	[03:42:21] I'm connecting zenity to lua with a set of functions
+2018-03-10 18:14:00	rungcc	[03:42:30] will make my live waaaaaaaaay easier in the future
+2018-03-10 18:14:00	rungcc	[04:32:08] hey guys
+2018-03-10 18:14:00	rungcc	[04:32:19] what is the oposite of require('x')?
+2018-03-10 18:14:00	RhodiumToad	[04:32:29] opposite?
+2018-03-10 18:14:00	rungcc	[04:32:30] is there a dump('x') or reload('x')?
+2018-03-10 18:14:00	rungcc	[04:32:58] or if I just re-require the same file he will load again and overwrite the old one?
+2018-03-10 18:14:00	RhodiumToad	[04:33:10] re-requiring the file won't reload it
+2018-03-10 18:14:00	RhodiumToad	[04:33:30] require stores whatever it loaded in package.loaded, and if you require it again it just gets the value from there
+2018-03-10 18:14:00	RhodiumToad	[04:33:52] you could clobber the value in that table to make it load it again
+2018-03-10 18:14:00	RhodiumToad	[04:34:11] however, that may not do what you want when it comes to modules that have C codee
+2018-03-10 18:14:00	rungcc	[04:34:12] ok. it's because I'm testing a bunch of functions and even if I save the fixed file the lua interpreter will still get it from memory not from the file
+2018-03-10 18:14:00	RhodiumToad	[04:34:13] *code
+2018-03-10 18:14:00	rungcc	[04:34:18] +... RhodiumToad I promisse I will stop with those crazy questions in a bit hahaha.
+2018-03-10 18:14:00	rungcc	[04:35:22] its pure lua...
+2018-03-10 18:14:00	rungcc	[04:35:50] i'm just testing the modifications I'm making in one file, and at the moment I'm getting out and in again of the lua interpreter
+2018-03-10 18:14:00	rungcc	[04:35:57] and reloading the lua file again
+2018-03-10 18:14:00	rungcc	[04:36:03] it's getting kind of annoying
+2018-03-10 18:14:00	[xyzzy]	[04:46:18] https://www.youtube.com/watch?v=00RpZZThSAs looking good cmtptr
+2018-03-10 18:14:00	zash	[16:10:15] irc
+2018-03-10 18:14:00	zy]x[yz	[16:10:22] whats that
+2018-03-10 18:14:00	zash	[16:10:51] no, whos that
+2018-03-10 18:14:00	zash	[16:11:28] I totally didn't type my 'ssh to my server and reattach the irssi session' command twice, I promise
+2018-03-10 18:14:00	***	Playback Complete.
+2018-03-10 18:14:19	--	Channel created on sø., 26 nov. 2006 07:42:55
+2018-03-10 18:16:14	-->	Neighbor11111117 (~Neighbor@cpc1-hitc8-2-0-cust216.know.cable.virginm.net) has joined #lua
+2018-03-10 18:20:22	-->	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has joined #lua
+2018-03-10 18:25:28	<--	Neighbor11111117 (~Neighbor@cpc1-hitc8-2-0-cust216.know.cable.virginm.net) has quit (Ping timeout: 256 seconds)
+2018-03-10 18:28:34	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-10 18:46:34	<--	fkbm (~frozenkni@unaffiliated/frozenknight) has quit (Ping timeout: 264 seconds)
+2018-03-10 18:49:54	<--	rizzo (~RizzoTheR@p54B6B1EE.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2018-03-10 18:50:57	-->	orbiter (~orbiter@ipservice-092-217-000-227.092.217.pools.vodafone-ip.de) has joined #lua
+2018-03-10 19:02:34	<--	AbsoluteVirtue (4ec2c8ce@gateway/web/freenode/ip.78.194.200.206) has quit (Ping timeout: 260 seconds)
+2018-03-10 19:06:14	<--	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2018-03-10 19:09:48	<--	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 19:10:00	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-10 19:15:58	<--	govg (~govg@unaffiliated/govg) has quit (Ping timeout: 264 seconds)
+2018-03-10 19:16:51	<--	rdnewb (sid140643@gateway/web/irccloud.com/x-wvcchxonayuxbrqa) has quit (Read error: Connection reset by peer)
+2018-03-10 19:16:59	-->	rdnewb (sid140643@gateway/web/irccloud.com/x-tvdavgnwyxniqnzl) has joined #lua
+2018-03-10 19:17:22	-->	govg (~govg@unaffiliated/govg) has joined #lua
+2018-03-10 19:17:25	<--	cords__ (sid101023@gateway/web/irccloud.com/x-hglnkkdvtqwielhb) has quit (Read error: Connection reset by peer)
+2018-03-10 19:17:32	-->	cords__ (sid101023@gateway/web/irccloud.com/x-ywyqulglbwngwndj) has joined #lua
+2018-03-10 19:19:31	<--	eponym (~nym@77-85-141-14.ip.btc-net.bg) has quit (Remote host closed the connection)
+2018-03-10 19:23:25	zash	argh, which yaml parser did I use for this?
+2018-03-10 19:23:32	zash	and why are they all different
+2018-03-10 19:29:12	<--	Darcidride_ (~Darcidrid@2a01:e35:8b4a:ca10::719e:e3e1) has quit (Remote host closed the connection)
+2018-03-10 19:33:14	-->	epony (~nym@77-85-141-14.ip.btc-net.bg) has joined #lua
+2018-03-10 19:45:06	-->	alex`` (~alex@2a01cb000bb3100063af329055c4ee9c.ipv6.abo.wanadoo.fr) has joined #lua
+2018-03-10 19:45:20	-->	oxygene (~fred@2a01cb0c01d12a002951ba998ca6dc09.ipv6.abo.wanadoo.fr) has joined #lua
+2018-03-10 19:47:45	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-10 19:48:21	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Ping timeout: 264 seconds)
+2018-03-10 19:48:26	<--	epony (~nym@77-85-141-14.ip.btc-net.bg) has quit (Read error: Connection reset by peer)
+2018-03-10 19:52:45	-->	epony (~nym@77-85-141-14.ip.btc-net.bg) has joined #lua
+2018-03-10 19:53:27	<--	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has quit (Ping timeout: 240 seconds)
+2018-03-10 20:01:14	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-10 20:05:46	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Ping timeout: 264 seconds)
+2018-03-10 20:06:05	StephenLynx	i would just use json tbh
+2018-03-10 20:06:39	zash	Yeah, I'll just feed JSON to this thing that requires YAML
+2018-03-10 20:07:42	zash	StephenLynx: I've got a thing that spits out markdown for processing by pandoc, and pandoc wants metadata in yaml format, so not much I can do
+2018-03-10 20:08:28	-->	gelignite (~gelignite@55d4f371.access.ecotel.net) has joined #lua
+2018-03-10 20:08:50	ArRay_	zash: use a JSON to YAML converte
+2018-03-10 20:08:51	ArRay_	r
+2018-03-10 20:09:33	cebka	json is a subset of yaml afair
+2018-03-10 20:10:56	zash	the real solution here is to implement a pandoc reader for this particular xml format
+2018-03-10 20:11:38	zash	tho if you really love json you could spit out the json-ast thing pandoc has
+2018-03-10 20:13:37	<--	rendar (~rendar@unaffiliated/rendar) has quit
+2018-03-10 20:16:55	[xyzzy]	xml is for noob's
+2018-03-10 20:17:13	zash	I know, real developers use ASN.1
+2018-03-10 20:19:21	<--	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has quit (Ping timeout: 245 seconds)
+2018-03-10 20:31:27	ainomieli	real developers jump off the top of the office building after dealing with ASN.1
+2018-03-10 20:32:15	zash	noobs are the ones reinventing all the features of asn.1 on top of json
+2018-03-10 20:33:34	StephenLynx	what is pandoc?
+2018-03-10 20:34:04	zash	markup converter
+2018-03-10 20:34:17	LordRyan	StephenLynx: markup converting Swiss army knife
+2018-03-10 20:34:24	LordRyan	take in one format, put out another format
+2018-03-10 20:34:26	ArRay_	StephenLynx: pandoc.org
+2018-03-10 20:35:02	StephenLynx	and why you need this?
+2018-03-10 20:35:54	zash	I'm converting documents in a custom xml format to epub so I can read them on a eink device
+2018-03-10 20:36:07	StephenLynx	f
+2018-03-10 20:37:25	zash	also for producing nicer version comparisons/diffs without the xml
+2018-03-10 20:37:32	-->	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has joined #lua
+2018-03-10 20:43:12	-->	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has joined #lua
+2018-03-10 20:45:13	<--	sagax (~sagax_nb@213.138.71.146) has quit (Read error: Connection reset by peer)
+2018-03-10 20:56:23	-->	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has joined #lua
+2018-03-10 20:58:31	-->	sagax (~sagax_nb@213.138.71.146) has joined #lua
+2018-03-10 21:02:57	-->	Sketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has joined #lua
+2018-03-10 21:08:47	-->	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has joined #lua
+2018-03-10 21:11:22	<--	netlynx (~me@lugwv/member/Netlynx) has quit (Quit: Ex-Chat)
+2018-03-10 21:14:56	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 21:16:05	[xyzzy]	use latex
+2018-03-10 21:16:14	<--	KeyJoo (~keyjoo@164.215.52.106) has quit (Remote host closed the connection)
+2018-03-10 21:29:10	<--	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has quit (Ping timeout: 264 seconds)
+2018-03-10 21:30:12	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-10 21:31:44	-->	Neighbor11111117 (~Neighbor@cpc1-hitc8-2-0-cust216.know.cable.virginm.net) has joined #lua
+2018-03-10 21:38:13	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-10 21:41:10	<--	Neighbor11111117 (~Neighbor@cpc1-hitc8-2-0-cust216.know.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2018-03-10 21:47:13	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-10 21:50:35	<--	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2018-03-10 22:02:58	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-10 22:07:27	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Ping timeout: 240 seconds)
+2018-03-10 22:18:10	<--	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has quit (Read error: Connection reset by peer)
+2018-03-10 22:33:50	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-10 22:37:09	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Read error: Connection reset by peer)
+2018-03-10 22:37:55	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-10 22:39:37	<--	vyo (~Thunderbi@213.24.135.16) has quit (Remote host closed the connection)
+2018-03-10 22:46:07	-->	HugoDaniel (~0@unaffiliated/hugodaniel) has joined #lua
+2018-03-10 22:48:34	<--	black_13 (43d66102@gateway/web/freenode/ip.67.214.97.2) has quit (Quit: Page closed)
+2018-03-10 22:49:52	-->	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has joined #lua
+2018-03-10 22:53:44	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 22:57:46	<--	Sketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has quit (Quit: Leaving)
+2018-03-10 23:03:00	-->	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has joined #lua
+2018-03-10 23:07:13	-->	Sketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has joined #lua
+2018-03-10 23:14:12	zy]x[yz	join #roblox
+2018-03-10 23:14:47	<--	Overkill (Overkill@69-165-202-42.cable.teksavvy.com) has quit (Read error: Connection reset by peer)
+2018-03-10 23:15:04	-->	Overkill (Overkill@69-165-202-42.cable.teksavvy.com) has joined #lua
+2018-03-10 23:15:09	furq	https://pbs.twimg.com/media/DXxA2iLWAAAx6ka.jpg
+2018-03-10 23:15:12	furq	looking good cmtptr
+2018-03-10 23:17:30	zy]x[yz	I just finished a SM run in 1 hour 2 minutes
+2018-03-10 23:18:26	<--	oxygene (~fred@2a01cb0c01d12a002951ba998ca6dc09.ipv6.abo.wanadoo.fr) has quit (Quit: Leaving)
+2018-03-10 23:18:36	furq	https://video.twimg.com/ext_tw_video/907552721716133888/pu/vid/1280x720/z8bJYZjkgVC-qYae.mp4
+2018-03-10 23:18:39	furq	looking good cmtptr
+2018-03-10 23:19:14	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Remote host closed the connection)
+2018-03-10 23:21:01	<--	valledelucena (~rafaeldel@2804:14d:ba83:2709:c9bc:3e58:f9b6:b568) has quit (Quit: Leaving)
+2018-03-10 23:21:39	-->	rafaeldelucena (~rafaeldel@2804:14d:ba83:2709:c9bc:3e58:f9b6:b568) has joined #lua
+2018-03-10 23:23:16	[xyzzy]	wow that guy is a bada55
+2018-03-10 23:25:14	<--	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 23:26:30	zy]x[yz	I like how after two of them fell on him he learned his lesson and started sticking only to completely rotted stumps
+2018-03-10 23:32:50	<--	dvx (~dvx@178.17.10.104) has quit (Quit: dvx)
+2018-03-10 23:39:16	<--	Dylan16807 (~dylan@162-192-72-183.lightspeed.cntmoh.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2018-03-10 23:40:21	-->	Dylan16807 (~dylan@162-192-72-183.lightspeed.cntmoh.sbcglobal.net) has joined #lua
+2018-03-10 23:41:48	-->	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has joined #lua
+2018-03-10 23:41:55	-->	Doyousketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has joined #lua
+2018-03-10 23:42:12	-->	HugoDani1l (~0@unaffiliated/hugodaniel) has joined #lua
+2018-03-10 23:42:33	-->	rizzo (~RizzoTheR@p54B6B1EE.dip0.t-ipconnect.de) has joined #lua
+2018-03-10 23:43:04	-->	kark (~kartik@unaffiliated/kark) has joined #lua
+2018-03-10 23:43:11	<--	aquanight (~aquanight@159-118-163-147.cpe.cableone.net) has quit (Remote host closed the connection)
+2018-03-10 23:43:28	-->	aquanight (~aquanight@159-118-163-147.cpe.cableone.net) has joined #lua
+2018-03-10 23:43:57	<--	Sketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:44:57	<--	SinisterRectus (~SinisterR@cpe-184-153-239-44.twcny.res.rr.com) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:45:04	<--	HugoDaniel (~0@unaffiliated/hugodaniel) has quit (Ping timeout: 260 seconds)
+2018-03-10 23:45:29	-->	SinisterRectus (~SinisterR@cpe-184-153-239-44.twcny.res.rr.com) has joined #lua
+2018-03-10 23:45:57	<--	pulec (~pulec@37-97-160-172.colo.transip.net) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:45:57	<--	aidanh (~aidanh@unaffiliated/aidanh) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:46:04	-->	pulec (~pulec@37-97-160-172.colo.transip.net) has joined #lua
+2018-03-10 23:47:25	-->	aidanh (~aidanh@unaffiliated/aidanh) has joined #lua
+2018-03-10 23:47:52	<--	gelignite (~gelignite@55d4f371.access.ecotel.net) has quit (Quit: I have always found that mercy bears richer fruits than strict justice.)
+2018-03-10 23:53:38	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Remote host closed the connection)
+2018-03-11 00:03:35	-->	DarkGod (~DarkGod@static-176-183-174-41.ncc.abo.bbox.fr) has joined #lua
+2018-03-11 00:09:21	<--	HugoDani1l (~0@unaffiliated/hugodaniel) has quit (Ping timeout: 248 seconds)
+2018-03-11 00:09:58	-->	HugoDaniel (~0@unaffiliated/hugodaniel) has joined #lua
+2018-03-11 00:11:23	-->	Kitty-kat (d82f34ae@gateway/web/freenode/ip.216.47.52.174) has joined #lua
+2018-03-11 00:13:19	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-11 00:46:50	-->	Neighbor11111117 (~Neighbor@cpc1-hitc8-2-0-cust216.know.cable.virginm.net) has joined #lua
+2018-03-11 00:50:46	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 00:51:34	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-11 00:51:59	<--	Kitty-kat (d82f34ae@gateway/web/freenode/ip.216.47.52.174) has quit (Ping timeout: 260 seconds)
+2018-03-11 00:55:57	<--	Neighbor11111117 (~Neighbor@cpc1-hitc8-2-0-cust216.know.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2018-03-11 01:00:04	<--	epony (~nym@77-85-141-14.ip.btc-net.bg) has quit (Quit: QUIT)
+2018-03-11 01:02:47	-->	epony (~nym@77-85-141-14.ip.btc-net.bg) has joined #lua
+2018-03-11 01:11:51	<--	mischief (~none@iota.offblast.org) has quit (Ping timeout: 252 seconds)
+2018-03-11 01:12:26	-->	mischief (~none@iota.offblast.org) has joined #lua
+2018-03-11 01:12:50	--	mischief is now known as Guest70540
+2018-03-11 01:14:18	-->	sauvin_ (sauvin@about/linux/staff/sauvin) has joined #lua
+2018-03-11 01:16:05	--	sauvin_ is now known as bocaneriu
+2018-03-11 01:16:07	--	bocaneriu is now known as bocaneri
+2018-03-11 01:35:33	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 01:36:29	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 01:37:25	<--	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has quit (Quit: WeeChat 2.0.1)
+2018-03-11 01:47:33	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 01:51:54	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-11 01:55:36	-->	sibyakin (~sibyakin@83.234.69.145) has joined #lua
+2018-03-11 01:56:28	<--	alex`` (~alex@2a01cb000bb3100063af329055c4ee9c.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2018-03-11 02:03:01	<--	FreeBirdLjj (~freebirdl@124.77.177.74) has quit (Remote host closed the connection)
+2018-03-11 02:14:13	-->	swift110 (~swift110@unaffiliated/swift110) has joined #lua
+2018-03-11 02:20:42	<--	kapil___ (uid36151@gateway/web/irccloud.com/x-xfizkkxlehnhsfap) has quit (Quit: Connection closed for inactivity)
+2018-03-11 02:22:24	Technodrome	Good day 
+2018-03-11 02:23:39	RhodiumToad	evenin'
+2018-03-11 02:34:46	-->	zeus_ (~zeus_@c-67-188-115-6.hsd1.ca.comcast.net) has joined #lua
+2018-03-11 02:41:15	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 02:42:13	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 02:48:02	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 02:49:00	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 02:50:28	-->	Aconitin (~Aconitin@78-73-127-12-no193.tbcn.telia.com) has joined #lua
+2018-03-11 02:50:35	<--	govg (~govg@unaffiliated/govg) has quit (Ping timeout: 240 seconds)
+2018-03-11 02:53:01	-->	kapil___ (uid36151@gateway/web/irccloud.com/x-xeszlcfwktoyqezr) has joined #lua
+2018-03-11 02:54:22	<--	zeus_ (~zeus_@c-67-188-115-6.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2018-03-11 02:55:07	-->	zeus_ (~zeus_@2601:647:4200:69b7:ed1f:640d:94b9:a2) has joined #lua
+2018-03-11 02:57:29	-->	DesertRock (~Desert@65.129.3.15) has joined #lua
+2018-03-11 03:02:22	<--	tm (~sinnlos@unaffiliated/tm) has quit (Ping timeout: 268 seconds)
+2018-03-11 03:05:47	-->	tm (~sinnlos@unaffiliated/tm) has joined #lua
+2018-03-11 03:07:07	daurnimator	Eh; it's okay.
+2018-03-11 03:14:19	-->	black_13 (43d66102@gateway/web/freenode/ip.67.214.97.2) has joined #lua
+2018-03-11 03:23:49	<--	HugoDaniel (~0@unaffiliated/hugodaniel) has quit (Ping timeout: 260 seconds)
+2018-03-11 03:33:06	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 03:33:07	<--	mniip (mniip@haskell/developer/mniip) has quit (Ping timeout: 256 seconds)
+2018-03-11 03:33:49	<--	yalb (xsbot@lua/bot/yalb) has quit (Ping timeout: 268 seconds)
+2018-03-11 03:36:01	-->	mniip (mniip@haskell/developer/mniip) has joined #lua
+2018-03-11 03:37:44	-->	yalb (xsbot@lua/bot/yalb) has joined #lua
+2018-03-11 03:38:31	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 03:38:59	<--	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 260 seconds)
+2018-03-11 03:39:25	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 03:51:58	<--	bocaneri (sauvin@about/linux/staff/sauvin) has quit (Ping timeout: 264 seconds)
+2018-03-11 03:52:20	-->	sauvin_ (sauvin@about/linux/staff/sauvin) has joined #lua
+2018-03-11 03:54:08	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-11 04:01:10	<--	banc (~master@82.145.37.203) has quit (Quit: ZNC - http://znc.in)
+2018-03-11 04:02:20	-->	Neighbor11111117 (~Neighbor@81.102.236.217) has joined #lua
+2018-03-11 04:04:34	[xyzzy]	lua is grapes
+2018-03-11 04:05:40	<--	SpaceMonkey (~SpaceMonk@2a01:7b8:2011:e015::7a9:adab) has quit (Remote host closed the connection)
+2018-03-11 04:07:01	-->	SpaceMonkey (~SpaceMonk@2a01:7b8:2011:e015::7a9:adab) has joined #lua
+2018-03-11 04:09:23	<--	Neighbor11111117 (~Neighbor@81.102.236.217) has quit (Ping timeout: 256 seconds)
+2018-03-11 04:12:44	zash	no, just lemonade
+2018-03-11 04:15:09	-->	banc (~master@82.145.37.203) has joined #lua
+2018-03-11 04:17:24	-->	jshjsh (~jshjsh@24-113-170-30.wavecable.com) has joined #lua
+2018-03-11 04:17:35	<--	JoshS (~jshjsh@24-113-170-30.wavecable.com) has quit (Ping timeout: 240 seconds)
+2018-03-11 04:30:36	<--	abyxcos (~abyxcos@mnetic.ch) has quit (Ping timeout: 245 seconds)

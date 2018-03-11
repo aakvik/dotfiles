@@ -23005,3 +23005,469 @@
 2018-03-10 17:45:41	-->	pk12 (~pk12@199.241.146.163) has joined #nginx
 2018-03-10 17:45:57	<--	plaaster (~plaaster_@mail.plaaster.ee) has quit (Client Quit)
 2018-03-10 17:46:43	-->	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has joined #nginx
+2018-03-10 17:50:17	gloomy	Hi again
+2018-03-10 17:50:36	gloomy	I'm trying to configure nginx so that I can use jenkins
+2018-03-10 17:50:41	gloomy	Following this: https://wiki.jenkins.io/display/JENKINS/Running+Jenkins+behind+Nginx
+2018-03-10 17:51:22	<--	Repox (~textual@85.203.137.15) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 17:51:23	gloomy	In the end it says "To give nginx permission to read Jenkins web root folder, add nginx to Jenkins group:  useradd \-aG Jenkins nginx "
+2018-03-10 17:52:01	gloomy	That command doesn't work, but if I run an equivalent, I get "adduser: The user `nginx' does not exist."
+2018-03-10 17:52:02	@ngxbot	Nginx is the fastest, most scalable, and most sane web server on planet Ackworthorr.
+2018-03-10 17:52:50	gloomy	Any idea what I'm supposed to do? why is/isn't nginx a user?
+2018-03-10 17:54:55	-->	sarariman (~gromflomi@cpe-188-129-91-102.dynamic.amis.hr) has joined #nginx
+2018-03-10 17:56:02	gloomy	Mmh, ok, had to create the user first, but it doesn't help
+2018-03-10 17:56:11	jaybe	“basic unix filesystem permissions”
+2018-03-10 17:56:24	jaybe	!user
+2018-03-10 17:56:24	@ngxbot	http://ngx.cc/r/user
+2018-03-10 17:56:42	<--	energizer (~energizer@unaffiliated/energizer) has quit (Disconnected by services)
+2018-03-10 17:57:13	gloomy	Ah
+2018-03-10 17:57:38	-->	energizer (~energizer@unaffiliated/energizer) has joined #nginx
+2018-03-10 17:58:17	<--	energizer (~energizer@unaffiliated/energizer) has quit (Disconnected by services)
+2018-03-10 17:59:12	-->	energizer (~energizer@unaffiliated/energizer) has joined #nginx
+2018-03-10 17:59:47	<--	energizer (~energizer@unaffiliated/energizer) has quit (Remote host closed the connection)
+2018-03-10 18:00:10	<--	sarariman (~gromflomi@cpe-188-129-91-102.dynamic.amis.hr) has quit (Quit: i <3 postgres)
+2018-03-10 18:00:41	-->	energizer (~energizer@unaffiliated/energizer) has joined #nginx
+2018-03-10 18:01:17	<--	energizer (~energizer@unaffiliated/energizer) has quit (Remote host closed the connection)
+2018-03-10 18:01:36	-->	energizer (~energizer@unaffiliated/energizer) has joined #nginx
+2018-03-10 18:05:48	<--	mn3m (~mn3m@unaffiliated/mn3m) has quit (Quit: mn3m)
+2018-03-10 18:07:26	gloomy	Ok so my nginx.conf starts with `user www-data ;`
+2018-03-10 18:07:44	gloomy	and www-data is part of the `jenkins` group
+2018-03-10 18:07:54	gloomy	But I still get this in my logs when I try to connect:
+2018-03-10 18:08:11	gloomy	"2018/03/10 18:05:22 [error] 13063#13063: *1 directory index of "/var/cache/jenkins/war/" is forbidden, client: 81.11.163.52, server: groep4.webdev.ilabt.imec.be, request: "GET / HTTP/1.1", host: "groep4.webdev.ilabt.imec.be:8080""
+2018-03-10 18:08:49	--	irc: disconnected from server
+2018-03-10 18:13:59	-->	aakvik (goodtimes@aakvik.net) has joined #nginx
+2018-03-10 18:13:59	--	Topic for #nginx is "[Stable: 1.12.2] [Mainline: 1.13.9] Unofficial community support for nginx [engine x], primarily an HTTP and reverse proxy server. Welcome! Don't ask to ask; just ask a specific, clear, and concise question/problem/goal. Include configs on our pastebin. Be patient and wait for a response. Share pastes using our pastebin at https://paste.ngx.cc (see: !whypbin). Update to fix CVE-2017-7529"
+2018-03-10 18:13:59	--	Topic set by thresh (~popa3d@videolan/developer/thresh) on ti., 20 feb. 2018 15:25:13
+2018-03-10 18:13:59	--	Channel #nginx: 815 nicks (2 ops, 0 voices, 813 normals)
+2018-03-10 18:13:59	***	Buffer Playback...
+2018-03-10 18:13:59	bz-	[05:11:48] thanks
+2018-03-10 18:13:59	devwannabe	[05:19:49] I finally got CORS to work after so many hours debugging it! I placed my answer on my post - https://serverfault.com/questions/900736/still-get-data-even-there-is-a-cors-issue-in-nginx
+2018-03-10 18:13:59	devwannabe	[05:20:27] I saw a PHP code doing the same thing. So I tried telling nginx what it should do and it worked!
+2018-03-10 18:13:59	devwannabe	[05:22:59] test-cors.org cannot get it now - https://i.imgur.com/CP6oZcZ.png
+2018-03-10 18:13:59	devwannabe	[05:24:17] i'm still wondering why the nginx rules I did at work works without having to do this kind of IF statements
+2018-03-10 18:13:59	gloomy	[12:29:11] Hi :)
+2018-03-10 18:13:59	gloomy	[12:30:33] I'm very new to nginx. I want my webserver to serve a node (express) app, the right way is to setup nginx as a reverse proxy and direct requests to the node server, right ?
+2018-03-10 18:13:59	gloomy	[12:32:59] The node server is up and listening on port 8080, locally I can do curl 127.0.0.1:8080 and I get my page
+2018-03-10 18:13:59	gloomy	[12:33:44] but when I try to access it from my other machine, I get either a 404 with the IP address or a 502(bad gateway) with the domain name
+2018-03-10 18:13:59	vandemar	[12:35:23] gloomy: yes, you'd reverse proxy to node.  check the error logs for 404 or 502 reasons.
+2018-03-10 18:13:59	@ngxbot	[12:35:28] Paste from gloomy: [ https://paste.ngx.cc/3f ]
+2018-03-10 18:13:59	gloomy	[12:35:56] holy s*** that paste didn't work as expected
+2018-03-10 18:13:59	gloomy	[12:36:02] just a sec
+2018-03-10 18:13:59	@ngxbot	[12:36:54] Paste from gloomy: [ https://paste.ngx.cc/76 ]
+2018-03-10 18:13:59	gloomy	[12:37:08] There you go, that's my config.
+2018-03-10 18:13:59	vandemar	[12:37:14] why did you configure nginx to proxy to an https upstream?  I highly doubt node is speaking ssl.
+2018-03-10 18:13:59	gloomy	[12:37:52] 2018/03/10 13:22:32 [error] 9413#9413: *2 peer closed connection in SSL handshake while SSL handshaking to upstream, client: 81.11.163.52, server: groep4.webdev.ilabt.imec.be, request: "GET / HTTP/1.1", upstream: "https://127.0.0.1:8080/", host: "groep4.webdev.ilabt.imec.be" that's the error coming up in my log
+2018-03-10 18:13:59	gloomy	[12:38:38] Uh, so what's the approach I should take to serve the app through https?
+2018-03-10 18:13:59	vandemar	[12:38:53] proxy_pass https://127.0.0.1:8080;
+2018-03-10 18:13:59	vandemar	[12:38:59] *why* did you make that https?
+2018-03-10 18:13:59	gloomy	[12:39:32] Because I don't really understand what I'm doing :D
+2018-03-10 18:13:59	vandemar	[12:39:53] there are two hops, you get that, right?  From the client (browser) to nginx, and then from nginx to the upstream/backend node process.  You told nginx to use ssl for that backend leg, and it's trying, and node doesn't speak ssl, so it fails.
+2018-03-10 18:13:59	gloomy	[12:39:54] But now that you point it out, it doesn't really make sense indeed
+2018-03-10 18:13:59	gloomy	[12:40:11] yep, just realised it.
+2018-03-10 18:13:59	vandemar	[12:40:52] ssl on the backend connection has nothing to do with ssl on the nginx-to-client connection.
+2018-03-10 18:13:59	gloomy	[12:41:32] Yes, got it now, I was a bit confused as to what was communicating with what
+2018-03-10 18:13:59	vandemar	[12:42:03] there shouldn't be any introductory/non-advanced nginx guide showing https to a backend, and if there is the author should be bitched at.  that's fairly unusual.
+2018-03-10 18:13:59	gloomy	[12:44:44] No no, I followed a guide on how to setup nginx with node and another on how to setup https and was trying to combine the two
+2018-03-10 18:13:59	gloomy	[12:45:28] Ok, works now :) Thanks for heling
+2018-03-10 18:13:59	gloomy	[12:45:30] helping *
+2018-03-10 18:13:59	vandemar	[12:45:40] right but the usual guides for how to set up https shouldn't talk about https *to a backend* except as a clearly labelled special/unusual case
+2018-03-10 18:13:59	gloomy	[12:47:13] They didn't, it was just me misunderstanding it :-)
+2018-03-10 18:13:59	gloomy	[16:50:17] Hi again
+2018-03-10 18:13:59	gloomy	[16:50:36] I'm trying to configure nginx so that I can use jenkins
+2018-03-10 18:13:59	gloomy	[16:50:41] Following this: https://wiki.jenkins.io/display/JENKINS/Running+Jenkins+behind+Nginx
+2018-03-10 18:13:59	gloomy	[16:51:23] In the end it says "To give nginx permission to read Jenkins web root folder, add nginx to Jenkins group:  useradd \-aG Jenkins nginx "
+2018-03-10 18:13:59	gloomy	[16:52:01] That command doesn't work, but if I run an equivalent, I get "adduser: The user `nginx' does not exist."
+2018-03-10 18:13:59	@ngxbot	[16:52:02] Nginx is the fastest, most scalable, and most sane web server on planet Ackworthorr.
+2018-03-10 18:13:59	gloomy	[16:52:50] Any idea what I'm supposed to do? why is/isn't nginx a user?
+2018-03-10 18:13:59	gloomy	[16:56:02] Mmh, ok, had to create the user first, but it doesn't help
+2018-03-10 18:13:59	jaybe	[16:56:11] “basic unix filesystem permissions”
+2018-03-10 18:13:59	jaybe	[16:56:24] !user
+2018-03-10 18:13:59	@ngxbot	[16:56:24] http://ngx.cc/r/user
+2018-03-10 18:13:59	gloomy	[16:57:13] Ah
+2018-03-10 18:13:59	gloomy	[17:07:26] Ok so my nginx.conf starts with `user www-data ;`
+2018-03-10 18:13:59	gloomy	[17:07:44] and www-data is part of the `jenkins` group
+2018-03-10 18:13:59	gloomy	[17:07:54] But I still get this in my logs when I try to connect:
+2018-03-10 18:13:59	gloomy	[17:08:11] "2018/03/10 18:05:22 [error] 13063#13063: *1 directory index of "/var/cache/jenkins/war/" is forbidden, client: 81.11.163.52, server: groep4.webdev.ilabt.imec.be, request: "GET / HTTP/1.1", host: "groep4.webdev.ilabt.imec.be:8080""
+2018-03-10 18:13:59	gloomy	[17:09:17] the /var/cache/jenkins/ directory has permissions `drwxr-x---  3 jenkins jenkins 4096 Mar  9 14:53 jenkins`
+2018-03-10 18:13:59	gloomy	[17:09:38] so nginx should have access to it...?
+2018-03-10 18:13:59	***	Playback Complete.
+2018-03-10 18:14:07	--	Channel created on lø., 30 jan. 2010 08:48:24
+2018-03-10 18:15:11	-->	toomin (~Slartibar@unaffiliated/toomin) has joined #nginx
+2018-03-10 18:16:22	-->	plaaster (~plaaster_@mail.plaaster.ee) has joined #nginx
+2018-03-10 18:17:05	<--	plaaster (~plaaster_@mail.plaaster.ee) has quit (Client Quit)
+2018-03-10 18:17:21	jaybe	“directory index ... forbidden...”
+2018-03-10 18:17:24	-->	plaaster (~plaaster_@mail.plaaster.ee) has joined #nginx
+2018-03-10 18:17:24	jaybe	!index
+2018-03-10 18:17:25	@ngxbot	http://nginx.org/r/index. By default, Nginx looks for the default index file to serve, `index.html', within a matched `location'. Also note that by default, Nginx disables `autoindex` directory listings (indexes); that may look like an HTTP 403 response if no index file is found. Also refer to logs.
+2018-03-10 18:18:14	jaybe	simply, nginx needs to be able to read from whatever you desire to serve
+2018-03-10 18:20:12	<--	trobotham (~nitemare@wall-e.net.prd.ca.ku.cx) has quit (Ping timeout: 265 seconds)
+2018-03-10 18:20:35	-->	Repox (~textual@85.203.137.15) has joined #nginx
+2018-03-10 18:25:35	-->	RaiNerTsuFal (~RaiNerTsu@akita.vx.hn) has joined #nginx
+2018-03-10 18:26:47	phaleth	gloomy: prolly need to log out and log in with the www-data user
+2018-03-10 18:27:14	<--	d4re (~d4re@gateway/tor-sasl/d4re) has quit (Ping timeout: 255 seconds)
+2018-03-10 18:27:16	-->	d4re- (~d4re@gateway/tor-sasl/d4re) has joined #nginx
+2018-03-10 18:27:41	--	d4re- is now known as d4re
+2018-03-10 18:30:23	gloomy	mmmh, indeed there is no index file in that directory
+2018-03-10 18:30:40	gloomy	so why would they say to use that as root ._.
+2018-03-10 18:46:41	<--	coellobranco (~FoRcEr@240.119.165.83.dynamic.reverse-mundo-r.com) has quit (Ping timeout: 256 seconds)
+2018-03-10 18:47:27	-->	cbr900rr (~Thunderbi@bas6-montreal45-70-29-233-16.dsl.bell.ca) has joined #nginx
+2018-03-10 18:47:28	<--	cbr900rr (~Thunderbi@bas6-montreal45-70-29-233-16.dsl.bell.ca) has quit (Client Quit)
+2018-03-10 18:47:37	-->	Xaldafax (~Xaldafax@cpe-104-35-100-124.socal.res.rr.com) has joined #nginx
+2018-03-10 18:49:00	jaybe	because expecting an index file?
+2018-03-10 18:49:14	jaybe	dont blindly and explicitly follow “tutorials”
+2018-03-10 18:49:31	jaybe	it isnt a replacement for conprehension
+2018-03-10 18:49:49	-->	coellobranco (~FoRcEr@240.119.165.83.dynamic.reverse-mundo-r.com) has joined #nginx
+2018-03-10 18:50:27	<--	brainproxy (~michael@pdpc/supporter/gold/brainproxy) has quit (Quit: WeeChat 2.0.1)
+2018-03-10 18:50:57	-->	orbiter (~orbiter@ipservice-092-217-000-227.092.217.pools.vodafone-ip.de) has joined #nginx
+2018-03-10 18:59:07	<--	pk12 (~pk12@199.241.146.163) has quit (Quit: ZNC 1.6.6 - http://znc.in)
+2018-03-10 18:59:42	-->	pk12 (~pk12@199.241.146.163) has joined #nginx
+2018-03-10 19:09:04	<--	`VL (~vl@broadband-46-188-31-14.2com.net) has quit (Read error: Connection reset by peer)
+2018-03-10 19:12:17	<--	}ls{ (~kalle@unaffiliated/ls/x-8089558) has quit (Quit: real life interrupt)
+2018-03-10 19:12:41	-->	venmx (~pactadmin@host31-48-148-246.range31-48.btcentralplus.com) has joined #nginx
+2018-03-10 19:16:37	<--	lochii (sid152842@gateway/web/irccloud.com/x-znifgzzwwddmhiso) has quit (Read error: Connection reset by peer)
+2018-03-10 19:16:50	-->	lochii (sid152842@gateway/web/irccloud.com/x-wknskvelrcqtcnhx) has joined #nginx
+2018-03-10 19:17:28	<--	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 19:18:42	<--	pk12 (~pk12@199.241.146.163) has quit (Quit: ZNC 1.7.x-git-899-15ccaca4 - https://znc.in)
+2018-03-10 19:19:08	<--	toomin (~Slartibar@unaffiliated/toomin) has quit (Read error: Connection reset by peer)
+2018-03-10 19:19:25	-->	pk12 (~pk12@199.241.146.163) has joined #nginx
+2018-03-10 19:29:12	<--	Darcidride_ (~Darcidrid@2a01:e35:8b4a:ca10::719e:e3e1) has quit (Remote host closed the connection)
+2018-03-10 19:29:40	-->	tarkus (~tarkus@109.230.144.161) has joined #nginx
+2018-03-10 19:38:44	<--	Repox (~textual@85.203.137.15) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 19:40:47	<--	energizer (~energizer@unaffiliated/energizer) has quit (Remote host closed the connection)
+2018-03-10 19:43:33	-->	crtcji (~crtcji@host-static-109-185-194-167.moldtelecom.md) has joined #nginx
+2018-03-10 19:43:56	<--	crtcji (~crtcji@host-static-109-185-194-167.moldtelecom.md) has quit (Remote host closed the connection)
+2018-03-10 19:44:58	<--	pk12 (~pk12@199.241.146.163) has quit (Quit: ZNC 1.7.x-git-899-15ccaca4 - https://znc.in)
+2018-03-10 19:45:27	<--	Al_lA (~derwhalfi@109.128.69.111.dynamic.snap.net.nz) has quit (Ping timeout: 240 seconds)
+2018-03-10 19:46:06	-->	pk12 (~pk12@199.241.146.163) has joined #nginx
+2018-03-10 19:46:14	-->	Al_lA (~derwhalfi@165.84.31.95) has joined #nginx
+2018-03-10 19:53:11	-->	loonquawl (~loonquawl@74-195-164-161.hwkncmtc01.res.dyn.suddenlink.net) has joined #nginx
+2018-03-10 19:53:33	<--	plaaster (~plaaster_@mail.plaaster.ee) has quit (Quit: Leaving)
+2018-03-10 19:53:48	<--	Yamakaja (~yamakaja@vps.pub.yamakaja.me) has quit (Remote host closed the connection)
+2018-03-10 19:56:05	<--	venmx (~pactadmin@host31-48-148-246.range31-48.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2018-03-10 19:56:33	<--	aristipp_ (~aristippo@2601:646:c600:b291:8dd8:e45c:6aa0:b05e) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 19:58:24	-->	u0m3_ (~u0m3@188.27.122.117) has joined #nginx
+2018-03-10 20:01:17	<--	u0m3 (~u0m3@188.27.122.117) has quit (Ping timeout: 252 seconds)
+2018-03-10 20:01:23	-->	`VL (~Real@broadband-46-188-31-14.2com.net) has joined #nginx
+2018-03-10 20:01:36	-->	vl (~vl@broadband-46-188-31-14.2com.net) has joined #nginx
+2018-03-10 20:10:16	-->	plaaster (~plaaster_@mail.plaaster.ee) has joined #nginx
+2018-03-10 20:13:37	<--	rendar (~rendar@unaffiliated/rendar) has quit
+2018-03-10 20:13:45	-->	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has joined #nginx
+2018-03-10 20:18:05	<--	vl (~vl@broadband-46-188-31-14.2com.net) has quit (Ping timeout: 240 seconds)
+2018-03-10 20:18:09	<--	`VL (~Real@broadband-46-188-31-14.2com.net) has quit (Ping timeout: 252 seconds)
+2018-03-10 20:18:29	<--	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has quit (Ping timeout: 256 seconds)
+2018-03-10 20:20:45	<--	plaaster (~plaaster_@mail.plaaster.ee) has quit (Quit: Leaving)
+2018-03-10 20:20:52	-->	plaaster_ (~plaaster_@mail.plaaster.ee) has joined #nginx
+2018-03-10 20:21:10	-->	`VL (~Real@broadband-46-188-31-14.2com.net) has joined #nginx
+2018-03-10 20:21:18	-->	vl (~vl@broadband-46-188-31-14.2com.net) has joined #nginx
+2018-03-10 20:21:36	<--	plaaster_ (~plaaster_@mail.plaaster.ee) has quit (Remote host closed the connection)
+2018-03-10 20:21:47	-->	plaaster (~plaaster_@mail.plaaster.ee) has joined #nginx
+2018-03-10 20:23:29	<--	vlatkoB (~IRC_clien@unaffiliated/vlatkob) has quit (Remote host closed the connection)
+2018-03-10 20:30:29	-->	Arcaelyx (~Arcaelyx@2601:643:8680:5704:78b8:fe15:b17:8b86) has joined #nginx
+2018-03-10 20:35:29	<--	vl (~vl@broadband-46-188-31-14.2com.net) has quit (Ping timeout: 260 seconds)
+2018-03-10 20:35:43	<--	`VL (~Real@broadband-46-188-31-14.2com.net) has quit (Ping timeout: 268 seconds)
+2018-03-10 20:35:52	<--	phaleth (~phaleth@unaffiliated/phaleth) has quit (Quit: If you cannot understand it, it is machine code.)
+2018-03-10 20:36:04	-->	sarp (~sarp@152.3.43.23) has joined #nginx
+2018-03-10 20:39:33	-->	ChmEarl (~chmearl@unaffiliated/prymar56) has joined #nginx
+2018-03-10 20:41:36	<--	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has quit (Quit: maks25)
+2018-03-10 20:43:47	-->	unreal (~unreal@unaffiliated/unreal) has joined #nginx
+2018-03-10 20:48:12	<--	Trieste (~T@unaffiliated/trieste) has quit (Ping timeout: 260 seconds)
+2018-03-10 20:48:23	-->	tanner13m (~tnt@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 20:50:00	<--	tanner13m (~tnt@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Max SendQ exceeded)
+2018-03-10 20:50:04	<--	SenasOzys (~SenasOzys@vwifi-student-191.lnu.se) has quit (Ping timeout: 260 seconds)
+2018-03-10 20:51:26	-->	Trieste (~T@unaffiliated/trieste) has joined #nginx
+2018-03-10 20:52:55	-->	Repox (~textual@85.203.137.15) has joined #nginx
+2018-03-10 20:54:27	-->	RealUnix (~Staff@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 20:55:31	<--	Repox (~textual@85.203.137.15) has quit (Read error: Connection reset by peer)
+2018-03-10 20:55:34	<--	RealUnix (~Staff@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Max SendQ exceeded)
+2018-03-10 21:03:29	-->	SenasOzys (~SenasOzys@user208.77-105-199.netatonce.net) has joined #nginx
+2018-03-10 21:03:34	<--	sarp (~sarp@152.3.43.23) has quit (Ping timeout: 265 seconds)
+2018-03-10 21:05:22	-->	realtime_ (~realtime@unaffiliated/realtime) has joined #nginx
+2018-03-10 21:07:29	<--	thief (~realtime@unaffiliated/realtime) has quit (Ping timeout: 248 seconds)
+2018-03-10 21:11:31	<--	pk12 (~pk12@199.241.146.163) has quit (Quit: ZNC 1.7.x-git-899-15ccaca4 - https://znc.in)
+2018-03-10 21:13:37	<--	frostschutz (~frostschu@55d4ddfc.access.ecotel.net) has quit (Remote host closed the connection)
+2018-03-10 21:13:37	-->	jimmyrcom (~fold@71-11-240-211.dhcp.dntn.tx.charter.com) has joined #nginx
+2018-03-10 21:15:54	-->	thief (~realtime@unaffiliated/realtime) has joined #nginx
+2018-03-10 21:17:37	-->	pk12 (~pk12@199.241.146.163) has joined #nginx
+2018-03-10 21:17:45	<--	TacoGS (~tacogs@47.54.233.220) has quit
+2018-03-10 21:18:22	<--	realtime_ (~realtime@unaffiliated/realtime) has quit (Ping timeout: 264 seconds)
+2018-03-10 21:19:19	-->	TacoGS (~tacogs@47.54.233.220) has joined #nginx
+2018-03-10 21:21:35	-->	tnewman__ (~pi@1-160-6-34.dynamic-ip.hinet.net) has joined #nginx
+2018-03-10 21:22:58	<--	tnewman_ (~pi@36-224-104-103.dynamic-ip.hinet.net) has quit (Ping timeout: 248 seconds)
+2018-03-10 21:27:12	<--	kexmex (~kexmex@unaffiliated/kexmex) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 21:28:30	<--	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 21:29:51	-->	tarkus (~tarkus@109.230.144.161) has joined #nginx
+2018-03-10 21:30:16	-->	maddron (~bullo@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 21:35:24	-->	OtherAllan (uid180785@gateway/web/irccloud.com/x-iohkcxmssqhkigfv) has joined #nginx
+2018-03-10 21:35:34	<--	maddron (~bullo@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Max SendQ exceeded)
+2018-03-10 21:40:06	<--	tarkus (~tarkus@109.230.144.161) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 21:42:12	-->	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has joined #nginx
+2018-03-10 21:42:41	-->	cueilleusedetoil (~etoiles@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 21:42:58	-->	freswa (~freswa@2a01:170:109a:1:6cf7:da3a:3fb3:4679) has joined #nginx
+2018-03-10 21:44:02	<--	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has quit (Client Quit)
+2018-03-10 21:44:45	-->	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has joined #nginx
+2018-03-10 21:52:37	<--	maks25 (~maxim@pool-173-56-208-67.nycmny.fios.verizon.net) has quit (Quit: maks25)
+2018-03-10 21:53:23	<--	Corubba (~Corubba@200116b842acd90098fd062e4d27e330.dip.versatel-1u1.de) has quit (Quit: Leaving)
+2018-03-10 21:56:02	-->	sarp (~sarp@152.3.43.23) has joined #nginx
+2018-03-10 21:56:40	<--	cueilleusedetoil (~etoiles@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-10 22:05:50	-->	mikecmpbll (~mikecmpbl@ruby/staff/mikecmpbll) has joined #nginx
+2018-03-10 22:08:46	-->	newdimension (~newdimens@toroon12-3096785076.sdsl.bell.ca) has joined #nginx
+2018-03-10 22:10:51	-->	Guide-et-For (~Mibbit@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 22:13:59	-->	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has joined #nginx
+2018-03-10 22:14:38	<--	Trieste (~T@unaffiliated/trieste) has quit (Ping timeout: 276 seconds)
+2018-03-10 22:15:03	<--	Guide-et-For (~Mibbit@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-10 22:16:50	<--	sarp (~sarp@152.3.43.23) has quit (Quit: Leaving)
+2018-03-10 22:16:57	-->	Trieste (~T@unaffiliated/trieste) has joined #nginx
+2018-03-10 22:20:33	<--	tyranny12 (~blarg@unaffiliated/tyranny12) has quit (Ping timeout: 248 seconds)
+2018-03-10 22:20:57	<--	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has quit (Read error: Connection reset by peer)
+2018-03-10 22:22:20	-->	tyranny12 (~blarg@cpc122086-bmly10-2-0-cust783.2-3.cable.virginm.net) has joined #nginx
+2018-03-10 22:22:20	<--	tyranny12 (~blarg@cpc122086-bmly10-2-0-cust783.2-3.cable.virginm.net) has quit (Changing host)
+2018-03-10 22:22:20	-->	tyranny12 (~blarg@unaffiliated/tyranny12) has joined #nginx
+2018-03-10 22:23:08	<--	siovene (uid16530@gateway/web/irccloud.com/x-vxtflgwbhwbgrcuk) has quit (Quit: Connection closed for inactivity)
+2018-03-10 22:26:57	<--	loonquawl (~loonquawl@74-195-164-161.hwkncmtc01.res.dyn.suddenlink.net) has quit (Quit: loonquawl)
+2018-03-10 22:30:32	-->	timg__ (~timg__@p4FF26D1A.dip0.t-ipconnect.de) has joined #nginx
+2018-03-10 22:31:27	<--	ghoti (~paul@75.98.206.5) has quit (Ping timeout: 245 seconds)
+2018-03-10 22:32:09	<--	grumble (~grumble@freenode/staff/grumble) has quit (Read error: Connection reset by peer)
+2018-03-10 22:33:43	-->	maboline (~maboline@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 22:34:55	-->	grumble (~grumble@freenode/staff/grumble) has joined #nginx
+2018-03-10 22:35:05	-->	ghoti (~paul@75.98.206.5) has joined #nginx
+2018-03-10 22:37:05	-->	`VL (~Real@broadband-46-188-31-14.2com.net) has joined #nginx
+2018-03-10 22:37:34	<--	gffa (~unknown@unaffiliated/gffa) has quit (Quit: quit)
+2018-03-10 22:37:35	-->	vl (~vl@46.188.31.14) has joined #nginx
+2018-03-10 22:40:38	<--	mustmodify_ (~mustmodif@74.80.35.99) has left #nginx
+2018-03-10 22:44:34	-->	Yamakaja (~yamakaja@vps.pub.yamakaja.me) has joined #nginx
+2018-03-10 22:52:15	-->	multi_io1 (~olaf@x4db37165.dyn.telefonica.de) has joined #nginx
+2018-03-10 22:54:20	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Ping timeout: 240 seconds)
+2018-03-10 22:55:12	<--	multi_io_ (~olaf@x4db46ed4.dyn.telefonica.de) has quit (Ping timeout: 240 seconds)
+2018-03-10 22:55:34	<--	sol1x (~sol1x@2a02:810d:4440:1a03:58d2:c453:394b:2d30) has quit (Quit: WeeChat 1.4)
+2018-03-10 22:56:33	orbiter	how to mysql-loadbalance? openresty does not know the tcp directive....
+2018-03-10 22:57:06	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-10 23:02:41	<--	jimmyrcom (~fold@71-11-240-211.dhcp.dntn.tx.charter.com) has quit (Ping timeout: 255 seconds)
+2018-03-10 23:03:55	<--	TinkerTyper (~putneyj@75-8-78-151.lightspeed.rlghnc.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2018-03-10 23:04:23	<--	maboline (~maboline@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-10 23:05:44	-->	TinkerTyper (~putneyj@75-8-78-151.lightspeed.rlghnc.sbcglobal.net) has joined #nginx
+2018-03-10 23:07:09	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Ping timeout: 260 seconds)
+2018-03-10 23:14:18	<--	AndrewBC (~AndrewBC@ip70-187-57-150.pn.at.cox.net) has quit (Read error: Connection reset by peer)
+2018-03-10 23:14:47	-->	AndrewBC (~AndrewBC@ip70-187-57-150.pn.at.cox.net) has joined #nginx
+2018-03-10 23:21:32	<--	RaiNerTsuFal (~RaiNerTsu@akita.vx.hn) has quit (Quit: Conversation terminated!)
+2018-03-10 23:22:13	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-10 23:23:32	<--	digitalnomad91 (~digitalno@2600:380:643e:5cfa:d063:37f5:4bff:7bb7) has quit (Ping timeout: 256 seconds)
+2018-03-10 23:24:30	-->	wrrn__ (~textual@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-10 23:26:08	-->	RaiNerTsuFal (~RaiNerTsu@akita.vx.hn) has joined #nginx
+2018-03-10 23:28:44	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Ping timeout: 276 seconds)
+2018-03-10 23:28:53	<--	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has quit (Ping timeout: 256 seconds)
+2018-03-10 23:29:19	-->	chachasmooth_ (~chachasmo@unaffiliated/chachasmooth) has joined #nginx
+2018-03-10 23:31:37	<--	gloomy (~gloomy@ip-81-11-163-52.dsl.scarlet.be) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-10 23:31:58	-->	gloomy (~gloomy@ip-81-11-163-52.dsl.scarlet.be) has joined #nginx
+2018-03-10 23:38:40	-->	czart__ (~czart@abzn93.neoplus.adsl.tpnet.pl) has joined #nginx
+2018-03-10 23:38:49	-->	tccki_ (~tccki@zeta.webslate.co.nz) has joined #nginx
+2018-03-10 23:38:50	<--	wrrn__ (~textual@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-10 23:38:53	-->	p0pr0ck5__ (~p0pr0ck5@198.74.38.57) has joined #nginx
+2018-03-10 23:39:16	<--	czart_ (~czart@abzn93.neoplus.adsl.tpnet.pl) has quit (Read error: Connection reset by peer)
+2018-03-10 23:39:16	<--	tccki (~tccki@zeta.webslate.co.nz) has quit (Quit: tccki)
+2018-03-10 23:39:16	<--	p0pr0ck5_ (~p0pr0ck5@198.74.38.57) has quit (Read error: Connection reset by peer)
+2018-03-10 23:40:12	--	tccki_ is now known as tccki
+2018-03-10 23:42:34	<--	listenmore (~strike@95.151.48.215) has quit (Remote host closed the connection)
+2018-03-10 23:42:48	<--	`VL (~Real@broadband-46-188-31-14.2com.net) has quit (Ping timeout: 256 seconds)
+2018-03-10 23:42:56	-->	listenmore (~strike@95.151.48.215) has joined #nginx
+2018-03-10 23:44:27	<--	MuffinMedic (Evan@unaffiliated/muffinmedic) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:44:28	<--	kutenai (sid80151@gateway/web/irccloud.com/x-nxtqlunfeaxvblwq) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:44:57	<--	Deusdeorum (~Deusdeoru@unaffiliated/deusdeorum) has quit (Ping timeout: 240 seconds)
+2018-03-10 23:45:28	-->	Doginal (~agriggs@unaffiliated/doginal) has joined #nginx
+2018-03-10 23:45:39	<--	cliluw (~cliluw@unaffiliated/cliluw) has quit (Ping timeout: 260 seconds)
+2018-03-10 23:46:05	-->	kutenai (sid80151@gateway/web/irccloud.com/x-mstlqpszjfiwrjbt) has joined #nginx
+2018-03-10 23:46:07	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-10 23:46:25	-->	cliluw (~cliluw@unaffiliated/cliluw) has joined #nginx
+2018-03-10 23:46:56	<--	[NoClan]GoAway (~NoClan@195.138.249.5) has quit (Read error: Connection reset by peer)
+2018-03-10 23:47:22	-->	[NoClan]GoAway (~NoClan@195.138.249.3) has joined #nginx
+2018-03-10 23:47:39	-->	Deusdeorum (~Deusdeoru@h-72-198.A230.priv.bahnhof.se) has joined #nginx
+2018-03-10 23:47:43	-->	MuffinMedic (Evan@unaffiliated/muffinmedic) has joined #nginx
+2018-03-10 23:48:09	<--	sergey (~sergey@212.115.244.100) has quit
+2018-03-10 23:52:44	-->	jimmyrcom (~fold@71-11-240-211.dhcp.dntn.tx.charter.com) has joined #nginx
+2018-03-10 23:55:38	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Ping timeout: 265 seconds)
+2018-03-10 23:57:12	-->	JordanTheDev (~JordanThe@wsip-72-198-252-77.tu.ok.cox.net) has joined #nginx
+2018-03-10 23:57:12	<--	JordanTheDev (~JordanThe@wsip-72-198-252-77.tu.ok.cox.net) has quit (Client Quit)
+2018-03-10 23:57:32	-->	JordanTheDev (~JordanThe@wsip-72-198-252-77.tu.ok.cox.net) has joined #nginx
+2018-03-10 23:57:43	<--	Captain_Rage (~smuxi@c53-94.icpnet.pl) has quit (Read error: Connection reset by peer)
+2018-03-10 23:58:21	jaybe	hold an sql in each hand at around the same height
+2018-03-11 00:00:01	-->	officeboi (~Mutter@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-11 00:00:50	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-11 00:01:58	<--	JordanTheDev (~JordanThe@wsip-72-198-252-77.tu.ok.cox.net) has quit (Client Quit)
+2018-03-11 00:04:04	<--	nikitasius (~nikitasiu@abl14-1-78-214-206-62.fbx.proxad.net) has quit (Quit: WeeChat 1.0.1)
+2018-03-11 00:05:31	<--	hreinnbeck (~hreinnbec@k6.is) has quit (Quit: ZNC - https://znc.in)
+2018-03-11 00:05:50	<--	officeboi (~Mutter@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-11 00:06:06	-->	hreinnbeck (~hreinnbec@k6.is) has joined #nginx
+2018-03-11 00:06:59	-->	NullTerminator (~NullTermi@S010628cfe9601453.gv.shawcable.net) has joined #nginx
+2018-03-11 00:07:37	<--	NullTerminator (~NullTermi@S010628cfe9601453.gv.shawcable.net) has quit (Client Quit)
+2018-03-11 00:08:49	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Ping timeout: 248 seconds)
+2018-03-11 00:16:49	<--	newdimension (~newdimens@toroon12-3096785076.sdsl.bell.ca) has quit (Read error: Connection reset by peer)
+2018-03-11 00:17:08	-->	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has joined #nginx
+2018-03-11 00:17:19	<--	mikecmpbll (~mikecmpbl@ruby/staff/mikecmpbll) has quit (Quit: inabit. zz.)
+2018-03-11 00:17:23	<--	tnewman__ (~pi@1-160-6-34.dynamic-ip.hinet.net) has quit (Ping timeout: 255 seconds)
+2018-03-11 00:17:37	-->	newdimension (~newdimens@toroon12-3096785076.sdsl.bell.ca) has joined #nginx
+2018-03-11 00:19:34	<--	larsi (~lars@unaffiliated/larsi) has quit (Ping timeout: 264 seconds)
+2018-03-11 00:19:49	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-11 00:20:21	-->	pk12_ (~pk12@199.241.146.163) has joined #nginx
+2018-03-11 00:21:47	-->	larsi (~lars@15.51-174-167.customer.lyse.net) has joined #nginx
+2018-03-11 00:21:52	<--	pk12_ (~pk12@199.241.146.163) has left #nginx
+2018-03-11 00:21:54	<--	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has quit (Ping timeout: 256 seconds)
+2018-03-11 00:21:57	<--	larsi (~lars@15.51-174-167.customer.lyse.net) has quit (Changing host)
+2018-03-11 00:21:57	-->	larsi (~lars@unaffiliated/larsi) has joined #nginx
+2018-03-11 00:24:57	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Ping timeout: 264 seconds)
+2018-03-11 00:25:49	-->	tnewman__ (~pi@1-160-6-34.dynamic-ip.hinet.net) has joined #nginx
+2018-03-11 00:26:24	-->	cassidy777 (~cassidy77@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-11 00:26:39	<--	cassidy777 (~cassidy77@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-11 00:28:57	<--	WillMoogle (sid38138@gateway/web/irccloud.com/x-luftpwtacrsfdhhd) has quit (Ping timeout: 240 seconds)
+2018-03-11 00:29:57	<--	jefferai (jefferai@kde/mitchell) has quit (Ping timeout: 240 seconds)
+2018-03-11 00:30:35	-->	WillMoogle (sid38138@gateway/web/irccloud.com/x-mmhipjkmzrfbiuny) has joined #nginx
+2018-03-11 00:30:40	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-11 00:31:05	<--	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has quit (Remote host closed the connection)
+2018-03-11 00:32:15	-->	jefferai (jefferai@kde/mitchell) has joined #nginx
+2018-03-11 00:34:30	-->	mikecmpbll (~mikecmpbl@ruby/staff/mikecmpbll) has joined #nginx
+2018-03-11 00:36:33	-->	kexmex (~kexmex@unaffiliated/kexmex) has joined #nginx
+2018-03-11 00:43:03	-->	phishy (~phishy@c-68-57-184-147.hsd1.al.comcast.net) has joined #nginx
+2018-03-11 00:43:17	<--	robink (~quassel@unaffilated/robink) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-03-11 00:44:06	<--	phishy (~phishy@c-68-57-184-147.hsd1.al.comcast.net) has quit (Client Quit)
+2018-03-11 00:45:55	<--	OtherAllan (uid180785@gateway/web/irccloud.com/x-iohkcxmssqhkigfv) has quit (Quit: Connection closed for inactivity)
+2018-03-11 00:50:24	-->	robink (~quassel@unaffilated/robink) has joined #nginx
+2018-03-11 00:52:25	<--	gloomy (~gloomy@ip-81-11-163-52.dsl.scarlet.be) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 00:53:31	thresh	orbiter, don't use openresty, use nginx and you could do it then!
+2018-03-11 00:54:17	-->	nahtnam (uid22411@gateway/web/irccloud.com/x-cqaxuxtsnxgkhdih) has joined #nginx
+2018-03-11 00:55:17	-->	h12o (~h12o@210-135-213-163.parkcity.ne.jp) has joined #nginx
+2018-03-11 00:59:46	-->	Lies (~tyjo909@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-11 00:59:52	<--	Lies (~tyjo909@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-11 01:02:53	MTecknology	thresh: Why would you recommend nginx in #openresty?!
+2018-03-11 01:03:52	<--	mikecmpbll (~mikecmpbl@ruby/staff/mikecmpbll) has quit (Quit: inabit. zz.)
+2018-03-11 01:04:01	<--	enoch85 (~enoch85@unaffiliated/enoch85) has quit (Quit: Tech And Me - ZNC server 1.6.3 - https://www.techandme.se)
+2018-03-11 01:04:07	thresh	MTecknology, oh did I miss the rename
+2018-03-11 01:04:33	-->	enoch85 (~enoch85@109-124-180-118.customer.t3.se) has joined #nginx
+2018-03-11 01:04:33	<--	enoch85 (~enoch85@109-124-180-118.customer.t3.se) has quit (Changing host)
+2018-03-11 01:04:33	-->	enoch85 (~enoch85@unaffiliated/enoch85) has joined #nginx
+2018-03-11 01:06:22	-->	digitalnomad91 (~digitalno@2600:380:6b19:90e2:cddb:4574:b393:b312) has joined #nginx
+2018-03-11 01:09:16	-->	bgpaladin_ (~kvirc@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-11 01:14:18	-->	sauvin_ (sauvin@about/linux/staff/sauvin) has joined #nginx
+2018-03-11 01:14:49	MTecknology	:)
+2018-03-11 01:16:05	--	sauvin_ is now known as bocaneriu
+2018-03-11 01:16:06	<--	newdimension (~newdimens@toroon12-3096785076.sdsl.bell.ca) has quit (Read error: Connection reset by peer)
+2018-03-11 01:16:07	--	bocaneriu is now known as bocaneri
+2018-03-11 01:17:15	Peng_	thresh: You must have been resting
+2018-03-11 01:18:07	thresh	too busy on vacation, and then SCALE16x
+2018-03-11 01:18:40	<--	rashwell (~rashwell@c-67-184-144-214.hsd1.il.comcast.net) has quit (Quit: WeeChat 2.1-dev)
+2018-03-11 01:21:59	<--	bgpaladin_ (~kvirc@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-11 01:23:36	-->	marinin (~ktoverso@92-100-231-187.dynamic.avangarddsl.ru) has joined #nginx
+2018-03-11 01:25:04	-->	aristippos (~aristippo@209.116.154.66) has joined #nginx
+2018-03-11 01:27:28	<--	robink (~quassel@unaffilated/robink) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-03-11 01:27:36	<--	tilpner (znc@tx0.co) has quit (Quit: :wq)
+2018-03-11 01:27:53	<--	marinin (~ktoverso@92-100-231-187.dynamic.avangarddsl.ru) has quit (Client Quit)
+2018-03-11 01:28:36	-->	tilpner (znc@tx0.co) has joined #nginx
+2018-03-11 01:28:39	-->	marinin (~ktoverso@92-100-231-187.dynamic.avangarddsl.ru) has joined #nginx
+2018-03-11 01:29:04	<--	tilpner (znc@tx0.co) has quit (Remote host closed the connection)
+2018-03-11 01:29:09	thresh	manning a booth (not nginx this time) is so damn tiring
+2018-03-11 01:29:21	<--	mperillo (~mperillo@host242-26-dynamic.43-79-r.retail.telecomitalia.it) has quit (Ping timeout: 248 seconds)
+2018-03-11 01:29:51	-->	romano2k_ (uid190419@gateway/web/irccloud.com/x-nimievetaubdsyjn) has joined #nginx
+2018-03-11 01:33:15	<--	marinin (~ktoverso@92-100-231-187.dynamic.avangarddsl.ru) has quit (Quit: Sleep quit)
+2018-03-11 01:39:42	MTecknology	what kinda booth?
+2018-03-11 01:43:04	<--	digitalnomad91 (~digitalno@2600:380:6b19:90e2:cddb:4574:b393:b312) has quit (Ping timeout: 256 seconds)
+2018-03-11 01:43:09	-->	hitzfelder (~beville@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has joined #nginx
+2018-03-11 01:45:03	-->	frostschutz (~frostschu@55d4ddfc.access.ecotel.net) has joined #nginx
+2018-03-11 01:48:28	-->	timg___ (~timg__@p4FF26904.dip0.t-ipconnect.de) has joined #nginx
+2018-03-11 01:50:09	-->	tilpner (znc@tx0.co) has joined #nginx
+2018-03-11 01:51:53	<--	timg__ (~timg__@p4FF26D1A.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2018-03-11 01:54:08	--	Ewout_ is now known as Ewout
+2018-03-11 01:54:24	-->	pkx2 (~pkx@unaffiliated/pkx) has joined #nginx
+2018-03-11 01:54:53	<--	pkx2 (~pkx@unaffiliated/pkx) has quit (Read error: Connection reset by peer)
+2018-03-11 01:59:43	<--	cuddylier (~ryana@cpc78859-bele10-2-0-cust62.2-1.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2018-03-11 02:04:19	<--	kexmex (~kexmex@unaffiliated/kexmex) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 02:11:43	-->	kexmex (~kexmex@unaffiliated/kexmex) has joined #nginx
+2018-03-11 02:13:38	<--	AtumT (~IRC@201.86.164.76.dynamic.adsl.gvt.net.br) has quit (Remote host closed the connection)
+2018-03-11 02:17:19	-->	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has joined #nginx
+2018-03-11 02:19:21	-->	digitalnomad91 (~digitalno@2600:380:6b19:90e2:cddb:4574:b393:b312) has joined #nginx
+2018-03-11 02:21:27	<--	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has quit (Ping timeout: 240 seconds)
+2018-03-11 02:23:44	<--	timg___ (~timg__@p4FF26904.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-03-11 02:30:55	<--	freswa (~freswa@2a01:170:109a:1:6cf7:da3a:3fb3:4679) has quit (Quit: freswa)
+2018-03-11 02:31:04	-->	MathNeverEnds (~alpha@c-73-159-134-254.hsd1.ma.comcast.net) has joined #nginx
+2018-03-11 02:31:24	MathNeverEnds	Hey guys how would I setup frontend files to be served, and a backend api to avoid CORS blocking?
+2018-03-11 02:31:51	MathNeverEnds	I'm using flask for the backend and vuejs for the frontend
+2018-03-11 02:32:05	MathNeverEnds	right now i have them on 2 different droplets on digital ocean, but that doesn't work well
+2018-03-11 02:32:12	MathNeverEnds	as i keep getting cors blocked
+2018-03-11 02:34:49	-->	}ls{ (~kalle@unaffiliated/ls/x-8089558) has joined #nginx
+2018-03-11 02:44:56	<--	frostschutz (~frostschu@55d4ddfc.access.ecotel.net) has quit (Remote host closed the connection)
+2018-03-11 02:59:43	voker57	send proper CORS headers?
+2018-03-11 03:00:26	MathNeverEnds	i used credentials:"same-origin"
+2018-03-11 03:00:36	MathNeverEnds	but my nginx is probably setup all wrong
+2018-03-11 03:00:54	MathNeverEnds	im in a pickle
+2018-03-11 03:01:23	MathNeverEnds	i dont know much about nginx
+2018-03-11 03:01:37	MathNeverEnds	i can't even change the default location /
+2018-03-11 03:01:42	MathNeverEnds	to location /api on a test server
+2018-03-11 03:01:45	MathNeverEnds	without it failing
+2018-03-11 03:02:45	MathNeverEnds	https://gist.github.com/SeerHewer/91189d3a8233c4c6ee8cd3efc5708944
+2018-03-11 03:02:48	MathNeverEnds	like that should work
+2018-03-11 03:02:53	MathNeverEnds	it works if i dont use /api
+2018-03-11 03:02:59	MathNeverEnds	but the second i put /api on there
+2018-03-11 03:03:00	MathNeverEnds	FAIL
+2018-03-11 03:03:00	--	Mode #nginx [+q MathNeverEnds!*@*] by ngxbot
+2018-03-11 03:05:10	--	Mode #nginx [+o Peng_] by ChanServ
+2018-03-11 03:05:12	--	Mode #nginx [+z] by Peng_
+2018-03-11 03:05:24	--	Mode #nginx [-zq MathNeverEnds!*@*] by Peng_
+2018-03-11 03:05:29	MathNeverEnds	thank you
+2018-03-11 03:05:29	@Peng_	MathNeverEnds: Please hit Enter less.
+2018-03-11 03:05:45	MathNeverEnds	got it
+2018-03-11 03:13:56	<--	kexmex (~kexmex@unaffiliated/kexmex) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 03:16:28	merlincorey	MathNeverEnds: it seems like voker57 might have been on a good track -- if you send "proper" CORS headers (and that may involve some DNS entry setting perhaps to help out, though I think you can do it by IP as well) then you should not have a problem any longer
+2018-03-11 03:16:41	merlincorey	MathNeverEnds: that said if you truly want nginx can probably be made to do some gymnastics of course
+2018-03-11 03:18:24	MathNeverEnds	merlincorey, i'm not sure what proper cors headers would mean
+2018-03-11 03:18:51	MathNeverEnds	merlincorey, also do you mean sending them from the browser or sending them from the server?
+2018-03-11 03:21:16	merlincorey	MathNeverEnds: the backend server should send them, I believe, and potentially the frontend server (nginx) as well for the static assets
+2018-03-11 03:21:23	merlincorey	lemme see if I can find a decent guide real quick
+2018-03-11 03:22:02	MathNeverEnds	The value of the 'Access-Control-Allow-Credentials' header in the response is '' which must be 'true' when the request's credentials mode is 'include'. Origin 'null' is therefore not allowed access.
+2018-03-11 03:22:22	MathNeverEnds	That is the error that I receive because the cookies don't persist from after I have the user login.
+2018-03-11 03:23:07	voker57	MathNeverEnds: read this https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+2018-03-11 03:23:46	merlincorey	https://www.html5rocks.com/en/tutorials/cors/ <<< this looks reasonable as well though i think it is more dated
+2018-03-11 03:24:23	merlincorey	but yeah you want to essentially send some combination of "Access-Control-*" headers specifying what domains, etc are able to do cross origin requests
+2018-03-11 03:24:57	voker57	basically you need to set Access-Control-Allow-Origin on backend servers to address/mask of your frontend
+2018-03-11 03:25:39	MathNeverEnds	Okay, so in the javascript i have the client calling directly to the backend URL
+2018-03-11 03:25:50	MathNeverEnds	is this fundamentally wrong?
+2018-03-11 03:26:00	voker57	no
+2018-03-11 03:26:52	MathNeverEnds	oh so i just set access control to the frontend address
+2018-03-11 03:27:16	MathNeverEnds	okay let me try that
+2018-03-11 03:29:17	-->	a-ja (~aja@24-207-230-17.dhcp.stls.mo.charter.com) has joined #nginx
+2018-03-11 03:32:23	-->	aristipp_ (~aristippo@45-24-223-90.lightspeed.sntcca.sbcglobal.net) has joined #nginx
+2018-03-11 03:33:04	<--	aristippos (~aristippo@209.116.154.66) has quit (Read error: Connection reset by peer)
+2018-03-11 03:33:05	<--	HalfEatenPie (~HalfEaten@unaffiliated/halfeatenpie) has quit (Ping timeout: 248 seconds)
+2018-03-11 03:33:07	<--	mniip (mniip@haskell/developer/mniip) has quit (Ping timeout: 256 seconds)
+2018-03-11 03:36:01	-->	mniip (mniip@haskell/developer/mniip) has joined #nginx
+2018-03-11 03:36:32	-->	fc5dc9d4 (~quassel@p57A32FEF.dip0.t-ipconnect.de) has joined #nginx
+2018-03-11 03:37:27	<--	aristipp_ (~aristippo@45-24-223-90.lightspeed.sntcca.sbcglobal.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 03:37:52	-->	Moose_ (~digitalno@2600:380:6b19:90e2:cddb:4574:b393:b312) has joined #nginx
+2018-03-11 03:38:45	-->	HalfEatenPie (~HalfEaten@unaffiliated/halfeatenpie) has joined #nginx
+2018-03-11 03:39:48	MathNeverEnds	voker57, getting a different error now Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource
+2018-03-11 03:39:56	MathNeverEnds	Reason: CORS header ‘Access-Control-Allow-Origin’ does not match ‘(null)’).
+2018-03-11 03:40:14	<--	digitalnomad91 (~digitalno@2600:380:6b19:90e2:cddb:4574:b393:b312) has quit (Ping timeout: 256 seconds)
+2018-03-11 03:40:34	<--	fc5dc9d4_ (~quassel@p5B081338.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2018-03-11 03:51:58	<--	bocaneri (sauvin@about/linux/staff/sauvin) has quit (Ping timeout: 264 seconds)
+2018-03-11 03:52:20	-->	sauvin_ (sauvin@about/linux/staff/sauvin) has joined #nginx
+2018-03-11 03:54:28	<--	hitzfelder (~beville@mtrlpq3120w-lp130-01-74-14-212-25.dsl.bell.ca) has quit (Remote host closed the connection)
+2018-03-11 03:55:25	<--	SenasOzys (~SenasOzys@user208.77-105-199.netatonce.net) has quit (Ping timeout: 256 seconds)
+2018-03-11 04:01:47	MathNeverEnds	SOLVED
+2018-03-11 04:02:03	<--	Fr3DBr_p (~Fr3DBr@freenode/sponsor/hyperfilter.com) has quit (Read error: Connection reset by peer)
+2018-03-11 04:02:27	-->	kexmex (~kexmex@unaffiliated/kexmex) has joined #nginx
+2018-03-11 04:04:46	-->	Fr3DBr (~Fr3DBr@freenode/sponsor/hyperfilter.com) has joined #nginx
+2018-03-11 04:07:17	-->	Guest98041 (~AndChat85@197.2.86.51) has joined #nginx
+2018-03-11 04:08:24	-->	mack (~mack_121@vmd25044.contaboserver.net) has joined #nginx
+2018-03-11 04:08:27	<--	mack (~mack_121@vmd25044.contaboserver.net) has quit (Remote host closed the connection)
+2018-03-11 04:17:24	-->	fission6 (~textual@cpe-69-203-118-116.nyc.res.rr.com) has joined #nginx
+2018-03-11 04:17:32	-->	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has joined #nginx
+2018-03-11 04:18:49	-->	cbr900rr (~Thunderbi@bas6-montreal45-70-29-233-16.dsl.bell.ca) has joined #nginx
+2018-03-11 04:19:02	<--	cbr900rr (~Thunderbi@bas6-montreal45-70-29-233-16.dsl.bell.ca) has quit (Client Quit)
+2018-03-11 04:19:25	<--	romano2k_ (uid190419@gateway/web/irccloud.com/x-nimievetaubdsyjn) has quit (Quit: Connection closed for inactivity)
+2018-03-11 04:21:09	-->	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has joined #nginx
+2018-03-11 04:22:09	<--	Durstburger (~Durstburg@x1-6-a0-8e-78-6a-38-24.cpe.webspeed.dk) has quit (Ping timeout: 248 seconds)
+2018-03-11 04:22:11	<--	chachasmooth_ (~chachasmo@unaffiliated/chachasmooth) has quit (Ping timeout: 255 seconds)
+2018-03-11 04:29:15	<--	kupi (uid212005@gateway/web/irccloud.com/x-secchwkvibmgjzvb) has quit (Quit: Connection closed for inactivity)
+2018-03-11 04:29:43	-->	Dunedan (~dunedan@unaffiliated/dunedan) has joined #nginx
+2018-03-11 04:30:56	<--	mack121 (~mack_121@mail.mengelka.mp) has quit (Quit: ZNC 1.6.5+deb1 - http://znc.in)
+2018-03-11 04:31:10	<--	fission6 (~textual@cpe-69-203-118-116.nyc.res.rr.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 04:31:12	-->	mack (~mack_121@mail.mengelka.mp) has joined #nginx
+2018-03-11 04:31:36	--	mack is now known as Guest24081
+2018-03-11 04:31:43	<--	Guest24081 (~mack_121@mail.mengelka.mp) has quit (Client Quit)
+2018-03-11 04:32:53	-->	ziyourenxiang (~ziyourenx@unaffiliated/ziyourenxiang) has joined #nginx
+2018-03-11 04:33:04	<--	Dunedan_ (~dunedan@unaffiliated/dunedan) has quit (Ping timeout: 265 seconds)
+2018-03-11 04:36:28	<--	pR0Ps (~pR0Ps@69-165-140-177.dsl.teksavvy.com) has quit (Ping timeout: 256 seconds)

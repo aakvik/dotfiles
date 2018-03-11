@@ -1,36 +1,38 @@
-[2018-03-10 17:39:46] WeeChat 2.0.1 (compiled on Jan  3 2018 08:05:45)
-[2018-03-10 17:39:46] Reading configuration file sec.conf
-[2018-03-10 17:39:46] Reading configuration file weechat.conf
-[2018-03-10 17:39:46] Reading configuration file plugins.conf
-[2018-03-10 17:39:46] Reading configuration file charset.conf
-[2018-03-10 17:39:46] Reading configuration file logger.conf
-[2018-03-10 17:39:46] Reading configuration file exec.conf
-[2018-03-10 17:39:46] Reading configuration file trigger.conf
-[2018-03-10 17:39:46] Reading configuration file aspell.conf
-[2018-03-10 17:39:46] Reading configuration file alias.conf
-[2018-03-10 17:39:46] Reading configuration file buflist.conf
-[2018-03-10 17:39:46] Reading configuration file fifo.conf
-[2018-03-10 17:39:46] Reading configuration file xfer.conf
-[2018-03-10 17:39:46] Reading configuration file irc.conf
-[2018-03-10 17:39:46] Reading configuration file relay.conf
-[2018-03-10 17:39:46] Reading configuration file iset.conf
-[2018-03-10 17:39:46] Reading configuration file autosort.conf
-[2018-03-10 17:39:46] Writing configuration file autosort.conf
-[2018-03-10 17:39:46] Reading configuration file theme.conf
-[2018-03-10 17:39:47] Reading configuration file script.conf
-[2018-03-10 17:39:47] Reading configuration file fset.conf
-[2018-03-10 17:39:47] irc: connecting to server irc.aakvik.net/1025 (SSL)...
-[2018-03-10 17:39:47] irc: connecting to server irc.aakvik.net/1025 (SSL)...
-[2018-03-10 17:39:47] Writing configuration file irc.conf
-[2018-03-10 17:39:47] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:48] Writing configuration file irc.conf
-[2018-03-10 17:39:49] Writing configuration file irc.conf
-[2018-03-10 17:39:49] Writing configuration file irc.conf
-[2018-03-10 17:39:49] Writing configuration file irc.conf
+[2018-03-10 18:13:57] WeeChat 2.0.1 (compiled on Jan  3 2018 08:05:45)
+[2018-03-10 18:13:57] Reading configuration file sec.conf
+[2018-03-10 18:13:57] Reading configuration file weechat.conf
+[2018-03-10 18:13:57] Reading configuration file plugins.conf
+[2018-03-10 18:13:57] Reading configuration file charset.conf
+[2018-03-10 18:13:57] Reading configuration file logger.conf
+[2018-03-10 18:13:57] Reading configuration file exec.conf
+[2018-03-10 18:13:57] Reading configuration file trigger.conf
+[2018-03-10 18:13:57] Reading configuration file aspell.conf
+[2018-03-10 18:13:57] Reading configuration file alias.conf
+[2018-03-10 18:13:57] Reading configuration file buflist.conf
+[2018-03-10 18:13:57] Reading configuration file fifo.conf
+[2018-03-10 18:13:57] Reading configuration file xfer.conf
+[2018-03-10 18:13:57] Reading configuration file irc.conf
+[2018-03-10 18:13:57] Reading configuration file relay.conf
+[2018-03-10 18:13:58] Reading configuration file iset.conf
+[2018-03-10 18:13:58] Reading configuration file autosort.conf
+[2018-03-10 18:13:58] Writing configuration file autosort.conf
+[2018-03-10 18:13:58] Reading configuration file theme.conf
+[2018-03-10 18:13:58] Reading configuration file script.conf
+[2018-03-10 18:13:58] Reading configuration file fset.conf
+[2018-03-10 18:13:58] irc: connecting to server irc.aakvik.net/1025 (SSL)...
+[2018-03-10 18:13:58] irc: connecting to server irc.aakvik.net/1025 (SSL)...
+[2018-03-10 18:13:58] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:13:59] Writing configuration file irc.conf
+[2018-03-10 18:14:00] Writing configuration file irc.conf
+[2018-03-10 18:14:00] Writing configuration file irc.conf
+[2018-03-10 18:14:00] Writing configuration file irc.conf
+[2018-03-10 18:14:00] Writing configuration file irc.conf
+[2018-03-10 19:17:32] Writing configuration file irc.conf
+[2018-03-10 19:17:41] Writing configuration file irc.conf

@@ -316,7 +316,7 @@ globalkeys = awful.util.table.join(
 
 -- Lock screen
 
-    awful.key({modkey,}, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({altkey, "Control",}, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
 
 
     -- Show/Hide Wibox
