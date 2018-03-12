@@ -717,3 +717,136 @@
 2018-03-11 04:11:39	-->	katherin_ (~katherine@linuxjournal/staff/KatherineD) has joined #linuxjournal
 2018-03-11 04:11:39	--	Mode #linuxjournal [+o katherin_] by ChanServ
 2018-03-11 04:12:59	<--	katherined (~katherine@linuxjournal/staff/KatherineD) has quit (Ping timeout: 252 seconds)
+2018-03-11 04:51:32	-->	robink (~quassel@unaffilated/robink) has joined #linuxjournal
+2018-03-11 05:06:30	<--	kid (~kid@2a01:79c:cebe:7eac:216:3eff:feed:12b2) has quit (Ping timeout: 256 seconds)
+2018-03-11 05:07:48	-->	kid (~kid@2a01:79c:cebe:7eac:216:3eff:feed:12b2) has joined #linuxjournal
+2018-03-11 05:18:40	--	sauvin_ is now known as bocaneri
+2018-03-11 05:30:42	-->	octieuvt011 (746447ca@gateway/web/freenode/ip.116.100.71.202) has joined #linuxjournal
+2018-03-11 05:31:14	<--	octieuvt011 (746447ca@gateway/web/freenode/ip.116.100.71.202) has quit (Client Quit)
+2018-03-11 06:11:55	<--	Markow (~ejm@176.122.215.103) has quit (Quit: Leaving)
+2018-03-11 06:42:58	-->	nix_grandma (56628fed@gateway/web/freenode/ip.86.98.143.237) has joined #linuxjournal
+2018-03-11 06:46:25	<--	bkuhl (~bkuhl@pool-100-1-67-151.nwrknj.fios.verizon.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-03-11 06:47:24	-->	bkuhl (~bkuhl@pool-100-1-67-151.nwrknj.fios.verizon.net) has joined #linuxjournal
+2018-03-11 06:52:29	<--	nix_grandma (56628fed@gateway/web/freenode/ip.86.98.143.237) has quit (Ping timeout: 260 seconds)
+2018-03-11 07:30:55	-->	psachin (~psachin@103.51.232.131) has joined #linuxjournal
+2018-03-11 07:49:44	<--	burncycle (~burncycle@ec2-52-201-102-2.compute-1.amazonaws.com) has quit (Quit: init 0)
+2018-03-11 07:51:10	-->	burncycle (~burncycle@ec2-52-201-102-2.compute-1.amazonaws.com) has joined #linuxjournal
+2018-03-11 09:00:55	-->	s3mt3rr4 (aaf715fe@gateway/web/freenode/ip.170.247.21.254) has joined #linuxjournal
+2018-03-11 09:00:58	<--	arthurwong (~pplorins@183.14.30.182) has quit (Ping timeout: 256 seconds)
+2018-03-11 09:01:47	<--	s3mt3rr4 (aaf715fe@gateway/web/freenode/ip.170.247.21.254) has quit (Client Quit)
+2018-03-11 09:01:50	<--	nerdboy4200 (~nerdboy42@pool-71-176-113-115.syrcny.fios.verizon.net) has quit (Quit: The magician says "poof!")
+2018-03-11 09:02:22	-->	BH23 (~joes@santoroj.plus.com) has joined #linuxjournal
+2018-03-11 09:04:11	<--	katherin_ (~katherine@linuxjournal/staff/KatherineD) has quit (Remote host closed the connection)
+2018-03-11 09:05:27	-->	katherined (~katherine@linuxjournal/staff/KatherineD) has joined #linuxjournal
+2018-03-11 09:05:27	--	Mode #linuxjournal [+o katherined] by ChanServ
+2018-03-11 09:06:47	<--	BH23 (~joes@santoroj.plus.com) has quit (Client Quit)
+2018-03-11 09:07:02	-->	BH23 (~joes@santoroj.plus.com) has joined #linuxjournal
+2018-03-11 09:07:39	-->	pplorins (~pplorins@183.14.134.147) has joined #linuxjournal
+2018-03-11 09:07:42	<--	BH23 (~joes@santoroj.plus.com) has quit (Client Quit)
+2018-03-11 09:36:54	<--	psachin (~psachin@103.51.232.131) has quit (Remote host closed the connection)
+2018-03-11 09:51:24	-->	psachin (~psachin@103.51.232.131) has joined #linuxjournal
+2018-03-11 09:55:02	<--	psachin (~psachin@103.51.232.131) has quit (Remote host closed the connection)
+2018-03-11 09:55:17	-->	zapotek6 (~zapotek6@5-157-121-128.v4.ngi.it) has joined #linuxjournal
+2018-03-11 10:18:14	<--	zapotek6 (~zapotek6@5-157-121-128.v4.ngi.it) has quit (Remote host closed the connection)
+2018-03-11 11:02:32	<--	unixpro1970 (~unixpro19@unaffiliated/unixpro1970) has quit (Remote host closed the connection)
+2018-03-11 11:11:43	<--	jda2000 (~jda2000@24.40.93.140) has quit (Remote host closed the connection)
+2018-03-11 11:11:50	-->	unixpro1970 (~unixpro19@unaffiliated/unixpro1970) has joined #linuxjournal
+2018-03-11 11:35:10	-->	anon111 (~anon@124.13.252.201) has joined #linuxjournal
+2018-03-11 11:51:09	<--	Baudelaire (~Baudelair@wikipedia/Baudelaire) has quit (Remote host closed the connection)
+2018-03-11 11:52:29	<--	crowd42 (Elite20457@gateway/shell/elitebnc/x-rsnfcvfxppidjpyb) has quit (Ping timeout: 260 seconds)
+2018-03-11 11:57:26	-->	crowd42 (Elite20457@gateway/shell/elitebnc/x-qdlhjdbybmsdwluo) has joined #linuxjournal
+2018-03-11 12:06:52	-->	ggherdov (sid11402@gateway/web/irccloud.com/x-sletuzzdxfsigvhq) has joined #linuxjournal
+2018-03-11 12:06:59	<--	ggherdov (sid11402@gateway/web/irccloud.com/x-sletuzzdxfsigvhq) has quit (Excess Flood)
+2018-03-11 12:07:59	-->	ggherdov (sid11402@gateway/web/irccloud.com/x-eejfjmayltiuprwy) has joined #linuxjournal
+2018-03-11 12:08:06	<--	ggherdov (sid11402@gateway/web/irccloud.com/x-eejfjmayltiuprwy) has quit (Excess Flood)
+2018-03-11 12:25:19	<--	jinie (~jimmy@188.114.173.201) has quit (Quit: ZNC 1.6.1 - http://znc.in)
+2018-03-11 12:25:28	-->	jinie (~jimmy@188.114.173.201) has joined #linuxjournal
+2018-03-11 12:28:42	-->	atomekk (~atomekk@unaffiliated/atomekk) has joined #linuxjournal
+2018-03-11 12:50:04	-->	Markow (~ejm@176.122.215.103) has joined #linuxjournal
+2018-03-11 12:53:43	-->	ffdvdgnrgk (296f7918@gateway/web/freenode/ip.41.111.121.24) has joined #linuxjournal
+2018-03-11 12:54:03	<--	ffdvdgnrgk (296f7918@gateway/web/freenode/ip.41.111.121.24) has quit (Client Quit)
+2018-03-11 13:12:17	<--	hvxgr (~wl2v_usrn@epjdn.zq3q.org) has quit (Quit: leaving)
+2018-03-11 13:19:07	-->	dingotux (~dingotux@41.89.12.109.rev.sfr.net) has joined #linuxjournal
+2018-03-11 13:22:11	<--	dingotux (~dingotux@41.89.12.109.rev.sfr.net) has left #linuxjournal ("Konversation terminated!")
+2018-03-11 13:31:36	-->	hvxgr (~wl2v_usrn@epjdn.zq3q.org) has joined #linuxjournal
+2018-03-11 13:35:40	-->	zapotek6 (~zapotek6@5-157-121-128.v4.ngi.it) has joined #linuxjournal
+2018-03-11 13:35:44	<--	zapotek6 (~zapotek6@5-157-121-128.v4.ngi.it) has quit (Remote host closed the connection)
+2018-03-11 13:38:46	<--	ageha (~ageha@pool-108-52-246-38.phlapa.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2018-03-11 14:02:24	-->	amarco (bb7fe414@gateway/web/freenode/ip.187.127.228.20) has joined #linuxjournal
+2018-03-11 14:04:04	amarco	hiya ppl
+2018-03-11 14:04:18	-->	ggherdov (sid11402@gateway/web/irccloud.com/x-mcvodaqizhfpvukt) has joined #linuxjournal
+2018-03-11 14:04:26	<--	ggherdov (sid11402@gateway/web/irccloud.com/x-mcvodaqizhfpvukt) has quit (Excess Flood)
+2018-03-11 14:05:42	amarco	catherined..
+2018-03-11 14:05:50	amarco	ka
+2018-03-11 14:06:18	amarco	alison...
+2018-03-11 14:06:29	-->	ggherdov (sid11402@gateway/web/irccloud.com/x-teksdktksiqskozi) has joined #linuxjournal
+2018-03-11 14:08:15	amarco	i want to be part of the gang...
+2018-03-11 14:09:16	amarco	could i???
+2018-03-11 14:15:10	<--	amarco (bb7fe414@gateway/web/freenode/ip.187.127.228.20) has quit (Quit: Page closed)
+2018-03-11 14:20:21	<--	Markow (~ejm@176.122.215.103) has quit (Quit: Leaving)
+2018-03-11 14:52:39	-->	jda2000 (~jda2000@24.40.93.140) has joined #linuxjournal
+2018-03-11 15:22:20	<--	ilan (~ilan@captain.fonz.net) has quit (Ping timeout: 255 seconds)
+2018-03-11 15:23:02	<--	AngryBeaner (~Cesar@c-69-243-101-212.hsd1.md.comcast.net) has quit (Remote host closed the connection)
+2018-03-11 15:58:40	<--	robink (~quassel@unaffilated/robink) has quit (Ping timeout: 240 seconds)
+2018-03-11 16:03:48	-->	robink (~quassel@unaffilated/robink) has joined #linuxjournal
+2018-03-11 16:08:14	-->	gdb (cbell@gateway/vpn/privateinternetaccess/gdb) has joined #linuxjournal
+2018-03-11 16:14:21	-->	AngryBeaner (~Cesar@c-69-243-101-212.hsd1.md.comcast.net) has joined #linuxjournal
+2018-03-11 16:28:04	<--	atomekk (~atomekk@unaffiliated/atomekk) has quit (Remote host closed the connection)
+2018-03-11 17:03:38	-->	nerdboy4200 (~nerdboy42@pool-71-176-113-115.syrcny.fios.verizon.net) has joined #linuxjournal
+2018-03-11 17:26:25	<--	anon111 (~anon@124.13.252.201) has quit
+2018-03-11 18:01:21	-->	katherin_ (~katherine@linuxjournal/staff/KatherineD) has joined #linuxjournal
+2018-03-11 18:01:21	--	Mode #linuxjournal [+o katherin_] by ChanServ
+2018-03-11 18:02:50	<--	katherined (~katherine@linuxjournal/staff/KatherineD) has quit (Ping timeout: 256 seconds)
+2018-03-11 18:34:26	-->	atarocch (~atarocch@93.56.164.28) has joined #linuxjournal
+2018-03-11 18:44:45	<--	AlisonChaiken (~AlisonCha@173-228-89-192.dsl.static.fusionbroadband.com) has quit (Ping timeout: 264 seconds)
+2018-03-11 18:45:42	-->	AlisonChaiken (~AlisonCha@173-228-89-192.dsl.static.fusionbroadband.com) has joined #linuxjournal
+2018-03-11 18:57:31	<--	cyberanger (~cyberange@swissknife/adak/infocop411) has quit (Quit: ZNC 1.7.x-git-878-d4ae3115 - https://znc.in)
+2018-03-11 19:14:06	-->	rfthuj (4fa005a2@gateway/web/freenode/ip.79.160.5.162) has joined #linuxjournal
+2018-03-11 19:30:13	<--	rfthuj (4fa005a2@gateway/web/freenode/ip.79.160.5.162) has quit (Quit: Page closed)
+2018-03-11 19:55:43	-->	ageha (~ageha@pool-108-52-246-38.phlapa.fios.verizon.net) has joined #linuxjournal
+2018-03-11 19:56:49	-->	YoungWU (32196dd8@gateway/web/freenode/ip.50.25.109.216) has joined #linuxjournal
+2018-03-11 19:57:16	YoungWU	?
+2018-03-11 19:57:47	<--	YoungWU (32196dd8@gateway/web/freenode/ip.50.25.109.216) has quit (Client Quit)
+2018-03-11 19:59:58	-->	cyberanger (~cyberange@swissknife/adak/infocop411) has joined #linuxjournal
+2018-03-11 20:12:16	-->	Markow (~ejm@176.122.215.103) has joined #linuxjournal
+2018-03-11 20:20:18	<--	jdav (~james@d66-183-203-90.bchsia.telus.net) has quit (Quit: Coyote finally caught me)
+2018-03-11 20:23:07	-->	zapotek6 (~zapotek6@5-157-121-128.v4.ngi.it) has joined #linuxjournal
+2018-03-11 20:30:15	-->	johefernan (~joheferna@187.136.224.158) has joined #linuxjournal
+2018-03-11 20:35:43	<--	johefernan (~joheferna@187.136.224.158) has quit (Quit: Konversation terminated!)
+2018-03-11 20:41:19	-->	iu (49dca956@gateway/web/freenode/ip.73.220.169.86) has joined #linuxjournal
+2018-03-11 20:41:49	<--	iu (49dca956@gateway/web/freenode/ip.73.220.169.86) has quit (Client Quit)
+2018-03-11 20:48:31	-->	jdav (~james@d66-183-203-90.bchsia.telus.net) has joined #linuxjournal
+2018-03-11 21:04:18	<--	Markow (~ejm@176.122.215.103) has quit (Quit: Leaving)
+2018-03-11 21:31:57	<--	zapotek6 (~zapotek6@5-157-121-128.v4.ngi.it) has quit (Quit: Leaving)
+2018-03-11 21:56:49	<--	ageha (~ageha@pool-108-52-246-38.phlapa.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2018-03-11 22:02:15	-->	ragwing (4a818c5d@gateway/web/freenode/ip.74.129.140.93) has joined #linuxjournal
+2018-03-11 22:16:29	<--	ragwing (4a818c5d@gateway/web/freenode/ip.74.129.140.93) has quit (Ping timeout: 260 seconds)
+2018-03-11 22:37:52	AlisonChaiken	No one here will be surprised that replacing the mobo on my backup system took 1/10th the time of getting the network configuration right again.
+2018-03-11 22:38:19	pronto	o.o
+2018-03-11 22:38:22	pronto	scary
+2018-03-11 22:39:08	AlisonChaiken	The user interface of the router provided by my ISP makes me want to weep.   It insisted that the MAC associated with the old mobo owned a particular hostname and a particular IP, and would not budge.
+2018-03-11 22:39:47	pronto	xD
+2018-03-11 22:41:00	AlisonChaiken	These devices are designed for people who have no desire to configure them.   Having static IPs I paid for, port forwarding and NAT are so unusual in the eyes of the manufacturer that I deserve to be punished, obviously.
+2018-03-11 22:42:26	bkidwell	cutting down the nail that sticks out
+2018-03-11 22:43:43	AlisonChaiken	It's ironic how much harder to configure consumer-grade devices can be compared to enterprise-grade devices, where these use cases are not so uncommon.
+2018-03-11 22:53:04	pronto	:D
+2018-03-11 22:53:15	pronto	i did a test commute ride with the new ebike. this is deff gonna work ^_^
+2018-03-11 22:53:52	AlisonChaiken	What kind of ebike?  I think they're cool, but they don't appear to solve a problem I'm having.
+2018-03-11 22:55:05	AlisonChaiken	I did have to roll my regular bike on the way to work two weeks ago.   As I attempted to pull out of my driveway into the bike lane, I looked left, and at the last minute saw someone bearing down upon me riding a motor scooter the wrong way in the bike lane.
+2018-03-11 22:55:06	pronto	deff solved a problem i have: it costs me $30 a day about to get into the office (uber/lyft)  and theres a lot of hills with high traffic roads to the office.
+2018-03-11 22:55:18	AlisonChaiken	Sounds reasonable.
+2018-03-11 22:55:26	pronto	https://racepacebicycles.com/product/izip-e3-dash-290133-1.htm  <-- got this
+2018-03-11 22:55:43	pronto	does pedal assit to 28mph
+2018-03-11 22:55:49	pronto	more like 29ish , but yeah
+2018-03-11 22:56:28	pronto	i take a diff way home, which on normal bike is about an hour, and its a "I'd rather just be dead now" type of ride
+2018-03-11 22:56:32	pronto	all uphill basicly
+2018-03-11 22:57:06	pronto	normally takes about an hour. with this, and the pedal assit set to max. 30 minutes.   still a good workout. but not murder style
+2018-03-11 23:36:43	<--	gdb (cbell@gateway/vpn/privateinternetaccess/gdb) has quit (Quit: leaving)
+2018-03-11 23:46:36	-->	RangerBob (~brian@pool-108-44-149-192.clppva.fios.verizon.net) has joined #linuxjournal
+2018-03-11 23:54:26	<--	katherin_ (~katherine@linuxjournal/staff/KatherineD) has quit (Remote host closed the connection)
+2018-03-12 00:06:54	<--	nerdboy4200 (~nerdboy42@pool-71-176-113-115.syrcny.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2018-03-12 00:07:22	-->	katherined (~katherine@linuxjournal/staff/KatherineD) has joined #linuxjournal
+2018-03-12 00:07:22	--	Mode #linuxjournal [+o katherined] by ChanServ
+2018-03-12 00:17:06	<--	RangerBob (~brian@pool-108-44-149-192.clppva.fios.verizon.net) has quit (Quit: Leaving)
+2018-03-12 00:19:58	-->	nerdboy4200 (~nerdboy42@pool-71-176-113-115.syrcny.fios.verizon.net) has joined #linuxjournal
+2018-03-12 00:32:40	<--	mnavrati (~milan@ip-78-45-134-172.net.upcbroadband.cz) has quit (Quit: Leaving)

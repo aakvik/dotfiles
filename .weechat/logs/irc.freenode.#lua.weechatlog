@@ -11865,3 +11865,373 @@
 2018-03-11 04:17:24	-->	jshjsh (~jshjsh@24-113-170-30.wavecable.com) has joined #lua
 2018-03-11 04:17:35	<--	JoshS (~jshjsh@24-113-170-30.wavecable.com) has quit (Ping timeout: 240 seconds)
 2018-03-11 04:30:36	<--	abyxcos (~abyxcos@mnetic.ch) has quit (Ping timeout: 245 seconds)
+2018-03-11 04:58:17	<--	black_13 (43d66102@gateway/web/freenode/ip.67.214.97.2) has quit (Quit: Page closed)
+2018-03-11 05:18:40	--	sauvin_ is now known as bocaneri
+2018-03-11 05:18:40	<--	DarkGod (~DarkGod@static-176-183-174-41.ncc.abo.bbox.fr) has quit (Ping timeout: 248 seconds)
+2018-03-11 05:20:06	<--	StephenLynx (~Stephen@187-13-238-91.user.veloxzone.com.br) has quit (Quit: Leaving)
+2018-03-11 05:21:29	<--	SinisterRectus (~SinisterR@cpe-184-153-239-44.twcny.res.rr.com) has quit (Quit: Leaving)
+2018-03-11 05:26:17	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 05:27:40	-->	Lyqyd (~quassel@174-25-80-97.ptld.qwest.net) has joined #lua
+2018-03-11 05:28:59	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 05:38:00	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 05:38:24	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 05:41:42	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Remote host closed the connection)
+2018-03-11 05:43:18	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 05:43:46	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 05:45:27	<--	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has quit (Ping timeout: 260 seconds)
+2018-03-11 05:49:27	<--	sibyakin (~sibyakin@83.234.69.145) has quit
+2018-03-11 05:57:22	<--	rizzo (~RizzoTheR@p54B6B1EE.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2018-03-11 05:57:57	pdk`	i'm disappointed that guy didn't drop kick any of the tree stumps
+2018-03-11 06:32:25	<--	kapil___ (uid36151@gateway/web/irccloud.com/x-xeszlcfwktoyqezr) has quit (Quit: Connection closed for inactivity)
+2018-03-11 06:33:30	<--	DesertRock (~Desert@65.129.3.15) has quit (Quit: Quit)
+2018-03-11 06:37:08	<--	MrFlibble (MrFlibble@2.221.165.105) has quit (Quit: MrFlibble)
+2018-03-11 06:53:49	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 06:54:16	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 06:57:10	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Remote host closed the connection)
+2018-03-11 07:04:31	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 07:05:24	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 07:11:04	<--	zeus_ (~zeus_@2601:647:4200:69b7:ed1f:640d:94b9:a2) has quit (Remote host closed the connection)
+2018-03-11 07:18:31	-->	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has joined #lua
+2018-03-11 07:23:56	<--	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has quit (Ping timeout: 245 seconds)
+2018-03-11 07:27:21	<--	LichtMacher (~LichtMach@177.33.25.19) has quit (Ping timeout: 264 seconds)
+2018-03-11 07:35:57	u-ou	lua is a tasty beverage
+2018-03-11 07:36:17	-->	lumberJ (~lumberJui@45-31-142-227.lightspeed.gnvlsc.sbcglobal.net) has joined #lua
+2018-03-11 07:37:15	u-ou	help, my nose is itchy :-(
+2018-03-11 07:38:04	<--	Lyqyd (~quassel@174-25-80-97.ptld.qwest.net) has quit (Remote host closed the connection)
+2018-03-11 07:42:14	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 07:45:35	-->	FreeBirdLjj (~freebirdl@124.77.177.74) has joined #lua
+2018-03-11 07:46:27	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Ping timeout: 240 seconds)
+2018-03-11 07:52:01	-->	ericlee (~ericlee@2601:647:4500:b1a0::c721) has joined #lua
+2018-03-11 08:01:09	-->	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has joined #lua
+2018-03-11 08:09:46	<--	ericlee (~ericlee@2601:647:4500:b1a0::c721) has quit (Ping timeout: 245 seconds)
+2018-03-11 08:17:09	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 08:18:13	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 08:21:48	<--	FreeBirdLjj (~freebirdl@124.77.177.74) has quit (Remote host closed the connection)
+2018-03-11 08:28:59	-->	FreeBirdLjj (~freebirdl@124.77.177.74) has joined #lua
+2018-03-11 08:35:00	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-11 08:36:25	-->	rendar (~rendar@unaffiliated/rendar) has joined #lua
+2018-03-11 09:07:00	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 09:07:27	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 09:13:27	-->	alex`` (~alex@LFbn-1-2663-164.w86-245.abo.wanadoo.fr) has joined #lua
+2018-03-11 09:14:13	<--	Rena (~rena@dhcp-108-168-17-205.cable.user.start.ca) has quit (Ping timeout: 268 seconds)
+2018-03-11 09:28:09	-->	Rena (~rena@dhcp-108-168-17-205.cable.user.start.ca) has joined #lua
+2018-03-11 09:30:19	-->	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has joined #lua
+2018-03-11 09:37:47	-->	black_13 (46b9d8f4@gateway/web/freenode/ip.70.185.216.244) has joined #lua
+2018-03-11 09:49:34	<--	macsek (~pi@176.241.53.248.pool.invitel.hu) has quit (Ping timeout: 264 seconds)
+2018-03-11 10:03:47	-->	macsek (~pi@176.241.2.36.pool.invitel.hu) has joined #lua
+2018-03-11 10:11:44	-->	vyo (~Thunderbi@213.24.126.210) has joined #lua
+2018-03-11 10:16:41	RhodiumToad	why is some random idiot posting comments on my github commits
+2018-03-11 10:17:46	mbalmer	who?
+2018-03-11 10:18:03	RhodiumToad	https://github.com/RhodiumToad/pllua-ng/commit/c34b49e03478b5f70e6905b0f8152fa508065435
+2018-03-11 10:18:32	mbalmer	yes, that's a troll.
+2018-03-11 10:19:58	-->	pplorins_ (~pplorins@112.95.11.216) has joined #lua
+2018-03-11 10:20:18	<--	pplorins_ (~pplorins@112.95.11.216) has quit (Client Quit)
+2018-03-11 10:21:22	RhodiumToad	I don't suppose there's a way to turn off comments on commits globally for a repo?
+2018-03-11 10:21:32	<--	SchroDonger (uid194739@gateway/web/irccloud.com/x-oqngutbelzhtgauy) has quit (Quit: Connection closed for inactivity)
+2018-03-11 10:24:00	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2018-03-11 10:24:26	mbalmer	I have no idea.
+2018-03-11 10:24:55	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #lua
+2018-03-11 10:26:21	zash	you could always quit github :)
+2018-03-11 10:26:49	mbalmer	I have my own gitlab server...
+2018-03-11 10:31:06	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Quit: Leaving)
+2018-03-11 10:33:54	-->	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has joined #lua
+2018-03-11 10:38:19	<--	lumberJ (~lumberJui@45-31-142-227.lightspeed.gnvlsc.sbcglobal.net) has quit (Quit: Leaving)
+2018-03-11 10:40:25	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 10:40:48	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 10:41:18	daurn	RhodiumToad: have you tried using postgresfdw from plluang?
+2018-03-11 10:41:45	RhodiumToad	uh, how exactly?
+2018-03-11 10:43:13	<--	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has quit (Quit: WeeChat 2.0.1)
+2018-03-11 10:43:46	RhodiumToad	you mean doing spi calls from pllua that access foreign tables? I've not seen any reason to try it, the two modules shouldn't interact (if they do it's a bug)
+2018-03-11 10:46:57	RhodiumToad	do you have some specific reason for asking?
+2018-03-11 10:47:16	-->	sparvu (~sparvu@87-100-230-21.bb.dnainternet.fi) has joined #lua
+2018-03-11 10:48:56	<--	FreeBirdLjj (~freebirdl@124.77.177.74) has quit (Remote host closed the connection)
+2018-03-11 10:50:17	-->	dvx (~dvx@178.17.10.104) has joined #lua
+2018-03-11 10:51:54	zash	RhodiumToad: I see you have a perl pgsql wireproto thing. Ever considered doing that in Lua? :)
+2018-03-11 10:53:10	RhodiumToad	haven't touched that since long before I did any lua, so no :-)
+2018-03-11 10:54:29	RhodiumToad	also lua's pack/unpack format strings look a lot less powerful than perl's, so it's probably not possible to pack or unpack whole protocol messages in one call
+2018-03-11 10:55:24	zash	Many variable length fields?
+2018-03-11 10:55:33	zash	Or weirdness?
+2018-03-11 10:56:11	RhodiumToad	repeated groups of fields
+2018-03-11 10:56:19	<--	black_13 (46b9d8f4@gateway/web/freenode/ip.70.185.216.244) has quit (Ping timeout: 260 seconds)
+2018-03-11 10:56:46	RhodiumToad	"RowDescription", "n/(Z* N n! N n! N! n)"
+2018-03-11 10:57:42	<--	ard (~ard@2001:984:74c7:1:21e:6ff:feff:ff03) has quit (Ping timeout: 256 seconds)
+2018-03-11 10:57:51	RhodiumToad	the initial "n" there means the number of times the (...) group repeats
+2018-03-11 10:58:16	-->	ard (~ard@2001:984:74c7:1:21e:6ff:feff:ff03) has joined #lua
+2018-03-11 10:58:17	zash	The Lua way would be for loops.
+2018-03-11 10:59:08	RhodiumToad	yes. which is a lot more trouble than just writing down a description of the message format.
+2018-03-11 11:00:37	RhodiumToad	almost all of that perl module is generated code - rather than having a function for each message type, it has a table of types with a description of their format, and it generates functions from that
+2018-03-11 11:00:53	<--	Doyousketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-03-11 11:03:05	-->	Doyousketch2 (~Doyousket@cpe-98-30-72-164.columbus.res.rr.com) has joined #lua
+2018-03-11 11:05:03	-->	gelignite (~gelignite@55d49dcb.access.ecotel.net) has joined #lua
+2018-03-11 11:06:31	RhodiumToad	(and by "generated" I don't mean it constructs code from strings, it's all done with closures)
+2018-03-11 11:08:35	<--	mniip (mniip@haskell/developer/mniip) has quit (Ping timeout: 240 seconds)
+2018-03-11 11:12:42	-->	mniip (mniip@haskell/developer/mniip) has joined #lua
+2018-03-11 11:13:25	<--	xkapastel (uid17782@gateway/web/irccloud.com/x-dmbxezhmbptdcnzu) has quit (Quit: Connection closed for inactivity)
+2018-03-11 11:21:21	-->	HugoDaniel (~0@unaffiliated/hugodaniel) has joined #lua
+2018-03-11 11:26:39	-->	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has joined #lua
+2018-03-11 11:43:08	 *	ArRay_ doesn't see any comment on https://github.com/RhodiumToad/pllua-ng/commit/c34b49e03478b5f70e6905b0f8152fa508065435
+2018-03-11 11:45:05	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 11:45:32	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 11:52:41	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Remote host closed the connection)
+2018-03-11 11:56:00	RhodiumToad	ArRay_: because I deleted it
+2018-03-11 11:56:19	ArRay_	ok
+2018-03-11 11:56:43	 *	ArRay_ wonders what the comment was
+2018-03-11 12:11:02	-->	rizzo (~RizzoTheR@p54B6B1EE.dip0.t-ipconnect.de) has joined #lua
+2018-03-11 12:13:49	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 12:14:13	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 12:14:49	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 12:19:18	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Ping timeout: 256 seconds)
+2018-03-11 12:32:45	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 12:33:11	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 13:02:39	-->	DarkGod (~DarkGod@static-176-183-174-41.ncc.abo.bbox.fr) has joined #lua
+2018-03-11 13:07:34	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 13:08:00	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 13:12:17	<--	hvxgr (~wl2v_usrn@epjdn.zq3q.org) has quit (Quit: leaving)
+2018-03-11 13:13:02	-->	netlynx (~me@94-226-69-15.access.telenet.be) has joined #lua
+2018-03-11 13:13:02	<--	netlynx (~me@94-226-69-15.access.telenet.be) has quit (Changing host)
+2018-03-11 13:13:02	-->	netlynx (~me@lugwv/member/Netlynx) has joined #lua
+2018-03-11 13:18:20	-->	StephenLynx (~Stephen@187-13-224-145.user.veloxzone.com.br) has joined #lua
+2018-03-11 13:30:04	-->	sibyakin (~sibyakin@83.234.69.145) has joined #lua
+2018-03-11 13:31:32	-->	hvxgr (~wl2v_usrn@epjdn.zq3q.org) has joined #lua
+2018-03-11 13:37:08	-->	lumberJ (~lumberJui@96-37-222-205.dhcp.leds.al.charter.com) has joined #lua
+2018-03-11 13:44:19	<--	lumberJ (~lumberJui@96-37-222-205.dhcp.leds.al.charter.com) has quit (Quit: too tired)
+2018-03-11 13:45:48	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 13:46:12	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #lua
+2018-03-11 13:52:05	<--	nixi (~znc@195.181.217.17) has quit (Ping timeout: 240 seconds)
+2018-03-11 13:57:59	-->	nixi (~znc@195.181.217.17) has joined #lua
+2018-03-11 14:05:33	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2018-03-11 14:33:09	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 14:48:25	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Remote host closed the connection)
+2018-03-11 15:00:23	-->	kapil___ (uid36151@gateway/web/irccloud.com/x-mbvcwchnaovpklhs) has joined #lua
+2018-03-11 15:05:34	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 15:06:07	<--	gelignite (~gelignite@55d49dcb.access.ecotel.net) has quit (Read error: Connection reset by peer)
+2018-03-11 15:11:51	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Remote host closed the connection)
+2018-03-11 15:20:29	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 15:20:32	-->	ericlee (~ericlee@2601:647:4500:b1a0::c721) has joined #lua
+2018-03-11 15:30:29	-->	FreeBirdLjj (~freebirdl@124.77.177.74) has joined #lua
+2018-03-11 15:33:37	<--	cloyd (~cloyd@24-40-225-5.fidnet.com) has quit (Remote host closed the connection)
+2018-03-11 15:34:16	[xyzzy]	was it by that guy who opens c violation issues to every project on the site and gets all offended if you blow him off
+2018-03-11 15:37:17	-->	Tricycle (~CGI278@LFbn-1-12335-85.w90-91.abo.wanadoo.fr) has joined #lua
+2018-03-11 15:38:13	zash	what are "c violation issues"?
+2018-03-11 15:39:29	[xyzzy]	https://github.com/elfring
+2018-03-11 15:40:08	[xyzzy]	k maybe it was c++
+2018-03-11 15:46:30	zash	it was some account that had zero activity for two years, except for following RhodiumToad 
+2018-03-11 15:48:38	-->	MrFlibble (MrFlibble@2.221.165.105) has joined #lua
+2018-03-11 15:55:52	-->	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has joined #lua
+2018-03-11 16:05:15	[xyzzy]	ah a personal stalker
+2018-03-11 16:08:56	-->	groovy2shoes (~groovy2sh@unaffiliated/groovebot) has joined #lua
+2018-03-11 16:17:30	-->	minimalism (~none@unaffiliated/minimalism) has joined #lua
+2018-03-11 16:20:01	-->	DesertRock (~Desert@65.129.3.15) has joined #lua
+2018-03-11 16:21:14	<--	minimalism (~none@unaffiliated/minimalism) has quit (Quit: minimalism)
+2018-03-11 16:22:47	-->	minimalism (~none@unaffiliated/minimalism) has joined #lua
+2018-03-11 16:35:07	-->	SinisterRectus (~SinisterR@cpe-184-153-239-44.twcny.res.rr.com) has joined #lua
+2018-03-11 16:37:06	<--	DesertRock (~Desert@65.129.3.15) has quit (Quit: Quit)
+2018-03-11 16:43:27	-->	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has joined #lua
+2018-03-11 16:43:55	dlobi	How can I distinguish between function returning no value and function returning nil?
+2018-03-11 16:45:15	jdarnley	In Lua itself or with the C api?
+2018-03-11 16:45:33	dlobi	lua
+2018-03-11 16:45:41	dlobi	I suspect select
+2018-03-11 16:45:44	dlobi	select()
+2018-03-11 16:46:31	dlobi	yea it is select
+2018-03-11 16:46:34	dlobi	sorry for the troble
+2018-03-11 16:46:44	dlobi	trouble*
+2018-03-11 16:46:44	jdarnley	No problem.  I didn't know that myself
+2018-03-11 16:55:34	jdarnley	Oh, is this related to the email I've just seen on the lus user ml?
+2018-03-11 17:00:38	<--	sibyakin (~sibyakin@83.234.69.145) has quit
+2018-03-11 17:03:05	dlobi	?
+2018-03-11 17:03:12	dlobi	probably not
+2018-03-11 17:08:44	zy]x[yz	select is the way to di that, yes
+2018-03-11 17:09:28	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Remote host closed the connection)
+2018-03-11 17:10:46	ArRay_	select("#",...)
+2018-03-11 17:11:07	Tricycle	You sure about those " ?
+2018-03-11 17:11:29	ArRay_	Tricycle: what's wrong with them?
+2018-03-11 17:11:30	furq	yes
+2018-03-11 17:12:04	Tricycle	oh right, sorry
+2018-03-11 17:12:16	-->	xkapastel (uid17782@gateway/web/irccloud.com/x-veiimrhneynetemf) has joined #lua
+2018-03-11 17:12:26	ArRay_	…
+2018-03-11 17:12:59	-->	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has joined #lua
+2018-03-11 17:16:28	-->	tobylane (~Nightly@unaffiliated/tobylane) has joined #lua
+2018-03-11 17:17:07	zy]x[yz	select([==[#]==], ...)
+2018-03-11 17:21:29	<--	FreeBirdLjj (~freebirdl@124.77.177.74) has quit (Remote host closed the connection)
+2018-03-11 17:22:05	-->	FreeBirdLjj (~freebirdl@124.77.177.74) has joined #lua
+2018-03-11 17:26:34	<--	FreeBirdLjj (~freebirdl@124.77.177.74) has quit (Ping timeout: 256 seconds)
+2018-03-11 17:39:31	-->	devJet (~Thunderbi@unaffiliated/devjet) has joined #lua
+2018-03-11 17:40:12	[xyzzy]	select(string.char(0x23), ...)
+2018-03-11 17:43:48	<--	devJet (~Thunderbi@unaffiliated/devjet) has quit (Client Quit)
+2018-03-11 17:48:57	<--	kapil___ (uid36151@gateway/web/irccloud.com/x-mbvcwchnaovpklhs) has quit (Quit: Connection closed for inactivity)
+2018-03-11 18:03:58	<--	MrFlibble (MrFlibble@2.221.165.105) has quit (Ping timeout: 264 seconds)
+2018-03-11 18:14:17	pdk`	now you got us all curious what a c violation issue is
+2018-03-11 18:15:47	<--	zy]x[yz (~corey@unaffiliated/cmtptr) has quit (Quit: leaving)
+2018-03-11 18:17:05	-->	Mohawk_ (4d455764@gateway/web/freenode/ip.77.69.87.100) has joined #lua
+2018-03-11 18:18:17	Mohawk_	Hey guys, I'm a little noobish at lua and I'm trying to delete the last 2 lines from a file. Can someone help me?
+2018-03-11 18:18:18	furq	¢
+2018-03-11 18:18:35	-->	zy]x[yz (~corey@unaffiliated/cmtptr) has joined #lua
+2018-03-11 18:18:49	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Remote host closed the connection)
+2018-03-11 18:19:16	-->	Lyqyd (~quassel@174-25-80-97.ptld.qwest.net) has joined #lua
+2018-03-11 18:19:25	furq	Mohawk_: os.execute("head -n -2 foo > foo2 && mv foo2 foo")
+2018-03-11 18:19:26	furq	hth
+2018-03-11 18:20:41	Mohawk_	is this platform indepedent?
+2018-03-11 18:20:55	furq	not if you include windows
+2018-03-11 18:20:56	pdk`	he's pulling your leg
+2018-03-11 18:21:11	furq	only a little bit
+2018-03-11 18:21:17	furq	that's more or less the same thing as you'd do in lua
+2018-03-11 18:21:43	-->	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has joined #lua
+2018-03-11 18:22:27	Mohawk_	can I do this in "pure" lua?
+2018-03-11 18:22:29	furq	sure
+2018-03-11 18:22:32	Mohawk_	this looks a little hacky
+2018-03-11 18:22:32	furq	how big is the file
+2018-03-11 18:22:42	Mohawk_	around 2-3 mb
+2018-03-11 18:23:58	furq	f1 = io.open("foo") f2 = io.open("bar", "w") f2:write(f:read("*a"):gsub("\n.-\n.-$", "")) f1:close() f2:close() os.rename("bar", "foo")
+2018-03-11 18:24:01	furq	something like that
+2018-03-11 18:24:13	-->	Kilroo (~Kilroo@cpe-71-71-97-50.triad.res.rr.com) has joined #lua
+2018-03-11 18:24:52	furq	that works fine for small files
+2018-03-11 18:25:02	[xyzzy]	does just \n work on windows
+2018-03-11 18:25:11	furq	why wouldn't it
+2018-03-11 18:25:26	furq	that'll work identically for \r\n lines
+2018-03-11 18:25:56	furq	you do actually need an extra set of parens around the gsub call or it'll write an extra 1 at the end
+2018-03-11 18:26:36	<--	dvx (~dvx@178.17.10.104) has quit (Quit: dvx)
+2018-03-11 18:27:37	furq	also you probably want to use os.tmpnam() at some point there
+2018-03-11 18:28:41	Mohawk_	is removing lines from a file too complex? Every solution you've given me so far looks like a little hacky
+2018-03-11 18:30:31	furq	other than the gsub bit, that is more or less the only way of doing it
+2018-03-11 18:32:35	Mohawk_	Can I read each line of the file separately? This might give me the solution I want, strings are easy to work with...
+2018-03-11 18:33:07	furq	that's more complicated because you don't know how many lines are in the file
+2018-03-11 18:33:20	furq	you'd need to either read the file twice or set up some kind of buffer
+2018-03-11 18:34:00	pdk`	https://hastebin.com/johiqomahi.lua
+2018-03-11 18:34:03	pdk`	kinda dumb but functional
+2018-03-11 18:34:22	pdk`	note the last line of bar.txt will be missing a newline at the end in case you need one
+2018-03-11 18:35:24	pdk`	you'd want to replace #f1lines+1 with an incrementing counter for performance with large files
+2018-03-11 18:35:27	furq	http://codepad.org/Xcr8yhV2
+2018-03-11 18:35:30	furq	i was thinking more like that
+2018-03-11 18:35:53	furq	http://codepad.org/IAz8LoYJ
+2018-03-11 18:35:54	furq	or that, rather
+2018-03-11 18:36:16	furq	http://codepad.org/3XHig5kp
+2018-03-11 18:36:18	furq	or that, rather
+2018-03-11 18:37:50	Mohawk_	can I read and write a file at the same time?
+2018-03-11 18:37:55	furq	no
+2018-03-11 18:39:07	zy]x[yz	you can open it for reading, unlink it, then open a new file with the original name for writing.  but that's neither portable nor possible without either a third party lib or getting into c
+2018-03-11 18:39:11	furq	right
+2018-03-11 18:39:23	furq	if you're adding stuff at the end of a file then you don't need a temp file
+2018-03-11 18:39:27	furq	pretty much anything else and you do
+2018-03-11 18:39:53	furq	most things that edit files in place are actually doing this under the hood
+2018-03-11 18:40:06	<--	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2018-03-11 18:41:21	furq	why do i remember io.tmpfile() being updated to return the filename
+2018-03-11 18:41:25	furq	that definitely hasn't happened
+2018-03-11 18:48:17	<--	Guest70540 (~none@iota.offblast.org) has quit (Ping timeout: 248 seconds)
+2018-03-11 18:49:02	-->	mischief (~none@iota.offblast.org) has joined #lua
+2018-03-11 18:49:26	--	mischief is now known as Guest98600
+2018-03-11 19:35:42	-->	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has joined #lua
+2018-03-11 19:48:03	<--	Mohawk_ (4d455764@gateway/web/freenode/ip.77.69.87.100) has quit (Quit: Page closed)
+2018-03-11 19:51:14	furq	https://pbs.twimg.com/media/DX9L3rLW0AAWu7P.jpg
+2018-03-11 19:51:16	furq	looking good cmtptr
+2018-03-11 19:53:01	<--	dlobi (~dlobi@bzq-79-181-139-79.red.bezeqint.net) has quit (Remote host closed the connection)
+2018-03-11 19:55:14	zy]x[yz	it freaks me out a little that I was just listening to the batman begins soundtrack for the first time in months
+2018-03-11 20:00:42	CodeKiwi	it freaks me out that you listen to the batman begins soundtrack every few months
+2018-03-11 20:00:45	--	Doyousketch2 is now known as Sketch2
+2018-03-11 20:03:05	zy]x[yz	why
+2018-03-11 20:03:44	zy]x[yz	hans zimmer and james newton howard make good stuff
+2018-03-11 20:04:25	CodeKiwi	shut up I'm watching thor ragnarok again
+2018-03-11 20:04:47	zy]x[yz	I wanted to see that this weekend but all of the redboxes around me are out of it
+2018-03-11 20:04:59	zy]x[yz	hopefully everyone will have seen it by next weekend
+2018-03-11 20:09:21	<--	rendar (~rendar@unaffiliated/rendar) has quit
+2018-03-11 20:13:53	<--	netlynx (~me@lugwv/member/Netlynx) has quit (Quit: Ex-Chat)
+2018-03-11 20:15:49	-->	cloyd (~cloyd@24-40-225-5.fidnet.com) has joined #lua
+2018-03-11 20:17:42	<--	Gazooo (~Gazooo@72.238.66.176) has quit (Ping timeout: 245 seconds)
+2018-03-11 20:18:01	-->	Gazooo (~Gazooo@72.238.66.176) has joined #lua
+2018-03-11 20:19:06	<--	Aconitin (~Aconitin@78-73-127-12-no193.tbcn.telia.com) has quit
+2018-03-11 20:22:09	-->	BCB (185a3ace@gateway/web/freenode/ip.24.90.58.206) has joined #lua
+2018-03-11 20:23:13	-->	MrFlibble (MrFlibble@2.221.165.105) has joined #lua
+2018-03-11 20:32:45	<--	MrFlibble (MrFlibble@2.221.165.105) has quit (Ping timeout: 264 seconds)
+2018-03-11 20:42:05	pdk`	do i want to know the context with the hermaphroditic joker bit
+2018-03-11 20:42:41	-->	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has joined #lua
+2018-03-11 20:43:14	-->	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has joined #lua
+2018-03-11 20:47:39	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 20:50:28	-->	Technodrome (~textual@unaffiliated/technodrome) has joined #lua
+2018-03-11 21:02:59	-->	Darcidride_ (~Darcidrid@2a01:e35:8b4a:ca10::719e:e3e1) has joined #lua
+2018-03-11 21:16:00	<--	epony (~nym@77-85-141-14.ip.btc-net.bg) has quit (Quit: QUIT)
+2018-03-11 21:21:28	<--	Darcidride_ (~Darcidrid@2a01:e35:8b4a:ca10::719e:e3e1) has quit (Quit: Bye.)
+2018-03-11 21:24:29	<--	Technodrome (~textual@unaffiliated/technodrome) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 21:24:40	-->	FrankyCyborg (~FrankyCyb@p54BD555F.dip0.t-ipconnect.de) has joined #lua
+2018-03-11 21:25:32	FrankyCyborg	is this the right place to ask questions about LuaJIT or is there some other channel better suited?
+2018-03-11 21:26:51	LordRyan	here's usually fine
+2018-03-11 21:34:06	<--	SinisterRectus (~SinisterR@cpe-184-153-239-44.twcny.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-03-11 21:35:23	<--	Vornicus (~Vorn@2605:e000:1907:40f1:0:1c34:4a11:fe8c) has quit (Ping timeout: 276 seconds)
+2018-03-11 21:37:54	jdarnley	I wonder whether that was his only question.
+2018-03-11 21:38:00	FrankyCyborg	i have the problem of compiling LuaJIT on my Mac OS X 10.5.8 PowerPC machine. the build process stops after some files, trying to compile the file   src/lj_vm.s   , with multiple errors like:   buildvm_ppc.dasc:<LINE NUMBER>:Invalid mnemonic 'plt'  .  I am not aware of any mnemonic 'plt' for PowerPC and doing a   grep -R plt    over the source tree shows me, that the file src/host/buildvm.c has a comment about '@plt' inside a preprocesso
+2018-03-11 21:38:01	FrankyCyborg	block, indicating that something has been removed, related to PowerPC stuff..  so, it's more likely about a missing symbol, named 'plt'.
+2018-03-11 21:38:12	FrankyCyborg	vey funny, i'm still trying to conduct my research...
+2018-03-11 21:38:15	FrankyCyborg	=)
+2018-03-11 21:38:25	LordRyan	jdarnley: you cursed it :P
+2018-03-11 21:38:30	jdarnley	indeed
+2018-03-11 21:38:32	FrankyCyborg	maybe I can find the solution in older versions of LuaJIT
+2018-03-11 21:39:06	furq	FrankyCyborg: https://www.freelists.org/post/luajit/Compiled-for-OSX-PPC
+2018-03-11 21:40:17	FrankyCyborg	ah indeed, then my recent search for plt on freelists.org didn't work for some reason.. does the page need javascript?!?
+2018-03-11 21:40:35	FrankyCyborg	anyway, that should do it (I hope)
+2018-03-11 21:40:45	FrankyCyborg	i'm testing it right now
+2018-03-11 21:46:10	-->	MrFlibble (MrFlibble@2.221.165.105) has joined #lua
+2018-03-11 21:51:26	<--	svm_invictvs (~svm_invic@unaffiliated/svminvictvs/x-938456) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2018-03-11 21:52:43	<--	max22 (~maxime@2a01cb08833598002e27d7fffeabcac8.ipv6.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2018-03-11 21:53:46	<--	vyo (~Thunderbi@213.24.126.210) has quit (Remote host closed the connection)
+2018-03-11 21:54:03	-->	vyo (~Thunderbi@213.24.126.210) has joined #lua
+2018-03-11 22:02:27	FrankyCyborg	great! it built fine and has been installed.. thanks a lot for your quick help!
+2018-03-11 22:10:27	-->	HugoDani1l (~0@unaffiliated/hugodaniel) has joined #lua
+2018-03-11 22:12:58	<--	HugoDaniel (~0@unaffiliated/hugodaniel) has quit (Ping timeout: 264 seconds)
+2018-03-11 22:16:10	-->	epony (~nym@77-85-141-14.ip.btc-net.bg) has joined #lua
+2018-03-11 22:23:09	<--	vyo (~Thunderbi@213.24.126.210) has quit (Quit: vyo)
+2018-03-11 22:36:22	<--	aidanh (~aidanh@unaffiliated/aidanh) has quit (Ping timeout: 264 seconds)
+2018-03-11 22:37:50	-->	aidanh (~aidanh@unaffiliated/aidanh) has joined #lua
+2018-03-11 22:39:05	-->	gelignite (~gelignite@55d49dcb.access.ecotel.net) has joined #lua
+2018-03-11 22:41:56	-->	rav3n (~Rav3nSw0r@unaffiliated/rav3nsw0rd) has joined #lua
+2018-03-11 22:48:13	<--	MrFlibble (MrFlibble@2.221.165.105) has quit (Ping timeout: 268 seconds)
+2018-03-11 22:54:11	<--	unclutter (~unclutter@99.81-166-254.customer.lyse.net) has quit (Quit: leaving)
+2018-03-11 23:01:51	<--	ohama (ohama@cicolina.org) has quit (Remote host closed the connection)
+2018-03-11 23:03:33	-->	ohama (ohama@cicolina.org) has joined #lua
+2018-03-11 23:06:11	-->	landwork (~Adium@123.254.123.2) has joined #lua
+2018-03-11 23:19:58	<--	raingloom (~raingloom@C2267141.catv.pool.telekom.hu) has quit (Quit: WeeChat 2.0.1)
+2018-03-11 23:25:02	<--	gelignite (~gelignite@55d49dcb.access.ecotel.net) has quit (Quit: I have always found that mercy bears richer fruits than strict justice.)
+2018-03-11 23:28:33	-->	zeus_ (~zeus_@2601:647:4200:69b7:6536:aa9d:c4bc:1816) has joined #lua
+2018-03-11 23:30:06	<--	minimalism (~none@unaffiliated/minimalism) has quit (Quit: minimalism)
+2018-03-11 23:31:04	-->	MrFlibble (MrFlibble@2.221.165.105) has joined #lua
+2018-03-11 23:31:14	-->	zeus__ (~zeus_@2601:647:4200:69b7:502e:760:a8af:99a5) has joined #lua
+2018-03-11 23:33:12	<--	zeus_ (~zeus_@2601:647:4200:69b7:6536:aa9d:c4bc:1816) has quit (Ping timeout: 256 seconds)
+2018-03-11 23:33:32	<--	alex`` (~alex@LFbn-1-2663-164.w86-245.abo.wanadoo.fr) has quit (Ping timeout: 245 seconds)
+2018-03-11 23:38:06	-->	DanielPowerNL (~DanielPow@142.162.33.68) has joined #lua
+2018-03-11 23:39:34	luxio	Is there a way to kill the coroutine inside of coroutine.wrap?
+2018-03-11 23:39:51	luxio	like "break"?
+2018-03-11 23:41:25	LordRyan	luxio: just stop calling it?
+2018-03-11 23:41:43	luxio	no I mean inside the coroutine
+2018-03-11 23:41:49	LordRyan	you get out of a coroutine using coroutine.yield() which acts as "returning" from the function returned by coroutine.wrap()
+2018-03-11 23:46:14	<--	zeus__ (~zeus_@2601:647:4200:69b7:502e:760:a8af:99a5) has quit (Ping timeout: 256 seconds)
+2018-03-11 23:53:33	pdk`	doesn't returning from the function you're using as a coroutine effectively do that
+2018-03-11 23:54:52	furq	yes
+2018-03-11 23:55:35	pdk`	once the function you used as a coroutine returns then it's "dead"
+2018-03-11 23:55:59	furq	i assume he wants something you can call from a nested function
+2018-03-11 23:56:48	[xyzzy]	coroutine wraps are delicious
+2018-03-11 23:57:06	pdk`	yeah, the best you can do there is yield() from the nested function and have it yield some sort of sentinel value
+2018-03-11 23:57:15	pdk`	then going up the call chain you'd check for that sentinel value to tell whether you should bail out early
+2018-03-11 23:58:46	-->	sibyakin (~sibyakin@83.234.69.145) has joined #lua
+2018-03-11 23:59:21	pdk`	since you can yield() multiple values at once you could have the first value you yield be an indicator for "should i bail early? y/n" and the remaining values are whatever you actually wanted to pass back
+2018-03-12 00:02:07	<--	BCB (185a3ace@gateway/web/freenode/ip.24.90.58.206) has quit (Quit: Page closed)
+2018-03-12 00:03:26	<--	DanielPowerNL (~DanielPow@142.162.33.68) has quit (Quit: Leaving)
+2018-03-12 00:03:28	-->	zeus_ (~zeus_@2601:647:4200:69b7:502e:760:a8af:99a5) has joined #lua
+2018-03-12 00:05:01	<--	martanne (~martanne@idvm-infk-isg37.ethz.ch) has quit (Remote host closed the connection)
+2018-03-12 00:05:18	<--	nighty- (~nighty@s229123.ppp.asahi-net.or.jp) has quit (Quit: Disappears in a puff of smoke)
+2018-03-12 00:08:32	<--	zeus_ (~zeus_@2601:647:4200:69b7:502e:760:a8af:99a5) has quit (Ping timeout: 260 seconds)
+2018-03-12 00:15:39	-->	Niu-Bei (bobbie_pas@gateway/vpn/privateinternetaccess/bobbiepasta/x-70106438) has joined #lua
+2018-03-12 00:19:22	--	luxio is now known as luxio-[]\`^{}
+2018-03-12 00:19:30	--	luxio-[]\`^{} is now known as luxio-[]\`^{}_
+2018-03-12 00:19:33	--	luxio-[]\`^{}_ is now known as luxio
+2018-03-12 00:19:49	-->	martanne (~martanne@idvm-infk-isg37.ethz.ch) has joined #lua
+2018-03-12 00:33:45	-->	LichtMacher (~LichtMach@177.33.25.19) has joined #lua
+2018-03-12 00:45:39	-->	zeus_ (~zeus_@2601:647:4200:69b7:502e:760:a8af:99a5) has joined #lua
+2018-03-12 00:49:22	-->	DanielPowerNL (~DanielPow@142.162.33.68) has joined #lua
+2018-03-12 00:54:19	<--	MrFlibble (MrFlibble@2.221.165.105) has quit (Quit: MrFlibble)
+2018-03-12 01:04:22	<--	Niu-Bei (bobbie_pas@gateway/vpn/privateinternetaccess/bobbiepasta/x-70106438) has quit (Quit: I'll be Bach)
+2018-03-12 01:04:54	-->	kapil___ (uid36151@gateway/web/irccloud.com/x-qismreaknwgscsjf) has joined #lua
+2018-03-12 01:09:18	<--	jshjsh (~jshjsh@24-113-170-30.wavecable.com) has quit (Quit: Leaving)
+2018-03-12 01:12:45	luxio	I have two files, A and B, where B is required by A. I want B to have access to variables on file A, but I don't want to have to pass those variables each time a function of file B is called. How can I do this?
+2018-03-12 01:17:10	LordRyan	when you need access to something inside A ,use require("whatever you'd use to load A")
+2018-03-12 01:17:27	LordRyan	it'll use a cached version of the library as long as package.loaded I think it is hasn't changed
+2018-03-12 01:17:37	luxio	variables inside A are constantly changing though
+2018-03-12 01:18:09	LordRyan	then use a table and store the values in a table; the table won't change but the variables will
+2018-03-12 01:18:34	LordRyan	well actually, no, just having them as values in the table returned from A is fine either way.
+2018-03-12 01:19:51	luxio	so if file A returns table {["123"] = 123.0}, then B does require("A.lua"), then 5 seconds later A changes ["123"] to 124.0, will B know that it was updated, or will 123.0 be the cached value?
