@@ -595,11 +595,12 @@ awful.rules.rules = {
 
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
-      properties = { titlebars_enabled = false } },
+        properties = { titlebars_enabled = false } },
 
-    -- Set Firefox to always map on the first tag on screen 1.
-    --{ rule = { class = "Firefox" },
-    --  properties = { screen = 1, tag = awful.util.tagnames[1] } },
+    -- Set Enpass to tag9 screen1
+    { rule = { class = "Enpass" },
+        properties = { screen = 1, tag = awful.util.tagnames[9] } },
+
 
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized = true } },
