@@ -597,10 +597,19 @@ awful.rules.rules = {
     { rule_any = { type = { "dialog", "normal" } },
         properties = { titlebars_enabled = false } },
 
-    -- Set Enpass to tag9 screen1
+    -- Force some applications to start in spesific tags / screens
+
+    { rule = { class = "Slack" },
+        properties = { screen = 2, tag = awful.util.tagnames[4] } },
+
+    { rule = { class = "discord" },
+        properties = { screen = 2, tag = awful.util.tagnames[3] } },
+
+    { rule = { class = "Thunderbird" },
+        properties = { screen = 2, tag = awful.util.tagnames[2] } },
+
     { rule = { class = "Enpass" },
         properties = { screen = 1, tag = awful.util.tagnames[9] } },
-
 
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized = true } },
