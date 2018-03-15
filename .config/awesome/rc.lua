@@ -454,7 +454,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end),
 
-    awful.key({ modkey }, "e", function () awful.spawn("urxvt -e neomutt") end),
+    awful.key({ modkey }, "e", function () awful.spawn("urxvt -e mutt") end),
     awful.key({ modkey }, "i", function () awful.spawn("urxvt -e weechat") end),
     -- Default
     --[[ Menubar
