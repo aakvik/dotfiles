@@ -54,8 +54,8 @@ match Error /\%81v.\+/                                                       " m
 au BufRead /tmp/mutt-* set tw=80                                             " max 80 char lenght when writing email (mutt)
 
 " set cursor on first empty line and enter insert mode
-autocmd BufRead /tmp/neomutt-* execute "normal /^$/\n"
-autocmd BufRead /tmp/neomutt-* execute ":startinsert"
+autocmd BufRead /tmp/mutt-* execute "normal /^$/\n"
+autocmd BufRead /tmp/mutt-* execute ":startinsert"
 
 
 " Disable Arrow keys in Escape mode

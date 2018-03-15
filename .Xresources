@@ -91,7 +91,7 @@ URxvt*background:                               #2D2D2D
 
 URxvt.scrollBar:                                false
 URxvt*cursorColor:                              #F5C685
-URxvt*font:                                     xft:Source Code Pro:size=14
+URxvt*font:                                     xft:Source Code Pro:size=12
 URxvt*boldFont:
 !URxvt.letterSpace:                             +1
 
