@@ -13,6 +13,8 @@ Plugin 'scrooloose/nerdtree'                                                 " n
 Plugin 'tpope/vim-fugitive'                                                  " git wrapper
 Plugin 'scrooloose/nerdcommenter'                                            " magic comments
 Plugin 'taglist.vim'                                                         " source code browser
+Plugin 'Yggdroot/indentLine'                                                 " identlines for crooked eyes
+
 
 call vundle#end()                                                            " all plugins before this line
 
@@ -43,6 +45,7 @@ set linebreak                                                                " s
 set nobackup                                                                 " set nobackup
 set nowritebackup                                                            " only in case you don't want a backup file while editing
 set noswapfile                                                               " no swap files
+set cursorline                                                               " see current line
 
 let mapleader = ','                                                          " set leaders for more hotkeys
 let g:mapleader = ','
@@ -122,3 +125,9 @@ let NERDTreeIgnore = ['\.js.map$']
 nmap <silent> <leader>k :NERDTreeToggle<cr>
 " expand to the path of the file in the current buffer
 nmap <silent> <leader>y :NERDTreeFind<cr>
+
+" indentLine
+let g:indentLine_color_term = 245
+let g:indentLine_color_tty_light = 4 " (default: 4)
+let g:indentLine_color_dark = 2 " (default: 2)
+let g:indentLine_char = '¦'
