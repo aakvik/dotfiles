@@ -45,7 +45,7 @@ set linebreak                                                                " s
 set nobackup                                                                 " set nobackup
 set nowritebackup                                                            " only in case you don't want a backup file while editing
 set noswapfile                                                               " no swap files
-set cursorline                                                               " see current line
+"set cursorline                                                               " see current line
 
 let mapleader = ','                                                          " set leaders for more hotkeys
 let g:mapleader = ','
