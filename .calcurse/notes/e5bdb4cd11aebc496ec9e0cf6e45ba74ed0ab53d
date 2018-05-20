@@ -1,0 +1,3 @@
+create continuous query mysql_traffic_rate on telegraf begin select sum(value) as value into mysql_rate from mysql_traffic_bytes WHERE time > now() - 10m group by time(1s), "user" end
+
+select top(value, 10), "user" from mysql_rate where time < now() -10m and value != 0

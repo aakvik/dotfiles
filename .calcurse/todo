@@ -1,0 +1,6 @@
+[0]>ccf7a98134ec92e2bcca21f54da8c498f9130aec Backup revision
+[0] Investigate 14:47 spikes
+[0]>e5bdb4cd11aebc496ec9e0cf6e45ba74ed0ab53d Investigate influxdb for large metrics : https://www.influxdata.com/
+[0]>f6e5435ac8d55e9f18a2831db207e67d4f6ea5bb Prometheus MySQL configuration
+[0]>f53809dfedeacad7ee0f25573a875d73fa2bf3b6 Prometheus alert configuration
+[0]>0041a554965e5f4907e57762e157e0a846100539 maintenance ansible playbook : update internal services

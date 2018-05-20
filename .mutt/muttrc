@@ -8,7 +8,6 @@
  set spoolfile = "imap://mail.uniweb.no/INBOX"
  set record = +INBOX/Sent
  set postponed = +INBOX/Drafts
-
  set ssl_force_tls = yes
 
 # change dateformat
@@ -38,7 +37,7 @@
  set edit_headers = yes
 
 # local folders
- set header_cache = "~/.mutt/cache"
+ set header_cache = "~/.mutt/cache/headers"
  set message_cachedir = "~/.mutt/cache"
  set certificate_file = "~/.mutt/certificates"
 
@@ -56,7 +55,6 @@
  set pgp_timeout = 3600
  set crypt_autosign = no
  set crypt_replyencrypt = no
- set crypt_replyencrypt
  set crypt_replysign
  set crypt_replysignencrypted
  set pgp_show_unusable = no
@@ -76,11 +74,5 @@
  macro index,pager  a "<pipe-message>abook --add-email-quiet<return>" "Add this sender to Abook"
  bind editor        <Tab> complete-query
 
-# disables index highlighting in all folders except inbox
- folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
- folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
-
-# spamassasin training
-macro index \ed "<enter-command>unset wait_key\n<pipe-entry>sa-learn --spam\n<enter-command>set wait_key\n<save-message>+INBOX/Junk\n" "Tags as SPAM"
-macro index \eu "<pipe-entry>sa-learn --ham\n<enter-command>set wait_key\n<save-message>+INBOX\n" "Untags as SPAM"
-macro index \et "<pipe-entry>spamassassin -t\n<enter-command>set wait_key\n" "Tests if it is SPAM"
+# shift+S moves mail to Junk
+macro index S "<save-message>+INBOX/Junk\n"
