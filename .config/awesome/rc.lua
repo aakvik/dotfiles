@@ -411,39 +411,39 @@ globalkeys = awful.util.table.join(
             beautiful.volume.update()
         end),
 
-    -- MPD control
-    awful.key({ altkey, "Control" }, "Up",
-        function ()
-            awful.spawn.with_shell("mpc toggle")
-            beautiful.mpd.update()
-        end),
-    awful.key({ altkey, "Control" }, "Down",
-        function ()
-            awful.spawn.with_shell("mpc stop")
-            beautiful.mpd.update()
-        end),
-    awful.key({ altkey, "Control" }, "Left",
-        function ()
-            awful.spawn.with_shell("mpc prev")
-            beautiful.mpd.update()
-        end),
-    awful.key({ altkey, "Control" }, "Right",
-        function ()
-            awful.spawn.with_shell("mpc next")
-            beautiful.mpd.update()
-        end),
-    awful.key({ altkey }, "0",
-        function ()
-            local common = { text = "MPD widget ", position = "top_middle", timeout = 2 }
-            if beautiful.mpd.timer.started then
-                beautiful.mpd.timer:stop()
-                common.text = common.text .. lain.util.markup.bold("OFF")
-            else
-                beautiful.mpd.timer:start()
-                common.text = common.text .. lain.util.markup.bold("ON")
-            end
-            naughty.notify(common)
-        end),
+--    -- MPD control
+--    awful.key({ altkey, "Control" }, "Up",
+--        function ()
+--            awful.spawn.with_shell("mpc toggle")
+--            beautiful.mpd.update()
+--        end),
+--    awful.key({ altkey, "Control" }, "Down",
+--        function ()
+--            awful.spawn.with_shell("mpc stop")
+--            beautiful.mpd.update()
+--        end),
+--    awful.key({ altkey, "Control" }, "Left",
+--        function ()
+--            awful.spawn.with_shell("mpc prev")
+--            beautiful.mpd.update()
+--        end),
+--    awful.key({ altkey, "Control" }, "Right",
+--        function ()
+--            awful.spawn.with_shell("mpc next")
+--            beautiful.mpd.update()
+--        end),
+--    awful.key({ altkey }, "0",
+--        function ()
+--            local common = { text = "MPD widget ", position = "top_middle", timeout = 2 }
+--            if beautiful.mpd.timer.started then
+--                beautiful.mpd.timer:stop()
+--                common.text = common.text .. lain.util.markup.bold("OFF")
+--            else
+--                beautiful.mpd.timer:start()
+--                common.text = common.text .. lain.util.markup.bold("ON")
+--            end
+--            naughty.notify(common)
+--        end),
 
     -- Copy primary to clipboard (terminals to gtk)
     awful.key({ modkey }, "c", function () awful.spawn("xsel | xsel -i -b") end),
@@ -454,7 +454,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end),
 
-    awful.key({ modkey }, "e", function () awful.spawn("urxvt -e mutt") end),
+    awful.key({ modkey }, "e", function () awful.spawn("urxvt -e neomutt") end),
     awful.key({ modkey }, "i", function () awful.spawn("urxvt -e weechat") end),
     -- Default
     --[[ Menubar
@@ -600,19 +600,22 @@ awful.rules.rules = {
     -- Force some applications to start in spesific tags / screens
 
     { rule = { class = "Slack" },
-        properties = { screen = 2, tag = awful.util.tagnames[4] } },
+        properties = { screen = 2, tag = awful.util.tagnames[3] } },
 
     { rule = { class = "discord" },
         properties = { screen = 2, tag = awful.util.tagnames[3] } },
 
     { rule = { class = "Thunderbird" },
-        properties = { screen = 2, tag = awful.util.tagnames[2] } },
+        properties = { screen = 2, tag = awful.util.tagnames[4] } },
 
     { rule = { class = "Enpass" },
-        properties = { screen = 1, tag = awful.util.tagnames[9] } },
+        properties = { screen = 4, tag = awful.util.tagnames[9] } },
 
-    { rule = { class = "Gimp", role = "gimp-image-window" },
-          properties = { maximized = true } },
+    { rule = { class = "Kodi" },
+        properties = { screen = 4 } },
+
+--    { rule = { class = "Gimp", role = "gimp-image-window" },
+--          properties = { maximized = true } },
 }
 -- }}}
 
@@ -699,6 +702,15 @@ client.connect_signal("focus",
         end
     end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
+-- Fullscreen inside tile
+--local rule = { class = "Google-chrome" }
+--client.disconnect_signal("request::geometry", awful.ewmh.geometry)
+--client.connect_signal("request::geometry", function(c, context, ...)
+--    if context ~= "fullscreen" or not awful.rules.match(c, rule) then
+--        awful.ewmh.geometry(c, context, ...)
+--    end
+--end)
 
 awful.util.spawn_with_shell("~/.config/awesome/autorun.sh")
 -- }}}

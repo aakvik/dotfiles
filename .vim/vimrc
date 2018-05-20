@@ -51,11 +51,11 @@ let g:airline_theme = 'hybrid'                                               " s
 
 match Error /\%81v.\+/                                                       " mark anything after 80 chars as an error
 
-au BufRead /tmp/mutt-* set tw=80                                             " max 80 char lenght when writing email (mutt)
+au BufRead /tmp/neomutt-* set tw=72                                             " max 72 char lenght when writing email (mutt)
 
 " set cursor on first empty line and enter insert mode
-autocmd BufRead /tmp/mutt-* execute "normal /^$/\n"
-autocmd BufRead /tmp/mutt-* execute ":startinsert"
+autocmd BufRead /tmp/neomutt-* execute "normal /^$/\n"
+autocmd BufRead /tmp/neomutt-* execute ":startinsert"
 
 
 " Disable Arrow keys in Escape mode

@@ -51,6 +51,6 @@ bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
 
 # start tmux in interactive shells
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux
 
