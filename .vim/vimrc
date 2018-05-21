@@ -1,60 +1,60 @@
-set nocompatible                                                             " be iMproved, required
-filetype off                                                                 " required
+set nocompatible                                             " be iMproved, required
+filetype off                                                 " required
 
-set rtp+=~/.vim/bundle/Vundle.vim                                            " set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim                            " set the runtime path to include Vundle and initialize
 
-call vundle#begin()                                                          " all plugins below this line
+call vundle#begin()                                          " all plugins below this line
 
-Plugin 'VundleVim/Vundle.vim'                                                " let Vundle handle itself
-Plugin 'vim-airline/vim-airline'                                             " airline infobar
-Plugin 'vim-airline/vim-airline-themes'                                      " airline themes
-Plugin 'mhinz/vim-signify'                                                   " git modify indicator
-Plugin 'scrooloose/nerdtree'                                                 " nerdtree browser
-Plugin 'tpope/vim-fugitive'                                                  " git wrapper
-Plugin 'scrooloose/nerdcommenter'                                            " magic comments
-Plugin 'taglist.vim'                                                         " source code browser
-Plugin 'Yggdroot/indentLine'                                                 " identlines for crooked eyes
+Plugin 'VundleVim/Vundle.vim'                                " let Vundle handle itself
+Plugin 'vim-airline/vim-airline'                             " airline infobar
+Plugin 'vim-airline/vim-airline-themes'                      " airline themes
+Plugin 'mhinz/vim-signify'                                   " git modify indicator
+Plugin 'scrooloose/nerdtree'                                 " nerdtree browser
+Plugin 'tpope/vim-fugitive'                                  " git wrapper
+Plugin 'scrooloose/nerdcommenter'                            " magic comments
+Plugin 'taglist.vim'                                         " source code browser
+Plugin 'Yggdroot/indentLine'                                 " identlines for crooked eyes
 
 
-call vundle#end()                                                            " all plugins before this line
+call vundle#end()                                            " all plugins before this line
 
-filetype plugin indent on                                                    " required
+filetype plugin indent on                                    " required
 
-if has("syntax")                                                             " Enables code syntax highlighting
+if has("syntax")                                             " Enables code syntax highlighting
   syntax on
 endif
 
-colorscheme smyck                                                            " Set theme
-set showcmd                                                                  " Show (partial) command in status line.
-set showmatch                                                                " Show matching brackets.
-set ignorecase                                                               " Do case insensitive matching
-set smartcase                                                                " Do smart case matching
-set incsearch                                                                " Incremental search
-set autowrite                                                                " Automatically save before commands like :next and :make
-set hidden                                                                   " Hide buffers when they are abandoned
-set number                                                                   " Enable linenumbers
-set tabstop=4                                                                " show existing tab with 4 spaces width
-set shiftwidth=4                                                             " when indenting with '>', use 4 spaces width
-set expandtab                                                                " show existing tab with 4 spaces width
-set clipboard=unnamedplus                                                    " yank to CLIPBOARD
-set laststatus=2                                                             " always display statusline
-set autoindent                                                               " copies indentation from previous line
-set smartindent                                                              " automatically indent level
-set showbreak=↪                                                              " show ellipsis at breaking
-set linebreak                                                                " set soft wrapping
-set nobackup                                                                 " set nobackup
-set nowritebackup                                                            " only in case you don't want a backup file while editing
-set noswapfile                                                               " no swap files
-"set cursorline                                                              " see current line
+colorscheme smyck                                            " Set theme
+set showcmd                                                  " Show (partial) command in status line.
+set showmatch                                                " Show matching brackets.
+set ignorecase                                               " Do case insensitive matching
+set smartcase                                                " Do smart case matching
+set incsearch                                                " Incremental search
+set autowrite                                                " Automatically save before commands like :next and :make
+set hidden                                                   " Hide buffers when they are abandoned
+set number                                                   " Enable linenumbers
+set tabstop=4                                                " show existing tab with 4 spaces width
+set shiftwidth=4                                             " when indenting with '>', use 4 spaces width
+set expandtab                                                " show existing tab with 4 spaces width
+set clipboard=unnamedplus                                    " yank to CLIPBOARD
+set laststatus=2                                             " always display statusline
+set autoindent                                               " copies indentation from previous line
+set smartindent                                              " automatically indent level
+set showbreak=↪                                              " show ellipsis at breaking
+set linebreak                                                " set soft wrapping
+set nobackup                                                 " set nobackup
+set nowritebackup                                            " only in case you don't want a backup file while editing
+set noswapfile                                               " no swap files
+"set cursorline                                              " see current line
 
-let mapleader = ','                                                          " set leaders for more hotkeys
+let mapleader = ','                                          " set leaders for more hotkeys
 let g:mapleader = ','
 
-let g:airline_theme = 'hybrid'                                               " set theme for airline infobar
+let g:airline_theme = 'hybrid'                               " set theme for airline infobar
 
-match Error /\%81v.\+/                                                       " mark anything after 80 chars as an error
+match Error /\%81v.\+/                                       " mark anything after 80 chars as an error
 
-au BufRead /tmp/neomutt-* set tw=72                                          " max 72 char lenght when writing email (mutt)
+au BufRead /tmp/neomutt-* set tw=72                          " max 72 char lenght when writing email (mutt)
 
 " set cursor on first empty line and enter insert mode
 autocmd BufRead /tmp/neomutt-* execute "normal /^$/\n"
