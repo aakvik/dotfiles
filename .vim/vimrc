@@ -131,3 +131,6 @@ let g:indentLine_color_term = 245
 let g:indentLine_color_tty_light = 4 " (default: 4)
 let g:indentLine_color_dark = 2 " (default: 2)
 let g:indentLine_char = '¦'
+
+" yaml 2 space ident
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
