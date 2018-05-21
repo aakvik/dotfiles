@@ -20,22 +20,22 @@ call vundle#end()                                                            " a
 
 filetype plugin indent on                                                    " required
 
-if has("syntax")		                                                     " Enables code syntax highlighting
+if has("syntax")                                                             " Enables code syntax highlighting
   syntax on
 endif
 
-colorscheme smyck		                                                     " Set theme
-set showcmd			                                                         " Show (partial) command in status line.
-set showmatch			                                                     " Show matching brackets.
-set ignorecase			                                                     " Do case insensitive matching
-set smartcase			                                                     " Do smart case matching
-set incsearch			                                                     " Incremental search
-set autowrite			                                                     " Automatically save before commands like :next and :make
-set hidden			                                                         " Hide buffers when they are abandoned
-set number			                                                         " Enable linenumbers
-set tabstop=4			                                                     " show existing tab with 4 spaces width
-set shiftwidth=4		                                                     " when indenting with '>', use 4 spaces width
-set expandtab			                                                     " show existing tab with 4 spaces width
+colorscheme smyck                                                            " Set theme
+set showcmd                                                                  " Show (partial) command in status line.
+set showmatch                                                                " Show matching brackets.
+set ignorecase                                                               " Do case insensitive matching
+set smartcase                                                                " Do smart case matching
+set incsearch                                                                " Incremental search
+set autowrite                                                                " Automatically save before commands like :next and :make
+set hidden                                                                   " Hide buffers when they are abandoned
+set number                                                                   " Enable linenumbers
+set tabstop=4                                                                " show existing tab with 4 spaces width
+set shiftwidth=4                                                             " when indenting with '>', use 4 spaces width
+set expandtab                                                                " show existing tab with 4 spaces width
 set clipboard=unnamedplus                                                    " yank to CLIPBOARD
 set laststatus=2                                                             " always display statusline
 set autoindent                                                               " copies indentation from previous line
@@ -45,7 +45,7 @@ set linebreak                                                                " s
 set nobackup                                                                 " set nobackup
 set nowritebackup                                                            " only in case you don't want a backup file while editing
 set noswapfile                                                               " no swap files
-"set cursorline                                                               " see current line
+"set cursorline                                                              " see current line
 
 let mapleader = ','                                                          " set leaders for more hotkeys
 let g:mapleader = ','
@@ -54,7 +54,7 @@ let g:airline_theme = 'hybrid'                                               " s
 
 match Error /\%81v.\+/                                                       " mark anything after 80 chars as an error
 
-au BufRead /tmp/neomutt-* set tw=72                                             " max 72 char lenght when writing email (mutt)
+au BufRead /tmp/neomutt-* set tw=72                                          " max 72 char lenght when writing email (mutt)
 
 " set cursor on first empty line and enter insert mode
 autocmd BufRead /tmp/neomutt-* execute "normal /^$/\n"
