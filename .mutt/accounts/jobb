@@ -1,0 +1,32 @@
+# whoami
+ set from = "aleksander.aakvik@digitalgarden.no"
+ set realname = "Aleksander Aakvik"
+ set use_from = yes
+
+# IMAP connection TLS
+ set folder = "imap://mail.uniweb.no/"
+ set spoolfile = "imap://mail.uniweb.no/INBOX"
+ set record = +INBOX/Sent
+ set postponed = +INBOX/Drafts
+ set ssl_force_tls = yes
+
+# change dateformat
+ set date_format="%y-%m-%d %T"
+ set index_format="%2C | %Z [%d] %-40.30F (%-4.4c) %s"
+
+# gpg encryped credentials
+ source "gpg -dq $HOME/.mutt/accounts/jobb.cred.gpg |"
+ set imap_user = "aleksander.aakvik@digitalgarden.no"
+ set imap_pass = $my_pass
+
+# SMTP settings TLS
+ set ssl_starttls = yes
+ set smtp_url = "smtp://$imap_user:$imap_pass@mail.uniweb.no:587"
+
+# signature
+ set signature = "~/.mutt/accounts/jobb.sig"
+
+# local folders
+ set header_cache = "~/.mutt/cache/jobb/headers"
+ set message_cachedir = "~/.mutt/jobb/cache"
+ set certificate_file = "~/.mutt/jobb/certificates"
