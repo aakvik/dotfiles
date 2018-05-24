@@ -82,55 +82,6 @@ local gray   = "#94928F"
 local mytextclock = wibox.widget.textclock(" %a %b %d %H:%M ")
 mytextclock.font = theme.font
 
----- Calendar
---lain.widget.calendar({
---    attach_to = { mytextclock },
---    notification_preset = {
---        font = "Misc Tamsyn 11",
---        fg   = theme.fg_normal,
---        bg   = theme.bg_normal
---    }
---})
-
---[[ Mail IMAP check
--- commented because it needs to be set before use
-local mail = lain.widget.imap({
-    timeout  = 180,
-    server   = "server",
-    mail     = "mail",
-    password = "keyring get mail",
-    settings = function()
-        mail  = ""
-        count = ""
-
-        if mailcount > 0 then
-            mail = "Mail "
-            count = mailcount .. " "
-        end
-
-        widget:set_markup(markup(gray, mail) .. count)
-    end
-})
---]]
-
--- MPD
---theme.mpd = lain.widget.mpd({
---    settings = function()
---        artist = mpd_now.artist .. " "
---        title  = mpd_now.title  .. " "
---
---        if mpd_now.state == "pause" then
---            artist = "mpd "
---            title  = "paused "
---        elseif mpd_now.state == "stop" then
---            artist = ""
---            title  = ""
---        end
---
---        widget:set_markup(markup.font(theme.font, markup(gray, artist) .. title))
---    end
---})
-
 -- CPU
 local cpu = lain.widget.sysload({
     settings = function()
@@ -144,13 +95,6 @@ local mem = lain.widget.mem({
         widget:set_markup(markup.font(theme.font, markup(gray, " Mem ") .. mem_now.used .. " "))
     end
 })
-
----- /home fs
---theme.fs = lain.widget.fs({
---    options = "--exclude-type=tmpfs",
---    partition = "/mnt/storage",
---    notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Misc Tamsyn 10.5" },
---})
 
 -- Battery
 local bat = lain.widget.bat({
@@ -256,7 +200,6 @@ function theme.at_screen_connect(s)
             s.mytaglist,
             spr,
             s.mytxtlayoutbox,
-            --spr,
             s.mypromptbox,
             spr,
         },
@@ -265,11 +208,9 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             spr,
-            --theme.fs.widget,
-            --mail.widget,
             cpu.widget,
             mem.widget,
-            --bat.widget,
+            bat.widget,
             net.widget,
             volume.widget,
             mytextclock
