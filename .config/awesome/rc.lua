@@ -612,8 +612,6 @@ if screen.count() > 1 then
         { rule = { class = "Kodi" },
             properties = { screen = 4 } },
 
-    --    { rule = { class = "Gimp", role = "gimp-image-window" },
-    --          properties = { maximized = true } },
     }
 else
     awful.rules.rules = {
@@ -634,9 +632,9 @@ else
         -- Titlebars
         { rule_any = { type = { "dialog", "normal" } },
             properties = { titlebars_enabled = false } },
--- }}}
 }
 end
+
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
 client.connect_signal("manage", function (c)
