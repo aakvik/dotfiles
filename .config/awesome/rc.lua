@@ -377,73 +377,12 @@ globalkeys = awful.util.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Dropdown application
-    awful.key({ modkey, }, "z", function () awful.screen.focused().quake:toggle() end),
+    -- awful.key({ modkey, }, "z", function () awful.screen.focused().quake:toggle() end),
 
     -- Widgets popups
     awful.key({ altkey, }, "c", function () lain.widget.calendar.show(7) end),
     awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end),
     awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end),
-
-    -- ALSA volume control
-    awful.key({ altkey }, "Up",
-        function ()
-            os.execute(string.format("amixer -q set %s 1%%+", beautiful.volume.channel))
-            beautiful.volume.update()
-        end),
-    awful.key({ altkey }, "Down",
-        function ()
-            os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
-            beautiful.volume.update()
-        end),
-    awful.key({ altkey }, "m",
-        function ()
-            os.execute(string.format("amixer -q set %s toggle", beautiful.volume.togglechannel or beautiful.volume.channel))
-            beautiful.volume.update()
-        end),
-    awful.key({ altkey, "Control" }, "m",
-        function ()
-            os.execute(string.format("amixer -q set %s 100%%", beautiful.volume.channel))
-            beautiful.volume.update()
-        end),
-    awful.key({ altkey, "Control" }, "0",
-        function ()
-            os.execute(string.format("amixer -q set %s 0%%", beautiful.volume.channel))
-            beautiful.volume.update()
-        end),
-
---    -- MPD control
---    awful.key({ altkey, "Control" }, "Up",
---        function ()
---            awful.spawn.with_shell("mpc toggle")
---            beautiful.mpd.update()
---        end),
---    awful.key({ altkey, "Control" }, "Down",
---        function ()
---            awful.spawn.with_shell("mpc stop")
---            beautiful.mpd.update()
---        end),
---    awful.key({ altkey, "Control" }, "Left",
---        function ()
---            awful.spawn.with_shell("mpc prev")
---            beautiful.mpd.update()
---        end),
---    awful.key({ altkey, "Control" }, "Right",
---        function ()
---            awful.spawn.with_shell("mpc next")
---            beautiful.mpd.update()
---        end),
---    awful.key({ altkey }, "0",
---        function ()
---            local common = { text = "MPD widget ", position = "top_middle", timeout = 2 }
---            if beautiful.mpd.timer.started then
---                beautiful.mpd.timer:stop()
---                common.text = common.text .. lain.util.markup.bold("OFF")
---            else
---                beautiful.mpd.timer:start()
---                common.text = common.text .. lain.util.markup.bold("ON")
---            end
---            naughty.notify(common)
---        end),
 
     -- Copy primary to clipboard (terminals to gtk)
     awful.key({ modkey }, "c", function () awful.spawn("xsel | xsel -i -b") end),
@@ -456,17 +395,7 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey }, "e", function () awful.spawn("urxvt -e neomutt") end),
     awful.key({ modkey }, "i", function () awful.spawn("urxvt -e weechat") end),
-    -- Default
-    --[[ Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
-    --]]
-    --[[ dmenu
-    awful.key({ modkey }, "x", function ()
-        awful.spawn(string.format("dmenu_run -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-        beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
-		end)
-    --]]
+
     -- Prompt
     awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
@@ -689,8 +618,7 @@ client.connect_signal("request::titlebars", function(c)
         },
         { -- Right
             awful.titlebar.widget.floatingbutton (c),
-            awful.titlebar.widget.maximizedbutton(c),
-            awful.titlebar.widget.stickybutton   (c),
+            awful.titlebar.widget.maximizedbutton(c), awful.titlebar.widget.stickybutton   (c),
             awful.titlebar.widget.ontopbutton    (c),
             awful.titlebar.widget.closebutton    (c),
             layout = wibox.layout.fixed.horizontal()

@@ -1,5 +1,4 @@
 --[[
-
      Steamburn Awesome WM theme 3.0
      github.com/copycat-killer
 
@@ -14,7 +13,7 @@ local os    = { getenv = os.getenv }
 local theme                                     = {}
 theme.zenburn_dir                               = require("awful.util").get_themes_dir() .. "zenburn"
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/steamburn"
---theme.wallpaper                                 = "#e2ccb0"
+-- theme.wallpaper                                 = "#e2ccb0"
 theme.font                                      = "Misc Tamsyn 14"
 theme.fg_normal                                 = "#e2ccb0"
 theme.fg_focus                                  = "#e2ccb0"
@@ -32,7 +31,7 @@ theme.tasklist_fg_focus                         = "#e2ccb0"
 theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
 theme.menu_height                               = 16
-theme.menu_width                                = 140
+theme.menu_width                                = 250
 theme.awesome_icon                              = theme.dir .."/icons/awesome.png"
 theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.png"
 theme.layout_txt_tile                           = "[t]"
@@ -49,7 +48,7 @@ theme.layout_txt_magnifier                      = "[M]"
 theme.layout_txt_floating                       = "[|]"
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
-theme.useless_gap                               = 5
+theme.useless_gap                               = 3
 theme.titlebar_close_button_normal              = theme.zenburn_dir.."/titlebar/close_normal.png"
 theme.titlebar_close_button_focus               = theme.zenburn_dir.."/titlebar/close_focus.png"
 theme.titlebar_minimize_button_normal           = theme.zenburn_dir.."/titlebar/minimize_normal.png"
@@ -142,7 +141,8 @@ local volume = lain.widget.pulse {
 
 -- Weather
 theme.weather = lain.widget.weather({
-    city_id = 2643743, -- placeholder (London)
+    city_id = 3134521,
+    font = "Misc Tamsyn 14",
 })
 
 -- Separators
@@ -158,6 +158,22 @@ end
 function theme.at_screen_connect(s)
     -- Quake application
     s.quake = lain.util.quake({ app = awful.util.terminal })
+
+    -- /home fs
+    theme.fs = lain.widget.fs({
+        partition = "/home",
+        notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Misc Tamsyn 14" },
+    })
+
+    -- Calendar
+    lain.widget.calendar({
+        attach_to = { mytextclock },
+        notification_preset = {
+            font = "Misc Tamsyn 14",
+            fg   = theme.fg_normal,
+            bg   = theme.bg_normal
+        }
+    })
 
     -- If wallpaper is a function, call it with the screen
     local wallpaper = theme.wallpaper
@@ -188,6 +204,11 @@ function theme.at_screen_connect(s)
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
+    -- Create systray
+    systray = wibox.widget {
+        set_base_size = 30,
+        widget = wibox.widget.systray,
+    }
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s, height = 32 })
 
@@ -206,7 +227,7 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
+            systray,
             spr,
             cpu.widget,
             mem.widget,
