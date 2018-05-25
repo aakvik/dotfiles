@@ -556,7 +556,7 @@ local desktop_rules = {
         properties = { screen = 4 } }
 }
 
-if screen.count() > 1 then
+if screen.count() >= 4 then
     awful.rules.rules = merge_tables(awful.rules.rules, desktop_rules)
 end
 
