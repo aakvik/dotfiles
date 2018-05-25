@@ -166,14 +166,14 @@ function theme.at_screen_connect(s)
     })
 
     -- Calendar
-    lain.widget.calendar({
-        attach_to = { mytextclock },
-        notification_preset = {
-            font = "Misc Tamsyn 14",
-            fg   = theme.fg_normal,
-            bg   = theme.bg_normal
-        }
-    })
+    --lain.widget.calendar({
+    --    attach_to = { mytextclock },
+    --    notification_preset = {
+    --        font = "Misc Tamsyn 14",
+    --        fg   = theme.fg_normal,
+    --        bg   = theme.bg_normal
+    --    }
+    --})
 
     -- If wallpaper is a function, call it with the screen
     local wallpaper = theme.wallpaper
