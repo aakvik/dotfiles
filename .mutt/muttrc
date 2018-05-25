@@ -36,11 +36,19 @@ macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/privat<en
  bind index G imap-fetch-mail
 
 # misc config
+ set pager_context = 2
+ set pager_index_lines = 20
  set send_charset = "utf-8"
  set fast_reply = yes
+ unset reply_self
  set include = yes
  set sort = threads
  set sort_aux = last-date-received
+ set indent_str="> "
+ set attribution="On %d, %n wrote:"
+ set fcc_attach
+ set markers = no
+
 
 # abook address book
  set query_command = "abook --mutt-query '%s'"
@@ -48,4 +56,4 @@ macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/privat<en
  bind editor        <Tab> complete-query
 
 # shift+S moves mail to Junk
-macro index S "<save-message>+INBOX/Junk\n"
+macro index,pager S "<save-message>+INBOX/Junk\n<enter>"
