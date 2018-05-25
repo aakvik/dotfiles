@@ -23,6 +23,19 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
 
+
+local function merge_tables(t1, t2)
+    local merged = {}
+    for i,v in ipairs(t1) do
+        merged[i] = v
+    end
+
+    for _,v in ipairs(t2) do
+        table.insert(merged, v)
+    end
+
+    return merged
+end
 -- }}}
 
 -- {{{ Error handling
@@ -529,22 +542,22 @@ awful.rules.rules = {
     -- Force some applications to start in spesific tags / screens
 }
 
+local desktop_rules = {
+    { rule = { class = "Slack" },
+        properties = { screen = 2, tag = awful.util.tagnames[3] } },
+
+    { rule = { class = "discord" },
+        properties = { screen = 2, tag = awful.util.tagnames[3] } },
+
+    { rule = { class = "Enpass" },
+        properties = { screen = 4, tag = awful.util.tagnames[9] } },
+
+    { rule = { class = "Kodi" },
+        properties = { screen = 4 } }
+}
+
 if screen.count() > 1 then
-        for _,rule in ipairs{
-            { rule = { class = "Slack" },
-                properties = { screen = 2, tag = awful.util.tagnames[3] } },
-
-            { rule = { class = "discord" },
-                properties = { screen = 2, tag = awful.util.tagnames[3] } },
-
-            { rule = { class = "Enpass" },
-                properties = { screen = 4, tag = awful.util.tagnames[9] } },
-
-            { rule = { class = "Kodi" },
-                properties = { screen = 4 } }
-        } do
-            table.insert(awful.rules.rules, rule)
-        end
+    awful.rules.rules = merge_tables(awful.rules.rules, desktop_rules)
 end
 
 -- {{{ Signals
