@@ -14,6 +14,7 @@ Plugin 'tpope/vim-fugitive'                                  " git wrapper
 Plugin 'scrooloose/nerdcommenter'                            " magic comments
 Plugin 'taglist.vim'                                         " source code browser
 Plugin 'Yggdroot/indentLine'                                 " identlines for crooked eyes
+Plugin 'spacewander/openresty-vim'                           " openresty syntax hightlight (lua)
 
 
 call vundle#end()                                            " all plugins before this line
