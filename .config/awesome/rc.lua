@@ -398,9 +398,9 @@ globalkeys = awful.util.table.join(
     awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end),
 
     -- Copy primary to clipboard (terminals to gtk)
-    awful.key({ modkey }, "c", function () awful.spawn("xsel | xsel -i -b") end),
+    awful.key({ modkey }, "c", function () awful.spawn("xsel -o -p | xsel -i -b") end),
     -- Copy clipboard to primary (gtk to terminals)
-    awful.key({ modkey }, "v", function () awful.spawn("xsel -b | xsel") end),
+    awful.key({ modkey }, "v", function () awful.spawn("xsel -o -b | xsel -i -p") end),
 
     -- User programs
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
