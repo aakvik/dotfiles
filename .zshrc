@@ -22,11 +22,6 @@ alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
 
-# source alias file
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # adds coloring to man pages
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
@@ -42,7 +37,7 @@ man() {
 export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
 export LESS='-R '
 
-# git handling for dotfiles
+# git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
 
 # pastebin
@@ -50,8 +45,14 @@ pb () {
       curl -F "c=@${1:--}" https://ptpb.pw/
   }
 
+# fix movement keys (alt + arrows)
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
+
+# openvpn aliases
+alias aakvik-vpn='sudo systemctl start openvpn-client@aakvik && sudo systemd-tty-ask-password-agent'
+alias kontor='sudo systemctl start openvpn-client@kontor && sudo systemd-tty-ask-password-agent'
+alias maakeveien='sudo systemctl start openvpn-client@maakeveien && sudo systemd-tty-ask-password-agent'
 
 # start tmux in interactive shells
 #[[ $- != *i* ]] && return

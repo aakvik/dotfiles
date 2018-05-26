@@ -35,7 +35,7 @@ set autowrite                                                " Automatically sav
 set hidden                                                   " Hide buffers when they are abandoned
 set number                                                   " Enable linenumbers
 set tabstop=4                                                " show existing tab with 4 spaces width
-set shiftwidth=2                                             " when indenting with '>', use 4 spaces width
+set shiftwidth=2                                             " when indenting with '>', use 2 spaces width
 set expandtab                                                " show existing tab with 4 spaces width
 " set clipboard=unnamedplus                                    " yank to CLIPBOARD
 set laststatus=2                                             " always display statusline
