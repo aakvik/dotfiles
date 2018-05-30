@@ -1,13 +1,7 @@
 ! ----------------------------- terminal colors
 
 Xcursor.size:  10
-
-#define base00 #181818
-#define base01 #282828
-#define base02 #383838
-#define base03 #585858
-#define base04 #b8b8b8
-#define base05 #d8d8d8
+#define base00 #181818 #define base01 #282828 #define base02 #383838 #define base03 #585858 #define base04 #b8b8b8 #define base05 #d8d8d8
 #define base06 #e8e8e8
 #define base07 #f8f8f8
 #define base08 #ab4642
@@ -93,6 +87,8 @@ URxvt.scrollBar                                 : false
 URxvt*cursorColor                               : #F5C685
 URxvt*font                                      : xft:Source Code Pro:size=11
 URxvt*boldFont                                  :
+URxvt*scrollTtyOutput                           : false
+URxvt*scrollWithBuffer                          : true
 
 URxvt.termName                                  : rxvt-256color
 URxvt.perl-ext-common                           : default,clipboard,matcher,font-size
