@@ -49,6 +49,7 @@ color index      brightblack    default  ~D         # Deleted
 color index      yellow         default  opennms@uniweb.no
 color index      yellow         default  opsgenie@opsgenie.net
 color index      yellow         default  noreply@mxtoolbox.com
+color index      yellow         default  noc@hprt.no
 color index      yellow         default  noreply-peakflow@broadnet.no
 #color index      brightblack    default "~n 10-20"
 #color index	  blue 	         default  '\[(CHRPM|Contrib-Rpm)\]'
