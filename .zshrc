@@ -15,6 +15,8 @@ plugins=(
   git
 )
 
+unsetopt nomatch
+
 source $ZSH/oh-my-zsh.sh
 
 # some verbose stuff
