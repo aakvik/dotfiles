@@ -231,7 +231,12 @@ globalkeys = awful.util.table.join(
     -- awful.key({ altkey }, "p", function() os.execute("screenshot") end),
 
     -- Take screenshot standard arch way
-    awful.key( { modkey,         }, "p", function () awful.util.spawn_with_shell("sleep 0.5 && scrot -s -e 'mv $f ~/Pictures/screenshots/'") end),
+--    awful.key( { modkey,         }, "p", function () awful.util.spawn_with_shell("sleep 0.5 && scrot -s -e 'mv $f ~/Pictures/screenshots/'") end),
+--
+   -- Take screenshot with flameshot
+
+    awful.key({ modkey,         }, "p", function () awful.util.spawn_with_shell("flameshot gui") end),
+
     -- Hotkeys
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),

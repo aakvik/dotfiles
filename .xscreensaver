@@ -1,6 +1,6 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.34 for aleksander on Thu Mar 15 12:02:11 2018.
-# http://www.jwz.org/xscreensaver/
+# Written by xscreensaver-demo 5.40 for aleksander on Tue Sep  4 09:26:48 2018.
+# https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
 cycle:		0:10:00
@@ -24,7 +24,7 @@ fadeTicks:	20
 captureStderr:	True
 ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
-dpmsEnabled:	False
+dpmsEnabled:	True
 dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
@@ -271,6 +271,14 @@ programs:								      \
   GL: 				vigilance -root				    \n\
 				unicode -root				    \n\
 				testx11 -root				    \n\
+  GL: 				esper -root				    \n\
+  GL: 				crumbler -root				    \n\
+				filmleader -root			    \n\
+				glitchpeg -root				    \n\
+  GL: 				maze3d -root				    \n\
+  GL: 				peepers -root				    \n\
+  GL: 				razzledazzle -root			    \n\
+				vfeedback -root				    \n\
 
 
 pointerPollTime:    0:00:05
