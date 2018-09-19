@@ -44,9 +44,12 @@ alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/
 
 # pastebin
 pb () {
-      curl -F "c=@${1:--}" https://ptpb.pw/
+  curl -F "c=@${1:--}" https://ptpb.pw/
   }
 
+cb () {
+ xsel -bp
+}
 # fix movement keys (alt + arrows)
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
@@ -55,6 +58,8 @@ bindkey "^[^[[D" backward-word
 alias aakvik-vpn='sudo systemctl start openvpn-client@aakvik && sudo systemd-tty-ask-password-agent'
 alias kontor='sudo systemctl start openvpn-client@kontor && sudo systemd-tty-ask-password-agent'
 alias maakeveien='sudo systemctl start openvpn-client@maakeveien && sudo systemd-tty-ask-password-agent'
+
+alias passman='TERM=xterm ssh passman@admint.uniweb.no'
 
 # start tmux in interactive shells
 #[[ $- != *i* ]] && return
