@@ -1,6 +1,7 @@
 # switch to default account on startup
 source ~/.mutt/accounts/jobb
 
+
 # change account
 macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/accounts/jobb<enter><change-folder>!<enter>'
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/privat<enter><change-folder>!<enter>'
@@ -48,6 +49,7 @@ macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/privat<en
  set attribution="On %d, %n wrote:"
  set fcc_attach
  set markers = no
+ set tmpdir = "~/.mutt/tmp"
 
 
 # abook address book

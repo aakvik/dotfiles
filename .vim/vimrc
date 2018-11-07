@@ -55,12 +55,21 @@ let g:airline_theme = 'hybrid'                               " set theme for air
 
 match Error /\%81v.\+/                                       " mark anything after 80 chars as an error
 
-au BufRead /tmp/neomutt-* set tw=72                          " max 72 char lenght when writing email (mutt)
+au BufRead ~/.mutt/tmp/* set tw=72                                  " max 72 char lenght when writing email (mutt)
+
+" spell checking for mutt
+set spelllang=en_us,nb_no
+autocmd BufRead,BufNewFile ~/.mutt/tmp/* set filetype=mail
+autocmd FileType mail set spell
 
 " set cursor on first empty line and enter insert mode
-autocmd BufRead /tmp/neomutt-* execute "normal /^$/\n"
-autocmd BufRead /tmp/neomutt-* execute ":startinsert"
-
+function! AddEmptyLineBelow()
+  call append(line("."), "")
+endfunction
+autocmd BufRead ~/.mutt/tmp/* execute "normal /^$/\n"
+autocmd BufRead ~/.mutt/tmp/* call AddEmptyLineBelow()
+autocmd BufRead ~/.mutt/tmp/* execute ":+1"
+autocmd BufRead ~/.mutt/tmp/* execute ":startinsert"
 
 " Disable Arrow keys in Escape mode
 "map <up> <nop>
@@ -75,11 +84,11 @@ autocmd BufRead /tmp/neomutt-* execute ":startinsert"
 "imap <right> <nop>
 
 " mark trailing whitespace as red blocks
+autocmd BufRead,BufNewFile ~/.mutt/tmp/* let b:isEmail = 1
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * if ! exists('b:isEmail') |  match ExtraWhitespace /\s\+$/ | endif
+autocmd InsertEnter * if ! exists('b:isEmail') |  match ExtraWhitespace /\s\+\%#\@<!$/ | endif
+autocmd InsertLeave * if ! exists('b:isEmail') |  match ExtraWhitespace /\s\+$/ | endif
 autocmd BufWinLeave * call clearmatches()
 
 " bracketed paste mode
