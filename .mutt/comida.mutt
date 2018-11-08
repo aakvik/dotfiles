@@ -18,7 +18,7 @@ color tree       brightmagenta  default # thread arrows
 color status     cyan           black   # status line
 color error      brightcyan     default # errors
 color message    cyan           default # info messages
-color signature  red            default # signature
+color signature  brightblack    default # signature
 color attachment green          default # MIME attachments
 color search     brightyellow   red     # search matches
 color tilde      brightmagenta  default # ~ at bottom of msg
@@ -35,7 +35,7 @@ color quoted5    blue           default
 #
 #     object     foreground backg.   RegExp
 #
-color header     red            default  "^(from|subject):"
+color header     green            default  "^(from|subject):"
 color body       yellow         default  "((ftp|http|https)://|(file|news):|www\\.)[-a-z0-9_.:]*[a-z0-9](/[^][{} \t\n\r\"<>()]*[^][{} \t\n\r\"<>().,:!])?/?"
 color body       cyan           default  "[-a-z_0-9.+]+@[-a-z_0-9.]+"
 color body       red            default  "(^| )\\*[-a-z0-9*]+\\*[,.?]?[ \n]"
