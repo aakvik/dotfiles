@@ -13,11 +13,11 @@
 #     object     foreground     background
 #
 color normal     default        default # normal text
-color indicator  brightcyan     black   # actual message
+color indicator  blue           black   # actual message
 color tree       brightmagenta  default # thread arrows
-color status     cyan           black   # status line
+color status     blue           black   # status line
 color error      brightcyan     default # errors
-color message    cyan           default # info messages
+color message    blue           default # info messages
 color signature  brightblack    default # signature
 color attachment green          default # MIME attachments
 color search     brightyellow   red     # search matches
