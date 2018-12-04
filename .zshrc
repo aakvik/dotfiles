@@ -51,8 +51,8 @@ cb () {
  xsel -bp
 }
 # fix movement keys (alt + arrows)
-bindkey "^[^[[C" forward-word
-bindkey "^[^[[D" backward-word
+#bindkey "^[^[[C" forward-word
+#bindkey "^[^[[D" backward-word
 
 # openvpn aliases
 alias aakvik-vpn='sudo systemctl start openvpn-client@aakvik && sudo systemd-tty-ask-password-agent'
