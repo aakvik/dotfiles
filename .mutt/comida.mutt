@@ -51,6 +51,9 @@ color index      yellow         default  opsgenie@opsgenie.net
 color index      yellow         default  noreply@mxtoolbox.com
 color index      yellow         default  noc@hprt.no
 color index      yellow         default  noreply-peakflow@broadnet.no
+color index      yellow         default  bakis3@uniweb.no
+color index      yellow         default  amandabackup@hmg-vz-18-01-amanda
+color index      yellow         default  .*amanda.hprt.no
 #color index      brightblack    default "~n 10-20"
 #color index	  blue 	         default  '\[(CHRPM|Contrib-Rpm)\]'
 #color index      brightblack    default "~h ^X.Mailer..Microsoft.Outlook"
