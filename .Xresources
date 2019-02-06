@@ -92,7 +92,7 @@ URxvt*boldFont                                  :
 URxvt*scrollTtyOutput                           : true
 URxvt*scrollWithBuffer                          : false
 
-URxvt.termName                                  : xterm-256color
+!URxvt.termName                                  : xterm-256color
 URxvt.perl-ext-common                           : default,clipboard,matcher,font-size
 URxvt.url-launcher                              : /usr/bin/firefox
 URxvt.matcher.button                            : 2
