@@ -89,8 +89,9 @@ URxvt.scrollBar                                 : false
 URxvt*cursorColor                               : #F5C685
 URxvt*font                                      : xft:Source Code Pro:size=11
 URxvt*boldFont                                  :
-URxvt*scrollTtyOutput                           : true
-URxvt*scrollWithBuffer                          : false
+URxvt*scrollTtyOutput                           : false
+URxvt*scrollWithBuffer                          : true
+URxvt*scrollTtyKeypress                         : true
 
 !URxvt.termName                                  : xterm-256color
 URxvt.perl-ext-common                           : default,clipboard,matcher,font-size
