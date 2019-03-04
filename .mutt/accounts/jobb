@@ -5,11 +5,14 @@
 
 # IMAP connection TLS
  set folder = "imap://mail.uniweb.no/"
- set spoolfile = "imap://mail.uniweb.no/INBOX"
+ set spoolfile = +INBOX/
  set record = +INBOX/Sent
  set postponed = +INBOX/Drafts
  set ssl_force_tls = yes
 
+ mailboxes =INBOX
+
+ alternates aakvik@uniweb.no a@uw.no
 # change dateformat
  set date_format="%y-%m-%d %T"
  set index_format="%2C | %Z [%d] %-40.30F (%-4.4c) %s"
