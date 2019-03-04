@@ -55,7 +55,7 @@ cb () {
 #bindkey "^[^[[D" backward-word
 
 # openvpn aliases
-alias aakvik-vpn='sudo systemctl start openvpn-client@aakvik && sudo systemd-tty-ask-password-agent'
+alias hjem='sudo systemctl start openvpn-client@aakvik && sudo systemd-tty-ask-password-agent'
 alias kontor='sudo systemctl start openvpn-client@kontor && sudo systemd-tty-ask-password-agent'
 alias maakeveien='sudo systemctl start openvpn-client@maakeveien && sudo systemd-tty-ask-password-agent'
 
