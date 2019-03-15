@@ -65,3 +65,4 @@ alias passman='TERM=xterm ssh passman@admint.uniweb.no'
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
 
+for (( i=1; i<=$LINES; i++ )); do echo; done; clear

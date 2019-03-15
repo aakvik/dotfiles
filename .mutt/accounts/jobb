@@ -4,7 +4,7 @@
  set use_from = yes
 
 # IMAP connection TLS
- set folder = "imap://mail.uniweb.no/"
+ set folder = "imap://mail.uniweb.no"
  set spoolfile = +INBOX/
  set record = +INBOX/Sent
  set postponed = +INBOX/Drafts

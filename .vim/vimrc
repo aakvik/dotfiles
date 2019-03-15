@@ -15,6 +15,7 @@ Plugin 'scrooloose/nerdcommenter'                            " magic comments
 Plugin 'taglist.vim'                                         " source code browser
 Plugin 'Yggdroot/indentLine'                                 " identlines for crooked eyes
 Plugin 'spacewander/openresty-vim'                           " openresty syntax hightlight (lua)
+Plugin 'vim-syntastic/syntastic'                             " syntax checker
 
 
 call vundle#end()                                            " all plugins before this line
@@ -35,9 +36,8 @@ set autowrite                                                " Automatically sav
 set hidden                                                   " Hide buffers when they are abandoned
 set number                                                   " Enable linenumbers
 set tabstop=4                                                " show existing tab with 4 spaces width
-set shiftwidth=2                                             " when indenting with '>', use 2 spaces width
+set shiftwidth=4                                             " when indenting with '>', use 2 spaces width
 set expandtab                                                " show existing tab with 4 spaces width
-" set clipboard=unnamedplus                                    " yank to CLIPBOARD
 set laststatus=2                                             " always display statusline
 set autoindent                                               " copies indentation from previous line
 set smartindent                                              " automatically indent level
@@ -46,23 +46,34 @@ set linebreak                                                " set soft wrapping
 set nobackup                                                 " set nobackup
 set nowritebackup                                            " only in case you don't want a backup file while editing
 set noswapfile                                               " no swap files
-"set cursorline                                              " see current line
+set cursorline                                               " see current line
+
+let g:syntastic_perl_checkers = ["perl","podchecker"]
+let g:syntastic_enable_perl_checker = 1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let mapleader = ','                                          " set leaders for more hotkeys
 let g:mapleader = ','
 
 let g:airline_theme = 'hybrid'                               " set theme for airline infobar
 
-match Error /\%81v.\+/                                       " mark anything after 80 chars as an error
+let w:m1=matchadd('ErrorMsg', '\%>80v.\+', -1)               " mark everyhing after 80 chars as error
 
-au BufRead ~/.mutt/tmp/* set tw=72                                  " max 72 char lenght when writing email (mutt)
+au BufRead ~/.mutt/tmp/* set tw=72                           " max 72 char lenght when writing email (mutt)
 
 " spell checking for mutt
 set spelllang=en_us,nb_no
 autocmd BufRead,BufNewFile ~/.mutt/tmp/* set filetype=mail
 autocmd FileType mail set spell
 
-" set cursor on first empty line and enter insert mode
+" set cursor on first empty line and enter insert mode in mutt
 function! AddEmptyLineBelow()
   call append(line("."), "")
 endfunction
