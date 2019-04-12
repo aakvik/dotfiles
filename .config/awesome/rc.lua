@@ -552,7 +552,7 @@ local desktop_rules = {
         properties = { screen = 2, tag = awful.util.tagnames[3] } },
 
     { rule = { class = "discord" },
-        properties = { screen = 2, tag = awful.util.tagnames[3] } },
+        properties = { screen = 2, tag = awful.util.tagnames[5] } },
 
     { rule = { class = "Enpass" },
         properties = { screen = 4, tag = awful.util.tagnames[9] } },
