@@ -64,7 +64,7 @@ let g:mapleader = ','
 
 let g:airline_theme = 'hybrid'                               " set theme for airline infobar
 
-let w:m1=matchadd('ErrorMsg', '\%>80v.\+', -1)               " mark everyhing after 80 chars as error
+" let w:m1=matchadd('ErrorMsg', '\%>80v.\+', -1)               " mark everyhing after 80 chars as error
 
 au BufRead ~/.mutt/tmp/* set tw=72                           " max 72 char lenght when writing email (mutt)
 

@@ -334,7 +334,7 @@ globalkeys = awful.util.table.join(
 
 -- Lock screen
 
-    awful.key({altkey, "Control",}, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({altkey, "Control",}, "l", function () awful.util.spawn("gnome-screensaver-command --lock") end),
 
 
     -- Show/Hide Wibox
@@ -410,9 +410,6 @@ globalkeys = awful.util.table.join(
     -- User programs
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end),
-
-    awful.key({ modkey }, "e", function () awful.spawn("urxvt -e neomutt") end),
-    awful.key({ modkey }, "i", function () awful.spawn("urxvt -e weechat") end),
 
     -- Prompt
     awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,

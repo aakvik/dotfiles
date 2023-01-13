@@ -3,6 +3,11 @@
  set realname = "Aleksander Aakvik"
  set use_from = yes
 
+# gpg encryped credentials
+ source "gpg -dq $HOME/.mutt/accounts/jobb.cred.gpg |"
+ set imap_user = "aleksander.aakvik@digitalgarden.no"
+ set imap_pass = $my_pass
+
 # IMAP connection TLS
  set folder = "imap://mail.uniweb.no"
  set spoolfile = +INBOX/
@@ -16,11 +21,6 @@
 # change dateformat
  set date_format="%y-%m-%d %T"
  set index_format="%2C | %Z [%d] %-40.30F (%-4.4c) %s"
-
-# gpg encryped credentials
- source "gpg -dq $HOME/.mutt/accounts/jobb.cred.gpg |"
- set imap_user = "aleksander.aakvik@digitalgarden.no"
- set imap_pass = $my_pass
 
 # SMTP settings TLS
  set ssl_starttls = yes
