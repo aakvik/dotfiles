@@ -94,7 +94,7 @@ URxvt*scrollWithBuffer                          : true
 URxvt*scrollTtyKeypress                         : true
 
 URxvt.termName                                  : xterm-256color
-URxvt.perl-ext-common                           : default,clipboard,matcher,font-size
+URxvt.perl-ext-common                           : default,clipboard,matcher,font-size,-confirm-paste
 URxvt.url-launcher                              : /usr/bin/firefox
 URxvt.matcher.button                            : 2
 
