@@ -1,7 +1,7 @@
 --[[
 
      Licensed under GNU General Public License v2
-      * (c) 2013, Luke Bonham
+      * (c) 2013, Luca CPZ
       * (c) 2010, Adrian C. <anrxc@sysphere.org>
 
 --]]
@@ -9,16 +9,15 @@
 local helpers = require("lain.helpers")
 local shell   = require("awful.util").shell
 local wibox   = require("wibox")
-local string  = { match  = string.match,
-                  format = string.format }
+local string  = string
 
 -- ALSA volume
 -- lain.widget.alsa
 
 local function factory(args)
-    local alsa     = { widget = wibox.widget.textbox() }
-    local args     = args or {}
-    local timeout  = args.timeout or 1
+    args           = args or {}
+    local alsa     = { widget = args.widget or wibox.widget.textbox() }
+    local timeout  = args.timeout or 5
     local settings = args.settings or function() end
 
     alsa.cmd           = args.cmd or "amixer"
@@ -37,6 +36,7 @@ local function factory(args)
     function alsa.update()
         helpers.async(format_cmd, function(mixer)
             local l,s = string.match(mixer, "([%d]+)%%.*%[([%l]*)")
+            l = tonumber(l)
             if alsa.last.level ~= l or alsa.last.status ~= s then
                 volume_now = { level = l, status = s }
                 widget = alsa.widget

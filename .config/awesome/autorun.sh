@@ -9,6 +9,6 @@ function run {
 
 setxkbmap -layout "no"
 setxkbmap -option caps:none
-run xscreensaveri -nosplash &
+run xscreensaver -nosplash &
 run nm-applet &
 #run compton --backend glx --paint-on-overlay --vsync opengl-swc --no-fading-openclose &
