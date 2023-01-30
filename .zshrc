@@ -1,5 +1,5 @@
 # path to openresty
-export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:$PATH
+export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:~/go/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/aleksander/.oh-my-zsh
@@ -54,15 +54,8 @@ cb () {
 #bindkey "^[^[[C" forward-word
 #bindkey "^[^[[D" backward-word
 
-# openvpn aliases
-alias hjem='sudo systemctl start openvpn-client@aakvik && sudo systemd-tty-ask-password-agent'
-alias kontor='sudo systemctl start openvpn-client@kontor && sudo systemd-tty-ask-password-agent'
-alias maakeveien='sudo systemctl start openvpn-client@maakeveien && sudo systemd-tty-ask-password-agent'
-
-alias passman='TERM=xterm ssh passman@admint.uniweb.no'
-
 # start tmux in interactive shells
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
 
-for (( i=1; i<=$LINES; i++ )); do echo; done; clear
+#for (( i=1; i<=$LINES; i++ )); do echo; done; clear
