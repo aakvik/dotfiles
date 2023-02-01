@@ -9,4 +9,4 @@ export GDK_DPI_SCALE=1
 
 xrdb -merge -I$HOME ~/.Xresources
 
-exec awesome
+exec dbus-launch --exit-with-session awesome
