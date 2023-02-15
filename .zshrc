@@ -2,7 +2,7 @@
 export PATH=~/go/bin:/opt/mssql-tools/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/aleksander/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # set vim as default editor
 export EDITOR='vim'
@@ -36,4 +36,4 @@ man() {
 }
 
 # git for dotfiles
-alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
