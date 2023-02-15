@@ -1,5 +1,5 @@
 # path to openresty
-export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:~/go/bin:$PATH
+export PATH=~/go/bin:/opt/mssql-tools/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/aleksander/.oh-my-zsh
