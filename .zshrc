@@ -1,4 +1,4 @@
-# path to openresty
+# Some path additions
 export PATH=~/go/bin:/opt/mssql-tools/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -35,27 +35,5 @@ man() {
     command man "$@"
 }
 
-# adds syntax coloring to less (depends on source-highlight package)
-export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
-export LESS='-R '
-
 # git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=/home/aleksander/.cfg/ --work-tree=/home/aleksander'
-
-# pastebin
-pb () {
-  curl -F "c=@${1:--}" https://ptpb.pw/
-  }
-
-cb () {
- xsel -bp
-}
-# fix movement keys (alt + arrows)
-#bindkey "^[^[[C" forward-word
-#bindkey "^[^[[D" backward-word
-
-# start tmux in interactive shells
-#[[ $- != *i* ]] && return
-#[[ -z "$TMUX" ]] && exec tmux
-
-#for (( i=1; i<=$LINES; i++ )); do echo; done; clear
