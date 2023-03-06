@@ -11,9 +11,7 @@ export EDITOR='vim'
 ZSH_THEME="aakvik"
 
 # add plugins
-plugins=(
-  git
-)
+plugins=(git)
 
 unsetopt nomatch
 
