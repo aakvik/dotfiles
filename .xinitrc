@@ -1,12 +1,21 @@
 #!/bin/sh
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ] && [ -n "$XDG_RUNTIME_DIR" ] && \
+    [ "$XDG_RUNTIME_DIR" = "/run/user/`id -u`" ] && \
+    [ -S "$XDG_RUNTIME_DIR/bus" ]; then
+  DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
+  export DBUS_SESSION_BUS_ADDRESS
+fi
 
-dbus-update-activation-environment --systemd DISPLAY
+if [ -x "/usr/bin/dbus-update-activation-environment" ]; then
+  dbus-update-activation-environment --verbose --systemd \
+    DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+fi
+
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1
-#export DBUS_SESSION_BUS_ADDRESS="autolaunch:"
 
 xrdb -merge -I$HOME ~/.Xresources
 
-exec dbus-launch --exit-with-session awesome
+exec awesome
