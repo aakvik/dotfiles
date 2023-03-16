@@ -23,6 +23,7 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
 
+naughty.config.defaults.timeout = 20
 
 local function merge_tables(t1, t2)
     local merged = {}
