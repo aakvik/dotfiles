@@ -23,7 +23,18 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
 
-naughty.config.defaults.timeout = 20
+---- Configure notifications
+--local dpi = beautiful.xresources.apply_dpi
+--
+--naughty.config.defaults.ontop = true
+--naughty.config.defaults.icon_size = dpi(32)
+--naughty.config.defaults.timeout = 10
+--naughty.config.defaults.title = ''
+--naughty.config.defaults.margin = dpi(20)
+--naughty.config.defaults.border_width = 0
+--naughty.config.defaults.position = 'top_middle'
+--naughty.config.defaults.shape = function(cr, w, h) gears.shape.rounded_rect(cr, w, h, dpi(6)) end
+
 
 local function merge_tables(t1, t2)
     local merged = {}
@@ -76,7 +87,7 @@ run_once({ "unclutter -root" }) -- entries must be comma-separated
 -- }}}
 
 -- {{{ Variable definitions
-local chosen_theme = "steamburn"
+local chosen_theme = "multicolor.aakvik"
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "urxvt"
@@ -89,10 +100,10 @@ awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 awful.layout.layouts = {
     --awful.layout.suit.floating,
+    awful.layout.suit.tile.top,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile,
     awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
     awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
