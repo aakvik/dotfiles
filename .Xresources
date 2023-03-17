@@ -85,6 +85,9 @@ xscreensaver.passwd.thermometer.width           : 8
 URxvt*foreground                                : #E7E7E7
 URxvt*background                                : #2D2D2D
 
+URxvt*transparent                               : false
+URxvt*shading                                   : 5
+
 URxvt.scrollBar                                 : false
 URxvt*cursorColor                               : #F5C685
 URxvt*font                                      : xft:Source Code Pro:size=12
