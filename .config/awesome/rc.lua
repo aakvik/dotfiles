@@ -93,7 +93,7 @@ local altkey       = "Mod1"
 local terminal     = "urxvt"
 local editor       = os.getenv("EDITOR") or "vim"
 local gui_editor   = "vim"
-local browser      = "firefox"
+local browser      = "brave-browser"
 local guieditor    = "vim"
 
 awful.util.terminal = terminal
