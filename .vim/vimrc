@@ -35,9 +35,9 @@ set incsearch                                                " Incremental searc
 set autowrite                                                " Automatically save before commands like :next and :make
 set hidden                                                   " Hide buffers when they are abandoned
 set number                                                   " Enable linenumbers
-set tabstop=4                                                " show existing tab with 4 spaces width
-set shiftwidth=4                                             " when indenting with '>', use 2 spaces width
-set expandtab                                                " show existing tab with 4 spaces width
+set tabstop=2                                                " show existing tab with 2 spaces width
+set shiftwidth=2                                             " when indenting with '>', use 2 spaces width
+set expandtab                                                " show existing tab with 2 spaces width
 set laststatus=2                                             " always display statusline
 set autoindent                                               " copies indentation from previous line
 set smartindent                                              " automatically indent level
@@ -152,7 +152,3 @@ let g:indentLine_color_term = 245
 let g:indentLine_color_tty_light = 4 " (default: 4)
 let g:indentLine_color_dark = 2 " (default: 2)
 let g:indentLine_char = '¦'
-
-" yaml 2 space ident
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType conf setlocal ts=2 sts=2 sw=2 expandtab
