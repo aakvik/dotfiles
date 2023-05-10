@@ -1,5 +1,5 @@
 # Some path additions
-export PATH=~/go/bin:/opt/mssql-tools/bin:$PATH
+export PATH=~/go/bin:/opt/mssql-tools/bin:/usr/local/go/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -44,3 +44,6 @@ man() {
 
 # git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
+
+alias kubectl='microk8s.kubectl'
+

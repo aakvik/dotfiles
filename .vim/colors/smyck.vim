@@ -12,6 +12,7 @@ if exists("syntax_on")
 endif
 
 set background=dark
+set linespace=3
 
 let g:colors_name = "smyck"
 
@@ -36,7 +37,7 @@ hi SpellCap             cterm=none ctermbg=4        ctermfg=15      gui=none    
 hi SpellRare            cterm=none ctermbg=4        ctermfg=15      gui=none                        guifg=#F7F7F7
 hi SpellLocal           cterm=none ctermbg=4        ctermfg=15      gui=none                        guifg=#F7F7F7
 hi Visual               cterm=none ctermbg=15       ctermfg=8       gui=none        guibg=#F7F7F7   guifg=#8F8F8F
-hi Directory            cterm=none ctermbg=none     ctermfg=4       gui=none        guibg=#282828   guifg=#88CCE7
+hi Directory            cterm=none ctermbg=none     ctermfg=4       gui=none        guibg=#242424   guifg=#88CCE7
 hi SpecialKey           cterm=none ctermbg=none     ctermfg=8       gui=none                        guifg=#8F8F8F
 hi DiffAdd              cterm=bold ctermbg=2        ctermfg=15
 hi DiffChange           cterm=bold ctermbg=4        ctermfg=15
@@ -69,3 +70,28 @@ hi Underlined           cterm=none ctermbg=none ctermfg=magenta     gui=underlin
 hi Symbol               cterm=none ctermbg=none ctermfg=9           gui=none        guifg=#FAB1AB
 hi Method               cterm=none ctermbg=none ctermfg=15          gui=none        guifg=#F7F7F7
 hi Interpolation        cterm=none ctermbg=none ctermfg=6           gui=none        guifg=#2EB5C1
+
+" Erlang
+hi link erlangAtom            Keyword
+hi link erlangBitType         Keyword
+
+hi link rubyBeginend          Keyword
+hi link rubyClass             Keyword
+hi link rubyModule            Keyword
+hi link rubyKeyword           Keyword
+hi link rubyOperator          Method
+hi link rubyIdentifier        Keyword
+hi link rubyClassVariable     Symbol
+hi link rubyInstanceVariable  Constant
+hi link rubyGlobalVariable    Constant
+hi link rubyClassVariable     Method
+hi link rubyConstant          Constant
+hi link rubySymbol            Symbol
+hi link rubyFunction          Constant
+hi link rubyControl           Keyword
+hi link rubyConditional       Keyword
+hi link rubyInterpolation     Interpolation
+hi link rubyInterpolationDelimiter    Interpolation
+hi link rubyRailsMethod       Method
+
+
