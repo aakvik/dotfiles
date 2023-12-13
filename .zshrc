@@ -44,6 +44,3 @@ man() {
 
 # git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
-
-alias kubectl='microk8s.kubectl'
-
