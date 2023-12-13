@@ -18,6 +18,7 @@ Xcursor.size                                    : 10
 #define base0D #7cafc2
 #define base0E #ba8baf
 #define base0F #a16946
+#define base0G #6b6ca8
 
 *.foreground                                    : base05
 *.background                                    : base00
