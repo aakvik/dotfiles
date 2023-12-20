@@ -83,19 +83,20 @@ xscreensaver.passwd.thermometer.width           : 8
 
 ! URxvt
 
-URxvt*foreground                                : #E7E7E7
-URxvt*background                                : #2D2D2D
+URxvt.foreground                                : #E7E7E7
+URxvt.background                                : #2D2D2D
 
-URxvt*transparent                               : false
-URxvt*shading                                   : 5
+URxvt.transparent                               : false
+URxvt.shading                                   : 5
 
 URxvt.scrollBar                                 : false
-URxvt*cursorColor                               : #F5C685
-URxvt*font                                      : xft:Source Code Pro:size=12
-URxvt*boldFont                                  :
-URxvt*scrollTtyOutput                           : false
-URxvt*scrollWithBuffer                          : true
-URxvt*scrollTtyKeypress                         : true
+URxvt.cursorColor                               : #F5C685
+URxvt.font                                      : xft:Source Code Pro:size=12
+URxvt.boldFont                                  :
+URxvt.scrollTtyOutput                           : false
+URxvt.scrollWithBuffer                          : true
+URxvt.scrollTtyKeypress                         : true
+URxvt.saveLines                                 : 40000
 
 URxvt.termName                                  : xterm-256color
 URxvt.perl-ext-common                           : default,clipboard,matcher,font-size,-confirm-paste
