@@ -1,5 +1,5 @@
 # Some path additions
-export PATH=~/go/bin:/opt/mssql-tools/bin:/usr/local/go/bin:$PATH
+export PATH=/opt/mssql-tools/bin:/usr/local/go/bin:~/.temporalio/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
