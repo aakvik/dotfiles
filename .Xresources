@@ -91,7 +91,7 @@ URxvt.shading                                   : 5
 
 URxvt.scrollBar                                 : false
 URxvt.cursorColor                               : #F5C685
-URxvt.font                                      : xft:Source Code Pro:size=12
+URxvt.font                                      : xft:SauceCodePro Nerd Font:size=12
 URxvt.boldFont                                  :
 URxvt.scrollTtyOutput                           : false
 URxvt.scrollWithBuffer                          : true
