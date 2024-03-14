@@ -93,7 +93,7 @@ return require('packer').startup(function(use)
   -- Signature help
   use "ray-x/lsp_signature.nvim"
 
-  -- Autopair 
+  -- Autopair
   use {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
@@ -111,12 +111,11 @@ return require('packer').startup(function(use)
   }
 
   -- Nvim tree (filebrowser)
-  use {
+  use ({
     'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons',
-    },
-  }
+    requires = 'nvim-tree/nvim-web-devicons',
+    config = function() require('plugins.nvimtree') end,
+  })
 
   -- Which key (shows keybinds)
   use {
