@@ -11,11 +11,12 @@ if [ -x "/usr/bin/dbus-update-activation-environment" ]; then
     DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 fi
 
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1
 
 xrdb -merge -I$HOME ~/.Xresources
+
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 
 exec awesome -c ~/.config/awesome/rc.lua
