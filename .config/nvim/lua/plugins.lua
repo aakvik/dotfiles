@@ -28,26 +28,29 @@ return require('packer').startup(function(use)
   use({'wbthomason/packer.nvim', opt = true})
 
   -- LSP and completion
-  use {
+  use ({
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+    "hrsh7th/cmp-nvim-lsp",
+    "ray-x/lsp_signature.nvim",
     run = ":MasonUpdate",
-  }
-
+  })
 
   require("plugins.lspconfig")
 
-    -- Autocomplete
+  -- neodev for neovim development
+  use 'folke/neodev.nvim'
+
+  -- Autocomplete
   use({
     "hrsh7th/nvim-cmp",
     requires = {
-      "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
-      "hrsh7th/cmp-nvim-lua",
       "hrsh7th/cmp-cmdline",
-      "saadparwaiz1/cmp_luasnip",
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
     },
     config = function() require('plugins.cmp') end,
   })
@@ -66,6 +69,7 @@ return require('packer').startup(function(use)
   -- Treesitter syntax hightlighting
   use({
     'nvim-treesitter/nvim-treesitter',
+    'windwp/nvim-ts-autotag',
     config = function() require('plugins.treesitter') end,
     run = ':TSUpdate'
   })
@@ -86,12 +90,6 @@ return require('packer').startup(function(use)
   requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- Snippets
-  use {"L3MON4D3/LuaSnip", config = function() require('plugins.snippets') end}
-  use "rafamadriz/friendly-snippets"
-
-  -- Signature help
-  use "ray-x/lsp_signature.nvim"
 
   -- Autopair
   use {
@@ -128,8 +126,13 @@ return require('packer').startup(function(use)
     end
   }
 
-  -- Startify (startup screen)
-  use 'mhinz/vim-startify'
+  -- Startup screen
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+  }
 
   -- Markdown
   use 'godlygeek/tabular'
