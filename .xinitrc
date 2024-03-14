@@ -13,7 +13,7 @@ fi
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
 export QT_QPA_PLATFORMTHEME=qt5ct
-export GDK_DPI_SCALE=1
+#export GDK_DPI_SCALE=1
 
 xrdb -merge -I$HOME ~/.Xresources
 
