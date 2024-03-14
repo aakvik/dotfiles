@@ -90,9 +90,8 @@ run_once({ "unclutter -root" }) -- entries must be comma-separated
 local chosen_theme = "multicolor.aakvik"
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "urxvt"
+local terminal     = "alacritty"
 local editor       = os.getenv("EDITOR") or "vim"
-local gui_editor   = "vim"
 local browser      = "firefox"
 local guieditor    = "vim"
 
