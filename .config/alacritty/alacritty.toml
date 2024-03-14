@@ -4,3 +4,15 @@ import = [
     "~/.config/alacritty/env.toml",
     "~/.config/alacritty/fonts.toml",
   ]
+
+[selection]
+save_to_clipboard = true
+
+[scrolling]
+history = 50000
+
+[window]
+padding = { x = 6, y = 6}
+
+#[colors]
+#cursor = { cursor = "#f5C685"}
