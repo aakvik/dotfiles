@@ -1,0 +1,6 @@
+# import all configuration files
+import = [
+    "~/.config/alacritty/colorscheme.toml",
+    "~/.config/alacritty/env.toml",
+    "~/.config/alacritty/fonts.toml",
+  ]
