@@ -19,7 +19,7 @@ vim.o.linebreak		    = true
 vim.o.noswapfile	    = true
 vim.o.nobackup		    = true
 vim.o.cursorline	    = true
-vim.opt.clipboard     = 'unnamedplus'
+vim.opt.clipboard     = "unnamed,unnamedplus"
 vim.opt.termguicolors = true
 vim.opt.timeoutlen    = 50
 
