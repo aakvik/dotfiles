@@ -8,6 +8,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+
+# change location of zcompdumps
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 # set vim as default editor
 export EDITOR='vim'
 
