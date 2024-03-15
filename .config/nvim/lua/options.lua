@@ -19,13 +19,6 @@ vim.o.linebreak		    = true
 vim.o.noswapfile	    = true
 vim.o.nobackup		    = true
 vim.o.cursorline	    = true
-vim.opt.clipboard     = "unnamed,unnamedplus"
+vim.opt.clipboard     = 'unnamed,unnamedplus'
 vim.opt.termguicolors = true
 vim.opt.timeoutlen    = 50
-
-
--- indentLine configuration
-vim.g.indentLine_color_term = 245
-vim.g.indentLine_color_tty_light = 4
-vim.g.indentLine_color_dark = 2
-vim.g.indentLine_char = '¦'
