@@ -148,6 +148,9 @@ return require('packer').startup(function(use)
   -- Github copilot
   use "github/copilot.vim"
 
+  -- Trouble (show diagnostics)
+  use 'folke/trouble.nvim'
+
   -- Python formatting
   use "EgZvor/vim-black"
   use 'jeetsukumaran/vim-python-indent-black'
