@@ -17,4 +17,6 @@ export GDK_DPI_SCALE=1
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 
+xrdb -merge -I$HOME ~/.Xresources
+
 exec awesome -c ~/.config/awesome/rc.lua
