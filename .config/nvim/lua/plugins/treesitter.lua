@@ -1,39 +1,26 @@
--- Treesitter configuration
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      highlight = {
+        enable = true,
+      },
 
-require('nvim-treesitter.configs').setup({
-	highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
+      ensure_installed = {
+        "bash",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "tsx",
+        "typescript",
+        "vim",
+      },
+    },
   },
-  autotag = {
-    enable = true,
-  },
-  -- We must manually specify which parsers to install
-	ensure_installed = {
-    "bash",
-    "c",
-    "cpp",
-    "cuda",
-    "json",
-    "julia",
-    "lua",
-    "markdown",
-    "python",
-    "yaml",
-    "vim",
-    "latex",
-    "go",
-    "rust",
-    "css",
-    "html",
-    "javascript",
-    "typescript",
-    "ini",
-    "regex",
-    "toml",
-    "comment",
-    "sql",
-    "xml",
-    "dockerfile",
-	},
-})
+}
