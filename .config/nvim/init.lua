@@ -1,7 +1,2 @@
--- Load all config files
-
-require('options')
-require('plugins')
-require('keymapping')
-require('commands')
-require('colorscheme')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

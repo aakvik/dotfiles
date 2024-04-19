@@ -8,7 +8,6 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-
 # change location of zcompdumps
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
@@ -16,9 +15,6 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export EDITOR='vim'
 
 # set theme
-#ZSH_THEME="xiong-chiamiov-plus"
-#ZSH_THEME="agnoster"
-#ZSH_THEME="jonathan"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # add plugins
@@ -36,7 +32,6 @@ source $ZSH/oh-my-zsh.sh
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
-
 
 # git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
