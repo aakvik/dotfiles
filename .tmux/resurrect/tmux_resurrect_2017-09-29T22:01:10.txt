@@ -1,6 +1,0 @@
-pane	0	0	:bash	1	:*	1	:/home/aleksander/.tmux/plugins/tmux-themepack/powerline/default	1	bash	:
-pane	16	1	:ssh	1	:*	1	:/home/aleksander	0	ssh	:ssh root@mx05.uniweb.no
-pane	16	1	:ssh	1	:*	2	:/home/aleksander	1	ssh	:ssh sindrenordbotten@35.184.68.11
-window	0	0	1	:*	d65d,255x69,0,0,0
-window	16	1	1	:*	cc9d,255x76,0,0[255x38,0,0,22,255x37,0,39,23]
-state	16	
