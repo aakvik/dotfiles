@@ -5,12 +5,12 @@ application/x-extension-shtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
-text/html=firefox_firefox.desktop
-x-scheme-handler/about=firefox_firefox.desktop
+text/html=firefox.desktop
+x-scheme-handler/about=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop
-x-scheme-handler/http=firefox_firefox.desktop
-x-scheme-handler/https=firefox_firefox.desktop
-x-scheme-handler/unknown=firefox_firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
 
 [Added Associations]
 image/jpeg=feh.desktop;

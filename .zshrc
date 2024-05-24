@@ -28,13 +28,19 @@ unsetopt nomatch
 
 source $ZSH/oh-my-zsh.sh
 
-# some verbose stuff
+# some aliases
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
+alias l.='ls -dlh .*'
 
 # git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Run every terminal in tmux
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
