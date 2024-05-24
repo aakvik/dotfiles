@@ -18,4 +18,6 @@ eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 
 xrdb -merge -I$HOME ~/.Xresources
 
+setxkbmap -option caps:escape
+
 exec awesome -c ~/.config/awesome/rc.lua
