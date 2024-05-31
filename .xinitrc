@@ -12,7 +12,7 @@ if [ -x "/usr/bin/dbus-update-activation-environment" ]; then
 fi
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
-export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 
