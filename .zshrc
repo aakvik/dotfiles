@@ -22,6 +22,7 @@ plugins=(
   git
   colored-man-pages
   jsontools
+  #zsh-autosuggestions
 )
 
 unsetopt nomatch
