@@ -270,7 +270,7 @@ globalkeys = awful.util.table.join(
 	-- Take screenshot with flameshot
 
 	awful.key({ modkey }, "å", function()
-		awful.util.spawn_with_shell("flameshot gui")
+		awful.util.spawn_with_shell("maim -s | xclip -selection clipboard -t image/png")
 	end),
 
 	-- Hotkeys
