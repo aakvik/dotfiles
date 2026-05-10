@@ -1,50 +1,69 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Powerlevel10k instant prompt
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-# change location of zcompdumps
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-
-# set vim as default editor
+# Editor
 export EDITOR='vim'
 
-# set theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# add plugins
-plugins=(
-  git
-  colored-man-pages
-  jsontools
-)
+# SSH agent
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+# Zsh behavior
 unsetopt nomatch
 
-source $ZSH/oh-my-zsh.sh
+# Completion system
+autoload -Uz compinit
+ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/.zcompdump-$HOST"
+mkdir -p "${ZSH_COMPDUMP:h}"
+compinit -d "$ZSH_COMPDUMP"
 
-# some aliases
+# Better completion menu
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Colors for ls/grep/etc where supported
+autoload -Uz colors && colors
+eval "$(dircolors -b)"
+alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+alias ll='ls -lh --color=auto'
+
+# Git prompt/status functions
+autoload -Uz vcs_info
+
+# Aliases
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
 
-# git for dotfiles
+# Git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# JSON helpers replacing jsontools basics
+alias pp_json='python -m json.tool'
+alias is_json='python -m json.tool >/dev/null'
+
+# Colored man pages replacement
+export LESS_TERMCAP_mb=$'\e[1;31m'
+export LESS_TERMCAP_md=$'\e[1;31m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;44;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;32m'
+
+# Powerlevel10k theme, adjust path if installed elsewhere
+[[ -r ~/.powerlevel10k/powerlevel10k.zsh-theme ]] &&
+  source ~/.powerlevel10k/powerlevel10k.zsh-theme
+
+# Powerlevel10k config
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ## Run every terminal in tmux
 #if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 #  exec tmux
 #fi
-
-#eval "$(/bin/brew shellenv)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
