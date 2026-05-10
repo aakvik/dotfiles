@@ -35,6 +35,25 @@ alias ll='ls -lh --color=auto'
 # Git prompt/status functions
 autoload -Uz vcs_info
 
+# History
+HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/history"
+mkdir -p "${HISTFILE:h}"
+
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt extended_history
+
+# Explicitly bind Ctrl+R to reverse history search
+bindkey -e
+bindkey '^R' history-incremental-search-backward
+
 # Aliases
 alias rm='rm -v'
 alias cp='cp -v'
