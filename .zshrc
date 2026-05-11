@@ -17,6 +17,13 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # Zsh behavior
 unsetopt nomatch
 
+# History settings
+setopt INC_APPEND_HISTORY   # write to history file immediately, not on shell exit
+setopt SHARE_HISTORY        # import new commands from history file, and append typed commands
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+
 # Completion system
 autoload -Uz compinit
 ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/.zcompdump-$HOST"
