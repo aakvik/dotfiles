@@ -44,6 +44,10 @@ alias ll='ls -lh --color=auto'
 # Git prompt/status functions
 autoload -Uz vcs_info
 
+# Bash alt+backspace style
+autoload -Uz select-word-style
+select-word-style bash
+
 # History
 HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/history"
 mkdir -p "${HISTFILE:h}"
