@@ -5,3 +5,5 @@
 .config/ksmserverrc
 .config/kactivitymanagerdrc
 .config/kglobalshortcutsrc
+.config/kdeglobals
+.config/kwinrc
