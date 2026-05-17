@@ -18,6 +18,7 @@ x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
 x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
 x-scheme-handler/slack=com.slack.Slack.desktop
+x-scheme-handler/bitwarden=bitwarden.desktop;
 
 [Default Applications]
 application/json=org.kde.kate.desktop;
@@ -51,3 +52,4 @@ x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/slack=com.slack.Slack.desktop
 x-scheme-handler/unknown=firefox.desktop
+x-scheme-handler/bitwarden=bitwarden.desktop

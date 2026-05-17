@@ -1,7 +1,7 @@
-# Powerlevel10k instant prompt
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # Editor
 export EDITOR='vim'
@@ -16,13 +16,10 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Zsh behavior
 unsetopt nomatch
+bindkey -e
 
-# History settings
-setopt INC_APPEND_HISTORY   # write to history file immediately, not on shell exit
-setopt SHARE_HISTORY        # import new commands from history file, and append typed commands
-HISTFILE=~/.zsh_history
-HISTSIZE=50000
-SAVEHIST=50000
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
 
 # Completion system
 autoload -Uz compinit
@@ -30,67 +27,45 @@ ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/.zcompdump-$HOST"
 mkdir -p "${ZSH_COMPDUMP:h}"
 compinit -d "$ZSH_COMPDUMP"
 
-# Better completion menu
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# Colors for ls/grep/etc where supported
-autoload -Uz colors && colors
+# Colors
 eval "$(dircolors -b)"
 alias ls='ls --color=auto'
-alias la='ls -la --color=auto'
-alias ll='ls -lh --color=auto'
-
-# Git prompt/status functions
-autoload -Uz vcs_info
-
-# Bash alt+backspace style
-autoload -Uz select-word-style
-select-word-style bash
 
 # History
-HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/history"
-mkdir -p "${HISTFILE:h}"
-
 HISTSIZE=10000
-SAVEHIST=10000
-
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
-setopt incappendhistory
-setopt hist_ignore_dups
 setopt hist_ignore_space
-setopt hist_reduce_blanks
-setopt extended_history
-
-# Explicitly bind Ctrl+R to reverse history search
-bindkey -e
-bindkey '^R' history-incremental-search-backward
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
 
 # Aliases
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
-
-# Git for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 
-# JSON helpers replacing jsontools basics
-alias pp_json='python -m json.tool'
-alias is_json='python -m json.tool >/dev/null'
+# Zinit
+ZINIT_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/zinit/zinit.git"
+if [[ ! -d "$ZINIT_HOME" ]]; then
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "$ZINIT_HOME/zinit.zsh"
 
-# Colored man pages replacement
-export LESS_TERMCAP_mb=$'\e[1;31m'
-export LESS_TERMCAP_md=$'\e[1;31m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[1;44;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;32m'
+# Powerlevel10k
+zinit ice depth=1
+zinit light romkatv/powerlevel10k
 
-# Powerlevel10k theme, adjust path if installed elsewhere
-[[ -r ~/.powerlevel10k/powerlevel10k.zsh-theme ]] &&
-  source ~/.powerlevel10k/powerlevel10k.zsh-theme
+# Plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
 
 # Powerlevel10k config
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
