@@ -9,10 +9,10 @@ bind-key C-space send-prefix
 
 # Fix paste with middle mouse
 unbind -T copy-mode-vi MouseDragEnd2Pane
-bind -T root MouseDown2Pane run "tmux set-buffer \"$(xclip -o -selection clipboard)\"; tmux paste-buffer"
+bind -T root MouseDown2Pane run "tmux set-buffer \"$(wl-paste)\"; tmux paste-buffer"
 
 # Yank to both tmux buffer and system clipboard
-bind-key -T copy-mode-vi 'y' send-keys -X copy-pipe-and-cancel "xclip -selection clipboard -i && xclip -selection primary -i"
+bind-key -T copy-mode-vi 'y' send-keys -X copy-pipe-and-cancel "wl-copy"
 
 # Yank directly on double click
-bind -T copy-mode-vi MouseDragEnd1Pane send -X copy-pipe-and-cancel "xsel -ib"
+bind -T copy-mode-vi MouseDragEnd1Pane send -X copy-pipe-and-cancel "wl-copy"
