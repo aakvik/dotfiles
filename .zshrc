@@ -51,6 +51,14 @@ alias cp='cp -v'
 alias mv='mv -v'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 
+# fzf
+source <(fzf --zsh)
+export FZF_TMUX=1
+export FZF_TMUX_OPTS="-p 80%,60%"
+export FZF_DEFAULT_COMMAND="fd --type f --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="fd --color=always"
+
 # Zinit
 ZINIT_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/zinit/zinit.git"
 if [[ ! -d "$ZINIT_HOME" ]]; then
