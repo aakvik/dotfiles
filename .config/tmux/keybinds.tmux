@@ -14,7 +14,7 @@ bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
 
 # Fix paste with middle mouse
 unbind -T copy-mode-vi MouseDragEnd2Pane
-bind -T root MouseDown2Pane run "tmux set-buffer \"$(wl-paste)\"; tmux paste-buffer"
+bind -T root MouseDown2Pane run -b 'if command -v powershell.exe >/dev/null 2>&1; then tmux set-buffer -- "$(powershell.exe -NoProfile -Command Get-Clipboard | tr -d "\r")"; else tmux set-buffer -- "$(wl-paste)"; fi; tmux paste-buffer -p'
 
 # Yank to both tmux buffer and system clipboard
 bind-key -T copy-mode-vi 'y' send-keys -X copy-pipe-and-cancel "wl-copy"
