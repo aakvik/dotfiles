@@ -2,5 +2,6 @@
     "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
     "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
     "chat.fontFamily": "JetBrainsMono Nerd Font Mono",
-    "markdown.preview.fontSize": 12
+    "markdown.preview.fontSize": 12,
+    "claudeCode.preferredLocation": "panel"
 }
