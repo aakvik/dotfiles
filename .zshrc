@@ -50,6 +50,7 @@ alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
+alias wl-copy='wl-copy --type text/plain'
 
 # fzf
 source <(fzf --zsh)
