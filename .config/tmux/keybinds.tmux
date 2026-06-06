@@ -7,6 +7,9 @@ unbind C-b
 set-option -g prefix C-space
 bind-key C-space send-prefix
 
+# prefix + v: enter copy mode and immediately start visual selection
+bind-key v copy-mode \; send-keys -X begin-selection
+
 # Vimlike mouse selection
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi V send-keys -X select-line
@@ -38,7 +41,7 @@ bind-key ? display-popup -w 60% -h 60% -E "cat <<'EOF' | fzf --no-sort --layout=
 [tmux]  F          tmux-fzf
 [tmux]  I          install plugins
 [tmux]  [          enter copy mode
-[tmux]  v          select (copy mode)
+[tmux]  v          copy mode + visual select
 [tmux]  V          select line (copy mode)
 [tmux]  C-v        select block (copy mode)
 [tmux]  y / Enter  yank to clipboard (copy mode)
