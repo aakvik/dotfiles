@@ -37,9 +37,3 @@ dotfiles checkout
 # 4. Hide untracked files so `dotfiles status` stays clean
 dotfiles config --local status.showUntrackedFiles no
 ```
-
-## Notes
-
-- `.gitignore` only excludes `.cfg` itself (the bare git dir living inside the work tree).
-- This README lives in `.github/README.md` so it surfaces on the GitHub repo page
-  without putting a `README.md` directly in `$HOME`.
