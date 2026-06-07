@@ -29,5 +29,6 @@ import = [
     "~/.config/alacritty/fonts.toml",
   ]
 
-#[colors]
-#cursor = { cursor = "#f5C685"}
+[colors.cursor]
+text = "CellBackground"
+cursor = "#bb9af7"
