@@ -31,4 +31,4 @@ import = [
 
 [colors.cursor]
 text = "CellBackground"
-cursor = "#bb9af7"
+cursor = "#ff9e64"
