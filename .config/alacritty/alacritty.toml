@@ -5,6 +5,12 @@ semantic_escape_chars = ",│`|\"' ()[]{}<>\t"
 [scrolling]
 history = 50000
 
+# Shift+Enter inserts a newline (sends ESC+CR, which Claude Code reads as newline)
+[[keyboard.bindings]]
+key = "Enter"
+mods = "Shift"
+chars = "\u001b\r"
+
 [window]
 padding = { x = 6, y = 6}
 
