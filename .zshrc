@@ -84,7 +84,13 @@ zinit light Aloxaf/fzf-tab
 # Powerlevel10k config
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Run every terminal in tmux
+# Run every terminal in tmux, each in its own cleanly-numbered session.
+# Reuses the lowest free integer name so numbering stays tight (no gaps).
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
+  tmux_existing=$(tmux ls -F '#{session_name}' 2>/dev/null)
+  tmux_n=0
+  while print -r -- "$tmux_existing" | grep -qx "$tmux_n"; do
+    (( tmux_n++ ))
+  done
+  exec tmux new-session -s "$tmux_n"
 fi
