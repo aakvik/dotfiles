@@ -7,8 +7,8 @@ unbind C-b
 set-option -g prefix C-space
 bind-key C-space send-prefix
 
-# prefix + v: enter copy mode and immediately start visual selection
-bind-key v copy-mode \; send-keys -X begin-selection
+# Enter copy mode
+bind v copy-mode
 
 # Vimlike mouse selection
 bind-key -T copy-mode-vi v send-keys -X begin-selection
